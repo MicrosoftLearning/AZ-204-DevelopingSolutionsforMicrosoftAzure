@@ -1,0 +1,29 @@
+{
+  "Gender": 1,
+  "FirstName": "Bethany",
+  "LastName": "Mante",
+  "FullName": "Bethany Mante",
+  "UserName": "Bethany.Mante46",
+  "Avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/vlajki/128.jpg",
+  "Email": "Bethany38@gmail.com",
+  "DateOfBirth": "1970-04-01T16:30:14.8705642-05:00",
+  "Address": {
+    "Street": "855 Andreanne Drive",
+    "Suite": "Apt. 068",
+    "City": "East Natashachester",
+    "State": "California",
+    "ZipCode": "89702",
+    "Geo": {
+      "Lat": 41.5921,
+      "Lng": -51.6111
+    }
+  },
+  "Phone": "(235) 449-1439 x231",
+  "Website": "iva.org",
+  "Company": {
+    "Name": "Strosin and Sons",
+    "CatchPhrase": "Open-architected full-range local area network",
+    "Bs": "brand strategic e-tailers"
+  },
+  "Random": {}
+}

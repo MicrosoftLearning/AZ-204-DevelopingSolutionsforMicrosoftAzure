@@ -1,0 +1,52 @@
+﻿@page "{id:guid}"
+@model Details
+@inject IOptions<Settings> Settings
+@{
+    List<SelectListItem> modelList = Model.Model.Products.Select(p => new SelectListItem { Value = p.id.ToString(), Text = $"{p.Name}, {p.ListPrice:C}" }).ToList();
+}
+<article class="row">
+    <section class="col-md-8">
+        <img src="@Flurl.Url.Combine(Settings.Value?.BlobContainerUrl, Model.Model.Photo)" class="img-thumbnail img-fluid w-100 shadow-sm" alt="@Model.Model.Name" />
+    </section>
+    <aside class="col-md-4">
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h4 class="font-weight-normal">@Model.Model.Name</h4>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">
+                    <span class="text-nowrap text-muted">
+                        @($"{Model.Model.Products.Average(p => p.ListPrice):C}")
+                    </span>
+                </h3>
+                <form method="post">
+                    <div class="form-group">
+                        <label asp-for="SelectedProductId">
+                            Select Options
+                        </label>
+                        <select asp-for="SelectedProductId" asp-items="modelList" class="form-control">
+                            @if (modelList.Count >= 2)
+                            {
+                                <option value="">Select an option</option>
+                            }
+                        </select>
+                        <span asp-validation-for="SelectedProductId" class="text-danger"></span>
+                    </div>
+                    <button disabled="disabled" type="submit" class="btn btn-info btn-lg btn-block">
+                        <i class="fas fa-shopping-cart ml-2"></i>
+                        Add to Cart
+                    </button>
+                </form>
+            </div>
+        </div>
+    </aside>
+</article>
+<summary class="mt-3">
+    <div class="card bg-light shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title">
+                @Model.Model.Description
+            </h5>
+        </div>
+    </div>
+</summary>

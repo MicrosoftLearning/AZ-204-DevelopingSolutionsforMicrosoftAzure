@@ -1,0 +1,11 @@
+{
+    "version": "0.2.4",
+    "root": "/usr/libexec/mews_principal/",
+    "device": {
+        "id": "21e46d2b2b926cba031a23c6919"
+    },
+    "notifications": {
+        "email": "Anais85@outlook.com",
+        "phone": "751.757.2014 x4151"
+    }
+}

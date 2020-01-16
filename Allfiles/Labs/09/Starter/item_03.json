@@ -1,0 +1,29 @@
+{
+  "Gender": 1,
+  "FirstName": "Lauren",
+  "LastName": "Schmidt",
+  "FullName": "Lauren Schmidt",
+  "UserName": "Lauren72",
+  "Avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg",
+  "Email": "Lauren.Schmidt@hotmail.com",
+  "DateOfBirth": "1995-09-13T18:19:06.6723499-04:00",
+  "Address": {
+    "Street": "11293 Marion Expressway",
+    "Suite": "Suite 041",
+    "City": "New Hazle",
+    "State": "Wyoming",
+    "ZipCode": "50024",
+    "Geo": {
+      "Lat": 1.2475,
+      "Lng": -175.4012
+    }
+  },
+  "Phone": "1-975-976-1834 x643",
+  "Website": "dolores.info",
+  "Company": {
+    "Name": "Rohan, Mraz and Flatley",
+    "CatchPhrase": "Switchable coherent success",
+    "Bs": "seize back-end technologies"
+  },
+  "Random": {}
+}

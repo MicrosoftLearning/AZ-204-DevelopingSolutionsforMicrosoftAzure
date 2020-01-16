@@ -1,0 +1,29 @@
+﻿@page
+@model Index
+@inject IOptions<Settings> Settings
+@{
+    ViewData["Home"] = true;
+}
+<article class="card-columns">
+    @foreach (var item in Model.Models)
+    {
+        <div class="card">
+            <img src="@Flurl.Url.Combine(Settings.Value?.BlobContainerUrl, item.Photo)" class="card-img-top" alt="@item.Name">
+            <div class="card-body">
+                <h5 class="card-title">
+                    @item.Name
+                </h5>
+                <p class="card-text">
+                    <small class="text-muted">
+                        @item.Description
+                    </small>
+                </p>
+            </div>
+            <div class="card-footer">
+                <a asp-page="@nameof(Details)" asp-route-id="@item.id" class="card-link">
+                    View Details
+                </a>
+            </div>
+        </div>
+    }
+</article>

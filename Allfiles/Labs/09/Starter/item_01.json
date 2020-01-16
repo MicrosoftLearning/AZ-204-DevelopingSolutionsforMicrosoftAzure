@@ -1,0 +1,29 @@
+{
+  "Gender": 1,
+  "FirstName": "Wendy",
+  "LastName": "Wilkinson",
+  "FullName": "Wendy Wilkinson",
+  "UserName": "Wendy_Wilkinson",
+  "Avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/amywebbb/128.jpg",
+  "Email": "Wendy_Wilkinson9@hotmail.com",
+  "DateOfBirth": "1977-05-05T08:44:27.0271129-04:00",
+  "Address": {
+    "Street": "7357 Clint Ridge",
+    "Suite": "Suite 589",
+    "City": "Watersshire",
+    "State": "Arkansas",
+    "ZipCode": "61971-8078",
+    "Geo": {
+      "Lat": 8.7522,
+      "Lng": 8.5219
+    }
+  },
+  "Phone": "1-527-843-4377 x7091",
+  "Website": "darrell.name",
+  "Company": {
+    "Name": "Pollich LLC",
+    "CatchPhrase": "Advanced stable standardization",
+    "Bs": "target enterprise supply-chains"
+  },
+  "Random": {}
+}
