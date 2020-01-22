@@ -1,4 +1,4 @@
-name: '$(Date:yyyyMMdd)$(Rev:.rr)'
+name: '$(Date:yyyyMMdd)$(Rev:.rr)-prerelease'
 jobs:
   - job: build_markdown_content
     displayName: 'Build Markdown Content'
@@ -29,6 +29,7 @@ jobs:
           releaseNotes: '# Version $(Build.BuildNumber) Release'
           assets: '$(Build.SourcesDirectory)/out/*.zip'
           assetUploadMode: replace
+          isPreRelease: true
       - task: PublishBuildArtifacts@1
         displayName: 'Publish Output Files'
         inputs:
