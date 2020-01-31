@@ -126,7 +126,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **Create Topic** blade, perform the following actions:
 
-    1.  In the **Name** text box, enter **hrtopic*yourname***.
+    1.  In the **Name** text box, enter **hrtopic*[yourname]***.
 
     1.  From the **Location** drop-down list, select the **(US) East US** region.
 
@@ -156,7 +156,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Resource group** section, select **PubSubEvents**.
 
-    1.  In the **Name** text box, enter **eventviewer*yourname***.
+    1.  In the **Name** text box, enter **eventviewer*[yourname]***.
 
     1.  In the **Publish** section, select **Docker Container**.
 
@@ -202,7 +202,7 @@ In this exercise, you created the Event Grid topic and a web app that you will u
 
 1.  On the **Resource groups** blade, select the **PubSubEvents** resource group that you created earlier in this lab.
 
-1.  On the **PubSubEvents** blade, select the **eventviewer*yourname*** web app that you created earlier in this lab.
+1.  On the **PubSubEvents** blade, select the **eventviewer*[yourname]*** web app that you created earlier in this lab.
 
 1.  On the **App Service** blade, in the **Settings** category, select the **Properties** link.
 
@@ -224,7 +224,7 @@ In this exercise, you created the Event Grid topic and a web app that you will u
 
 1.  On the **Resource groups** blade, select the **PubSubEvents** resource group that you created earlier in this lab.
 
-1.  On the **PubSubEvents** blade, select the **hrtopic*yourname*** Event Grid topic that you created earlier in this lab.
+1.  On the **PubSubEvents** blade, select the **hrtopic*[yourname]*** Event Grid topic that you created earlier in this lab.
 
 1.  On the **Event Grid Topic** blade, select **+ Event Subscription**.
 
@@ -262,7 +262,7 @@ In this exercise, you created the Event Grid topic and a web app that you will u
 
 1.  On the **Resource groups** blade, select the **PubSubEvents** resource group that you created earlier in this lab.
 
-1.  On the **PubSubEvents** blade, select the **hrtopic*yourname*** Event Grid topic that you created earlier in this lab.
+1.  On the **PubSubEvents** blade, select the **hrtopic*[yourname]*** Event Grid topic that you created earlier in this lab.
 
 1.  On the **Event Grid Topic** blade, record the value of the **Topic Endpoint** field. You'll use this value later in the lab.
 
@@ -286,7 +286,7 @@ In this exercise, you created a new subscription, validated its registration, an
 
 1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
 
-1.  At the open command prompt, enter the following command, and then select Enter to create a new Microsoft .NET project named **EventPublisher** in the current folder:
+1.  At the open command prompt, enter the following command, and then select Enter to create a new .NET project named **EventPublisher** in the current folder:
 
     ```
     dotnet new console --name EventPublisher --output .

@@ -76,7 +76,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Resource group** section, select **Create new**, enter **MonitoredAssets**, and then select **OK**.
     
-    1.  In the **Name** text box, enter **instrm*yourname***.
+    1.  In the **Name** text box, enter **instrm*[yourname]***.
     
     1.  In the **Location** drop-down list, select the **(US) East US** region.
     
@@ -92,7 +92,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
 
-1.  From the **MonitoredAssets** blade, select the **instrm*yourname*** Application Insights account that you created earlier in this lab.
+1.  From the **MonitoredAssets** blade, select the **instrm*[yourname]*** Application Insights account that you created earlier in this lab.
 
 1.  From the **Application Insights** blade, in the **Configure** category, select the **Properties** link.
 
@@ -120,7 +120,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Resource group** drop-down list, select **MonitoredAssets**.
     
-    1.  In the **Name** text box, enter **smpapi*yourname***.
+    1.  In the **Name** text box, enter **smpapi*[yourname]***.
 
     1.  In the **Publish** section, select **Code**.
 
@@ -140,7 +140,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  In the **Enable Application Insights** section, select **Yes**.
 
-    1.  In the **Application Insights** drop-down list, select the **instrm*yourname*** Application Insights account that you created earlier in this lab.
+    1.  In the **Application Insights** drop-down list, select the **instrm*[yourname]*** Application Insights account that you created earlier in this lab.
 
     1.  Select **Review + Create**.
 
@@ -154,7 +154,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
 
-1.  From the **MonitoredAssets** blade, select the **smpapi*yourname*** web app that you created earlier in this lab.
+1.  From the **MonitoredAssets** blade, select the **smpapi*[yourname]*** web app that you created earlier in this lab.
 
 1.  From the **App Service** blade, in the **Settings** category, select the **Configuration** link.
 
@@ -309,7 +309,7 @@ In this exercise, you created the resources that you'll use for the remainder of
 
 1.  From the **Resource groups** blade, find and select the **MonitoredAssets** resource group that you created earlier in this lab.
 
-1.  From the **MonitoredAssets** blade, select the **instrm*yourname*** Application Insights account that you created earlier in this lab.
+1.  From the **MonitoredAssets** blade, select the **instrm*[yourname]*** Application Insights account that you created earlier in this lab.
 
 1.  From the **Application Insights** blade, in the tiles in the center of the blade, find the displayed metrics. Specifically, find the number of server requests that have occurred and the average server response time.
 
@@ -389,7 +389,7 @@ In this exercise, you created an API by using ASP.NET and configured it to strea
 
 1.  From the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
 
-1.  From the **MonitoredAssets** blade, select the **smpapi*yourname*** web app that you created earlier in this lab.
+1.  From the **MonitoredAssets** blade, select the **smpapi*[yourname]*** web app that you created earlier in this lab.
 
 1.  From the **App Service** blade, select **Browse**. A new browser window or tab will open and return a "404 (Not Found)" error.
 
@@ -407,7 +407,7 @@ In this exercise, you created an API by using ASP.NET and configured it to strea
 
 1.  From the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
 
-1.  From the **MonitoredAssets** blade, select the **smpapi*yourname*** web app that you created earlier in this lab.
+1.  From the **MonitoredAssets** blade, select the **smpapi*[yourname]*** web app that you created earlier in this lab.
 
 1.  From the **App Service** blade, select **Application Insights**.
 
@@ -451,7 +451,7 @@ In this exercise, you created an API by using ASP.NET and configured it to strea
 
 1.  From the **Resource groups** blade, find and select the **MonitoredAssets** resource group that you created earlier in this lab.
 
-1.  From the **MonitoredAssets** blade, select the **instrm*yourname*** Application Insights account that you created earlier in this lab.
+1.  From the **MonitoredAssets** blade, select the **instrm*[yourname]*** Application Insights account that you created earlier in this lab.
 
 1.  From the **Application Insights** blade, in the tiles in the center of the blade, find the displayed metrics. Specifically, find the number of server requests that have occurred and the average server response time.
 
@@ -465,7 +465,7 @@ In this exercise, you created an API by using ASP.NET and configured it to strea
 
 1.  From the **Resource groups** blade, find and select the **MonitoredAssets** resource group that you created earlier in this lab.
 
-1.  From the **MonitoredAssets** blade, select the **instrm*yourname*** Application Insights account that you created earlier in this lab.
+1.  From the **MonitoredAssets** blade, select the **instrm*[yourname]*** Application Insights account that you created earlier in this lab.
 
 1.  From the **Application Insights** blade, select **Live Metrics Stream** in the **Investigate** section.
 

@@ -17,7 +17,7 @@ public class Program
         app = PublicClientApplicationBuilder
             .Create(_clientId)
             .WithAuthority(AzureCloudInstance.AzurePublic, _tenantId)
-            //.WithRedirectUri("http://localhost")
+            .WithRedirectUri("http://localhost")
             .Build();
 
         List<string> scopes = new List<string> 

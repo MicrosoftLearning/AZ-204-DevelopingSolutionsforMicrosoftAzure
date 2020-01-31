@@ -70,7 +70,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  In the **Resource group** section, select **Create new**, enter **SecureFunction**, and then select **OK**.
 
-    1.  In the **Storage account name** text box, enter **securestor*yourname***.
+    1.  In the **Storage account name** text box, enter **securestor*[yourname]***.
 
     1.  In the **Location** drop-down list, select the **(US) East US** region.
 
@@ -124,7 +124,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Resource group** section, select **Use existing**, and then select **SecureFunction** in the list.
     
-    1.  In the **Key vault name** text box, enter **securevault*yourname***.
+    1.  In the **Key vault name** text box, enter **securevault*[yourname]***.
 
     1.  In the **Region** drop-down list, select the **East US** region.
         
@@ -160,7 +160,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Resource group** section, select **Use existing**, and then select **SecureFunction** in the list.
     
-    1.  In the **Function app name** text box, enter **securefunc*yourname***.
+    1.  In the **Function app name** text box, enter **securefunc*[yourname]***.
 
     1.  In the **Publish** section, select **Code**.
 
@@ -172,7 +172,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **Hosting** tab, perform the following actions:
 
-    1.  In the **Storage account** drop-down list, select the **securestor*yourname*** storage account that you created earlier in this lab.
+    1.  In the **Storage account** drop-down list, select the **securestor*[yourname]*** storage account that you created earlier in this lab.
 
     1.  In the **Operating System** section, select **Windows**.
 
@@ -204,7 +204,7 @@ In this exercise, you created all the resources that you'll use for this lab.
 
 1.  From the **Resource groups** blade, find and then select the **SecureFunction** resource group that you created earlier in this lab.
 
-1.  From the **SecureFunction** blade, select the **securefunc*yourname*** function app that you created earlier in this lab.
+1.  From the **SecureFunction** blade, select the **securefunc*[yourname]*** function app that you created earlier in this lab.
 
 1.  From the **Function Apps** blade, select the **Platform features** tab.
 
@@ -224,7 +224,7 @@ In this exercise, you created all the resources that you'll use for this lab.
 
 1.  From the **Resource groups** blade, find and then select the **SecureFunction** resource group that you created earlier in this lab.
 
-1.  From the **SecureFunction** blade, select the **securevault*yourname*** key vault that you created earlier in this lab.
+1.  From the **SecureFunction** blade, select the **securevault*[yourname]*** key vault that you created earlier in this lab.
 
 1.  From the **Key Vault** blade, select the **Secrets** link in the **Settings** section.
 
@@ -268,7 +268,7 @@ In this exercise, you created all the resources that you'll use for this lab.
 
 1.  From the **Resource groups** blade, find and then select the **SecureFunction** resource group that you created earlier in this lab.
 
-1.  From the **SecureFunction** blade, select the **securevault*yourname*** key vault that you created earlier in this lab.
+1.  From the **SecureFunction** blade, select the **securevault*[yourname]*** key vault that you created earlier in this lab.
 
 1.  From the **Key Vault** blade, select the **Access policies** link in the **Settings** section.
 
@@ -278,7 +278,9 @@ In this exercise, you created all the resources that you'll use for this lab.
     
     1.  Select the **Select principal** link.
     
-    1.  From the **Principal** blade, find and then select the service principal named **securefunc*yourname***, and then select **Select**.
+    1.  From the **Principal** blade, find and then select the service principal named **securefunc*[yourname]***, and then select **Select**.
+
+        > **Note**: The system-assigned managed identity you created earlier in this lab will have the same name as the Azure Function resource.
     
     1.  Leave the **Key permissions** list set to its default value.
     
@@ -306,7 +308,7 @@ In this exercise, you created a server-assigned managed service identity for you
 
 1.  From the **Resource groups** blade, find and then select the **SecureFunction** resource group that you created earlier in this lab.
 
-1.  From the **SecureFunction** blade, select the **securefunc*yourname*** function app that you created earlier in this lab.
+1.  From the **SecureFunction** blade, select the **securefunc*[yourname]*** function app that you created earlier in this lab.
 
 1.  From the **Function Apps** blade, select the **Platform features** tab.
 
@@ -336,7 +338,7 @@ In this exercise, you created a server-assigned managed service identity for you
 
 1.  From the **Resource groups** blade, find and then select the **SecureFunction** resource group that you created earlier in this lab.
 
-1.  From the **SecureFunction** blade, select the **securefunc*yourname*** function app that you created earlier in this lab.
+1.  From the **SecureFunction** blade, select the **securefunc*[yourname]*** function app that you created earlier in this lab.
 
 1.  From the **Function App** blade, select the plus sign (**+**) next to the **Functions** drop-down list.
 
@@ -458,7 +460,7 @@ In this exercise, you used a service identity to read the value of a secret stor
 
 1.  From the **Resource groups** blade, find and then select the **SecureFunction** resource group that you created earlier in this lab.
 
-1.  From the **SecureFunction** blade, select the **securestor*yourname*** storage account that you created earlier in this lab.
+1.  From the **SecureFunction** blade, select the **securestor*[yourname]*** storage account that you created earlier in this lab.
 
 1.  From the **Storage account** blade, select the **Containers** link in the **Blob service** section.
 
@@ -518,7 +520,7 @@ In this exercise, you used a service identity to read the value of a secret stor
 
 1.  From the **Resource groups** blade, find and then select the **SecureFunction** resource group that you created earlier in this lab.
 
-1.  From the **SecureFunction** blade, select the **securefunc*yourname*** function app that you created earlier in this lab.
+1.  From the **SecureFunction** blade, select the **securefunc*[yourname]*** function app that you created earlier in this lab.
 
 1.  From the **Function App** blade, find and then select the existing **FileParser** function to open the editor for the function.
 

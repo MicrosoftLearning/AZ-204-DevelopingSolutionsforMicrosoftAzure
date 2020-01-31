@@ -72,7 +72,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Resource group** section, select **Create new**, enter **PolyglotData**, and then select **OK**.
     
-    1.  In the **Server name** text box, enter **polysqlsrvr*yourname***.
+    1.  In the **Server name** text box, enter **polysqlsrvr*[yourname]***.
     
     1.  In the **Location** drop-down list, select **(US) East US**.
     
@@ -93,6 +93,8 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
 
 1.  Select **Create** to create the SQL Database server by using your specified configuration.
+
+    > **Note**: At this point in the lab, we are only creating the Azure SQL logical server. We will create the Azure SQL database instance later in the lab.
 
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
@@ -116,7 +118,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Resource group** section, select **PolyglotData** from the list.
     
-    1.  In the **AccountName** text box, enter **polycosmos*yourname***.
+    1.  In the **AccountName** text box, enter **polycosmos*[yourname]***.
     
     1.  In the **API** drop-down list, select **Core (SQL)**.
 
@@ -140,7 +142,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **Resource groups** blade, find and then select the **PolyglotData** resource group that you created earlier in this lab.
 
-1.  From the **PolyglotData** blade, select the **polycosmos*yourname*** Azure Cosmos DB account that you created earlier in this lab.
+1.  From the **PolyglotData** blade, select the **polycosmos*[yourname]*** Azure Cosmos DB account that you created earlier in this lab.
 
 1.  From the **Azure Cosmos DB account** blade, find the **Settings** section from the blade, and then select the **Keys** link.
 
@@ -166,7 +168,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Resource group** section, select **PolyglotData** from the list.
     
-    1.  In the **Storage account name** text box, enter **polystor*yourname***.
+    1.  In the **Storage account name** text box, enter **polystor*[yourname]***.
     
     1.  In the **Location** drop-down list, select the **East US** region.
     
@@ -198,7 +200,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
 1.  From the **Resource groups** blade, find and select the **PolyglotData** resource group that you created earlier in this lab.
 
-1.  From the **PolyglotData** blade, select the **polystor*yourname*** storage account that you created earlier in this lab.
+1.  From the **PolyglotData** blade, select the **polystor*[yourname]*** storage account that you created earlier in this lab.
 
 1.  From the **Storage account** blade, select the **Containers** link in the **Blob service** section from the blade.
 
@@ -238,7 +240,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
 1.  From the **Resource groups** blade, find and select the **PolyglotData** resource group that you created earlier in this lab.
 
-1.  From the **PolyglotData** blade, select the **polystor*yourname*** storage account that you created earlier in this lab.
+1.  From the **PolyglotData** blade, select the **polystor*[yourname]*** storage account that you created earlier in this lab.
 
 1.  From the **Storage account** blade, select the **Containers** link in the **Blob service** section from the blade.
 
@@ -272,7 +274,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
 1.  From the **Resource groups** blade, find and select the **PolyglotData** resource group that you created earlier in this lab.
 
-1.  From the **PolyglotData** blade, select the **polysqlsrvr*yourname*** SQL server that you created earlier in this lab.
+1.  From the **PolyglotData** blade, select the **polysqlsrvr*[yourname]*** SQL server that you created earlier in this lab.
 
 1.  From the **SQL server** blade, select **Import database**.
 
@@ -282,7 +284,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
     1.  Select the **Storage** option.
 
-    1.  From the **Storage accounts** blade, select the **polystor*yourname*** storage account that you created earlier in this lab. 
+    1.  From the **Storage accounts** blade, select the **polystor*[yourname]*** storage account that you created earlier in this lab. 
 
     1.  From the **Containers** blade, select the **databases** container that you created earlier in this lab. 
 
@@ -308,7 +310,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
 1.  From the **Resource groups** blade, find and select the **PolyglotData** resource group that you created earlier in this lab.
 
-1.  From the **PolyglotData** blade, select the **polysqlsrvr*yourname*** SQL server that you created earlier in this lab.
+1.  From the **PolyglotData** blade, select the **polysqlsrvr*[yourname]*** SQL server that you created earlier in this lab.
 
 1.  From the **SQL server** blade, find the **Security** section from the blade, and then select the **Firewalls and virtual networks** link.
 
@@ -757,7 +759,7 @@ In this exercise, you configured your ASP.NET web application to connect to your
 
 1.  From the **Resource groups** blade, find and select the **PolyglotData** resource group that you created earlier in this lab.
 
-1.  From the **PolyglotData** blade, select the **polycosmos*yourname*** Azure Cosmos DB account that you created earlier in this lab.
+1.  From the **PolyglotData** blade, select the **polycosmos*[yourname]*** Azure Cosmos DB account that you created earlier in this lab.
 
 1.  From the **Azure Cosmos DB account** blade, find and select the **Data Explorer** link from the blade.
 

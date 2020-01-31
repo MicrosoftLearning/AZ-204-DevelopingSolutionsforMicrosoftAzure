@@ -62,7 +62,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the **Register an application** section, perform the following actions:
 
-    1.  In the **Name** text box, enter **graphapp*yourname***.
+    1.  In the **Name** text box, enter **graphapp**.
 
     1.  In the **Supported account types** list, select the **Accounts in this organizational directory only (Single tenant)** check box.
 
@@ -74,7 +74,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 3: Enable the default client type
 
-1.  In the **graphapp*yourname*** application registration blade, select **Authentication** in the **Manage** section.
+1.  In the **graphapp** application registration blade, select **Authentication** in the **Manage** section.
 
 1.  In the **Authentication** section, perform the following actions:
 
@@ -84,7 +84,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 4: Record unique identifiers
 
-1.  On the **graphapp*yourname*** application registration blade, select **Overview**.
+1.  On the **graphapp** application registration blade, select **Overview**.
 
 1.  In the **Overview** section, find and record the value of the **Application (client) ID** text box. You'll use this value later in the lab.
 
@@ -473,14 +473,6 @@ In this exercise, you acquired a token from the Microsoft identity platform by u
         ```
         Console.WriteLine($"Token:\t{result.AccessToken}");
         ```
- 
-1.  Within the **Main** method, perform the following actions to remove the **Redirect Uri** from the public client application:
-
-    1.  Delete the following line of code:
-
-    ```
-    .WithRedirectUri("http://localhost")
-    ```
 
 1.  Observe the **Main** method, which should now include:
 
@@ -492,6 +484,7 @@ In this exercise, you acquired a token from the Microsoft identity platform by u
         app = PublicClientApplicationBuilder
             .Create(_clientId)
             .WithAuthority(AzureCloudInstance.AzurePublic, _tenantId)
+            .WithRedirectUri("http://localhost")
             .Build();
 
         List<string> scopes = new List<string> 
@@ -574,6 +567,7 @@ In this exercise, you acquired a token from the Microsoft identity platform by u
         app = PublicClientApplicationBuilder
             .Create(_clientId)
             .WithAuthority(AzureCloudInstance.AzurePublic, _tenantId)
+            .WithRedirectUri("http://localhost")
             .Build();
 
         List<string> scopes = new List<string> 
@@ -652,9 +646,9 @@ In this exercise, you queried Microsoft Graph by using the SDK and MSAL-based au
 
 1.  From the **Azure Active Directory** blade, select **App registrations** in the **Manage** section.
 
-1.  In the **App registrations** section, select the **graphapp*yourname*** Azure AD application registration that you created earlier in this lab.
+1.  In the **App registrations** section, select the **graphapp** Azure AD application registration that you created earlier in this lab.
 
-1.  In the **graphapp*yourname*** section, perform the following actions:
+1.  In the **graphapp** section, perform the following actions:
 
     1.  Select **Delete**.
 

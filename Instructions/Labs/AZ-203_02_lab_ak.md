@@ -72,7 +72,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Resource group** section, select **Create new**, enter **Serverless**, and then select **OK**.
     
-    1.  In the **Storage account name** text box, enter **funcstor*yourname***.
+    1.  In the **Storage account name** text box, enter **funcstor*[yourname]***.
     
     1.  In the **Location** list, select the **(US) East US** region.
     
@@ -114,7 +114,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Resource group** section, select **Use existing**, and then select **Serverless** in the list.
     
-    1.  In the **Function app name** text box, enter **funclogic*yourname***.
+    1.  In the **Function app name** text box, enter **funclogic*[yourname]***.
 
     1.  In the **Publish** section, select **Code**.
 
@@ -126,7 +126,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **Hosting** tab, perform the following actions:
 
-    1.  In the **Storage account** drop-down list, select the **funcstor*yourname*** storage account that you created earlier in this lab.
+    1.  In the **Storage account** drop-down list, select the **funcstor*[yourname]*** storage account that you created earlier in this lab.
 
     1.  In the **Operating System** section, select **Windows**.
 
@@ -158,7 +158,7 @@ In this exercise, you created all the resources that you'll use for this lab.
 
 1.  On the **Resource groups** blade, find and then select the **Serverless** resource group that you created earlier in this lab.
 
-1.  On the **Serverless** blade, select the **funclogic*yourname*** function app that you created earlier in this lab.
+1.  On the **Serverless** blade, select the **funclogic*[yourname]*** function app that you created earlier in this lab.
 
 1.  On the **Function Apps** blade, select the plus sign (**+**) next to the **Functions** drop-down list.
 
@@ -270,7 +270,7 @@ In this exercise, you created all the resources that you'll use for this lab.
 
 1.  On the **Resource groups** blade, find and then select the **Serverless** resource group that you created earlier in this lab.
 
-1.  On the **Serverless** blade, select the **funclogic*yourname*** function app that you created earlier in this lab.
+1.  On the **Serverless** blade, select the **funclogic*[yourname]*** function app that you created earlier in this lab.
 
 1.  On the **Function Apps** blade, copy the value of the **URL** text box. You'll use this value later in the lab.
 
@@ -344,7 +344,7 @@ In this exercise, you created a basic function that echoes the content sent via 
 
 1.  On the **Resource groups** blade, find and then select the **Serverless** resource group that you created earlier in this lab.
 
-1.  On the **Serverless** blade, select the **funclogic*yourname*** function app that you created earlier in this lab.
+1.  On the **Serverless** blade, select the **funclogic*[yourname]*** function app that you created earlier in this lab.
 
 1.  On the **Function Apps** blade, select the plus sign (**+**) next to the **Functions** drop-down list.
 
@@ -370,7 +370,7 @@ In this exercise, you created a basic function that echoes the content sent via 
 
 1.  Back on the **Function Apps** blade, perform the following actions:
 
-    1.  Expand the node for the **funclogic*yourname*** function app that you created earlier in this lab.
+    1.  Expand the node for the **funclogic*[yourname]*** function app that you created earlier in this lab.
 
     1.  Expand the **Functions** node.
 
@@ -390,7 +390,7 @@ In this exercise, you created a basic function that echoes the content sent via 
 
 1.  Back on the **Function Apps** blade, perform the following actions:
 
-    1.  Expand the node for the **funclogic*yourname*** function app that you created earlier in this lab.
+    1.  Expand the node for the **funclogic*[yourname]*** function app that you created earlier in this lab.
 
     1.  Expand the **Functions** node.
 
@@ -412,7 +412,7 @@ In this exercise, you created a function that runs automatically based on a fixe
 
 1.  On the **Resource groups** blade, find and then select the **Serverless** resource group that you created earlier in this lab.
 
-1.  On the **Serverless** blade, select the **funclogic*yourname*** function app that you created earlier in this lab.
+1.  On the **Serverless** blade, select the **funclogic*[yourname]*** function app that you created earlier in this lab.
 
 1.  On the **Function Apps** blade, select the plus sign (**+**) next to the **Functions** drop-down list.
 
@@ -432,7 +432,7 @@ In this exercise, you created a function that runs automatically based on a fixe
 
 1.  On the **Resource groups** blade, find and then select the **Serverless** resource group that you created earlier in this lab.
 
-1.  On the **Serverless** blade, select the **funcstor*yourname*** storage account that you created earlier in this lab.
+1.  On the **Serverless** blade, select the **funcstor*[yourname]*** storage account that you created earlier in this lab.
 
 1.  On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
 
@@ -466,11 +466,11 @@ In this exercise, you created a function that runs automatically based on a fixe
 
 1.  On the **Resource groups** blade, find and then select the **Serverless** resource group that you created earlier in this lab.
 
-1.  On the **Serverless** blade, select the **funclogic*yourname*** function app that you created earlier in this lab.
+1.  On the **Serverless** blade, select the **funclogic*[yourname]*** function app that you created earlier in this lab.
 
 1.  On the **Function Apps** blade, perform the following actions:
 
-    1.  Expand the node for the **funclogic*yourname*** function app that you created earlier in this lab.
+    1.  Expand the node for the **funclogic*[yourname]*** function app that you created earlier in this lab.
 
     1.  Expand the **Functions** node.
 
@@ -516,7 +516,7 @@ In this exercise, you created a function that runs automatically based on a fixe
 
 1.  On the **Function Apps** blade, perform the following actions:
 
-    1.  Expand the node for the **funclogic*yourname*** function app that you created earlier in this lab.
+    1.  Expand the node for the **funclogic*[yourname]*** function app that you created earlier in this lab.
 
     1.  Expand the **Functions** node.
 

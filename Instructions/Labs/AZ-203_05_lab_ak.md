@@ -255,11 +255,16 @@ In this exercise, you used Cloud Shell to create a VM as part of an automated sc
     {
         public static void Main(string[] args)
         {        
+            // Check if network is available
             if (System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable())
             {
                 System.Console.WriteLine("Current IP Addresses:");
+
+                // Get host entry for current hostname
                 string hostname = System.Net.Dns.GetHostName();
                 System.Net.IPHostEntry host = System.Net.Dns.GetHostEntry(hostname);
+                
+                // Iterate over each IP address and render their values
                 foreach(System.Net.IPAddress address in host.AddressList)
                 {
                     System.Console.WriteLine($"\t{address}");
@@ -288,21 +293,20 @@ In this exercise, you used Cloud Shell to create a VM as part of an automated sc
 1.  Copy and paste the following code into the **Dockerfile** file:
 
     ```
+    # Start using the .NET Core 2.2 SDK container image
     FROM mcr.microsoft.com/dotnet/core/sdk:2.2-alpine AS build
+
+    # Change current working directory
     WORKDIR /app
 
-    COPY *.csproj ./
-    RUN dotnet restore
-
+    # Copy existing files from host machine
     COPY . ./
+
+    # Publish application to the "out" folder
     RUN dotnet publish --configuration Release --output out
 
-    FROM mcr.microsoft.com/dotnet/core/runtime:2.2-alpine
-    WORKDIR /app
-
-    COPY --from=build /app/out .
-
-    ENTRYPOINT ["dotnet", "ipcheck.dll"]
+    # Start container by running application DLL
+    ENTRYPOINT ["dotnet", "out/ipcheck.dll"]
     ```
 
 1.  Save the **Dockerfile** file by using the menu in the graphical editor or by using the Ctrl+S keyboard shortcut.

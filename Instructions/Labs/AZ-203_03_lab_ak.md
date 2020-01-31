@@ -70,7 +70,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  In the **Resource group** section, select **Create new**, enter **StorageMedia**, and then select **OK**.
 
-    1.  In the **Storage account name** text box, enter **mediastor*yourname***.
+    1.  In the **Storage account name** text box, enter **mediastor*[yourname]***.
 
     1.  In the **Location** drop-down list, select the **(US) East US** region.
 
@@ -94,7 +94,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **All services** blade, select **Storage Accounts**.
 
-1.  On the **Storage accounts** blade, select the **mediastor*yourname*** storage account instance.
+1.  On the **Storage accounts** blade, select the **mediastor*[yourname]*** storage account instance.
 
 1.  On the **Storage account** blade, find the **Settings** section, and then select the **Properties** link.
 
@@ -124,7 +124,7 @@ In this exercise, you created a new Storage account to use throughout the remain
 
 1.  On the **Resource groups** blade, find and then select the **StorageMedia** resource group that you created earlier in this lab.
 
-1.  On the **StorageMedia** blade, select the **mediastor*yourname*** storage account that you created earlier in this lab.
+1.  On the **StorageMedia** blade, select the **mediastor*[yourname]*** storage account that you created earlier in this lab.
 
 1.  On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
 
@@ -152,7 +152,7 @@ In this exercise, you created a new Storage account to use throughout the remain
 
 1.  On the **Resource groups** blade, find and then select the **StorageMedia** resource group that you created earlier in this lab.
 
-1.  On the **StorageMedia** blade, select the **mediastor*yourname*** storage account that you created earlier in this lab.
+1.  On the **StorageMedia** blade, select the **mediastor*[yourname]*** storage account that you created earlier in this lab.
 
 1.  On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
 
@@ -639,7 +639,7 @@ In this exercise, you accessed existing containers by using the Azure Storage SD
 
 1.  On the **Resource groups** blade, find and then select the **StorageMedia** resource group that you created earlier in this lab.
 
-1.  On the **StorageMedia** blade, select the **mediastor*yourname*** storage account that you created earlier in this lab.
+1.  On the **StorageMedia** blade, select the **mediastor*[yourname]*** storage account that you created earlier in this lab.
 
 1.  On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
 
@@ -750,7 +750,7 @@ In this exercise, you accessed existing containers by using the Azure Storage SD
 
 1.  Observe the output from the currently running console application. The updated output includes the final URL to access the blob online. Record the value of this URL to use later in the lab.
 
-    > **Note**: The URL will likely be similar to the following string: **https://mediastor*yourname*.blob.core.windows.net/vector-graphics/graph.svg**
+    > **Note**: The URL will likely be similar to the following string: **https://mediastor*[yourname]*.blob.core.windows.net/vector-graphics/graph.svg**
 
 1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
 
