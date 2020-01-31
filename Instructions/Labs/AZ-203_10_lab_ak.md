@@ -302,14 +302,6 @@ In this exercise, you created a new subscription, validated its registration, an
 
     > **Note**: The **dotnet add package** command will add the **Microsoft.Azure.EventGrid** package from NuGet. For more information, go to [Microsoft.Azure.EventGrid](https://www.nuget.org/packages/Microsoft.Azure.EventGrid/3.2.0).
 
-1.  At the command prompt, enter the following command, and then select Enter to import version 28.4.4 of **Bogus** from NuGet:
-
-    ```
-    dotnet add package Bogus --version 28.4.4
-    ```
-
-    > **Note**: The **dotnet add package** command will add the **Bogus** package from NuGet. For more information, go to [Bogus](https://www.nuget.org/packages/Bogus/28.4.4).
-
 1.  At the command prompt, enter the following command, and then select Enter to build the .NET web application:
 
     ```
@@ -323,12 +315,6 @@ In this exercise, you created a new subscription, validated its registration, an
 1.  In the Explorer pane of the **Visual Studio Code** window, open the **Program.cs** file.
 
 1.  On the code editor tab for the **Program.cs** file, delete all the code in the existing file.
-
-1.  Add the following line of code to import the **Bogus** namespace from the **Bogus** package imported from NuGet:
-
-    ```
-    using Bogus;
-    ```
 
 1.  Add the following line of code to import the **Microsoft.Azure.EventGrid**, and **Microsoft.Azure.EventGrid.Models** namespaces from the **Microsoft.Azure.EventGrid** package imported from NuGet:
 
@@ -380,7 +366,6 @@ In this exercise, you created a new subscription, validated its registration, an
 1.  Observe the **Program.cs** file, which should now include the following lines of code:
 
     ```
-    using Bogus;
     using Microsoft.Azure.EventGrid;
     using Microsoft.Azure.EventGrid.Models;
     using System;
@@ -420,10 +405,14 @@ In this exercise, you created a new subscription, validated its registration, an
         List<EventGridEvent> events = new List<EventGridEvent>();
         ```
 
-    1.  Add the following line of code to create a new variable named **firstPerson** of type **Person**:
+    1.  Add the following lines of code to create a new variable named **firstPerson** of an anonymous type:
 
         ```
-        Person firstPerson = new Person();
+        var firstPerson = new
+        {
+            FullName = "Alba Sutton",
+            Address = "4567 Pine Avenue, Edison, WA 97202"
+        };
         ```
 
     1.  Add the following block of code to create a new variable named **firstEvent** of type **EventGridEvent**, and then populate the **EventGridEvent** variable with sample data:
@@ -446,10 +435,14 @@ In this exercise, you created a new subscription, validated its registration, an
         events.Add(firstEvent);
         ```
 
-    1.  Add the following line of code to create a new variable named **secondPerson** of type **Person**:
+    1.  Add the following line of code to create a new variable named **secondPerson** of an anonymous type:
 
         ```
-        Person secondPerson = new Person();
+        var secondPerson = new
+        {
+            FullName = "Alexandre Doyon",
+            Address = "456 College Street, Bow, WA 98107"
+        };
         ```
 
     1.  Add the following block of code to create a new variable named **secondEvent** of type **EventGridEvent**, and then populate the **EventGridEvent** variable with sample data:
@@ -500,7 +493,12 @@ In this exercise, you created a new subscription, validated its registration, an
 
         List<EventGridEvent> events = new List<EventGridEvent>();
 
-        Person firstPerson = new Person();
+        var firstPerson = new
+        {
+            FullName = "Alba Sutton",
+            Address = "4567 Pine Avenue, Edison, WA 97202"
+        };
+
         EventGridEvent firstEvent = new EventGridEvent
         {
             Id = Guid.NewGuid().ToString(),
@@ -512,7 +510,12 @@ In this exercise, you created a new subscription, validated its registration, an
         };
         events.Add(firstEvent);
 
-        Person secondPerson = new Person();
+        var secondPerson = new
+        {
+            FullName = "Alexandre Doyon",
+            Address = "456 College Street, Bow, WA 98107"
+        };
+        
         EventGridEvent secondEvent = new EventGridEvent
         {
             Id = Guid.NewGuid().ToString(),

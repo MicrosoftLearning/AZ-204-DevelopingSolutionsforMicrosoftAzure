@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Bogus;
 using Microsoft.Azure.EventGrid;
 using Microsoft.Azure.EventGrid.Models;
 
@@ -18,7 +17,12 @@ public class Program
 
         List<EventGridEvent> events = new List<EventGridEvent>();
 
-        Person firstPerson = new Person();
+        var firstPerson = new
+        {
+            FullName = "Alba Sutton",
+            Address = "4567 Pine Avenue, Edison, WA 97202"
+        };
+        
         EventGridEvent firstEvent = new EventGridEvent
         {
             Id = Guid.NewGuid().ToString(),
@@ -30,7 +34,12 @@ public class Program
         };
         events.Add(firstEvent);
 
-        Person secondPerson = new Person();
+        var secondPerson = new
+        {
+            FullName = "Alexandre Doyon",
+            Address = "456 College Street, Bow, WA 98107"
+        };
+        
         EventGridEvent secondEvent = new EventGridEvent
         {
             Id = Guid.NewGuid().ToString(),
