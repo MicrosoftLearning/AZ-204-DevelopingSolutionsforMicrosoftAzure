@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab: Building a web application on Azure App Service'
-    module: 'Module 01: '
+    module: 'Module 01: Creating Azure App Service Web Apps'
     type: 'Answer Key'
 ---
 

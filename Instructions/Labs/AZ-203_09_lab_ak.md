@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab: Automate business processes with Logic Apps'
-    module: 'Module 09: '
+    module: 'Module 09: Develop App Service Logic Apps'
     type: 'Answer Key'
 ---
     

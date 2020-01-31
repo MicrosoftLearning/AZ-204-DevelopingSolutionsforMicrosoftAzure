@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab: Publishing and subscribing to Event Grid events'
-    module: 'Module 10: '
+    module: 'Module 10: Develop event-based solutions'
     type: 'Answer Key'
 ---
     

@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab: Asynchronously processing messages by using Azure Queue storage'
-    module: 'Module 11: '
+    module: 'Module 11: Develop message-based solutions'
     type: 'Answer Key'
 ---
 

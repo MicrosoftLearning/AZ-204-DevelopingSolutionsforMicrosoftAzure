@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab: Constructing a NoSQL data solution by using Azure Cosmos DB'
-    module: 'Module 04: '
+    module: 'Module 04: Develop solutions that use Cosmos DB storage'
     type: 'Answer Key'
 ---
 
