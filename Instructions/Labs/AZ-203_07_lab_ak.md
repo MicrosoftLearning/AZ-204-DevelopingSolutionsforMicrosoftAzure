@@ -26,7 +26,7 @@ Sign in to your Windows 10 virtual machine by using the following credentials:
 
 -   Password: **Pa55w.rd**
 
-> **Note**: Your instructor will provide lab virtual machine sign-in instructions.
+> **Note**: Instructions to connect to the virtual lab environment will be provided by your instructor.
 
 #### Review the installed applications
 
@@ -537,7 +537,7 @@ In this exercise, you used a service identity to read the value of a secret stor
     ```
     <Project Sdk="Microsoft.NET.Sdk">
         <PropertyGroup>
-            <TargetFramework>netstandard2.0</TargetFramework>
+            <TargetFramework>netstandard2.1</TargetFramework>
         </PropertyGroup>
         <ItemGroup>
             <PackageReference Include="Azure.Storage.Blobs" Version="12.0.0" />

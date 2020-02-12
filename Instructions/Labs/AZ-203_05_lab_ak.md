@@ -26,7 +26,7 @@ Sign in to your Windows 10 virtual machine (VM) by using the following credentia
 
 -   Password: **Pa55w.rd**
 
-> **Note**: Your instructor will provide lab VM sign-in instructions.
+> **Note**: Instructions to connect to the virtual lab environment will be provided by your instructor.
 
 #### Review the installed applications
 
