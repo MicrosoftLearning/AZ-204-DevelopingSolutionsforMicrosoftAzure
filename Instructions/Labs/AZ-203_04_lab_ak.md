@@ -1092,7 +1092,7 @@ In this exercise, you used Entity Framework and the .NET SDK for Azure Cosmos DB
 
 In this exercise, you wrote C# code to query an Azure Cosmos DB collection by using the .NET SDK.
 
-### Exercise 7: Clean up your subscription 
+### Exercise 6: Clean up your subscription 
 
 #### Task 1: Open Azure Cloud Shell
 
