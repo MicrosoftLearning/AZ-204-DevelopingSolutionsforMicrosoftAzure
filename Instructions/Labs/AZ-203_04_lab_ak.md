@@ -458,8 +458,6 @@ In this exercise, you imported all the resources that you'll use with your web a
 
 1.  From the **Water Bottle** product detail page, find **Add to Cart**, and then observe that the checkout functionality is currently disabled.
 
-    > **Note**: For now, only the product page functionality is implemented. You'll implement the checkout logic later in this lab.
-
 1.  Close the browser window displaying your web application.
 
 1.  Return to the **Visual Studio Code** window, and then select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
@@ -1085,8 +1083,6 @@ In this exercise, you used Entity Framework and the .NET SDK for Azure Cosmos DB
     1.  In the **Select options** list, select **Touring-1000 Yellow, 50, $2,384.07**.
     
     1.  Find **Add to Cart**, and then observe that the checkout functionality is still disabled.
-
-    > **Note**: In the next exercise, you'll implement the checkout logic.
 
 1.  Close the browser window displaying your web application.
 
