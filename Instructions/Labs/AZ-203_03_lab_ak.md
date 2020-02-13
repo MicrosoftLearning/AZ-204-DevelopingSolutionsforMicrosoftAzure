@@ -597,7 +597,7 @@ In this exercise, you accessed existing containers by using the Azure Storage SD
 1.  In the **Main** method, enter the following code at the end of the method to invoke the **GetContainerAsync** method, passing in the *serviceClient* and *newContainerName* variables as parameters, and to store the result in a variable named *containerClient* of type **BlobContainerClient**:
 
     ```
-    await GetContainerAsync(serviceClient, newContainerName);
+    BlobContainerClient containerClient = await GetContainerAsync(serviceClient, newContainerName);
     ```
 
 1.  Observe the **Main** method, which should now include:
