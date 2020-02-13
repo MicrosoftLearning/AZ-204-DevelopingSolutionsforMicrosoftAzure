@@ -164,7 +164,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  In the **Publish** section, select **Code**.
 
-    1.  In the **Runtime stack** drop-down list, select **.NET**.
+    1.  In the **Runtime stack** drop-down list, select **.NET Core**.
 
     1.  In the **Region** drop-down list, select the **East US** region.
     

@@ -64,11 +64,11 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  In the **Name** text box, enter **graphapp**.
 
-    1.  In the **Supported account types** list, select the **Accounts in this organizational directory only (Single tenant)** check box.
+    1.  In the **Supported account types** list, select the **Accounts in this organizational directory only (Default Directory only - Single tenant)** check box.
 
     1.  In the **Redirect URI** drop-down list, select **Public client/native (mobile & desktop)**.
 
-    1.  In the **Redirect URI** text box, enter **http\:\/\/localhost**.
+    1.  In the **Redirect URI** text box, enter **http\://localhost**.
 
     1.  Select **Register**.
 
@@ -89,8 +89,6 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1.  In the **Overview** section, find and record the value of the **Application (client) ID** text box. You'll use this value later in the lab.
 
 1.  In the **Overview** section, find and record the value of the **Directory (tenant) ID** text box. You'll use this value later in the lab.
-
-1.  Close the currently open browser window.
 
 #### Review
 

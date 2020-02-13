@@ -205,19 +205,7 @@ In this exercise, you created an Azure Storage account and an Azure Web App that
         az provider list --query "[].namespace"
         ```
 
-    1.  Observe the list of currently registered providers. The **Microsoft.CDN** provider isn't currently in the list of providers.
-
-    1.  Enter the following command, and then select Enter to get the required flags to register a new provider:
-
-        ```
-        az provider register --help
-        ```
-
-    1.  Enter the following command, and then select Enter to register the **Microsoft.CDN** namespace with your current subscription:
-
-        ```
-        az provider register --namespace Microsoft.CDN
-        ```
+    1.  Observe the list of currently registered providers. The **Microsoft.CDN** provider should be currently in the list of providers.
 
 1.  Close the Cloud Shell pane in the portal.
 
