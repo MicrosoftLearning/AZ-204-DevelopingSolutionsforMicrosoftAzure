@@ -124,7 +124,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  In the **Apache Spark** section, select **None**.
     
-    1.  In the **Location** drop-down list, select the **East US** region.
+    1.  In the **Location** drop-down list, select the **(US) East US** region.
     
     1.  In the **Geo-Redundancy** section, select **Disable**.
     
@@ -170,7 +170,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Storage account name** text box, enter **polystor*[yourname]***.
     
-    1.  In the **Location** drop-down list, select the **East US** region.
+    1.  In the **Location** drop-down list, select the **(US) East US** region.
     
     1.  In the **Performance** section, select **Standard**.
     
@@ -314,7 +314,13 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
 1.  From the **SQL server** blade, find the **Security** section from the blade, and then select the **Firewalls and virtual networks** link.
 
-1.  In the Firewalls and virtual networks pane, select **Add client IP**, and then select **Save**.
+1.  In the Firewalls and virtual networks pane, perform the following actions:
+
+    1.  Select **Add client IP**
+    
+    1.  Select **Save**.
+
+    1.  In the **Success!** confirmation dialog, select **OK**.
 
     > **Note**: This step will ensure that your local machine will have access to the databases that are associated with this server.
 
@@ -336,7 +342,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
         > **Note**: For example, if your connection string was originally ``Server=tcp:polysqlsrvrinstructor.database.windows.net,1433;Initial Catalog=AdventureWorks;User ID={your_username};Password={your_password};``, your updated connection string will be ``Server=tcp:polysqlsrvrinstructor.database.windows.net,1433;Initial Catalog=AdventureWorks;User ID=testuser;Password=TestPa55w.rd;``
 
-1.  Find and select the **Query editor** link from the blade.
+1.  Find and select the **Query editor (preview)** link from the blade.
 
 1.  In the Query editor pane, perform the following actions:
 

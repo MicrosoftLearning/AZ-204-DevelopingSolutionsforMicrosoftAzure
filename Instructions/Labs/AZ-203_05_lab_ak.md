@@ -347,7 +347,7 @@ In this exercise, you used Cloud Shell to create a VM as part of an automated sc
 
 #### Task 4: Open Cloud Shell and store Container Registry metadata
 
-1.   In the portal, select the **Cloud Shell** icon to open a new shell instance.  
+1.  In the portal, select the **Cloud Shell** icon to open a new shell instance.  
 
     > **Note**: Wait for Cloud Shell to finish connecting to an instance before moving forward with the lab.
 

@@ -5,7 +5,7 @@ lab:
     type: 'Answer Key'
 ---
 
-# Lab: Retrieving Azure Storage resources and metadata by using the .NET SDK
+# Lab: Retrieving Azure Storage resources and metadata by using the Azure Storage SDK for .NET
 # Student lab answer key
 
 ## Microsoft Azure user interface
@@ -174,7 +174,7 @@ In this exercise, you created a new Storage account to use throughout the remain
 
 In this exercise, you created a couple of placeholder containers in the storage account and populated one of the containers with a blob.
 
-### Exercise 3: Access containers by using the Microsoft Software Development Kit (SDK) for .NET
+### Exercise 3: Access containers by using the .NET SDK
 
 #### Task 1: Create .NET project
 

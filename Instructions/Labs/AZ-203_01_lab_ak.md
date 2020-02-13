@@ -158,7 +158,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  In the **Publish** section, select **Code**.
 
-    1.  In the **Runtime stack** drop-down list, select **.NET 3.0 (current)**.
+    1.  In the **Runtime stack** drop-down list, select **.NET Core 3.0 (current)**.
 
     1.  In the **Operating System** section, select **Windows**.
 
@@ -320,13 +320,13 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
     1.  In the **Publish** section, select **Code**.
 
-    1.  In the **Runtime stack** drop-down list, select **.NET 3.0 (current)**.
+    1.  In the **Runtime stack** drop-down list, select **.NET Core 3.0 (current)**.
 
     1.  In the **Operating System** section, select **Windows**.
 
     1.  In the **Region** drop-down list, select the **East US** region.
 
-    1.  In the **Windows Plan (East US)** section, select **ManagedPlan**.
+    1.  In the **Windows Plan (East US)** section, select **ManagedPlan (S1)**.
 
     1.  Select **Next: Monitoring**.
 

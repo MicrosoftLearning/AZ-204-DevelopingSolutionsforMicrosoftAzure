@@ -118,7 +118,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  In the **Publish** section, select **Code**.
 
-    1.  In the **Runtime stack** drop-down list, select **.NET**.
+    1.  In the **Runtime stack** drop-down list, select **.NET Core**.
 
     1.  In the **Region** drop-down list, select the **East US** region.
     
@@ -166,7 +166,7 @@ In this exercise, you created all the resources that you'll use for this lab.
     
     1.  Under the **Choose a Development Environment** header, select **In-Portal**, and then select **Continue**.
     
-    1.  Under the **Choose a Function** header, select **More templates**, and then select **Finish and locate templates**.
+    1.  Under the **Create a Function** header, select **More templates**, and then select **Finish and view templates**.
     
     1.  In the list of templates, select **HTTP trigger**.
     
@@ -380,7 +380,7 @@ In this exercise, you created a basic function that echoes the content sent via 
 
 1.  In the **Integrate** section, perform the following actions:
 
-    1.  Select the **Timer** option in the **Trigger** section.
+    1.  Select the **Timer (myTimer)** option in the **Trigger** section.
 
     1.  In the **Schedule** text box, enter the value **\*/30 \* \* \* \* \***.
 
@@ -486,11 +486,7 @@ In this exercise, you created a function that runs automatically based on a fixe
 
     1.  Select **Select**.
 
-1.  In the **Azure Blob Storage input** section, select **Install** to install the **Microsoft.Azure.WebJobs.Extensions.Storage** extension.
-
-    > **Note**: Wait for the function app to finish installing the extension before continuing with this lab. Installation can take from 2 to 5 minutes.
-
-1.  Back in the **Azure Blob Storage input** section, perform the following actions:
+1.  In the **Azure Blob Storage input** section, perform the following actions:
 
     1.  In the **Blob parameter name** text box, enter the value **json**.
 
