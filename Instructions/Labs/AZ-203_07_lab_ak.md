@@ -330,6 +330,8 @@ In this exercise, you created a server-assigned managed service identity for you
     
     1.  Select **Save** from the blade to persist your settings.  
 
+    1.  In the **Save Changes** confirmation popup dialog, select **Continue**.
+
     > **Note**: Wait for your application settings to persist before you move forward with the lab.
 
 #### Task 2: Create an HTTP-triggered function
@@ -346,7 +348,7 @@ In this exercise, you created a server-assigned managed service identity for you
     
     1.  Under the **Choose a Development Environment** header, select **In-Portal**, and then select **Continue**.
     
-    1.  Under the **Choose a Function** header, select **More templates**, and then select **Finish and locate templates**.
+    1.  Under the **Create a Function** header, select **More templates**, and then select **Finish and view templates**.
     
     1.  In the list of templates, select **HTTP trigger**.
     
@@ -400,6 +402,8 @@ In this exercise, you created a server-assigned managed service identity for you
 1.  Select **Save and run** to save the script and perform a test of the function.
 
 1.  The Test and Logs panes will automatically open when the script runs for the first time.
+
+    > **Note**: You may notice warning content during compilation in the log. This can be safely ignored.
 
 1.  Find the **Output** text box in the Test pane. You should now notice the value **Test Successful** returned from the function.
 
