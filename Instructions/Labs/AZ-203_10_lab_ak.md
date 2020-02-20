@@ -50,7 +50,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     > **Note**: If this is your first time signing in to the Azure portal, you'll be offered a tour of the portal. Select **Get Started** to skip the tour and begin using the portal.
 
-#### Task 1: Open Azure Cloud Shell
+#### Task 2: Open Azure Cloud Shell
 
 1.  In the portal, select the **Cloud Shell** icon to open a new shell instance.
 
@@ -68,7 +68,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     az --version
     ```
 
-#### Task 2: Register the Microsoft.EventGrid provider
+#### Task 3: Register the Microsoft.EventGrid provider
 
 1.  At the **Cloud Shell** command prompt in the portal, perform the following actions:
 
@@ -96,19 +96,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
         az provider list --query "[].namespace"
         ```
 
-    1.  Review the list of currently registered providers. Notice that the **Microsoft.EventGrid** provider isn't currently included in the list of providers.
-
-    1.  Enter the following command, and then select Enter to get the required flags to register a new provider:
-
-        ```
-        az provider register --help
-        ```
-
-    1.  Enter the following command, and then select Enter to register the **Microsoft.EventGrid** namespace with your current subscription:
-
-        ```
-        az provider register --namespace Microsoft.EventGrid
-        ```
+    1.  Review the list of currently registered providers. Notice that the **Microsoft.EventGrid** provider is currently included in the list of providers.
 
 1.  Close the Cloud Shell pane.
 
@@ -127,6 +115,8 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1.  On the **Create Topic** blade, perform the following actions:
 
     1.  In the **Name** text box, enter **hrtopic*[yourname]***.
+    
+    1.  In the **Resource group** section, select **Create new**, enter **PubSubEvents**, and then select **OK**.
 
     1.  From the **Location** drop-down list, select the **(US) East US** region.
 
@@ -238,9 +228,9 @@ In this exercise, you created the Event Grid topic and a web app that you will u
 
     1.  Select **Endpoint**.
 
-    1.  In the **Select Web Hook** dialog box, in the **Subscriber Endpoint** text box, enter the **Web App URL** value that you recorded earlier, add the suffix **/api/updates**, and then select **Confirm Selection**.
+    1.  In the **Select Web Hook** dialog box, in the **Subscriber Endpoint** text box, enter the **Web App URL** value that you recorded earlier, ensure it uses an **https://** prefix, add the suffix **/api/updates**, and then select **Confirm Selection**.
 
-        > **Note**: For example, if your **Web App URL** value is **https://eventviewerstudent.azurewebsites.net/**, then your **Subscriber Endpoint** would be **https://eventviewerstudent.azurewebsites.net/api/updates**.
+        > **Note**: For example, if your **Web App URL** value is **http://eventviewerstudent.azurewebsites.net/**, then your **Subscriber Endpoint** would be **https://eventviewerstudent.azurewebsites.net/api/updates**.
 
     1.  Select **Create**.
   
