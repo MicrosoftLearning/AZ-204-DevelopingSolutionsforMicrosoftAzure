@@ -58,7 +58,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  If this is your first time opening Cloud Shell using your subscription, you can use the **Welcome to Azure Cloud Shell Wizard** to configure Cloud Shell. Perform the following actions in the wizard:
     
-    - When a dialog box prompts you to create a new storage account to begin using the shell, accept the default settings, and then select **Create storage**. 
+    -   When a dialog box prompts you to create a new storage account to begin using the shell, accept the default settings, and then select **Create storage**. 
 
     > **Note**: Wait for Cloud Shell to finish its initial setup procedures before continuing with the lab. If you don't notice the **Cloud Shell** configuration options, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
 

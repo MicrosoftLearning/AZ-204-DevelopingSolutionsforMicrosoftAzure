@@ -167,7 +167,7 @@ In this exercise, you created an Azure Storage account and an Azure Web App that
 
 1.  If this is your first time opening Cloud Shell using your subscription, you can use the **Welcome to Azure Cloud Shell Wizard** to configure Cloud Shell for first-time usage. Perform the following actions in the wizard:
     
-    - A dialog box prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**. 
+    -   A dialog box prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**. 
 
     > **Note**: Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab. If you don't notice the **Cloud Shell** configuration options, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
 
@@ -607,7 +607,7 @@ In this exercise, you updated your Web App to use Content Delivery Network to se
 
 #### Task 3: Close the active application
 
-- Close the currently running Microsoft Edge application.
+1.     the currently running Microsoft Edge application.
 
 #### Review
 

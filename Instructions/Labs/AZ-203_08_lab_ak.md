@@ -222,13 +222,13 @@ In this exercise, you created a new Azure web app by using a container image sou
 
 1.	In the **Inbound processing, Set Headers** section, perform the following actions:
     
-    1. In the **Name** text box, enter **source**.
+    1.  In the **Name** text box, enter **source**.
     
-    1. In the **Value** text box, select the list, select **Add Value**, and then enter **azure-api-mgmt**.
+    1.  In the **Value** text box, select the list, select **Add Value**, and then enter **azure-api-mgmt**.
     
-    1. In the **Action** list, select **append**.
+    1.  In the **Action** list, select **append**.
     
-    1. Select **Save**.
+    1.  Select **Save**.
 
 1.	Back from the **Design** tab, in the list of operations, select **Echo Headers**.
 

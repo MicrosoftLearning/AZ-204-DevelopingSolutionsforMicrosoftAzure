@@ -684,7 +684,7 @@ In this exercise, you created a function that returns the content of a JSON file
 
 #### Task 3: Close the active application
 
-- Close the currently running Microsoft Edge application.
+1.     the currently running Microsoft Edge application.
 
 #### Review
 

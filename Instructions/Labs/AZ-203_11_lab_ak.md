@@ -462,6 +462,8 @@ In this exercise, you configured your .NET project to access the Storage service
     }
     ```
 
+1.  **Save** the **Program.cs** file.
+
 1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
 
 1.  At the open command prompt, enter the following command, and then select Enter to run the .NET web application:
@@ -539,6 +541,8 @@ In this exercise, you read and deleted existing messages from the Storage queue 
     }
     ```
 
+1.  **Save** the **Program.cs** file.
+
 1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
 
 1.  At the open command prompt, enter the following command, and then select Enter to run the .NET web application:
@@ -579,7 +583,7 @@ In this exercise, you created new messages in the queue by using the .NET librar
 
 1.  If this is your first time opening Cloud Shell using your subscription, you can use the **Welcome to Azure Cloud Shell Wizard** to configure Cloud Shell for first-time usage. Perform the following actions in the wizard:
     
-    - A dialog box prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**. 
+    -   A dialog box prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**. 
 
     > **Note**: Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab. If you don't notice Cloud Shell configuration options, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
 
@@ -607,7 +611,11 @@ In this exercise, you created new messages in the queue by using the .NET librar
 
 #### Task 3: Close the active application
 
-- Close the currently running Microsoft Edge application.
+1.  Close the currently running Microsoft Edge application.
+
+1.  Close the currently running Visual Studio Code application.
+
+1.  Close the currently running Azure Storage Explorer application.
 
 #### Review
 
