@@ -70,7 +70,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  Leave the **Subscription** text box set to its default value.
     
-    1.  In the **Resource group** section, select **Create new**, and then in the text box, enter **AutomatedWorkflow**.
+    1.  In the **Resource group** section, select **Create new**, in the text box enter **AutomatedWorkflow**, and then select **OK**.
     
     1.  In the **Location** list, select **East US**.
     
@@ -94,19 +94,29 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **Logic App** blade, select **Create**.
 
-1.  On the **Logic App** blade, perform the following actions:
-    
-    1.  In the **Name** field, enter **prodflow*[yourname]***. 
-    
+1.  On the **Logic App** blade, review the tabs on the blade, such as **Basics**, **Tags**, and **Review + Create**.
+
+    > **Note**: Each tab represents a step in the workflow to create a new logic app. You can select **Review + Create** at any time to skip the remaining tabs.
+
+1.  Select the **Basics** tab, and then in the tab area, perform the following actions:
+       
     1.  Leave the **Subscription** field set to its default value.
     
     1.  In the **Resource group** list, select **Use existing**, and then select the **AutomatedWorkflow** group you created earlier in the lab.
-    
+        
+    1.  In the **Logic App name** field, enter **prodflow*[yourname]***.
+
+    1.  In the **Select the location** section, select **Region**.
+
     1.  In the **Location** list, select **East US**.
     
     1.  In the **Log Analytics** section, select **Off**.
     
-    1.  Select **Create**.
+    1.  Select **Review + Create**.
+
+1.  On the **Review + Create** tab, review the options that you specified in the previous steps.
+
+1.  Select **Create** to create the logic app by using your specified configuration.
 
     > **Note**: Wait for Azure to finish creating the Logic Apps resource prior to moving on in the lab. You will receive a notification when the resource is created.
 
@@ -164,7 +174,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Name** text box, enter **metadata**.
     
-    1.  In the **Quota** text box, enter **1** (GB).
+    1.  In the **Quota** text box, enter **1** (GiB).
     
     1.  Select **Create**.
 
@@ -256,7 +266,7 @@ In this exercise, you created all the resources that you'll use for this lab.
 
 1.  In the **Select** area, perform the following actions to configure the **Select (Data Operations)** action:
     
-    1.  In the **Body** field, in the **Dynamic content** list, within the **List files** category, select **value**. 
+    1.  In the **From** field, in the **Dynamic content** list, within the **List files** category, select **value**. 
     
     1.  In the **Map** field, select **Switch to text mode**.
 
@@ -267,9 +277,7 @@ In this exercise, you created all the resources that you'll use for this lab.
 1.  In the **Designer** area, select **+ New step**, and then perform the following actions to add a **Response (Request)** action:
  
     1.  In the **Search connectors and triggers** field, enter **response**.
-    
-    1.  In the category list, select **Request**.
-    
+       
     1.  In the **Actions** result list, select **Response**.
 
 1.  In the **Response** area, perform the following actions to configure the **Response (Request)** action:
@@ -318,7 +326,7 @@ In this exercise, you built a basic workflow that starts when it's triggered by 
 
 1.  In the **Add a new API** section, select **Logic App**.
 
-1.  In the **Create a blank API** dialog box, perform the following actions:
+1.  In the **Create from Logic App** dialog box, perform the following actions:
 
     1.  Select **Full**.
 
