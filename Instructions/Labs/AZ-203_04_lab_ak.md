@@ -626,7 +626,7 @@ In this exercise, you configured your ASP.NET web application to connect to your
 
 1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
 
-#### Task 4: Get SQL database records by using Entity Framework
+#### Task 3: Get SQL database records by using Entity Framework
 
 1.  Within the **Main** method of the **Program** class within the **Program.cs** file, add the following line of code to create a new instance of the **AdventureWorksSqlContext** class, passing in the *sqlDBConnectionString* variable as the connection string value:
 
@@ -668,7 +668,7 @@ In this exercise, you configured your ASP.NET web application to connect to your
 
 1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
 
-#### Task 5: Insert items into Azure Cosmos DB
+#### Task 4: Insert items into Azure Cosmos DB
 
 1.  Within the **Main** method of the **Program** class within the **Program.cs** file, add the following line of code to create a new instance of the **CosmosClient** class, passing in the *cosmosDBConnectionString* variable as the connection string value:
 
@@ -741,7 +741,7 @@ In this exercise, you configured your ASP.NET web application to connect to your
 
     > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\04\\Solution\\AdventureWorks\\AdventureWorks.Migrate** folder.
 
-#### Task 6: Perform a migration
+#### Task 5: Perform a migration
 
 1.  At the open command prompt, enter the following command, and then select Enter to run the .NET web application:
 
@@ -755,7 +755,7 @@ In this exercise, you configured your ASP.NET web application to connect to your
 
 1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
 
-#### Task 7: Validate the migration
+#### Task 6: Validate the migration
 
 1.  Return to the **Microsoft Edge** browser window with the Azure portal.
 

@@ -379,8 +379,6 @@ In this exercise, you created a new application registration and recorded import
 
     1.  Select **Accept**.
 
-1.  Close the currently open browser window.
-
 1.  Return to the currently running Visual Studio Code application.
 
 1.  Observe the token rendered in the output from the currently running console application.
@@ -619,8 +617,6 @@ In this exercise, you acquired a token from the Microsoft identity platform by u
     1.  Enter the password for your Microsoft account, and then select **Sign in**.
 
     > **Note**: You might have the option to select an existing Microsoft account as opposed to signing in again.
-
-1.  Close the currently open browser window.
 
 1.  Return to the currently running Visual Studio Code application.
 
