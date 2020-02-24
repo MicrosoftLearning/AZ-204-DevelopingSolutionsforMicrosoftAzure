@@ -577,7 +577,7 @@ In this exercise, you updated your Web App to use Content Delivery Network to se
 
 ### Exercise 5: Clean up your subscription 
 
-#### Task 1: Open Cloud Shell and list resource groups
+#### Task 1: Open Azure Cloud Shell and list resource groups
 
 1.  In the portal, select the **Cloud Shell** icon to open a new shell instance.
 

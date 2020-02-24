@@ -452,6 +452,8 @@ In this exercise, you created a server-assigned managed service identity for you
 
 1.  Find the **Output** text box in the Test pane. You should now notice the connection string returned from the function.
 
+    > **Note**: You may notice a warning message. This is simply a C# compiler warning that says you are using an asynchronous method without asynchronous code. This warning will no longer show up later in the lab.
+
 #### Review
 
 In this exercise, you used a service identity to read the value of a secret stored in Key Vault and returned that value as the result of an function app.
@@ -541,7 +543,7 @@ In this exercise, you used a service identity to read the value of a secret stor
     ```
     <Project Sdk="Microsoft.NET.Sdk">
         <PropertyGroup>
-            <TargetFramework>netstandard2.1</TargetFramework>
+            <TargetFramework>netstandard2.0</TargetFramework>
         </PropertyGroup>
         <ItemGroup>
             <PackageReference Include="Azure.Storage.Blobs" Version="12.0.0" />

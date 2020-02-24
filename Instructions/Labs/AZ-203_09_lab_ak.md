@@ -158,7 +158,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     > **Note**: On the **Deployment** blade, wait for the creation task to complete before moving on in this lab.
 
-#### Task 5: Upload content to an Azure Storage file share
+#### Task 5: Upload sample content to Azure Files
 
 1.  In the Azure portal navigation pane, select the **Resource groups** link.
 
@@ -408,7 +408,7 @@ In this exercise, you used Azure API Management as a proxy to trigger your Logic
 
 ### Exercise 4: Clean up your subscription 
 
-#### Task 1: Open Cloud Shell and list resource groups
+#### Task 1: Open Azure Cloud Shell and list resource groups
 
 1.  In Azure portal, select the **Cloud Shell** icon to open a new shell instance.
 

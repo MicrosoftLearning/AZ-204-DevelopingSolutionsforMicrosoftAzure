@@ -160,7 +160,7 @@ In this exercise, you created a new Azure web app by using a container image sou
     
     1.  In the **Resource group** list, select the **ApiService** group that you created earlier in the lab.
     
-    1.  In the **Location** list, select **West US**.
+    1.  In the **Location** list, select **East US**.
     
     1.  In the **Organization name** text box, enter **Contoso**.
     
@@ -329,7 +329,7 @@ In this exercise, you built a proxy tier between your App Service resource and a
 
 ### Exercise 3: Clean up your subscription 
 
-#### Task 1: Open Cloud Shell
+#### Task 1: Open Azure Cloud Shell
 
 1.  In the portal, select the **Cloud Shell** icon to open a new shell instance.
 

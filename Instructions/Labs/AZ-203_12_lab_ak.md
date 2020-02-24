@@ -506,7 +506,7 @@ In this exercise, you deployed your web application to Azure App Service and mon
 
 ### Exercise 4: Clean up your subscription 
 
-#### Task 1: Open Cloud Shell
+#### Task 1: Open Azure Cloud Shell
 
 1.  In the Azure portal, select the **Cloud Shell** icon to open a new shell instance.
 

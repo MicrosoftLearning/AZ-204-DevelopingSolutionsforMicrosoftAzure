@@ -345,7 +345,7 @@ In this exercise, you used Cloud Shell to create a VM as part of an automated sc
 
     > **Note**: Wait for the creation task to complete before moving forward with this lab.
 
-#### Task 4: Open Cloud Shell and store Container Registry metadata
+#### Task 4: Open Azure Cloud Shell and store Container Registry metadata
 
 1.  In the portal, select the **Cloud Shell** icon to open a new shell instance.  
 
@@ -595,7 +595,7 @@ In this exercise, you used multiple methods to deploy a container image to an Az
 
 ### Exercise 4: Clean up your subscription 
 
-#### Task 1: Open Cloud Shell and list resource groups
+#### Task 1: Open Azure Cloud Shell and list resource groups
 
 1.  In the portal, select the **Cloud Shell** icon to open a new shell instance.
 

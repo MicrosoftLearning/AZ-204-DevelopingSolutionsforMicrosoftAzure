@@ -556,7 +556,7 @@ In this exercise, you published new events to your Event Grid topic using a .NET
 
 ### Exercise 4: Clean up your subscription 
 
-#### Task 1: Open Cloud Shell
+#### Task 1: Open Azure Cloud Shell
 
 1.  In Azure portal, select the **Cloud Shell** icon to open a new shell instance.
 
