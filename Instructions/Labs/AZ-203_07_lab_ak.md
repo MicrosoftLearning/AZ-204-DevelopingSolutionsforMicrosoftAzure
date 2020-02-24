@@ -94,7 +94,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **All services** blade, select **Storage Accounts**.
 
-1.  From the **Storage accounts** blade, select the storage account instance with the prefix "securestor".
+1.  From the **Storage accounts** blade, select the storage account instance with the prefix *securestor\**.
 
 1.  From the **Storage account** blade, find the **Settings** section, and then select the **Access keys** link.
 

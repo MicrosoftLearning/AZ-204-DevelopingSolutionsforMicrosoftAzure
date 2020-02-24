@@ -246,13 +246,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     az webapp list --resource-group ManagedPlatform
     ```
 
-1.	Enter the following command, and then select Enter to find the apps that have the "imgapi\*" prefix:
+1.	Enter the following command, and then select Enter to find the apps that have the **imgapi\*** prefix:
 
     ```
     az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgapi')]"
     ```
 
-1.	Enter the following command, and then select Enter to render only the name of the single app that has the "imgapi\*" prefix:
+1.	Enter the following command, and then select Enter to render only the name of the single app that has the **imgapi\*** prefix:
 
     ```
     az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgapi')].{Name:name}" --output tsv
@@ -404,13 +404,13 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
     az webapp list --resource-group ManagedPlatform
     ```
 
-1.	Enter the following command, and then select Enter to find the apps that have the "imgweb\*" prefix:
+1.	Enter the following command, and then select Enter to find the apps that have the **imgweb\*** prefix:
 
     ```
     az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgweb')]"
     ```
 
-1.	Enter the following command, and then select Enter to render only the name of the single app that has the "imgweb\*" prefix:
+1.	Enter the following command, and then select Enter to render only the name of the single app that has the **imgweb\*** prefix:
 
     ```
     az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgweb')].{Name:name}" --output tsv

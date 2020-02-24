@@ -78,7 +78,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Name** text box, enter **instrm*[yourname]***.
     
-    1.  In the **Location** drop-down list, select the **(US) East US** region.
+    1.  In the **Region** drop-down list, select the **(US) East US** region.
     
     1.  Select **Review + Create**.
 
@@ -120,11 +120,11 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Resource group** drop-down list, select **MonitoredAssets**.
     
-    1.  In the **Name** text box, enter **smpapi*[yourname]***.
+    1.  In the **Name** text box, enter ***smpapi\***[yourname]***.
 
     1.  In the **Publish** section, select **Code**.
 
-    1.  In the **Runtime stack** drop-down list, select **.NET 3.0 (current)**.
+    1.  In the **Runtime stack** drop-down list, select **.NET Core 3.0 (current)**.
 
     1.  In the **Operating System** section, select **Windows**.
 
@@ -154,7 +154,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
 
-1.  From the **MonitoredAssets** blade, select the **smpapi*[yourname]*** web app that you created earlier in this lab.
+1.  From the **MonitoredAssets** blade, select the ***smpapi\***[yourname]*** web app that you created earlier in this lab.
 
 1.  From the **App Service** blade, in the **Settings** category, select the **Configuration** link.
 
@@ -274,7 +274,7 @@ In this exercise, you created the resources that you'll use for the remainder of
     ```
     public void ConfigureServices(IServiceCollection services)
     {
-        services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);        
+        services.AddControllers();
     }
     ```
 
@@ -289,7 +289,7 @@ In this exercise, you created the resources that you'll use for the remainder of
     ```
     public void ConfigureServices(IServiceCollection services)
     {
-        services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);   
+        services.AddControllers();
         services.AddApplicationInsightsTelemetry(INSTRUMENTATION_KEY);        
     }
     ```
@@ -310,7 +310,7 @@ In this exercise, you created the resources that you'll use for the remainder of
     dotnet run
     ```
 
-1.  On the taskbar, select the **Microsoft Edge** icon.
+1.  On the taskbar, open the context menu for the **Microsoft Edge** icon, and then open a new browser window.
 
 1.  In the open browser window, go to the **/weatherforecast** relative path of your test application that's hosted at **localhost** on port **5000**.
     
@@ -372,13 +372,13 @@ In this exercise, you created an API by using ASP.NET and configured it to strea
     az webapp list --resource-group MonitoredAssets
     ```
 
-1.  Enter the following command, and then select Enter to find the apps that have the prefix "smpapi\*":
+1.  Enter the following command, and then select Enter to find the apps that have the prefix **smpapi\***:
 
     ```
     az webapp list --resource-group MonitoredAssets --query "[?starts_with(name, 'smpapi')]"
     ```
 
-1.  Enter the following command, and then select Enter to render out only the name of the single app that has the prefix "smpapi\*":
+1.  Enter the following command, and then select Enter to render out only the name of the single app that has the **smpapi\***:
 
     ```
     az webapp list --resource-group MonitoredAssets --query "[?starts_with(name, 'smpapi')].{Name:name}" --output tsv
@@ -408,13 +408,13 @@ In this exercise, you created an API by using ASP.NET and configured it to strea
 
 1.  From the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
 
-1.  From the **MonitoredAssets** blade, select the **smpapi*[yourname]*** web app that you created earlier in this lab.
+1.  From the **MonitoredAssets** blade, select the ***smpapi\***[yourname]*** web app that you created earlier in this lab.
 
 1.  From the **App Service** blade, select **Browse**. A new browser window or tab will open and return a "404 (Not Found)" error.
 
 1.  In the browser address bar, update the URL by appending the suffix **/weatherforecast** to the end of the current URL, and then select Enter.
 
-    > **Note**: For example, if your URL is http://smpapistudent.azurewebsites.net, the new URL would be http://smpapistudent.azurewebsites.net/weatherforecast.
+    > **Note**: For example, if your URL is https://smpapistudent.azurewebsites.net, the new URL would be https://smpapistudent.azurewebsites.net/weatherforecast.
 
 1.  Find the JavaScript Object Notation (JSON) array that's returned as a result of using the API.
 
@@ -426,13 +426,13 @@ In this exercise, you created an API by using ASP.NET and configured it to strea
 
 1.  From the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
 
-1.  From the **MonitoredAssets** blade, select the **smpapi*[yourname]*** web app that you created earlier in this lab.
+1.  From the **MonitoredAssets** blade, select the ***smpapi\***[yourname]*** web app that you created earlier in this lab.
 
 1.  From the **App Service** blade, select **Application Insights**.
 
 1.  From the **Application Insights** blade, perform the following actions:
 
-    1.  Ensure that the **Application Insights** section is set to **Enabled**.
+    1.  Ensure that the **Application Insights** section is set to **Enable**.
 
     1.  In the **Instrument your application** section, select the **.NET** tab.
 
@@ -454,13 +454,13 @@ In this exercise, you created an API by using ASP.NET and configured it to strea
 
 1.  In the browser address bar, update the URL by appending the suffix **/weatherforecast** to the end of the current URL, and then select Enter.
 
-    > **Note**: For example, if your URL is http://smpapistudent.azurewebsites.net, the new URL would be http://smpapistudent.azurewebsites.net/weatherforecast.
+    > **Note**: For example, if your URL is https://smpapistudent.azurewebsites.net, the new URL would be https://smpapistudent.azurewebsites.net/weatherforecast.
 
 1.  Observe the JSON array that's returned as a result of using the API.
 
 1.  Record the URL that you used to access the JSON array.
 
-    > **Note**: Using the example from the previous step, you would record the URL ``http://smpapistudent.azurewebsites.net/weatherforecast``.
+    > **Note**: Using the example from the previous step, you would record the URL ``https://smpapistudent.azurewebsites.net/weatherforecast``.
 
 #### Task 3: Get updated metrics in Application Insights
 
@@ -488,7 +488,7 @@ In this exercise, you created an API by using ASP.NET and configured it to strea
 
 1.  From the **Application Insights** blade, select **Live Metrics Stream** in the **Investigate** section.
 
-1.  On the taskbar, select the **Microsoft Edge** icon.
+1.  On the taskbar, open the context menu for the **Microsoft Edge** icon, and then open a new browser window.
 
 1.  In the new browser window, go to the URL that you recorded earlier in this lab.
 
