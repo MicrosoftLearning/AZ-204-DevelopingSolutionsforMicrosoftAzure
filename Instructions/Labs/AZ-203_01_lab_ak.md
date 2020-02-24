@@ -140,7 +140,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the search box, enter **Web**, and then select Enter.
 
-1.  From the **Everything** search results blade, select the **Web App** result.
+1.  From the **Marketplace** search results blade, select the **Web App** result.
 
 1.  From the **Web App** blade, select **Create**.
 
@@ -302,7 +302,7 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.  In the search box, enter **Web**, and then select Enter.
 
-1.  From the **Everything** search results blade, select the **Web App** result.
+1.  From the **Marketplace** search results blade, select the **Web App** result.
 
 1.  From the **Web App** blade, select **Create**.
 

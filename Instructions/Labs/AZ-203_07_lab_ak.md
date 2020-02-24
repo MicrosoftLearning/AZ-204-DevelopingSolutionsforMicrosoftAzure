@@ -110,7 +110,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the search box, enter **Vault**, and then select Enter.
 
-1.  From the **Everything** search results blade, select the **Key Vault** result.
+1.  From the **Marketplace** search results blade, select the **Key Vault** result.
 
 1.  From the **Key Vault** blade, select **Create**.
 
@@ -146,7 +146,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the search box, enter **Function**, and then select Enter.
 
-1.  From the **Everything** search results blade, select the **Function App** result.
+1.  From the **Marketplace** search results blade, select the **Function App** result.
 
 1.  From the **Function App** blade, select **Create**.
 

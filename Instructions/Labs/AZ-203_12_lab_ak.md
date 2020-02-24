@@ -62,7 +62,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the search box, enter **Insights**, and then select Enter.
 
-1.  From the **Everything** search results blade, select the **Application Insights** result.
+1.  From the **Marketplace** search results blade, select the **Application Insights** result.
 
 1.  From the **Application Insights** blade, select **Create**.
 
@@ -106,7 +106,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the search box, enter **Web**, and then select Enter.
 
-1.  From the **Everything** search results blade, select the **Web App** result.
+1.  From the **Marketplace** search results blade, select the **Web App** result.
 
 1.  From the **Web App** blade, select **Create**.
 

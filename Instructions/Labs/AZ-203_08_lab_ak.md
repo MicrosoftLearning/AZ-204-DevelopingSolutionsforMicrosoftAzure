@@ -56,7 +56,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the search box, enter **Web**, and then select Enter.
 
-1.  From the **Everything** search results blade, select the **Web App** result.
+1.  From the **Marketplace** search results blade, select the **Web App** result.
 
 1.  From the **Web App** blade, select **Create**.
 
@@ -148,7 +148,7 @@ In this exercise, you created a new Azure web app by using a container image sou
 
 1.  In the search box, enter **API**, and then select Enter.
 
-1.  From the **Everything** search results blade, select the **API Management** result.
+1.  From the **Marketplace** search results blade, select the **API Management** result.
 
 1.  From the **API Management** blade, select **Create**.
 

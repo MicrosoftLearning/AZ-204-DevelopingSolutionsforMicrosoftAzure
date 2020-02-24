@@ -60,7 +60,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the search box, enter the text **Resource Group**, and then select Enter.
 
-1.  From the **Everything** search results blade, select the **Resource group** result.
+1.  From the **Marketplace** search results blade, select the **Resource group** result.
 
 1.  From the **Resource group** blade, select **Create**.
 
@@ -321,7 +321,7 @@ In this exercise, you used Cloud Shell to create a VM as part of an automated sc
 
 1.  In the search box, enter **Container Registry**, and then select Enter.
 
-1.  From the **Everything** search results blade, select the **Container Registry** result.
+1.  From the **Marketplace** search results blade, select the **Container Registry** result.
 
 1.  From the **Container Registry** blade, select **Create**.
 
@@ -499,7 +499,7 @@ In this exercise, you created a .NET console application to display a machine’
 
 1.  In the search box, enter **Container instance**, and then select Enter.
 
-1.  From the **Everything** search results blade, select the **Container Instances** result.
+1.  From the **Marketplace** search results blade, select the **Container Instances** result.
 
 1.  From the **Container Instances** blade, select **Create**.
 
