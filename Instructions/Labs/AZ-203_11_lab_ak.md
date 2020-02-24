@@ -394,7 +394,21 @@ In this exercise, you configured your .NET project to access the Storage service
 
     > **Note**: If this is your first time opening Storage Explorer by using the portal, you might be prompted to allow the portal to open these types of links in the future. You should accept the prompt.
 
-1.  In Storage Explorer, find and expand the **asyncstor*[yourname]*** storage account that you created earlier in this lab.
+1.  In the **Azure Storage Explorer** application, you will notice a prompt to sign in to your Azure account. Sign in by performing the following actions:
+
+    1.  In the popup dialog, select **Sign in**.
+
+    1.  In the **Connect to Azure Storage** window, select **Add an Azure Account**, in the **Azure environment** list select **Azure**, and then select **Next**.
+
+    1.  In the **Sign in to your account** popup window, enter the email address for your Microsoft account, and then select **Next**.
+
+    1.  Still within the **Sign in to your account** popup window, enter the password for your Microsoft account, and then select **Sign in**.
+
+    1.  In the **ACCOUNT MANAGEMENT** pane, select **Apply**.
+
+    1.  Observe that you are returned back to the **EXPLORER** pane with your subscription information populated.
+
+1.  From the **Azure Storage Explorer** application, in the **EXPLORER** pane, find and expand the **asyncstor*[yourname]*** storage account that you created earlier in this lab.
 
 1.  Within the **asyncstor*[yourname]*** storage account, find and expand the **Queues** node.
 
