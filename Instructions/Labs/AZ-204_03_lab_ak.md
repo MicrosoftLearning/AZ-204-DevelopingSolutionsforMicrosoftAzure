@@ -580,7 +580,7 @@ In this exercise, you accessed existing containers by using the Azure Storage SD
     {      
         BlobContainerClient container = client.GetBlobContainerClient(containerName);
         
-        await container.CreateIfNotExistsAsync();
+        await container.CreateIfNotExistsAsync(PublicAccessType.Blob);
         
         await Console.Out.WriteLineAsync($"New Container:\t{container.Name}");
         
