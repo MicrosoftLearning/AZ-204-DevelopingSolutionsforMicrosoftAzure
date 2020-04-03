@@ -193,19 +193,32 @@ In this exercise, you created an Azure Storage account and an Azure Web App that
         az provider --help
         ```
 
-    1.  Enter the following command, and then select Enter to list all currently registered providers:
+    1.  Enter the following command:
 
         ```
-        az provider list
+        az provider show --namespace microsoft.cdn --query "[namespace,registrationState]"
+        ```
+        
+        and check if the registration status is **Registered**
+        
+        ```
+        [
+            "Microsoft.Cdn",
+            "Registered"
+        ]
         ```
 
-    1.  Enter the following command, and then select Enter to list just the namespaces of the currently registered providers:
+    1.  If the value of the registration status isn't **Registered**, enter the following command:
 
         ```
-        az provider list --query "[].namespace"
+        az provider register --namespace Microsoft.Cdn
         ```
-
-    1.  Observe the list of currently registered providers. The **Microsoft.CDN** provider should be currently in the list of providers.
+        
+        After the command execution, check the registration status of the provider entering the command:
+        
+        ```
+        az provider show --namespace microsoft.cdn --query "[namespace,registrationState]"
+        ```
 
 1.  Close the Cloud Shell pane in the portal.
 
