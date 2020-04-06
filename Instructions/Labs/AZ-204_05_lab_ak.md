@@ -435,7 +435,11 @@ In this exercise, you created a .NET console application to display a machine’
 
 1.  From the **Update container registry** blade, perform the following actions:
     
-    -   In the **Admin user** section, select **Enable**, and the select **Save**.
+    1.   In the **Admin user** section, select **Enable**.
+    
+    1.   Select **Save**.
+
+    1.   Close the blade.
     
 1.  Close the **Update container registry** blade.
 
@@ -503,7 +507,7 @@ In this exercise, you created a .NET console application to display a machine’
 
 1.  From the **Container Instances** blade, select **Create**.
 
-1.  Find the tabs from the **Create Container Instances** blade, such as **Basics** and **Advanced**.
+1.  Find the tabs from the **Create Container Instances** blade, such as **Basics**, **Networking**, and **Advanced**.
 
     > **Note**: Each tab represents a step in the workflow to create a new container instance.
 
@@ -517,51 +521,13 @@ In this exercise, you created a .NET console application to display a machine’
 
     1.  In the **Region** drop-down list, select **(US) East US**.
     
-    1.  In the **Image type** section, select **Private**.
+    1.  In the **Image source** section, select **Azure Container Registry**.
     
-    1.  In the **Image name** text box, enter the **Login server** value that you recorded earlier, and then add the suffix **/ipcheck:latest**.
-
-        > **Note**: For example, if your **Login server** value is **azadmin.azurecr.io**, then your container image name would be **azadmin.azurecr.io/ipcheck:latest**
-
-    1.  In the **Image registry login server** text box, enter the **Login server** value that you recorded earlier in this lab.
-
-    1.  In the **Image registry user name** text box, enter the **Username** value that you recorded earlier in this lab.
-
-    1.  In the **Image registry password** text box, enter the **Password** value that you recorded earlier in this lab.
-
-    1.  In the **OS type** section, select **Linux**.
-
-    1.  In the **Size** section, select the **Change size** link.
-
-    1.  From the **Change container size** blade, perform the following actions:
-
-        1.  In the **Number of CPU cores** text box, enter **1**.
-
-        1.  In the **Memory (GB)** text box, enter **1.5**.
-
-        1.  Leave the default value for the **GPU type** drop-down list.
-
-        1.  Select **Ok**.
+    1.  In the **Registry** drop-down list, select the **Azure Container Registry** resource that you created earlier in this lab.
     
-    1.  Select **Next: Networking**.
-
-1.  From the **Networking** tab, perform the following actions:
+    1.  In the **Image** drop-down list, select **ipcheck**.
     
-    1.  In the **Include Public IP address** section, select **Yes**.
-
-    1.  Ensure that in the **Ports** section, the port is **80** and the port protocol is **TCP**.
-    
-    1.  Leave the **DNS name label** text box empty.
-
-    1.  Select **Next: Advanced**.
-
-1.  From the **Advanced** tab, perform the following actions:
-    
-    1.  In the **Restart policy** drop-down list, select **On failure**.
-    
-    1.  Leave the **Environment variable** text box empty.
-    
-    1.  Leave the **Command override** text box empty.
+    1.  In the **Image tag** drop-down list, select **latest**.
 
     1.  Select **Review + Create**.
 
