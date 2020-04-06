@@ -284,7 +284,7 @@ In this exercise, you created all the resources that you'll use for this lab.
 
     1.  In the **Status Code** text box, enter **200**.
 
-    1.  On the **Body** field, in the **Dynamic content** list, within the **Output** category, select **Select**.
+    1.  On the **Body** field, in the **Dynamic content** list, within the **Select** category, select **Output**.
 
 1.  In the **Designer** area, select **Save**.
 
