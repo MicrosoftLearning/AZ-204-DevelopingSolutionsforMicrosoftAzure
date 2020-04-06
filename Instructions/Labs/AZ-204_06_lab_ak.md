@@ -102,7 +102,7 @@ In this exercise, you created a new application registration and recorded import
 
 1.  On the **File** menu, select **Open Folder**.
 
-1.  In the **File Explorer** window that opens, browse to **Allfiles (F):\\Allfiles\\Labs\\07\\Starter\\GraphClient**, and then select **Select Folder**.
+1.  In the **File Explorer** window that opens, browse to **Allfiles (F):\\Allfiles\\Labs\\06\\Starter\\GraphClient**, and then select **Select Folder**.
 
 1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
 
@@ -361,7 +361,7 @@ In this exercise, you created a new application registration and recorded import
     dotnet run
     ```
 
-    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\07\\Solution\\GraphClient** folder.
+    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\06\\Solution\\GraphClient** folder.
 
 1.  The running console application will automatically open an instance of the default browser.
 
@@ -596,7 +596,7 @@ In this exercise, you acquired a token from the Microsoft identity platform by u
     dotnet run
     ```
 
-    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\07\\Solution\\GraphClient** folder.
+    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\06\\Solution\\GraphClient** folder.
 
 1.  Observe the message in the output from the currently running console application. Record the value of the code in the message. You'll use this value later in the lab.
 
