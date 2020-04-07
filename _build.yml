@@ -1,4 +1,4 @@
-name: '$(Date:yyyyMMdd)$(Rev:.rr)-prerelease'
+name: '$(Date:yyyyMMdd)$(Rev:.rr)'
 jobs:
   - job: build_markdown_content
     displayName: 'Build Markdown Content'
