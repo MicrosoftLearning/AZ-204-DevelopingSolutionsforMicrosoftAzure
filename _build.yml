@@ -29,7 +29,7 @@ jobs:
           releaseNotes: '# Version $(Build.BuildNumber) Release'
           assets: '$(Build.SourcesDirectory)/out/*.zip'
           assetUploadMode: replace
-          isPreRelease: true
+          isPreRelease: false
       - task: PublishBuildArtifacts@1
         displayName: 'Publish Output Files'
         inputs:
