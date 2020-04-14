@@ -4,7 +4,7 @@ permalink: index.html
 layout: home
 ---
 
-# AZ-204: Developing Solutions for Microsoft Azure
+# AZ-204: Developing solutions for Microsoft Azure
 
 Hyperlinks to each of the lab exercises and demos are listed below.
 
