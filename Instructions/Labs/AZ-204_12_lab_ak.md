@@ -1,7 +1,8 @@
 ---
 lab:
     title: 'Lab: Monitoring services that are deployed to Azure'
-    module: 'Module 12: Monitor and optimize Azure solutions'
+    az204Module: 'Module 12: Monitor and optimize Azure solutions'
+    az020Module: 'Module 11: Monitor and optimize Azure solutions'
     type: 'Answer Key'
 ---
 

@@ -1,7 +1,8 @@
 ---
 lab:
     title: 'Lab: Implement task processing logic by using Azure Functions'
-    module: 'Module 02: Implement Azure Functions'
+    az204Module: 'Module 02: Implement Azure Functions'
+    az020Module: 'Module 02: Implement Azure Functions'
     type: 'Answer Key'
 ---
 

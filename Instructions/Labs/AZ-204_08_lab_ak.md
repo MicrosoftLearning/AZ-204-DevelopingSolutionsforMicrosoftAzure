@@ -1,7 +1,8 @@
 ---
 lab:
     title: 'Lab: Creating a multi-tier API by using Azure API Management'
-    module: 'Module 08: Implement API Management'
+    az204Module: 'Module 08: Implement API Management'
+    az020Module: 'Module 08: Implement API Management'
     type: 'Answer Key'
 ---
 
