@@ -4,7 +4,7 @@ permalink: /aws/index.html
 layout: home
 ---
 
-# AZ-020: Microsoft Azure Solutions for AWS Developers
+# AZ-020: Microsoft Azure solutions for AWS developers 
 
 Hyperlinks to each of the lab exercises and demos are listed below.
 
