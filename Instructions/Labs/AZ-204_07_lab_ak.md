@@ -167,6 +167,8 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  In the **Runtime stack** drop-down list, select **.NET Core**.
 
+    1.  In the **Version** drop-down list, select **3.1**.
+
     1.  In the **Region** drop-down list, select the **East US** region.
     
     1.  Select **Next: Hosting**.
@@ -177,7 +179,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  In the **Operating System** section, select **Windows**.
 
-    1.  In the **Plan type** drop-down list, select the **Consumption** option.
+    1.  In the **Plan type** drop-down list, select the **Consumption (Serverless)** option.
 
     1.  Select **Next: Monitoring**.
 
@@ -541,20 +543,20 @@ In this exercise, you used a service identity to read the value of a secret stor
 
 1.  In the editor, insert this configuration content:
 
-    ```
+    ```xml
     <Project Sdk="Microsoft.NET.Sdk">
         <PropertyGroup>
             <TargetFramework>netstandard2.0</TargetFramework>
         </PropertyGroup>
         <ItemGroup>
-            <PackageReference Include="Azure.Storage.Blobs" Version="12.0.0" />
+            <PackageReference Include="Azure.Storage.Blobs" Version="12.4.0" />
         </ItemGroup>
     </Project>
     ```
 
 1.  In the editor, select **Save** to persist your configuration changes.
 
-    > **Note**: This .proj file contains the NuGet package reference necessary to import the [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs/12.0.0) package.
+    > **Note**: This .proj file contains the NuGet package reference necessary to import the [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs/12.4.0) package.
 
 1.  Select the **run.csx** file to return to the editor for the **FileParser** function.
 
