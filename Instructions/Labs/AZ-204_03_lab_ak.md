@@ -456,7 +456,7 @@ In this exercise, you accessed existing containers by using the Azure Storage SD
     }
     ```
 
-1.  In the **EnumerateContainersAsync** method, enter the following code to get a new instance of the **BlobContainerClient** class by using the **GetBlobContainerClient** method of the **BlobServiceClient** class, passing in the **containerName** parameter:
+1.  In the **EnumerateBlobsAsync** method, enter the following code to get a new instance of the **BlobContainerClient** class by using the **GetBlobContainerClient** method of the **BlobServiceClient** class, passing in the **containerName** parameter:
 
     ```
     BlobContainerClient container = client.GetBlobContainerClient(containerName);
