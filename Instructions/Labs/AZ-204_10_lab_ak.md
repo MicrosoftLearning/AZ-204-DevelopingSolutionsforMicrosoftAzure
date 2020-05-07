@@ -365,7 +365,7 @@ In this exercise, you created a new subscription, validated its registration, an
 
     public class Program
     {
-        private const string topicEndpoint = <topic-endpoint>";
+        private const string topicEndpoint = "<topic-endpoint>";
         private const string topicKey = "<topic-key>";
         
         public static async Task Main(string[] args)
