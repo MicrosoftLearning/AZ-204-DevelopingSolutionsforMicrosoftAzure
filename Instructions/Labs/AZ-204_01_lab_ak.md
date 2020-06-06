@@ -321,7 +321,7 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
     1.  In the **Publish** section, select **Code**.
 
-    1.  In the **Runtime stack** drop-down list, select **.NET Core 3.0 (current)**.
+    1.  In the **Runtime stack** drop-down list, select **.NET Core 3.1 (LTS)**.
 
     1.  In the **Operating System** section, select **Windows**.
 
