@@ -477,24 +477,6 @@ In this exercise, you created a .NET console application to display a machine’
 
 #### Task 3: Manually deploy a container image to Container Instances
 
-1.  In the Azure portal's navigation pane, select the **Resource groups** link.
-
-1.  From the **Resource groups** blade, find and then select the **ContainerCompute** resource group that you created earlier in this lab.
-
-1.  From the **ContainerCompute** blade, select the container registry that you created earlier in this lab.
-
-1.  From the **Container Registry** blade, find the **Settings** section, and then select the **Access keys** link.
-
-1.  In the **Access Keys** section, record the values for the following fields:
-    
-    1.  **Login server**
-    
-    1.  **Username**
-    
-    1.  **Password**
-
-    > **Note**: You'll use these values later in this lab when you create another container instance.
-
 1.  In the Azure portal's navigation pane, select the **Create a resource** link.
 
 1.  From the **New** blade, find the **Search the Marketplace** text box above the list of featured services.
