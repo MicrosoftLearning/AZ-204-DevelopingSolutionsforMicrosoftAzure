@@ -305,8 +305,8 @@ In this exercise, you created all the Azure resources that you'll need for a pol
     
     1.  Select **OK**.
 
-    > **Note**: Wait for the database to be created before you continue with this lab.
-
+    > **Note**: Wait for the database to be created before you continue with this lab. If you receive a firewall-related error on the import step, it means you did not correctly configure the **Allow Azure services to access server** setting on your SQL Server earlier in the lab.  Review your settings, delete the empty **AdventureWorks** database, and then attempt your import again.
+    
 #### Task 4: Use an imported SQL database
 
 1.  In the Azure portal's navigation pane, select the **Resource groups** link.
