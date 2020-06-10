@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab: Building a web application on Azure App Service'
+    title: 'Lab: Building a web application on Azure platform as a service offerings'
     az204Module: 'Module 01: Creating Azure App Service Web Apps'
     az020Module: 'Module 01: Creating Azure App Service Web Apps'
     type: 'Answer Key'
