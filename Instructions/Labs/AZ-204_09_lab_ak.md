@@ -374,6 +374,8 @@ In this exercise, you built a basic workflow that starts when it's triggered by 
 
     > **Note**: For example, if your **URL** is **https://prodapimstudent.azure-api.net/manual/paths/invoke**, your command would be **httprepl https://prodapimstudent.azure-api.net/manual/paths/invoke**.
 
+1.  Observe the error message displayed by the httprepl tool. This message occurs because the tool is searching for a Swagger definition file to use to "traverse" the API. Because your Logic App does not produce a Swagger definition file, you will need to traverse the API manually.
+
 1.  Within the tool prompt, enter the following command, and then select Enter to run the **get** command against the API endpoint:
 
     ```
