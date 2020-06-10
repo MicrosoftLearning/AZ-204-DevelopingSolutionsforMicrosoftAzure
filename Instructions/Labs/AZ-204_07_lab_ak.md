@@ -131,11 +131,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
         
     1.  In the **Pricing tier** drop-down list, select **Standard**.
     
+    1.  In the **Soft delete** section, select **Disable**.
+
     1.  Select **Review + Create**.
 
 1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
 
-1.  Select **Create** to create the key vault by using your specified configuration. 
+1.  Select **Create** to create the key vault by using your specified configuration.
 
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
@@ -181,12 +183,6 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  In the **Plan type** drop-down list, select the **Consumption (Serverless)** option.
 
-    1.  Select **Next: Monitoring**.
-
-1.  From the **Monitoring** tab, perform the following actions:
-
-    1.  In the **Enable Application Insights** section, select **No**.
-
     1.  Select **Review + Create**.
 
 1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
@@ -199,7 +195,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 In this exercise, you created all the resources that you'll use for this lab.
 
-### Exercise 2: Configure secrets and identities 
+### Exercise 2: Configure secrets and identities
 
 #### Task 1: Configure a system-assigned managed service identity
 
@@ -209,11 +205,9 @@ In this exercise, you created all the resources that you'll use for this lab.
 
 1.  From the **SecureFunction** blade, select the **securefunc*[yourname]*** function app that you created earlier in this lab.
 
-1.  From the **Function Apps** blade, select the **Platform features** tab.
+1.  From the **App Service** blade, select the **Identity** option from the **Settings** section.
 
-1.  From the **Platform features** tab, select the **Identity** link in the **Networking** section.
-
-1.  From the **Identity** blade, find the **System assigned** tab, and then perform the following actions:
+1.  From the **Identity** pane, find the **System assigned** tab, and then perform the following actions:
     
     1.  In the **Status** section, select **On**, and then select **Save**.
     
@@ -231,7 +225,7 @@ In this exercise, you created all the resources that you'll use for this lab.
 
 1.  From the **Key Vault** blade, select the **Secrets** link in the **Settings** section.
 
-1.  In the Secrets pane, select **Generate/Import**.
+1.  In the **Secrets** pane, select **Generate/Import**.
 
 1.  From the **Create a secret** blade, perform the following actions:
     
@@ -247,7 +241,7 @@ In this exercise, you created all the resources that you'll use for this lab.
     
     1.  Leave the **Set expiration date** text box set to its default value.
     
-    1.  In the **Enabled** section, select **Yes**, and then select **Create**. 
+    1.  In the **Enabled** section, select **Yes**, and then select **Create**.
     
     > **Note**: Wait for the secret to be created before you move forward with this lab.
 
@@ -313,11 +307,9 @@ In this exercise, you created a server-assigned managed service identity for you
 
 1.  From the **SecureFunction** blade, select the **securefunc*[yourname]*** function app that you created earlier in this lab.
 
-1.  From the **Function Apps** blade, select the **Platform features** tab.
+1.  From the **App Service** blade, select the **Configuration** option from the **Settings** section.
 
-1.  From the **Platform features** tab, select the **Configuration** link in the **General Settings** section.
-
-1.  In the **Configuration** section, perform the following actions:
+1.  From the **Configuration** pane, perform the following actions:
     
     1.  Select the **Application settings** tab, and then select **New application setting**.
     
@@ -345,21 +337,21 @@ In this exercise, you created a server-assigned managed service identity for you
 
 1.  From the **SecureFunction** blade, select the **securefunc*[yourname]*** function app that you created earlier in this lab.
 
-1.  From the **Function App** blade, select the plus sign (**+**) next to the **Functions** drop-down list.
+1.  From the **App Service** blade, select the **Functions** option from the **Functions** section.
 
-1.  In the **New Azure Function** quickstart, perform the following actions:
+1. In the **Functions** pane, select the **+ Add** button.
+
+1.  In the **New Function** popup dialog, perform the following actions:
     
-    1.  Under the **Choose a Development Environment** header, select **In-Portal**, and then select **Continue**.
-    
-    1.  Under the **Create a Function** header, select **More templates**, and then select **Finish and view templates**.
-    
-    1.  In the list of templates, select **HTTP trigger**.
-    
-    1.  In the **New Function** pop-up window, find the **Name** text box, and then enter **FileParser**.
-    
-    1.  In the **New Function** pop-up window, find the **Authorization level** list, and then select **Anonymous**.
-    
-    1.  In the **New Function** pop-up window, select **Create**.
+    1.  Within the **Templates** tab, select **HTTP trigger**.
+
+    1.  Within the **Details** tab, find the **New Function** text box and then enter **FileParser**.
+
+    1.  Within the **Details** tab, find the **Authorization** text box and then select **Anonymous**.
+
+    1.  Select **Create Function**.
+
+1.  In the **Function** blade, select the **Code + Test** option from the **Developer** section.
 
 1.  In the function editor, find the example function script:
 
@@ -373,20 +365,19 @@ In this exercise, you created a server-assigned managed service identity for you
 
     public static async Task<IActionResult> Run(HttpRequest req, ILogger log)
     {
-
         log.LogInformation("C# HTTP trigger function processed a request.");
 
         string name = req.Query["name"];
 
         string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-
         dynamic data = JsonConvert.DeserializeObject(requestBody);
-
         name = name ?? data?.name;
 
-        return name != null
-            ? (ActionResult)new OkObjectResult($"Hello, {name}")
-            : new BadRequestObjectResult("Please pass a name from the query string or in the request body");
+        string responseMessage = string.IsNullOrEmpty(name)
+            ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
+                    : $"Hello, {name}. This HTTP triggered function executed successfully.";
+
+                return new OkObjectResult(responseMessage);
     }
     ```
 
@@ -402,13 +393,15 @@ In this exercise, you created a server-assigned managed service identity for you
     }
     ```
 
-1.  Select **Save and run** to save the script and perform a test of the function.
+1.  Select **Save** to persist your changes to the function code.
 
-1.  The Test and Logs panes will automatically open when the script runs for the first time.
+1.  Select **Test/Run**.
 
-    > **Note**: You may notice warning content during compilation in the log. This can be safely ignored.
+1.  In the popup dialog that appears, perform the following actions:
 
-1.  Find the **Output** text box in the Test pane. You should now notice the value **Test Successful** returned from the function.
+    1.  In the **Input** tab, select **Run**.
+
+    1.  In the **Output** tab, observe the output message of "Test Successful".
 
 #### Task 3: Test the Key Vault-derived application setting
 
@@ -451,11 +444,15 @@ In this exercise, you created a server-assigned managed service identity for you
     }
     ```
 
-1.  Select **Save and run** to save the script and perform a test of the function.
+1.  Select **Save** to persist your changes to the function code.
 
-1.  Find the **Output** text box in the Test pane. You should now notice the connection string returned from the function.
+1.  Select **Test/Run**.
 
-    > **Note**: You may notice a warning message. This is simply a C# compiler warning that says you are using an asynchronous method without asynchronous code. This warning will no longer show up later in the lab.
+1.  In the popup dialog that appears, perform the following actions:
+
+    1.  In the **Input** tab, select **Run**.
+
+    1.  In the **Output** tab, observe the output connection string returned from the function.
 
 #### Review
 
@@ -523,7 +520,7 @@ In this exercise, you used a service identity to read the value of a secret stor
 
     > **Note**: If you don't notice the error message, your browser might have cached the file. Press Ctrl+F5 to refresh the page until you notice the error message.
 
-#### Task 2: Pull the storage account SDK from NuGet
+#### Task 2: Add a .NET application setting
 
 1.  In the Azure portal's navigation pane, select the **Resource groups** link.
 
@@ -531,15 +528,41 @@ In this exercise, you used a service identity to read the value of a secret stor
 
 1.  From the **SecureFunction** blade, select the **securefunc*[yourname]*** function app that you created earlier in this lab.
 
-1.  From the **Function App** blade, find and then select the existing **FileParser** function to open the editor for the function.
+1.  From the **App Service** blade, select the **Configuration** option from the **Settings** section.
 
-    > **Note**: You might need to expand the **Functions** option in the menu of the blade.
+1.  From the **Configuration** pane, perform the following actions:
+    
+    1.  Select the **Application settings** tab, and then select **New application setting**.
+    
+    1.  In the **Add/Edit application setting** pop-up window, in the **Name** text box, enter **DOTNET_ADD_GLOBAL_TOOLS_TO_PATH**.
+    
+    1.  In the **Value** text box, enter **false**.
+    
+    1.  Leave the **deployment slot setting** text box set to its default value.
 
-1.  In the editor, select **View files** to open the tab.
+    1.  Select **OK** to close the pop-up window and return to the **Configuration** section.
+    
+    1.  Select **Save** from the blade to persist your settings.  
 
-1.  From the **View files** tab, select **Add**.
+    1.  In the **Save Changes** confirmation popup dialog, select **Continue**.
 
-1.  In the **File name** dialog box, enter **function.proj**, and then select Enter, which displays an empty code editor.
+    > **Note**: Wait for your application settings to persist before you move forward with the lab.
+
+#### Task 3: Pull the storage account SDK from NuGet
+
+1.  In the Azure portal's navigation pane, select the **Resource groups** link.
+
+1.  From the **Resource groups** blade, find and then select the **SecureFunction** resource group that you created earlier in this lab.
+
+1.  From the **SecureFunction** blade, select the **securefunc*[yourname]*** function app that you created earlier in this lab.
+
+1.  From the **App Service** blade, select the **App Service Editor (Preview)** option from the **Development Tools** section.
+
+1.  From the **App Service Editor (Preview)** pane, select **Go ->**.
+
+1.  In the **App Service Editor** browser window, expand the **FileParser** folder, open the context menu, and then select **New File**.
+
+1.  In the dialog box, enter **function.proj**, and then select Enter, which displays an empty code editor.
 
 1.  In the editor, insert this configuration content:
 
@@ -554,15 +577,23 @@ In this exercise, you used a service identity to read the value of a secret stor
     </Project>
     ```
 
-1.  In the editor, select **Save** to persist your configuration changes.
+    > **Note**: The App Service Editor will save changes to the file automatically. This .proj file contains the NuGet package reference necessary to import the [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs/12.4.0) package.
 
-    > **Note**: This .proj file contains the NuGet package reference necessary to import the [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs/12.4.0) package.
+1.  Close the browser window with the **App Service Editor**.
 
-1.  Select the **run.csx** file to return to the editor for the **FileParser** function.
+#### Task 4: Update the namespace references
 
-1.  Minimize the **View files** tab.
+1.  In the Azure portal's navigation pane, select the **Resource groups** link.
 
-    > **Note**: You can minimize the tab by selecting the arrow associated with the tab header.
+1.  From the **Resource groups** blade, find and then select the **SecureFunction** resource group that you created earlier in this lab.
+
+1.  From the **SecureFunction** blade, select the **securefunc*[yourname]*** function app that you created earlier in this lab.
+
+1.  From the **App Service** blade, select the **Functions** option from the **Functions** section.
+
+1.  In the **Functions** pane, select the the existing **FileParser** function to open the editor for the function.
+
+1.  In the **Function** blade, select the **Code + Test** option from the **Developer** section.
 
 1.  Within the editor, delete the existing code in the **Run** method of the script.
 
@@ -599,7 +630,7 @@ In this exercise, you used a service identity to read the value of a secret stor
     }
     ```
 
-#### Task 3: Write storage account code
+#### Task 5: Write storage account code
 
 1.  Add the following line of code in the **Run** method to get the value of the **StorageConnectionString** application setting by using the **Environment.GetEnvironmentVariable** method:
 
@@ -643,7 +674,7 @@ In this exercise, you used a service identity to read the value of a secret stor
     }
     ```
 
-#### Task 4: Download a blob
+#### Task 6: Download a blob
 
 1.  Add the following line of code to use the **BlobClient.DownloadAsync** method to download the contents of the referenced blob asynchronously and store the result in a variable named *response*:
 
@@ -677,9 +708,15 @@ In this exercise, you used a service identity to read the value of a secret stor
     }
     ```
 
-1.  Select **Save and run** to save the script and perform a test of the function.
+1.  Select **Save** to persist your changes to the function code.
 
-1.  Find the **Output** text box in the Test pane. You should now notice the content of the **$/drop/records.json** blob stored in your storage account.
+1.  Select **Test/Run**.
+
+1.  In the popup dialog that appears, perform the following actions:
+
+    1.  In the **Input** tab, select **Run**.
+
+    1.  In the **Output** tab, observe the output content of the **$/drop/records.json** blob stored in your storage account.
 
 #### Review
 

@@ -121,6 +121,8 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  In the **Runtime stack** drop-down list, select **.NET Core**.
 
+    1.  In the **Version** drop-down list, select **3.1**.
+
     1.  In the **Region** drop-down list, select the **East US** region.
     
     1.  Select **Next: Hosting**.
@@ -132,12 +134,6 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1.  In the **Operating System** section, select **Windows**.
 
     1.  In the **Plan type** drop-down list, select the **Consumption** option.
-
-    1.  Select **Next: Monitoring**.
-
-1.  On the **Monitoring** tab, perform the following actions:
-
-    1.  In the **Enable Application Insights** section, select **No**.
 
     1.  Select **Review + Create**.
 
@@ -161,23 +157,23 @@ In this exercise, you created all the resources that you'll use for this lab.
 
 1.  On the **Serverless** blade, select the **funclogic*[yourname]*** function app that you created earlier in this lab.
 
-1.  On the **Function Apps** blade, select the plus sign (**+**) next to the **Functions** drop-down list.
+1.  From the **App Service** blade, select the **Functions** option from the **Functions** section.
 
-1.  In the **New Azure Function** quickstart, perform the following actions:
+1. In the **Functions** pane, select the **+ Add** button.
+
+1.  In the **New Function** popup dialog, perform the following actions:
     
-    1.  Under the **Choose a Development Environment** header, select **In-Portal**, and then select **Continue**.
-    
-    1.  Under the **Create a Function** header, select **More templates**, and then select **Finish and view templates**.
-    
-    1.  In the list of templates, select **HTTP trigger**.
-    
-    1.  In the **New Function** pop-up window, find the **Name** text box, and then enter **Echo**.
-    
-    1.  In the **New Function** pop-up window, find the **Authorization level** list, and then select **Anonymous**.
-    
-    1.  In the **New Function** pop-up window, select **Create**.
+    1.  Within the **Templates** tab, select **HTTP Trigger**.
+
+    1.  Within the **Details** tab, find the **New Function** text box and then enter **Echo**.
+
+    1.  Within the **Details** tab, find the **Authorization** text box and then select **Anonymous**.
+
+    1.  Select **Create Function**.
 
 #### Task 2: Write function code
+
+1.  In the **Function** blade, select the **Code + Test** option from the **Developer** section.
 
 1.  In the function editor, find the example **run.csx** function script:
 
@@ -199,9 +195,11 @@ In this exercise, you created all the resources that you'll use for this lab.
         dynamic data = JsonConvert.DeserializeObject(requestBody);
         name = name ?? data?.name;
 
-        return name != null
-            ? (ActionResult)new OkObjectResult($"Hello, {name}")
-            : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
+        string responseMessage = string.IsNullOrEmpty(name)
+            ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
+                    : $"Hello, {name}. This HTTP triggered function executed successfully.";
+
+                return new OkObjectResult(responseMessage);
     }
     ```
 
@@ -253,17 +251,25 @@ In this exercise, you created all the resources that you'll use for this lab.
     }
     ```
 
-1.  Select **Save** to save the script.
+1.  Select **Save** to persist your changes to the function code.
 
 #### Task 3: Test function run in the portal
 
-1.  Select **Logs**.
+1.  Select **Test/Run**.
 
-1.  Observe the compilation results. The results should include a "Compilation succeeded" message.
+1.  In the popup dialog that appears, perform the following actions:
 
-1.  Select **Run** to test the function.
+    1.  In the **Input** tab, in the **Body** text box, enter the following JSON request body:
 
-1.  Observe the results of the test run. The results should echo the original request body exactly.
+        ```
+        {
+            "message": "Hello, World!"
+        }
+        ```
+
+    1.  In the **Input** tab, select **Run**.
+
+    1.  In the **Output** tab, observe the results of the test run. The results should echo the original request body exactly.
 
 #### Task 4: Get a base function URL
 
@@ -273,7 +279,7 @@ In this exercise, you created all the resources that you'll use for this lab.
 
 1.  On the **Serverless** blade, select the **funclogic*[yourname]*** function app that you created earlier in this lab.
 
-1.  On the **Function Apps** blade, copy the value of the **URL** text box. You'll use this value later in the lab.
+1.  On the **App Service** blade, copy the value of the **URL** text box. You'll use this value later in the lab.
 
 #### Task 5: Test function run by using httprepl
 
@@ -286,6 +292,8 @@ In this exercise, you created all the resources that you'll use for this lab.
     ```
 
     > **Note**: For example, if your URL is **https://funclogicstudent.azurewebsites.net**, your command would be **httprepl https://funclogicstudent.azurewebsites.net**.
+
+1.  Observe the error message displayed by the httprepl tool. This message occurs because the tool is searching for a Swagger definition file to use to "traverse" the API. Because your Logic App does not produce a Swagger definition file, you will need to traverse the API manually.
 
 1.  At the tool prompt, enter the following command, and then select Enter to browse to the relative **api** directory:
 
@@ -347,55 +355,45 @@ In this exercise, you created a basic function that echoes the content sent via 
 
 1.  On the **Serverless** blade, select the **funclogic*[yourname]*** function app that you created earlier in this lab.
 
-1.  On the **Function Apps** blade, select the plus sign (**+**) next to the **Functions** drop-down list.
+1.  From the **App Service** blade, select the **Functions** option from the **Functions** section.
 
-1.  In the **New Azure Function** quickstart, perform the following actions:
-        
-    1.  In the list of templates, select **Timer trigger**.
+1. In the **Functions** pane, select the **+ Add** button.
+
+1.  In the **New Function** popup dialog, perform the following actions:
     
-    1.  In the **New Function** pop-up window, find the **Name** text box, and then enter **Recurring**.
-    
-    1.  In the **New Function** pop-up window, find the **Schedule** text box, and then enter **0 \* \* \* \* \***.
-    
-    1.  In the **New Function** pop-up window, select **Create**.
+    1.  Within the **Templates** tab, select **Timer trigger**.
+
+    1.  Within the **Details** tab, find the **New Function** text box and then enter **Recurring**.
+
+    1.  Within the **Details** tab, find the **Schedule** text box and then enter **0 \*/2 \* \* \* \***.
+
+    1.  Within the **Details** tab, find the **Authorization** text box and then select **Anonymous**.
+
+    1.  Select **Create Function**.
 
 #### Task 2: Observe function runs
 
-1.  In the function editor, select **Save** to persist the default function implementation.
+1.  In the **Function** blade, select the **Code + Test** option from the **Developer** section.
 
-1.  Select **Logs**.
+1.  In the function editor, select **Logs**.
 
-1.  Observe the function run that occurs about every minute. Each function run should render a simple message to the log.
+1.  Observe the function run that occurs about every two minutes. Each function run should render a simple message to the log.
 
 #### Task 3: Update the function integration configuration
 
-1.  Back on the **Function Apps** blade, perform the following actions:
+1.  In the **Function** blade, select the **Integration** option from the **Developer** section.
 
-    1.  Expand the node for the **funclogic*[yourname]*** function app that you created earlier in this lab.
+1.  In the **Integration** pane, select the **Timer** trigger.
 
-    1.  Expand the **Functions** node.
+1.  In the **Edit Trigger** popup, perform the following actions:
 
-    1.  Expand the **Recurring** node for that specific function.
-
-    1.  Select the **Integrate** node.
-
-1.  In the **Integrate** section, perform the following actions:
-
-    1.  Select the **Timer (myTimer)** option in the **Trigger** section.
-
-    1.  In the **Schedule** text box, enter the value **\*/30 \* \* \* \* \***.
+    1.  In the **Schedule** text box, change the value to **\*/30 \* \* \* \* \***.
 
     1.  Select **Save**.
 
 #### Task 4: Observe function runs
 
-1.  Back on the **Function Apps** blade, perform the following actions:
-
-    1.  Expand the node for the **funclogic*[yourname]*** function app that you created earlier in this lab.
-
-    1.  Expand the **Functions** node.
-
-    1.  Select the **Recurring** node for that specific function.
+1.  In the **Function** blade, select the **Code + Test** option from the **Developer** section.
 
 1.  In the function editor, select **Logs**.
 
@@ -415,17 +413,19 @@ In this exercise, you created a function that runs automatically based on a fixe
 
 1.  On the **Serverless** blade, select the **funclogic*[yourname]*** function app that you created earlier in this lab.
 
-1.  On the **Function Apps** blade, select the plus sign (**+**) next to the **Functions** drop-down list.
+1.  From the **App Service** blade, select the **Functions** option from the **Functions** section.
 
-1.  In the **New Azure Function** quickstart, perform the following actions:
-        
-    1.  In the list of templates, select **HTTP trigger**.
+1. In the **Functions** pane, select the **+ Add** button.
+
+1.  In the **New Function** popup dialog, perform the following actions:
     
-    1.  In the **New Function** pop-up window, find the **Name** text box, and then enter **GetSettingInfo**.
-    
-    1.  In the **New Function** pop-up window, find the **Authorization level** list, and then select **Anonymous**.
-    
-    1.  In the **New Function** pop-up window, select **Create**.
+    1.  Within the **Templates** tab, select **HTTP trigger**.
+
+    1.  Within the **Details** tab, find the **New Function** text box and then enter **GetSettingInfo**.
+
+    1.  Within the **Details** tab, find the **Authorization** text box and then select **Anonymous**.
+
+    1.  Select **Create Function**.
 
 #### Task 2: Upload sample content
 
@@ -469,39 +469,29 @@ In this exercise, you created a function that runs automatically based on a fixe
 
 1.  On the **Serverless** blade, select the **funclogic*[yourname]*** function app that you created earlier in this lab.
 
-1.  On the **Function Apps** blade, perform the following actions:
+1.  From the **App Service** blade, select the **Functions** option from the **Functions** section.
 
-    1.  Expand the node for the **funclogic*[yourname]*** function app that you created earlier in this lab.
+1.  In the **Functions** pane, select the the existing **GetSettingInfo** function to open the editor for the function.
 
-    1.  Expand the **Functions** node.
+1.  In the **Function** blade, select the **Integration** option from the **Developer** section.
 
-    1.  Expand the **GetSettingInfo** node for that specific function.
+1.  In the **Integration** pane, select the **+ Add input**.
 
-    1.  Select the **Integrate** node.
+1.  In the **Create Input** popup dialog, perform the following actions:
 
-1.  In the **Integrate** section, perform the following actions to create a new input of type **Azure Blob Storage**:
+    1.  In the **Binding Type** list, select **Azure Blob Storage**.
 
-    1.  Select **New Input**.
-
-    1.  Select **Azure Blob Storage**.
-
-    1.  Select **Select**.
-
-1.  In the **Azure Blob Storage input** section, perform the following actions:
-
-    1.  In the **Blob parameter name** text box, enter the value **json**.
+    1.  In the **Blob parameter name** text box, enter the value **inputBlob**.
 
     1.  In the **Path** text box, enter the value **content/settings.json**.
 
     1.  In the **Storage account connection** list, select **AzureWebJobsStorage**.
 
-    1.  Select **Save**.
+    1.  Select **OK**.
 
-1.  Back in the **Integrate** section, select the existing **HTTP trigger**.
+1.  Back in the **Integration pane**, select the **HTTP** trigger.
 
-1.  In the **HTTP trigger** section, perform the following actions:
-
-    1.  In the **Allowed HTTP methods** list, select **Selected methods**.
+1.  In the **Edit Trigger** popup dialog, perform the following actions:
 
     1.  In the **Request parameter name** text box, enter the value **request**.
 
@@ -511,13 +501,7 @@ In this exercise, you created a function that runs automatically based on a fixe
 
 #### Task 4: Write function code
 
-1.  On the **Function Apps** blade, perform the following actions:
-
-    1.  Expand the node for the **funclogic*[yourname]*** function app that you created earlier in this lab.
-
-    1.  Expand the **Functions** node.
-
-    1.  Select the **GetSettingInfo** node for that specific function.
+1.  In the **Function** blade, select the **Code + Test** option from the **Developer** section.
 
 1.  In the function editor, find the example **run.csx** function script:
 
@@ -539,9 +523,11 @@ In this exercise, you created a function that runs automatically based on a fixe
         dynamic data = JsonConvert.DeserializeObject(requestBody);
         name = name ?? data?.name;
 
-        return name != null
-            ? (ActionResult)new OkObjectResult($"Hello, {name}")
-            : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
+        string responseMessage = string.IsNullOrEmpty(name)
+            ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
+                    : $"Hello, {name}. This HTTP triggered function executed successfully.";
+
+                return new OkObjectResult(responseMessage);
     }
     ```
 
@@ -585,7 +571,7 @@ In this exercise, you created a function that runs automatically based on a fixe
     }
     ```
 
-1.  Select **Save** to save the script.
+1.  Select **Save** to persist your changes to the function code.
 
 #### Task 5: Test function run
 
