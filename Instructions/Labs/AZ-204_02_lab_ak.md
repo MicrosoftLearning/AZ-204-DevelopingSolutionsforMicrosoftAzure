@@ -299,25 +299,25 @@ In this exercise, you created all the resources that you'll use for this lab.
     cd echo
     ```
 
-1.  Enter the following command, and then select Enter to run the **post** command sending in an HTTP request body set to a numeric value of **3** by using the **--content** option:
+1.  Enter the following command, and then select Enter to run the **post** command sending in an HTTP request body set to a numeric value of **3** by using the **\-\-content** option:
 
     ```
     post --content 3
     ```
 
-1.  Enter the following command, and then select Enter to run the **post** command sending in an HTTP request body set to a numeric value of **5** by using the **--content** option:
+1.  Enter the following command, and then select Enter to run the **post** command sending in an HTTP request body set to a numeric value of **5** by using the **\-\-content** option:
 
     ```
     post --content 5
     ```
 
-1.  Enter the following command, and then select Enter to run the **post** command sending in an HTTP request body set to a string value of **Hello** by using the **--content** option:
+1.  Enter the following command, and then select Enter to run the **post** command sending in an HTTP request body set to a string value of **Hello** by using the **\-\-content** option:
 
     ```
     post --content "Hello"
     ```
 
-1.  Enter the following command, and then select Enter to run the **post** command sending in an HTTP request body set to a JavaScript Object Notation (JSON) value of **{"msg": "Successful"}** by using the **--content** option:
+1.  Enter the following command, and then select Enter to run the **post** command sending in an HTTP request body set to a JavaScript Object Notation (JSON) value of **{"msg": "Successful"}** by using the **\-\-content** option:
 
     ```
     post --content "{"msg": "Successful"}"
