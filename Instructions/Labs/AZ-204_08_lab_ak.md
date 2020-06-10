@@ -332,19 +332,15 @@ In this exercise, you built a proxy tier between your App Service resource and a
 
 #### Task 1: Open Azure Cloud Shell
 
-1.  In the portal, select the **Cloud Shell** icon to open a new shell instance.
+1.  In the Azure portal's navigation pane, select the **Cloud Shell** icon to open a new shell instance.
 
-1.  In the portal, at the **Cloud Shell** command prompt, enter the following command, and then select Enter to list all resource groups in the subscription:
+    > **Note**: The **Cloud Shell** icon is represented by a greater than sign (\>) and underscore character (\_).
 
-    ```
-    az group list
-    ```
+1.  If this is your first time opening Cloud Shell using your subscription, you can use the **Welcome to Azure Cloud Shell Wizard** to configure Cloud Shell for first-time usage. Perform the following actions in the wizard:
+    
+    -   A dialog box prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**. 
 
-1.  Enter the following command, and then select Enter to observe a list of possible commands to delete a resource group:
-
-    ```
-    az group delete --help
-    ```
+    > **Note**: Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab. If you don't notice Cloud Shell configuration options, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
 
 #### Task 2: Delete resource groups
 

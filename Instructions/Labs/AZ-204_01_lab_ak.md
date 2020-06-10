@@ -481,18 +481,6 @@ In this exercise, you created an Azure web app and deployed an existing web appl
 
     > **Note**: If you don't notice the Cloud Shell configuration options, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
 
-1.  At the **Cloud Shell** command prompt in the portal, enter the following command, and then select Enter to list all resource groups in the subscription:
-
-    ```
-    az group list
-    ```
-
-1.  Enter the following command, and then select Enter to get a list of possible commands to delete a resource group:
-
-    ```
-    az group delete --help
-    ```
-
 #### Task 2: Delete resource groups
 
 1.  Enter the following command, and then select Enter to delete the **ManagedPlatform** resource group:
