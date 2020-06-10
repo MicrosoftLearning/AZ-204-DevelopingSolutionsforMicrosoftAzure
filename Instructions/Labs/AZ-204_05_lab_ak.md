@@ -337,8 +337,6 @@ In this exercise, you used Cloud Shell to create a VM as part of an automated sc
 
     1.  In the **Location** text box, select **East US**.
 
-    1.  In the **Admin user** section, select **Disable**.
-
     1.  In the **SKU** drop-down list, select **Basic**.
 
     1.  Select **Create**.  
