@@ -382,7 +382,7 @@ In this exercise, you built a basic workflow that starts when it's triggered by 
     get
     ```
 
-1.  Observe the JSON response content from the function app, which should now include:
+1.  Observe the JSON response content, which should now include:
 
     ```
     [ 
