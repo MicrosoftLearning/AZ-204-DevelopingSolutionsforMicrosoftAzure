@@ -69,7 +69,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     az --version
     ```
 
-#### Task 3: Register the Microsoft.EventGrid provider
+#### Task 3: View the Microsoft.EventGrid provider registration
 
 1.  At the **Cloud Shell** command prompt in the portal, perform the following actions:
 
