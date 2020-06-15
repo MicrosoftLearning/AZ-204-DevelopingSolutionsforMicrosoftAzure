@@ -481,7 +481,7 @@ In this exercise, you created a function that runs automatically based on a fixe
 
     1.  In the **Binding Type** list, select **Azure Blob Storage**.
 
-    1.  In the **Blob parameter name** text box, enter the value **inputBlob**.
+    1.  In the **Blob parameter name** text box, enter the value **json**.
 
     1.  In the **Path** text box, enter the value **content/settings.json**.
 
