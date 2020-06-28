@@ -303,6 +303,21 @@ In this exercise, you created a new subscription, validated its registration, an
 
 #### Task 2: Modify the Program class to connect to Event Grid
 
+1. In the Explorer pane of the **Visual Studio Code** window, click the button **New File** and give the new file the name of **Employee.cs**
+
+1.  In the Explorer pane of the **Visual Studio Code** window, open the **Employee.cs** file
+
+1.  On the code editor tab for the **Employee.cs** file, add the following lines: 
+
+        using System;
+
+        [Serializable]
+        public class Employee
+        {
+	        public string FullName { get; set; }
+	        public string Address { get; set; }
+        }
+
 1.  In the Explorer pane of the **Visual Studio Code** window, open the **Program.cs** file.
 
 1.  On the code editor tab for the **Program.cs** file, delete all the code in the existing file.
@@ -399,7 +414,7 @@ In this exercise, you created a new subscription, validated its registration, an
     1.  Add the following lines of code to create a new variable named **firstPerson** of an anonymous type:
 
         ```
-        var firstPerson = new
+        var firstPerson =  new Employee()
         {
             FullName = "Alba Sutton",
             Address = "4567 Pine Avenue, Edison, WA 97202"
@@ -429,7 +444,7 @@ In this exercise, you created a new subscription, validated its registration, an
     1.  Add the following line of code to create a new variable named **secondPerson** of an anonymous type:
 
         ```
-        var secondPerson = new
+        var secondPerson =  new Employee()
         {
             FullName = "Alexandre Doyon",
             Address = "456 College Street, Bow, WA 98107"
@@ -484,7 +499,7 @@ In this exercise, you created a new subscription, validated its registration, an
 
         List<EventGridEvent> events = new List<EventGridEvent>();
 
-        var firstPerson = new
+        var firstPerson =  new Employee()
         {
             FullName = "Alba Sutton",
             Address = "4567 Pine Avenue, Edison, WA 97202"
@@ -501,7 +516,7 @@ In this exercise, you created a new subscription, validated its registration, an
         };
         events.Add(firstEvent);
 
-        var secondPerson = new
+        var secondPerson =  new Employee()
         {
             FullName = "Alexandre Doyon",
             Address = "456 College Street, Bow, WA 98107"
