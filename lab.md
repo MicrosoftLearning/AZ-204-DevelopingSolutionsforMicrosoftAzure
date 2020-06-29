@@ -11,7 +11,7 @@
 | Visual Studio Code PowerShell Extension | https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell |
 | Visual Studio Code C# Extension | https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp |
 | Visual Studio Code Docker Extension | https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker |
-| PowerShell 6 | https://github.com/PowerShell/PowerShell/releases/latest/ |
+| PowerShell 7 | https://github.com/PowerShell/PowerShell/releases/latest/ |
 | Azure PowerShell | https://docs.microsoft.com/powershell/azure/install-az-ps |
 | Azure CLI | https://docs.microsoft.com/cli/azure/install-azure-cli |
 | Azure Storage Explorer | https://azure.microsoft.com/features/storage-explorer/ |
