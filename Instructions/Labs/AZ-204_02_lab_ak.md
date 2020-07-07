@@ -367,8 +367,6 @@ In this exercise, you created a basic function that echoes the content sent via 
 
     1.  Within the **Details** tab, find the **Schedule** text box and then enter **0 \*/2 \* \* \* \***.
 
-    1.  Within the **Details** tab, find the **Authorization** text box and then select **Anonymous**.
-
     1.  Select **Create Function**.
 
 #### Task 2: Observe function runs
