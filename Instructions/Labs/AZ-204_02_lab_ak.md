@@ -373,9 +373,9 @@ In this exercise, you created a basic function that echoes the content sent via 
 
 #### Task 2: Observe function runs
 
-1.  In the **Function** blade, select the **Code + Test** option from the **Developer** section.
+1.  In the **Function** blade, select the **Monitor** option from the **Developer** section.
 
-1.  In the function editor, select **Logs**.
+1.  Click the **Logs** tab.
 
 1.  Observe the function run that occurs about every two minutes. Each function run should render a simple message to the log.
 
@@ -393,9 +393,9 @@ In this exercise, you created a basic function that echoes the content sent via 
 
 #### Task 4: Observe function runs
 
-1.  In the **Function** blade, select the **Code + Test** option from the **Developer** section.
+1.  In the **Function** blade, select the **Monitor** option from the **Developer** section.
 
-1.  In the function editor, select **Logs**.
+1.  Click the **Logs** tab.
 
 1.  Observe the function run that now occurs about every 30 seconds. Each function run should render a simple message to the log.
 
