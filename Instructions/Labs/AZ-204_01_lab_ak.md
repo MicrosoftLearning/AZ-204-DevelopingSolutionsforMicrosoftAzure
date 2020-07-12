@@ -111,6 +111,8 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **ManagedPlatform** blade, select the **imgstor*[yourname]*** storage account that you created earlier in this lab.
 
+1.  From the **Storage Account** blade, in the **Settings** section, select **Configuration** and set **Blob public access** to **Enabled**.
+
 1.  From the **Storage Account** blade, in the **Blob service** section, select the **Containers** link.
 
 1.  In the **Containers** section, select **+ Container**.
@@ -209,7 +211,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the **Properties** section, copy the value of the **URL** text box. You'll use this value later in the lab.
 
-    > **Note**: At this point, the web server at this URL will return a 404 error. You have not deployed any code to the Web App yet. You will deploy code to the Web App later in this lab.
+    > **Note**: At this point, the web server at this URL will display a placeholder page (hostingstart.html). You have not deployed any code to the Web App yet. You will deploy code to the Web App later in this lab.
 
 #### Task 6: Deploy an ASP.NET web application to Web Apps
 
