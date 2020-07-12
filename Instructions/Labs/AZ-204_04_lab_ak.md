@@ -190,6 +190,10 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1.  Select **Create** to create the storage account by using your specified configuration.
 
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
+    
+1.  Open the **Configuration** section of your newly created storage account instance.
+
+1.  In the **Configuration** section set **Blob public access** to **Enabled** and click **Save**.       
 
 #### Review
 
@@ -339,7 +343,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
 1.  Update the connection string that you recorded by performing the following actions:
 
-    1.  Within the connection string, find the *your_username* placeholder and replace it with **testuser**.
+    1.  Within the connection string, find the *your_username* placeholder and replace it with **testuser**.  (The User ID value may already be set with your username.)
 
     1.  Within the connection string, find the *your_password* placeholder and replace it with **TestPa55w.rd**.
 
