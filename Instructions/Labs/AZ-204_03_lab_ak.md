@@ -99,7 +99,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **Storage account** blade, find the **Settings** section, and then select the **Properties** link.
 
-1.  In the **Properties** section, record the value of the **Primary Blob Service Endpoint** text box.
+1.  In the **Properties** section, in the **Blob service** section record the value in the **Blob service** textbox.
 
     > **Note**: You'll use this value later in the lab.
 
@@ -143,7 +143,7 @@ In this exercise, you created a new Storage account to use throughout the remain
     
     1.  In the **Name** text box, enter **compressed-audio**.
     
-    1.  In the **Public access level** drop-down list, select **Private (no anonymous access)**, and then select **OK**.
+    1.  In the **Public access level** drop-down list, select **Container (anonymous read access for containers and blobs)**, and then select **OK**.
 
 1.  Back in the **Containers** section, observe the updated list of containers.
 
