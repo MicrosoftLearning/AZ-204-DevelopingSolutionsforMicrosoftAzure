@@ -481,7 +481,7 @@ In this exercise, you configured your ASP.NET web application to connect to your
 
 1.  In the **Visual Studio Code** window, access the shortcut menu or right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
 
-1.  At the open command prompt, enter the following command, and then select Enter to create a new .NET project named **AdventureWorks.Migrate** in a folder with the same name:
+1.  At the open command prompt, enter the following command, and then select Enter to create a new .NET console project named **AdventureWorks.Migrate** in a folder with the same name:
 
     ```
     dotnet new console --name AdventureWorks.Migrate
@@ -527,7 +527,7 @@ In this exercise, you configured your ASP.NET web application to connect to your
 
     > **Note**: The **dotnet add package** command will add the **Microsoft.Azure.Cosmos** package from **NuGet**. For more information, go to: [Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.4.1).
 
-1.  At the command prompt, enter the following command, and then select Enter to build the .NET web application:
+1.  At the command prompt, enter the following command, and then select Enter to build the .NET console application:
 
     ```
     dotnet build
@@ -621,7 +621,7 @@ In this exercise, you configured your ASP.NET web application to connect to your
     cd .\AdventureWorks.Migrate\
     ```
 
-1.  At the command prompt, enter the following command, and then select Enter to build the .NET web application:
+1.  At the command prompt, enter the following command, and then select Enter to build the .NET console application:
 
     ```
     dotnet build
@@ -661,7 +661,7 @@ In this exercise, you configured your ASP.NET web application to connect to your
     cd .\AdventureWorks.Migrate\
     ```
     
-1.  At the command prompt,  enter the following command, and then select Enter to build the .NET web application:
+1.  At the command prompt,  enter the following command, and then select Enter to build the .NET console application:
 
     ```
     dotnet build
@@ -736,7 +736,7 @@ In this exercise, you configured your ASP.NET web application to connect to your
     cd .\AdventureWorks.Migrate\
     ```
     
-1.  At the command prompt, enter the following command, and then select Enter to build the .NET web application:
+1.  At the command prompt, enter the following command, and then select Enter to build the .NET console application:
 
     ```
     dotnet build
@@ -746,7 +746,7 @@ In this exercise, you configured your ASP.NET web application to connect to your
 
 #### Task 5: Perform a migration
 
-1.  At the open command prompt, enter the following command, and then select Enter to run the .NET web application:
+1.  At the open command prompt, enter the following command, and then select Enter to run the .NET console application:
 
     ```
     dotnet run
@@ -1071,7 +1071,7 @@ In this exercise, you used Entity Framework and the .NET SDK for Azure Cosmos DB
     cd .\AdventureWorks.Web\
     ```
 
-1.  At the command prompt, enter the following command, and then select Enter to run the .NET web application:
+1.  At the command prompt, enter the following command, and then select Enter to run the ASP.NET web application:
 
     ```
     dotnet run
