@@ -131,7 +131,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
         
     1.  In the **Pricing tier** drop-down list, select **Standard**.
     
-    1.  In the **Soft delete** section, select **Disable**.
+    1.  In the **Soft delete** section, select **Disable recovery of this vault and its objects**.
 
     1.  Select **Review + Create**.
 
@@ -530,21 +530,33 @@ In this exercise, you used a service identity to read the value of a secret stor
 
 1.  From the **App Service** blade, select the **Configuration** option from the **Settings** section.
 
-1.  From the **Configuration** pane, perform the following actions:
-    
-    1.  Select the **Application settings** tab, and then select **New application setting**.
-    
-    1.  In the **Add/Edit application setting** pop-up window, in the **Name** text box, enter **DOTNET_ADD_GLOBAL_TOOLS_TO_PATH**.
+1.  From the **Configuration** pane, select the **Application settings** tab, and then select **New application setting**.
+
+1.  In the **Add/Edit application setting** pop-up window, perform the following actions:
+
+    1.  In the **Name** text box, enter **DOTNET_ADD_GLOBAL_TOOLS_TO_PATH**.
     
     1.  In the **Value** text box, enter **false**.
     
     1.  Leave the **deployment slot setting** text box set to its default value.
 
     1.  Select **OK** to close the pop-up window and return to the **Configuration** section.
-    
-    1.  Select **Save** from the blade to persist your settings.  
 
-    1.  In the **Save Changes** confirmation popup dialog, select **Continue**.
+1.  Back in the **Application settings** tab, select **New application setting** again.
+
+1.  In the **Add/Edit application setting** pop-up window, perform the following actions:
+
+    1.  In the **Name** text box, enter **DOTNET_SKIP_FIRST_TIME_EXPERIENCE**.
+    
+    1.  In the **Value** text box, enter **true**.
+    
+    1.  Leave the **deployment slot setting** text box set to its default value.
+
+    1.  Select **OK** to close the pop-up window and return to the **Configuration** section.
+    
+1.  Back in the **Application settings** tab, select **Save** to persist your settings.  
+
+1.  In the **Save Changes** confirmation popup dialog, select **Continue**.
 
     > **Note**: Wait for your application settings to persist before you move forward with the lab.
 
@@ -572,12 +584,12 @@ In this exercise, you used a service identity to read the value of a secret stor
             <TargetFramework>netstandard2.0</TargetFramework>
         </PropertyGroup>
         <ItemGroup>
-            <PackageReference Include="Azure.Storage.Blobs" Version="12.4.0" />
+            <PackageReference Include="Azure.Storage.Blobs" Version="12.5.0" />
         </ItemGroup>
     </Project>
     ```
 
-    > **Note**: The App Service Editor will save changes to the file automatically. This .proj file contains the NuGet package reference necessary to import the [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs/12.4.0) package.
+    > **Note**: The App Service Editor will save changes to the file automatically. This .proj file contains the NuGet package reference necessary to import the [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs/12.5.0) package.
 
 1.  Close the browser window with the **App Service Editor**.
 
@@ -638,22 +650,10 @@ In this exercise, you used a service identity to read the value of a secret stor
     string connectionString = Environment.GetEnvironmentVariable("StorageConnectionString");
     ```
 
-1.  Add the following line of code to create a new instance of the **BlobServiceClient** class by passing in your *connectionString* variable to the constructor:
+1.  Add the following line of code to create a new instance of the **BlobServiceClient** class by passing in your *connectionString* variable, a  ``"drop"`` string value, and a ``"records.json"`` string value to the constructor:
 
     ```
-    BlobServiceClient serviceClient = new BlobServiceClient(connectionString);
-    ```
-
-1.  Add the following line of code to use the **BlobServiceClient.GetBlobContainerClient** method, while passing in the **drop** container name to create a new instance of the **BlobContainerClient** class that references the container that you created earlier in this lab:
-
-    ```
-    BlobContainerClient containerClient = serviceClient.GetBlobContainerClient("drop");
-    ```
-
-1.  Add the following line of code to use the **BlobContainerClient.GetBlobClient** method, while passing in the **records.json** blob name to create a new instance of the **BlobClient** class that references the blob that you uploaded earlier in this lab:
-
-    ```
-    BlobClient blobClient = containerClient.GetBlobClient("records.json");
+    BlobClient blob = new BlobClient(connectionString, "drop", "records.json");
     ```
     
 1.  Observe the **Run** method, which should now include:
@@ -668,9 +668,7 @@ In this exercise, you used a service identity to read the value of a secret stor
     public static async Task<IActionResult> Run(HttpRequest req)
     {
         string connectionString = Environment.GetEnvironmentVariable("StorageConnectionString");
-        BlobServiceClient serviceClient = new BlobServiceClient(connectionString);
-        BlobContainerClient containerClient = serviceClient.GetBlobContainerClient("drop");
-        BlobClient blobClient = containerClient.GetBlobClient("records.json");
+        BlobClient blob = new BlobClient(connectionString, "drop", "records.json");
     }
     ```
 
@@ -700,9 +698,7 @@ In this exercise, you used a service identity to read the value of a secret stor
     public static async Task<IActionResult> Run(HttpRequest req)
     {
         string connectionString = Environment.GetEnvironmentVariable("StorageConnectionString");
-        BlobServiceClient serviceClient = new BlobServiceClient(connectionString);
-        BlobContainerClient containerClient = serviceClient.GetBlobContainerClient("drop");
-        BlobClient blobClient = containerClient.GetBlobClient("records.json");
+        BlobClient blob = new BlobClient(connectionString, "drop", "records.json");
         var response = await blobClient.DownloadAsync();
         return new FileStreamResult(response?.Value?.Content, response?.Value?.ContentType);
     }
