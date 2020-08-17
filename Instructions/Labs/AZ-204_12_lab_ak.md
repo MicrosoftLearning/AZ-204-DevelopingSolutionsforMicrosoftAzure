@@ -81,6 +81,8 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Region** drop-down list, select the **(US) East US** region.
     
+    1.  In the **Resource Mode** section, select the **Classic** option.
+    
     1.  Select **Review + Create**.
 
 1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
@@ -219,29 +221,29 @@ In this exercise, you created the resources that you'll use for the remainder of
     dotnet new webapi --output . --name SimpleApi
     ```
 
-1.  At the command prompt, enter the following command, and then select Enter to import version 2.13.0 of **Microsoft.ApplicationInsights** from NuGet to the current project:
+1.  At the command prompt, enter the following command, and then select Enter to import version 2.14.0 of **Microsoft.ApplicationInsights** from NuGet to the current project:
 
     ```
-    dotnet add package Microsoft.ApplicationInsights --version 2.13.0
+    dotnet add package Microsoft.ApplicationInsights --version 2.14.0
     ```
 
-    > **Note**: The **dotnet add package** command will add the **Microsoft.ApplicationInsights** package from NuGet. For more information, go to [Microsoft.ApplicationInsights](https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.13.0).
+    > **Note**: The **dotnet add package** command will add the **Microsoft.ApplicationInsights** package from NuGet. For more information, go to [Microsoft.ApplicationInsights](https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.14.0).
 
-1.  At the command prompt, enter the following command, and then select Enter to import version 2.13.0 of **Microsoft.ApplicationInsights.AspNetCore** from NuGet:
-
-    ```
-    dotnet add package Microsoft.ApplicationInsights.AspNetCore --version 2.13.0
-    ```
-
-    > **Note**: The **dotnet add package** command will add the **Microsoft.ApplicationInsights.AspNetCore** package from NuGet. For more information, go to [Microsoft.ApplicationInsights.AspNetCore](https://www.nuget.org/packages/Microsoft.ApplicationInsights.AspNetCore/2.13.0).
-
-1.  At the command prompt, enter the following command, and then select Enter to import version 2.13.0 of **Microsoft.ApplicationInsights.PerfCounterCollector** from NuGet to the current project:
+1.  At the command prompt, enter the following command, and then select Enter to import version 2.14.0 of **Microsoft.ApplicationInsights.AspNetCore** from NuGet:
 
     ```
-    dotnet add package Microsoft.ApplicationInsights.PerfCounterCollector  --version 2.13.0
+    dotnet add package Microsoft.ApplicationInsights.AspNetCore --version 2.14.0
     ```
 
-    > **Note**: The **dotnet add package** command will add the **Microsoft.ApplicationInsights.PerfCounterCollector** package from NuGet. For more information, go to [Microsoft.ApplicationInsights.PerfCounterCollector](https://www.nuget.org/packages/Microsoft.ApplicationInsights.PerfCounterCollector/2.13.0).
+    > **Note**: The **dotnet add package** command will add the **Microsoft.ApplicationInsights.AspNetCore** package from NuGet. For more information, go to [Microsoft.ApplicationInsights.AspNetCore](https://www.nuget.org/packages/Microsoft.ApplicationInsights.AspNetCore/2.14.0).
+
+1.  At the command prompt, enter the following command, and then select Enter to import version 2.14.0 of **Microsoft.ApplicationInsights.PerfCounterCollector** from NuGet to the current project:
+
+    ```
+    dotnet add package Microsoft.ApplicationInsights.PerfCounterCollector  --version 2.14.0
+    ```
+
+    > **Note**: The **dotnet add package** command will add the **Microsoft.ApplicationInsights.PerfCounterCollector** package from NuGet. For more information, go to [Microsoft.ApplicationInsights.PerfCounterCollector](https://www.nuget.org/packages/Microsoft.ApplicationInsights.PerfCounterCollector/2.14.0).
 
 
 1.  At the command prompt, enter the following command, and then select Enter to build the .NET web app:
