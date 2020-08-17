@@ -109,7 +109,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **Resource groups** blade, select the **ApiService** resource group that you created earlier in this lab.
 
-1.  From the **ManagedPlatform** blade, select the **httpapi*[yourname]*** web app that you created earlier in this lab.
+1.  From the **ApiService** blade, select the **httpapi*[yourname]*** web app that you created earlier in this lab.
 
 1.	From the **Web App** blade, select **Browse**.
 
