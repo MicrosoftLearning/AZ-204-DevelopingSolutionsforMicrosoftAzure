@@ -1,12 +1,12 @@
 ---
 lab:
-    title: 'Lab: Asynchronously processing messages by using Azure Storage Queues'
+    title: 'Lab: Asynchronously processing messages by using Azure Queue Storage'
     az204Module: 'Module 11: Develop message-based solutions'
     az020Module: 'Module 10: Develop message-based solutions'
     type: 'Answer Key'
 ---
 
-# Lab: Asynchronously processing messages by using Azure Storage Queues
+# Lab: Asynchronously processing messages by using Azure Queue Storage
 # Student lab answer key
 
 ## Microsoft Azure user interface
