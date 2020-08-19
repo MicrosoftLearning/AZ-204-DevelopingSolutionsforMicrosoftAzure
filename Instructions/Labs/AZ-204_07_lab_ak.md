@@ -677,7 +677,7 @@ In this exercise, you used a service identity to read the value of a secret stor
 1.  Add the following line of code to use the **BlobClient.DownloadAsync** method to download the contents of the referenced blob asynchronously and store the result in a variable named *response*:
 
     ```
-    var response = await blobClient.DownloadAsync();
+    var response = await blob.DownloadAsync();
     ```
 
 1.  Add the following line of code to return the various content stored in the *content* variable by using the **FileStreamResult** class constructor:
@@ -699,7 +699,7 @@ In this exercise, you used a service identity to read the value of a secret stor
     {
         string connectionString = Environment.GetEnvironmentVariable("StorageConnectionString");
         BlobClient blob = new BlobClient(connectionString, "drop", "records.json");
-        var response = await blobClient.DownloadAsync();
+        var response = await blob.DownloadAsync();
         return new FileStreamResult(response?.Value?.Content, response?.Value?.ContentType);
     }
     ```
