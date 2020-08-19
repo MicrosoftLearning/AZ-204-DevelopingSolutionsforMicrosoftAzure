@@ -1,7 +1,4 @@
 name: '$(Date:yyyyMMdd)$(Rev:.rr)'
-trigger:
-- master
-pr: none
 jobs:
   - job: build_markdown_content
     displayName: 'Build Markdown Content'
