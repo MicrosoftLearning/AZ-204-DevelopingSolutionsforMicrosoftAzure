@@ -40,7 +40,8 @@
     "terminal.integrated.rendererType": "dom",
     "csharp.suppressDotnetInstallWarning": true,
     "csharp.suppressDotnetRestoreNotification": true,
-    "csharp.supressBuildAssetsNotification": true
+    "csharp.supressBuildAssetsNotification": true,
+    "azureFunctions.showProjectWarning": false
   }
   ```
 
