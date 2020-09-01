@@ -86,7 +86,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. On the **Basics** tab, perform the following actions:
     1. Leave the **Subscription** text box set to its default value.
     1. In the **Resource group** section, select **Use existing**, and then select **Serverless** in the list.
-    1. In the **Function app name** text box, enter **funclogic*[yourname]***.
+    1. In the **Function app name** text box, enter **funclogic[yourname]**.
     1. In the **Publish** section, select **Code**.
     1. In the **Runtime stack** drop-down list, select **.NET Core**.
     1. In the **Version** drop-down list, select **3.1**.
@@ -788,7 +788,21 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the popup dialog that appears, perform the following actions:
     - In the **HTTP method** list, select **GET**.
 1. Select **Run** to test the function.
-1. Observe the results of the test run. the JSON content should be the same as the **settings.json** file.
+1. Observe the results of the test run. the JSON content should now include:
+
+    ```json
+    {
+        "version": "0.2.4",
+        "root": "/usr/libexec/mews_principal/",
+        "device": {
+            "id": "21e46d2b2b926cba031a23c6919"
+        },
+        "notifications": {
+            "email": "Anais85@outlook.com",
+            "phone": "751.757.2014 x4151"
+        }
+    }
+    ```
 
 > **Review**: In this exercise, you deployed a local function project to Azure Functions and validated that the functions work in Azure.
 
