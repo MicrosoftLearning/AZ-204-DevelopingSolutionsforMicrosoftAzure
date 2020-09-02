@@ -510,7 +510,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     func azure functionapp publish <function-app-name>
     ```
 
-    > **Note**: For example, if your **Function App name** is **funclogicstudent**, then your command would be ``func azure functionapp publish funclogicstudent``. You can review the documentation to [publish the local function app project][azure-functions-core-tools-publish-azure] using the **Azure Functions Core Tools**.
+    > **Note**: For example, if your **Function App name** is **securefuncstudent**, then your command would be ``func azure functionapp publish securefuncstudent``. You can review the documentation to [publish the local function app project][azure-functions-core-tools-publish-azure] using the **Azure Functions Core Tools**.
 1. Wait for the deployment to finalize before you move forward with the lab.
 1. Close the currently running **Windows Terminal** application.
 
@@ -581,7 +581,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     dotnet add package Azure.Storage.Blobs --version 12.6.0
     ```
 
-    > **Note**: The [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs/12.6.0)NuGet package references the subset of the Azure SDK for .NET required to write code for Azure Blob Storage.
+    > **Note**: The [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs/12.6.0) NuGet package references the subset of the Azure SDK for .NET required to write code for Azure Blob Storage.
 1. Close the currently running **Windows Terminal** application.
 1. On the **Start** screen, select the **Visual Studio Code** tile.
 1. From the **File** menu, select **Open Folder**.
@@ -692,7 +692,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     func azure functionapp publish <function-app-name>
     ```
 
-    > **Note**: For example, if your **Function App name** is **funclogicstudent**, then your command would be ``func azure functionapp publish funclogicstudent``. You can review the documentation to [publish the local function app project][azure-functions-core-tools-publish-azure] using the **Azure Functions Core Tools**.
+    > **Note**: For example, if your **Function App name** is **securefuncstudent**, then your command would be ``func azure functionapp publish securefuncstudent``. You can review the documentation to [publish the local function app project][azure-functions-core-tools-publish-azure] using the **Azure Functions Core Tools**.
 1. Wait for the deployment to finalize before you move forward with the lab.
 1. Close the currently running **Windows Terminal** application.
 1. On the taskbar, select the **Microsoft Edge** icon.
