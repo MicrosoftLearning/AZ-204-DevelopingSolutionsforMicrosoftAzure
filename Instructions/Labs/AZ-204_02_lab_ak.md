@@ -105,7 +105,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 ### Exercise 2: Configure local Azure Functions project
 
-#### Task 1: Initialize project
+#### Task 1: Initialize function project
 
 1. On the taskbar, select the **Windows Terminal** icon.
 1. Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\02\\Starter\\func** empty directory:
@@ -221,7 +221,6 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     ```
 
 1. Delete all of the content within the **Echo.cs** file.
-
 1. Add the following lines of code to add **using directives** for the **Microsoft.AspNetCore.Mvc**, **Microsoft.Azure.WebJobs**, **Microsoft.AspNetCore.Http**, and **Microsoft.Extensions.Logging** namespaces:
 
     ```csharp
@@ -259,7 +258,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     { }
     ```
 
-1. Add the following code to append an attribute to the **Run** method of type **FunctionName** that has its **name** parameter set to a value of **Echo**:
+1. Add the following code to append an attribute to the **Run** method of type **FunctionNameAttribute** that has its **name** parameter set to a value of **Echo**:
 
     ```csharp
     [FunctionName("Echo")]
@@ -617,7 +616,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     > **Note**: We are only temporarily setting the return value to **null**.
 
-1. Add the following code to append an attribute to the **Run** method of type **FunctionName** that has its **name** parameter set to a value of **GetSettingInfo**:
+1. Add the following code to append an attribute to the **Run** method of type **FunctionNameAttribute** that has its **name** parameter set to a value of **GetSettingInfo**:
 
     ```csharp
     [FunctionName("GetSettingInfo")]
@@ -657,7 +656,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
         => new OkObjectResult(json);
     ```
 
-1. Observe the **Echo.cs** file again, which should now include:
+1. Observe the **GetSettingInfo.cs** file again, which should now include:
 
     ```csharp
     using Microsoft.AspNetCore.Http;
@@ -674,7 +673,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     }
     ```
 
-1. Select **Save** to persist your changes to the **Echo.cs** file.
+1. Select **Save** to persist your changes to the **GetSettingInfo.cs** file.
 
 #### Task 4: Test the Blob-inputed function by using httprepl
 
@@ -777,7 +776,8 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 2: Validate deployment
 
-1. Sign in to the Azure portal (<https://portal.azure.com>).
+1. On the taskbar, select the **Microsoft Edge** icon.
+1. In the open browser window, go to the Azure portal (<https://portal.azure.com>).
 1. In the Azure portal's navigation pane, select the **Resource groups** link.
 1. On the **Resource groups** blade, find and then select the **Serverless** resource group that you created earlier in this lab.
 1. On the **Serverless** blade, select the **funclogic[yourname]** function app that you created earlier in this lab.
