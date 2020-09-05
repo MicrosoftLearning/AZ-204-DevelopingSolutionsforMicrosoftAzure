@@ -10,7 +10,7 @@ lab:
 
 ## Microsoft Azure user interface
 
-Given the dynamic nature of Microsoft cloud tools, you might experience Azure UI changes after the development of this training content. These changes might cause the lab instructions and lab steps to not match up.
+Given the dynamic nature of Microsoft cloud tools, you might experience Azure user interface (UI) changes after the development of this training content. These changes might cause the lab instructions and lab steps to not match.
 
 Microsoft updates this training course when the community brings needed changes to our attention; however, because cloud updates occur frequently, you might encounter UI changes before this training content updates. **If this occurs, adapt to the changes, and then work through them in the labs as needed.**
 
@@ -20,7 +20,7 @@ Microsoft updates this training course when the community brings needed changes 
 
 #### Sign in to the lab virtual machine
 
-Sign in to your Windows 10 virtual machine by using the following credentials:
+Sign in to your Windows 10 virtual machine (VM) by using the following credentials:
 
 - Username: **Admin**
 - Password: **Pa55w.rd**
@@ -44,7 +44,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the open browser window, go to the **Azure portal** (<https://portal.azure.com>).
 1. Enter the email address for your Microsoft account, and then select **Next**.
 1. Enter the **password** for your Microsoft account, and then select **Sign in**.
-    > **Note**: If this is your first time signing in to the Azure portal, you will be offered a tour of the portal. Select **Get Started** to skip the tour and begin using the portal.
+    > **Note**: If this is your first time signing in to the Azure portal, you will be offered a tour of the portal. If you prefer to skip the tour, select **Get Started** to begin using the portal.
 
 #### Task 2: Create an Azure Storage account
 
@@ -152,7 +152,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1. Leave the **Set expiration date** text box set to its default value.
     1. In the **Enabled** section, select **Yes**, and then select **Create**.
     > **Note**: Wait for the secret to be created before you move forward with this lab.
-1. Back in the Secrets pane, select the **storagecredentials** item in the list.
+1. Return to the Secrets pane, and then select the **storagecredentials** item in the list.
 1. In the Versions pane, select the latest version of the **storagecredentials** secret.
 1. In the Secret Version pane, perform the following actions:
     1. Find the metadata for the latest version of the secret.
@@ -189,18 +189,18 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1. Select the **Application settings** tab, and then select **New application setting**.
     1. In the **Add/Edit application setting** pop-up window, in the **Name** text box, enter **StorageConnectionString**.
     1. In the **Value** text box, construct a value by using the following syntax: ``@Microsoft.KeyVault(SecretUri=*Secret Identifier*)``
-        > **Note**: You'll need to build a reference to your ***Secret Identifier*** by using the above syntax. For example, if your secret identifier is ``https://securevaultstudent.vault.azure.net/secrets/storagecredentials/17b41386df3e4191b92f089f5efb4cbf``, then your value would be ``@Microsoft.KeyVault(SecretUri=https://securevaultstudent.vault.azure.net/secrets/storagecredentials/17b41386df3e4191b92f089f5efb4cbf)``
+        > **Note**: You'll need to build a reference to your ***Secret Identifier*** by using the above syntax. For example, if your secret identifier is ``https://securevaultstudent.vault.azure.net/secrets/storagecredentials/17b41386df3e4191b92f089f5efb4cbf``, your value would be ``@Microsoft.KeyVault(SecretUri=https://securevaultstudent.vault.azure.net/secrets/storagecredentials/17b41386df3e4191b92f089f5efb4cbf)``.
     1. Leave the **deployment slot setting** text box set to its default value.
     1. Select **OK** to close the pop-up window and return to the **Configuration** section.
-    1. Select **Save** from the blade to persist your settings.  
-    1. In the **Save Changes** confirmation popup dialog, select **Continue**.
-    > **Note**: Wait for your application settings to persist before you move forward with the lab.
+    1. Select **Save** from the blade to save your settings.  
+    1. In the **Save Changes** confirmation pop-up dialog box, select **Continue**.
+    > **Note**: Wait for your application settings to save before you move forward with the lab.
 
 > **Review**: In this exercise, you created a system-assigned managed service identity for your function app and then gave that identity the appropriate permissions to get the value of a secret in your key vault. Finally, you created a secret that you referenced within your function app's configuration settings.
 
-### Exercise 3: Build an Azure Function app
+### Exercise 3: Build an Azure Functions app
 
-#### Task 1: Initialize function project
+#### Task 1: Initialize a function project
 
 1. On the taskbar, select the **Windows Terminal** icon.
 1. Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\07\\Starter\\func** empty directory:
@@ -420,7 +420,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     }
     ```
 
-1. Select **Save** to persist your changes to the **Echo.cs** file.
+1. Select **Save** to sae your changes to the **Echo.cs** file.
 
 #### Task 4: Validate the local function
 
@@ -439,14 +439,14 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     > **Note**: You can review the documentation to [start the function app project locally][azure-functions-core-tools-start-function] using the **Azure Functions Core Tools**.
 1. On the taskbar, select the **Windows Terminal** icon again to open a new instance of the **Windows Terminal** application.
-1. At the open command prompt, enter the following command, and then select Enter to start the **httprepl** tool setting the base Uniform Resource Identifier (URI) to ``http://localhost:7071``:
+1. When you receive the open command prompt, enter the following command, and then select Enter to start the **httprepl** tool setting the base Uniform Resource Identifier (URI) to ``http://localhost:7071``:
 
     ```powershell
     httprepl http://localhost:7071
     ```
 
-    > **Note**: An error message displayed by the httprepl tool. This message occurs because the tool is searching for a Swagger definition file to use to "traverse" the API. Because your functio projectp does not produce a Swagger definition file, you will need to traverse the API manually.
-1. At the tool prompt, enter the following command, and then select Enter to browse to the relative **api** directory:
+    > **Note**: An error message is displayed by the httprepl tool. This message occurs because the tool is searching for a Swagger definition file to use to "traverse" the API. Because your functio projectp does not produce a Swagger definition file, you'll need to traverse the API manually.
+1. When you receive the tool prompt, enter the following command, and then select Enter to browse to the relative **api** directory:
 
     ```powershell
     cd api
@@ -494,7 +494,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     cd F:\Allfiles\Labs\07\Starter\func
     ```
 
-1. At the open command prompt, enter the following command, and then select Enter to login to the Azure Command-Line Interface (CLI):
+1. At the open command prompt, enter the following command, and then select Enter to log in to the Azure Command-Line Interface (CLI):
 
     ```powershell
     az login
@@ -510,7 +510,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     func azure functionapp publish <function-app-name>
     ```
 
-    > **Note**: For example, if your **Function App name** is **securefuncstudent**, then your command would be ``func azure functionapp publish securefuncstudent``. You can review the documentation to [publish the local function app project][azure-functions-core-tools-publish-azure] using the **Azure Functions Core Tools**.
+    > **Note**: As an example, if your **Function App name** is **securefuncstudent**, your command would be ``func azure functionapp publish securefuncstudent``. You can review the documentation to [publish the local function app project][azure-functions-core-tools-publish-azure] using the **Azure Functions Core Tools**.
 1. Wait for the deployment to finalize before you move forward with the lab.
 1. Close the currently running **Windows Terminal** application.
 
@@ -525,12 +525,12 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the **Functions** pane, select the the existing **FileParser** function.
 1. In the **Function** blade, select the **Code + Test** option from the **Developer** section.
 1. In the function editor, select **Test/Run**.
-1. In the popup dialog that appears, perform the following actions:
+1. In the pop-up dialog box that appears, perform the following actions:
     - In the **HTTP method** list, select **GET**.
 1. Select **Run** to test the function.
 1. Observe the results of the test run. The result should be your Azure Storage connection string.
 
-> **Review**: In this exercise, you used a service identity to read the value of a secret stored in Key Vault and returned that value as the result of an function app.
+> **Review**: In this exercise, you used a service identity to read the value of a secret stored in Key Vault and returned that value as the result of a function app.
 
 ### Exercise 4: Access Azure Blob Storage data
 
@@ -544,27 +544,27 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the **New container** pop-up window, perform the following actions:
     1. In the **Name** text box, enter **drop**.
     1. In the **Public access level** drop-down list, select **Blob (anonymous read access for blobs only)**, and then select **OK**.
-1. Back in the **Containers** section, select the newly created **drop** container.
+1. Return to the **Containers** section, and then select the newly created **drop** container.
 1. From the **Container** blade, select **Upload**.
 1. In the **Upload blob** pop-up window, perform the following actions:
     1. In the **Files** section, select the **Folder** icon.
     1. In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\07\\Starter**, select the **records.json** file, and then select **Open**.
     1. Ensure that **Overwrite if files already exist** is selected, and then select **Upload**.  
     > **Note**: Wait for the blob to upload before you continue with this lab.
-1. Back from the **Container** blade, select the **records.json** blob in the list of blobs.
+1. Return to the **Container** blade, and then select the **records.json** blob in the list of blobs.
 1. From the **Blob** blade, find the blob metadata, and then copy the URL for the blob.
 1. On the taskbar, right-click the **Microsoft Edge** icon or activate the shortcut menu, and then select **New window**.
 1. In the new browser window, go to the URL that you copied for the blob.
-1. You should now notice the JavaScript Object Notation (JSON) contents of the blob. Close the browser window with the JSON contents.
+1. The JavaScript Object Notation (JSON) contents of the blob should now display. Close the browser window with the JSON contents.
 1. Return to the browser window with the Azure portal, and then close the **Blob** blade.
-1. Back from the **Container** blade, select **Change access level policy**.
+1. Return to the **Container** blade, and then select **Change access level policy**.
 1. In the **Change access level** pop-up window, perform the following actions:
     1. In the **Public access level** drop-down list, select **Private (no anonymous access)**.
     1. Select **OK**.
 1. On the taskbar, right-click the **Microsoft Edge** icon or activate the shortcut menu, and then select **New window**.
 1. In the new browser window, go to the URL that you copied for the blob.
-1. You should now notice an error message indicating that the resource wasn't found.
-    > **Note**: If you don't notice the error message, your browser might have cached the file. Press Ctrl+F5 to refresh the page until you notice the error message.
+1. An error message indicating that the resource wasn't found should now display.
+    > **Note**: If the error message doesn't display, your browser might have cached the file. Press Ctrl+F5 to refresh the page until the error message displays.
 
 #### Task 2: Pull and configure the Azure SDK for .NET
 
@@ -665,9 +665,9 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     }
     ```
 
-1. Select **Save** to persist your changes to the **Echo.cs** file.
+1. Select **Save** to save your changes to the **Echo.cs** file.
 
-#### Task 4: Deploy and validate the Azure Function app
+#### Task 4: Deploy and validate the Azure Functions app
 
 1. On the taskbar, select the **Windows Terminal** icon.
 1. Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\07\\Starter\\func** empty directory:
@@ -676,7 +676,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     cd F:\Allfiles\Labs\07\Starter\func
     ```
 
-1. At the open command prompt, enter the following command, and then select Enter to login to the Azure Command-Line Interface (CLI):
+1. At the open command prompt, enter the following command, and then select Enter to log in to the Azure CLI:
 
     ```powershell
     az login
@@ -692,7 +692,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     func azure functionapp publish <function-app-name>
     ```
 
-    > **Note**: For example, if your **Function App name** is **securefuncstudent**, then your command would be ``func azure functionapp publish securefuncstudent``. You can review the documentation to [publish the local function app project][azure-functions-core-tools-publish-azure] using the **Azure Functions Core Tools**.
+    > **Note**: As an example, if your **Function App name** is **securefuncstudent**, your command would be ``func azure functionapp publish securefuncstudent``. You can review the documentation to [publish the local function app project][azure-functions-core-tools-publish-azure] using the **Azure Functions Core Tools**.
 1. Wait for the deployment to finalize before you move forward with the lab.
 1. Close the currently running **Windows Terminal** application.
 1. On the taskbar, select the **Microsoft Edge** icon.
@@ -704,12 +704,12 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the **Functions** pane, select the the existing **FileParser** function.
 1. In the **Function** blade, select the **Code + Test** option from the **Developer** section.
 1. In the function editor, select **Test/Run**.
-1. In the popup dialog that appears, perform the following actions:
+1. In the pop-up dialog box that appears, perform the following actions:
     - In the **HTTP method** list, select **GET**.
 1. Select **Run** to test the function.
 1. Observe the results of the test run. The output will contain the content of the **$/drop/records.json** blob stored in your Azure Storage account.
 
-> **Review**: In this exercise, you used C\# code to access a storage account, and then download the contents of a blob.
+> **Review**: In this exercise, you used C\# code to access a storage account, and then downloaded the contents of a blob.
 
 ### Exercise 5: Clean up your subscription
 
@@ -717,17 +717,17 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1. In the Azure portal's navigation pane, select the **Cloud Shell** icon to open a new shell instance.
 
-    > **Note**: The **Cloud Shell** icon is represented by a greater than sign () and underscore character (\_).
+    > **Note**: The **Cloud Shell** icon is represented by a greater than sign (\>) and underscore character (\_).
 
 1. If this is your first time opening Cloud Shell using your subscription, you can use the **Welcome to Azure Cloud Shell Wizard** to configure Cloud Shell for first-time usage. Perform the following actions in the wizard:
 
     1. A dialog box prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**.
 
-    > **Note**: Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab. If you don't notice Cloud Shell configuration options, this is most likely because you are using an existing subscription with this course's labs. The labs are written with the presumption that you are using a new subscription.
+    > **Note**: Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab. If Cloud Shell configuration options don't display, this is most likely because you are using an existing subscription with this course's labs. The labs are written with the presumption that you are using a new subscription.
 
 #### Task 2: Delete a resource group
 
-1. At the command prompt, enter the following command, and then select Enter to delete the **ConfidentialStack** resource group:
+1. When you receive the command prompt, enter the following command, and then select Enter to delete the **ConfidentialStack** resource group:
 
     ```powershell
     az group delete --name ConfidentialStack --no-wait --yes

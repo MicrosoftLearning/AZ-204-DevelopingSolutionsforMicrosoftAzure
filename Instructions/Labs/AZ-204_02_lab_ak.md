@@ -10,7 +10,7 @@ lab:
 
 ## Microsoft Azure user interface
 
-Given the dynamic nature of Microsoft cloud tools, you might experience Azure UI changes after the development of this training content. These changes might cause the lab instructions and lab steps to not match up.
+Given the dynamic nature of Microsoft cloud tools, you might experience Azure user interface (UI) changes after the development of this training content. These changes might cause the lab instructions and lab steps to not match.
 
 Microsoft updates this training course when the community brings needed changes to our attention; however, because cloud updates occur frequently, you might encounter UI changes before this training content updates. **If this occurs, adapt to the changes, and then work through them in the labs as needed.**
 
@@ -44,7 +44,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the open browser window, go to the Azure portal (<https://portal.azure.com>).
 1. Enter the email address for your Microsoft account, and then select **Next**.
 1. Enter the password for your Microsoft account, and then select **Sign in**.
-    > **Note**: If this is your first time signing in to the Azure portal, you'll be offered a tour of the portal. Select **Get Started** to skip the tour and begin using the portal.
+    > **Note**: If this is your first time signing in to the Azure portal, you'll be offered a tour of the portal. If you prefer to skip the tour, select **Get Started** to begin using the portal.
 
 #### Task 2: Create an Azure Storage account
 
@@ -103,9 +103,9 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 > **Review**: In this exercise, you created all the resources that you'll use for this lab.
 
-### Exercise 2: Configure local Azure Functions project
+### Exercise 2: Configure a local Azure Functions project
 
-#### Task 1: Initialize function project
+#### Task 1: Initialize a function project
 
 1. On the taskbar, select the **Windows Terminal** icon.
 1. Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\02\\Starter\\func** empty directory:
@@ -114,7 +114,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     cd F:\Allfiles\Labs\02\Starter\func
     ```
 
-1. At the open command prompt, enter the following command, and then select Enter to use the **Azure Functions Core Tools** to create a new local Functions project in the current directory using the **dotnet** runtime:
+1. When you receive the open command prompt, enter the following command, and then select Enter to use the **Azure Functions Core Tools** to create a new local Azure Functions project in the current directory using the **dotnet** runtime:
 
     ```powershell
     func init --worker-runtime dotnet
@@ -137,7 +137,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1. Update the value of the **AzureWebJobsStorage** by setting it to the **connection string** of the storage account that you recorded earlier in this lab.
 
-#### Task 3: Build and validate project
+#### Task 3: Build and validate a project
 
 1. On the taskbar, select the **Windows Terminal** icon.
 1. Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\02\\Starter\\func** empty directory:
@@ -146,13 +146,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     cd F:\Allfiles\Labs\02\Starter\func
     ```
 
-1. At the open command prompt, enter the following command, and then select Enter to **build** the .NET Core 3.1 project:
+1. When you receive the open command prompt, enter the following command, and then select Enter to **build** the .NET Core 3.1 project:
 
     ```powershell
     dotnet build
     ```
 
-> **Review**: In this exercise, you created a local project that you will use for Azure Functions development.
+> **Review**: In this exercise, you created a local project that you'll use for Azure Functions development.
 
 ### Exercise 3: Create a function that's triggered by an HTTP request
 
@@ -165,7 +165,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     cd F:\Allfiles\Labs\02\Starter\func
     ```
 
-1. At the open command prompt, enter the following command, and then select Enter to use the **Azure Functions Core Tools** to create a new function named **Echo** using the **HTTP trigger** template:
+1. When you receive the open command prompt, enter the following command, and then select Enter to use the **Azure Functions Core Tools** to create a new function named **Echo** using the **HTTP trigger** template:
 
     ```powershell
     func new --template "HTTP trigger" --name "Echo"
@@ -220,7 +220,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     }
     ```
 
-1. Delete all of the content within the **Echo.cs** file.
+1. Delete all the content within the **Echo.cs** file.
 1. Add the following lines of code to add **using directives** for the **Microsoft.AspNetCore.Mvc**, **Microsoft.Azure.WebJobs**, **Microsoft.AspNetCore.Http**, and **Microsoft.Extensions.Logging** namespaces:
 
     ```csharp
@@ -268,7 +268,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     { }
     ```
 
-1. Add the following code to append an attribute to the **request** paramter of type **HttpTriggerAttribute** that has its **methods** parameter array set to a single value of **POST**:
+1. Add the following code to append an attribute to the **request** parameter of type **HttpTriggerAttribute** that has its **methods** parameter array set to a single value of **POST**:
 
     ```csharp
     [FunctionName("Echo")]
@@ -329,7 +329,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     }
     ```
 
-1. Select **Save** to persist your changes to the **Echo.cs** file.
+1. Select **Save** to save your changes to the **Echo.cs** file.
 
 #### Task 3: Test the HTTP-triggered function by using httprepl
 
@@ -340,7 +340,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     cd F:\Allfiles\Labs\02\Starter\func
     ```
 
-1. At the open command prompt, enter the following command, and then select Enter to run the function app project:
+1. When you receive the open command prompt, enter the following command, and then select Enter to run the function app project:
 
     ```powershell
     func start --build
@@ -348,14 +348,14 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     > **Note**: You can review the documentation to [start the function app project locally][azure-functions-core-tools-start-function] using the **Azure Functions Core Tools**.
 1. On the taskbar, select the **Windows Terminal** icon again to open a new instance of the **Windows Terminal** application.
-1. At the open command prompt, enter the following command, and then select Enter to start the **httprepl** tool setting the base Uniform Resource Identifier (URI) to ``http://localhost:7071``:
+1. When you receive the open command prompt, enter the following command, and then select Enter to start the **httprepl** tool setting the base Uniform Resource Identifier (URI) to ``http://localhost:7071``:
 
     ```powershell
     httprepl http://localhost:7071
     ```
 
-    > **Note**: An error message displayed by the httprepl tool. This message occurs because the tool is searching for a Swagger definition file to use to "traverse" the API. Because your functio projectp does not produce a Swagger definition file, you will need to traverse the API manually.
-1. At the tool prompt, enter the following command, and then select Enter to browse to the relative **api** directory:
+    > **Note**: An error message is displayed by the httprepl tool. This message occurs because the tool is searching for a Swagger definition file to use to "traverse" the API. Because your functio projectp does not produce a Swagger definition file, you'll need to traverse the API manually.
+1. When you receive the tool prompt, enter the following command, and then select Enter to browse to the relative **api** directory:
 
     ```powershell
     cd api
@@ -412,7 +412,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     cd F:\Allfiles\Labs\02\Starter\func
     ```
 
-1. At the open command prompt, enter the following command, and then select Enter to use the **Azure Functions Core Tools** to create a new function named **Recurring** using the **Timer trigger** template:
+1. When you receive the open command prompt, enter the following command, and then select Enter to use the **Azure Functions Core Tools** to create a new function named **Recurring** using the **Timer trigger** template:
 
     ```powershell
     func new --template "Timer trigger" --name "Recurring"
@@ -457,7 +457,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     cd F:\Allfiles\Labs\02\Starter\func
     ```
 
-1. At the open command prompt, enter the following command, and then select Enter to run the function app project:
+1. When you receive the open command prompt, enter the following command, and then select Enter to run the function app project:
 
     ```powershell
     func start --build
@@ -487,7 +487,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     public static void Run([TimerTrigger("*/30 * * * * *")]TimerInfo myTimer, ILogger log)
     ```
 
-1. Select **Save** to persist your changes to the **Recurring.cs** file.
+1. Select **Save** to save your changes to the **Recurring.cs** file.
 
 #### Task 5: Observe function runs
 
@@ -498,14 +498,14 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     cd F:\Allfiles\Labs\02\Starter\func
     ```
 
-1. At the open command prompt, enter the following command, and then select Enter to run the function app project:
+1. When you receive the open command prompt, enter the following command, and then select Enter to run the function app project:
 
     ```powershell
     func start --build
     ```
 
     > **Note**: You can review the documentation to [start the function app project locally][azure-functions-core-tools-start-function] using the **Azure Functions Core Tools**.
-1. Observe the function run that occurs about every thirty seconds. Each function run should render a simple message to the log.
+1. Observe the function run that occurs about every 30 seconds. Each function run should render a simple message to the log.
 1. Close the currently running **Windows Terminal** application.
 
 > **Review**: In this exercise, you created a function that runs automatically based on a fixed schedule.
@@ -523,7 +523,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1. In the **Name** text box, enter **content**.
     1. In the **Public access level** drop-down list, select **Private (no anonymous access)**.
     1. Select **OK**.
-1. Back in the **Containers** section, select the recently created **content** container.
+1. Return to the **Containers** section, and then select the recently created **content** container.
 1. On the **Container** blade, select **Upload**.
 1. In the **Upload blob** window, perform the following actions:
     1. In the **Files** section, select the **Folder** icon.
@@ -531,7 +531,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1. Ensure that the **Overwrite if files already exist** check box is selected, and then select **Upload**.
       > **Note**: Wait for the blob to upload before you continue with this lab.
 
-#### Task 2: Create an Blob-triggered function
+#### Task 2: Create a Blob-triggered function
 
 1. On the taskbar, select the **Windows Terminal** icon.
 1. Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\02\\Starter\\func** empty directory:
@@ -540,7 +540,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     cd F:\Allfiles\Labs\02\Starter\func
     ```
 
-1. At the open command prompt, enter the following command, and then select Enter to use the **Azure Functions Core Tools** to create a new function named **GetSettingInfo** using the **Blob trigger** template:
+1. When you receive the open command prompt, enter the following command, and then select Enter to use the **Azure Functions Core Tools** to create a new function named **GetSettingInfo** using the **Blob trigger** template:
 
     ```powershell
     func new --template "Blob trigger" --name "GetSettingInfo"
@@ -549,7 +549,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     > **Note**: You can review the documentation to [create a new function][azure-functions-core-tools-new-function] using the **Azure Functions Core Tools**.
 1. Close the currently running **Windows Terminal** application.
 
-#### Task 3: Write Blob-inputed function code
+#### Task 3: Write Blob-inputted function code
 
 1. On the **Start** screen, select the **Visual Studio Code** tile.
 1. From the **File** menu, select **Open Folder**.
@@ -577,7 +577,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     }
     ```
 
-1. Delete all of the content within the **GetSettingInfo.cs** file.
+1. Delete all the content within the **GetSettingInfo.cs** file.
 
 1. Add the following lines of code to add **using directives** for the **Microsoft.AspNetCore.Http**, **Microsoft.AspNetCore.Mvc**, and **Microsoft.Azure.WebJobs** namespaces:
 
@@ -605,7 +605,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     { }
     ```
 
-1. Within the **GetSettingInfo** class, add the following code block to create a new **public static** expression-boded method named **Run** that returns a variable of type **IActionResult** and that also takes in variables of type **HttpRequest** and **string** as parameters named *request* and *json*:
+1. Within the **GetSettingInfo** class, add the following code block to create a new **public static** expression-bodied method named **Run** that returns a variable of type **IActionResult** and that also takes in variables of type **HttpRequest** and **string** as parameters named *request* and *json*:
 
     ```csharp
     public static IActionResult Run(
@@ -614,7 +614,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
         => null;
     ```
 
-    > **Note**: We are only temporarily setting the return value to **null**.
+    > **Note**: You are only temporarily setting the return value to **null**.
 
 1. Add the following code to append an attribute to the **Run** method of type **FunctionNameAttribute** that has its **name** parameter set to a value of **GetSettingInfo**:
 
@@ -626,7 +626,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
         => null;
     ```
 
-1. Add the following code to append an attribute to the **request** paramter of type **HttpTriggerAttribute** that has its **methods** parameter array set to a single value of **GET**:
+1. Add the following code to append an attribute to the **request** parameter of type **HttpTriggerAttribute** that has its **methods** parameter array set to a single value of **GET**:
 
     ```csharp
     [FunctionName("GetSettingInfo")]
@@ -636,7 +636,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
         => null;
     ```
 
-1. Add the following code to append an attribute to the **json** paramter of type **BlobAttribute** that has its **blobPath** parameter set to a value of **content/settings.json**:
+1. Add the following code to append an attribute to the **json** parameter of type **BlobAttribute** that has its **blobPath** parameter set to a value of **content/settings.json**:
 
     ```csharp
     [FunctionName("GetSettingInfo")]
@@ -673,9 +673,9 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     }
     ```
 
-1. Select **Save** to persist your changes to the **GetSettingInfo.cs** file.
+1. Select **Save** to save your changes to the **GetSettingInfo.cs** file.
 
-#### Task 4: Test the Blob-inputed function by using httprepl
+#### Task 4: Test the Blob-inputted function by using httprepl
 
 1. On the taskbar, select the **Windows Terminal** icon.
 1. Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\02\\Starter\\func** empty directory:
@@ -684,7 +684,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     cd F:\Allfiles\Labs\02\Starter\func
     ```
 
-1. At the open command prompt, enter the following command, and then select Enter to run the function app project:
+1. When you receive the open command prompt, enter the following command, and then select Enter to run the function app project:
 
     ```powershell
     func start --build
@@ -692,14 +692,14 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     > **Note**: You can review the documentation to [start the function app project locally][azure-functions-core-tools-start-function] using the **Azure Functions Core Tools**.
 1. On the taskbar, select the **Windows Terminal** icon again to open a new instance of the **Windows Terminal** application.
-1. At the open command prompt, enter the following command, and then select Enter to start the **httprepl** tool setting the base Uniform Resource Identifier (URI) to ``http://localhost:7071``:
+1. When you receive the open command prompt, enter the following command, and then select Enter to start the **httprepl** tool setting the base Uniform Resource Identifier (URI) to ``http://localhost:7071``:
 
     ```powershell
     httprepl http://localhost:7071
     ```
 
-    > **Note**: An error message displayed by the httprepl tool. This message occurs because the tool is searching for a Swagger definition file to use to "traverse" the API. Because your functio projectp does not produce a Swagger definition file, you will need to traverse the API manually.
-1. At the tool prompt, enter the following command, and then select Enter to browse to the relative **api** endpoint:
+    > **Note**: An error message is displayed by the httprepl tool. This message occurs because the tool is searching for a Swagger definition file to use to "traverse" the API. Because your functio project does not produce a Swagger definition file, you'll need to traverse the API manually.
+1. When you receive the tool prompt, enter the following command, and then select Enter to browse to the relative **api** endpoint:
 
     ```powershell
     cd api
@@ -743,7 +743,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 > **Review**: In this exercise, you created a function that returns the content of a JSON file in Storage.
 
-### Exercise 6: Deploy local function project to an Azure Function app
+### Exercise 6: Deploy a local function project to an Azure Functions app
 
 #### Task 1: Deploy using the Azure Functions Core Tools
 
@@ -754,7 +754,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     cd F:\Allfiles\Labs\02\Starter\func
     ```
 
-1. At the open command prompt, enter the following command, and then select Enter to login to the Azure Command-Line Interface (CLI):
+1. When you receive the open command prompt, enter the following command, and then select Enter to login to the Azure Command-Line Interface (CLI):
 
     ```powershell
     az login
@@ -770,7 +770,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     func azure functionapp publish <function-app-name>
     ```
 
-    > **Note**: For example, if your **Function App name** is **funclogicstudent**, then your command would be ``func azure functionapp publish funclogicstudent``. You can review the documentation to [publish the local function app project][azure-functions-core-tools-publish-azure] using the **Azure Functions Core Tools**.
+    > **Note**: For example, if your **Function App name** is **funclogicstudent**, your command would be ``func azure functionapp publish funclogicstudent``. You can review the documentation to [publish the local function app project][azure-functions-core-tools-publish-azure] using the **Azure Functions Core Tools**.
 1. Wait for the deployment to finalize before you move forward with the lab.
 1. Close the currently running **Windows Terminal** application.
 
@@ -788,7 +788,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the popup dialog that appears, perform the following actions:
     - In the **HTTP method** list, select **GET**.
 1. Select **Run** to test the function.
-1. Observe the results of the test run. the JSON content should now include:
+1. Observe the results of the test run. The JSON content should now include:
 
     ```json
     {
@@ -814,11 +814,11 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     > **Note**: The **Cloud Shell** icon is represented by a greater than sign (\>) and underscore character (\_).
 1. If this is your first time opening Cloud Shell using your subscription, you can use the **Welcome to Azure Cloud Shell Wizard** to configure Cloud Shell for first-time usage. Perform the following actions in the wizard:
     1. A dialog box prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**.
-    > **Note**: Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab. If you don't notice Cloud Shell configuration options, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
+    > **Note**: Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab. If Cloud Shell configuration options don't display, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
 
 #### Task 2: Delete a resource group
 
-1. At the command prompt, enter the following command, and then select Enter to delete the **Serverless** resource group:
+1. When you receive the command prompt, enter the following command, and then select Enter to delete the **Serverless** resource group:
 
     ```powershell
     az group delete --name Serverless --no-wait --yes
