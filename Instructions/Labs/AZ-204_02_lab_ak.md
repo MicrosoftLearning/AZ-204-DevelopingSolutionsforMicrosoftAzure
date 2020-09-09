@@ -727,8 +727,8 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
             "id": "21e46d2b2b926cba031a23c6919"
         },
         "notifications": {
-            "email": "Anais85@outlook.com",
-            "phone": "751.757.2014 x4151"
+            "email": "joseph.price@contoso.com",
+            "phone": "(425) 555-0162 x4151"
         }
     }
     ```
@@ -798,8 +798,8 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
             "id": "21e46d2b2b926cba031a23c6919"
         },
         "notifications": {
-            "email": "Anais85@outlook.com",
-            "phone": "751.757.2014 x4151"
+            "email": "joseph.price@contoso.com",
+            "phone": "(425) 555-0162 x4151"
         }
     }
     ```
