@@ -107,7 +107,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **New** blade, find the **Search the Marketplace** text box.
 
-1.  In the search box, enter **Event Grid**, and then select Enter.
+1.  In the search box, enter **Event Grid Topic**, and then select Enter.
 
 1.  On the **Everything** search results blade, select the **Event Grid Topic** result.
 
