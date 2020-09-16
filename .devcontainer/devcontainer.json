@@ -1,0 +1,23 @@
+{
+	"name": "AZ204",
+	"build": {
+		"dockerfile": "Dockerfile",
+	},
+	"settings": {
+		"azureFunctions.showProjectWarning": false,
+		"csharp.suppressDotnetInstallWarning": true,
+		"csharp.suppressDotnetRestoreNotification": true,
+		"csharp.supressBuildAssetsNotification": true,
+		"terminal.integrated.shell.linux": "pwsh",
+		"workbench.startupEditor": "none"
+	},
+	"containerEnv": {
+		"POWERSHELL_UPDATECHECK": "Off"
+	},
+	"extensions": [
+		"humao.rest-client",
+		"ms-dotnettools.dotnet-interactive-vscode",
+		"ms-dotnettools.csharp",
+		"msazurermtools.azurerm-vscode-tools"
+	]
+}
