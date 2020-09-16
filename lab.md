@@ -18,8 +18,8 @@
 | Azure CLI | <https://docs.microsoft.com/cli/azure/install-azure-cli> |
 | Azure Storage Explorer | <https://azure.microsoft.com/features/storage-explorer> |
 | .NET Tool - HttpRepl | <https://github.com/dotnet/HttpRepl> |
-| Azure Functions Core Tools | <https://docs.microsoft.com/azure/azure-functions/functions-run-local#v2> |
-| Windows Terminal> | <https://aka.ms/terminal> |
+| Azure Functions Core Tools | <https://docs.microsoft.com/azure/azure-functions/functions-run-local#v3> |
+| Windows Terminal | <https://aka.ms/terminal> |
 | Edge (Chromium) | <https://www.microsoft.com/edge> |
 
 ## Additional Configuration
