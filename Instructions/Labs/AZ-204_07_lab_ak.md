@@ -131,8 +131,6 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
         
     1.  In the **Pricing tier** drop-down list, select **Standard**.
     
-    1.  In the **Soft delete** section, select **Disable recovery of this vault and its objects**.
-
     1.  Select **Review + Create**.
 
 1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
