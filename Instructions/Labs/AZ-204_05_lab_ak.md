@@ -158,10 +158,10 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     az vm list-ip-addresses --resource-group ContainerCompute --name quickvm --query '[].{ip:virtualMachine.network.publicIpAddresses[0].ipAddress}' --output tsv
     ```
 
-1.  Enter the following command, and then select Enter to store the results of the previous command in a new Bash shell variable named *ipAddress*:
+1.  Enter the following command, and then select Enter to store the results of the previous command in a new Bash shell variable named *$ipAddress*:
 
     ```
-    ipAddress=$(az vm list-ip-addresses --resource-group ContainerCompute --name quickvm --query '[].{ip:virtualMachine.network.publicIpAddresses[0].ipAddress}' --output tsv)
+    $ipAddress=(az vm list-ip-addresses --resource-group ContainerCompute --name quickvm --query '[].{ip:virtualMachine.network.publicIpAddresses[0].ipAddress}' --output tsv)
     ```
 
 1.  Enter the following command, and then select Enter to render the value of the Bash shell variable *ipAddress*:
