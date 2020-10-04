@@ -581,7 +581,7 @@ In this exercise, you used a service identity to read the value of a secret stor
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
         <PropertyGroup>
-            <TargetFramework>netstandard2.0</TargetFramework>
+            <TargetFramework>netstandard3.0</TargetFramework>
         </PropertyGroup>
         <ItemGroup>
             <PackageReference Include="Azure.Storage.Blobs" Version="12.5.0" />
