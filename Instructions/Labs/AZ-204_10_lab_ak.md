@@ -123,7 +123,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  From the **Event Schema** drop-down list, select **Event Grid Schema**, and then select **Create**.
   
-    > **Note**: Wait for Azure to finish creating the topic before you continue with the lab. You'll receive a notification when the app is created.
+    > **Note**: Wait for Azure to finish creating the topic before you continue with the lab. You'll receive a notification when the topic is created.
 
 #### Task 5: Deploy the Azure Event Grid viewer to a web app
 
