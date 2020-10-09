@@ -235,7 +235,7 @@ In this exercise, you created the Event Grid topic and a web app that you will u
 
     1.  Select **Create**.
   
-    > **Note**: Wait for Azure to finish creating the subscription before you continue with the lab. You'll receive a notification when the app is created.
+    > **Note**: Wait for Azure to finish creating the subscription before you continue with the lab. You'll receive a notification when the subscription is created.
 
 #### Task 3: Observe the subscription validation event
 
