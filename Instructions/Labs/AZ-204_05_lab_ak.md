@@ -86,7 +86,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 3: Open Azure Cloud Shell
 
-1.  In the portal, select the **Cloud Shell** icon to open a new shell instance.
+1.  In the portal, select the **Cloud Shell** icon to open a new shell instance. Configure the shell for Bash by using the default settings.
 
     > **Note**: The **Cloud Shell** icon is represented by a greater than sign () and underscore character (\_).
 
