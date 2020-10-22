@@ -519,8 +519,8 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. On the taskbar, select the **Microsoft Edge** icon.
 1. In the open browser window, go to the Azure portal (<https://portal.azure.com>).
 1. In the Azure portal's navigation pane, select the **Resource groups** link.
-1. On the **Resource groups** blade, find and then select the **Serverless** resource group that you created earlier in this lab.
-1. On the **Serverless** blade, select the **securefunc[yourname]** function app that you created earlier in this lab.
+1. On the **Resource groups** blade, find and then select the **ConfidentialStack** resource group that you created earlier in this lab.
+1. On the **ConfidentialStack** blade, select the **securefunc[yourname]** function app that you created earlier in this lab.
 1. From the **App Service** blade, select the **Functions** option from the **Functions** section.
 1. In the **Functions** pane, select the the existing **FileParser** function.
 1. In the **Function** blade, select the **Code + Test** option from the **Developer** section.
@@ -698,8 +698,8 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. On the taskbar, select the **Microsoft Edge** icon.
 1. In the open browser window, go to the Azure portal (<https://portal.azure.com>).
 1. In the Azure portal's navigation pane, select the **Resource groups** link.
-1. On the **Resource groups** blade, find and then select the **Serverless** resource group that you created earlier in this lab.
-1. On the **Serverless** blade, select the **securefunc[yourname]** function app that you created earlier in this lab.
+1. On the **Resource groups** blade, find and then select the **ConfidentialStack** resource group that you created earlier in this lab.
+1. On the **ConfidentialStack** blade, select the **securefunc[yourname]** function app that you created earlier in this lab.
 1. From the **App Service** blade, select the **Functions** option from the **Functions** section.
 1. In the **Functions** pane, select the the existing **FileParser** function.
 1. In the **Function** blade, select the **Code + Test** option from the **Developer** section.
