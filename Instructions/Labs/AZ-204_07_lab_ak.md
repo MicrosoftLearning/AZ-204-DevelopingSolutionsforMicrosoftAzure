@@ -420,7 +420,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     }
     ```
 
-1. Select **Save** to sae your changes to the **Echo.cs** file.
+1. Select **Save** to save your changes to the **FileParser.cs** file.
 
 #### Task 4: Validate the local function
 
