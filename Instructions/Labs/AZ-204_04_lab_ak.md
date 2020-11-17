@@ -66,6 +66,8 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1.  From the **Create SQL Database Server** blade, observe the tabs from the blade, such as **Basics**, **Networking**, and **Additional settings**.
 
     > **Note**: Each tab represents a step in the workflow to create a new Azure SQL Database server. You can select **Review + Create** at any time to skip the remaining tabs.
+    
+    > **Note**: If you're creating the resource from **Create a resource** please search **SQL server (logical server)**.
 
     1.  From the **Basics** tab, perform the following actions:
     
@@ -97,7 +99,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     > **Note**: At this point in the lab, we are only creating the Azure SQL logical server. We will create the Azure SQL database instance later in the lab.
 
-    > **Note**: Wait for the creation task to complete before you move forward with this lab.
+    > **Note**: Wait for the creation task to complete before you move forward with this lab.       
 
 #### Task 3: Create an Azure Cosmos DB account resource
 
