@@ -85,7 +85,11 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Replication** list, select **Locally-redundant storage (LRS)**.
     
-    1.  In the **Access tier (default)** section, ensure that **Hot** is selected.
+    1.  Select **Next** and keep the default values
+
+1.  Under the **Advanced** tab, perform the following actions:
+        
+    1.  In the **Blob access tier (default)** section, ensure that **Hot** is selected.
     
     1.  Select **Review + Create**.
 
