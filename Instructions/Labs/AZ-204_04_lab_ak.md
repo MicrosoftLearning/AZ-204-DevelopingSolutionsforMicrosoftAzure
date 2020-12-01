@@ -279,7 +279,17 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
 1.  From the **PolyglotData** blade, select the **polysqlsrvr*[yourname]*** SQL server that you created earlier in this lab.
 
-1.  From the **SQL server** blade, select **Import database**.
+1.  From the **SQL server** blade, select **Show Firewall Settings**.
+
+1. From the **Firewalls and virtual networks** blade, click **+Add Client IP**.
+
+1. From the **Firewalls and virtual networks** blade, set **Allow Azure services and resources to access this server** to **Yes**.
+
+1. From the **Firewalls and virtual networks** blade, click **Save**.
+
+1. Open the **Overview** blade.
+
+1.  From the **Overview** blade, select **Import database**.
 
 1.  From the **Import database** blade, perform the following actions:
 
