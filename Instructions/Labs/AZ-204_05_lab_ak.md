@@ -429,7 +429,7 @@ In this exercise, you created a .NET console application to display a machine’
 
 1.  From the **ContainerCompute** blade, select the container registry that you created earlier in this lab.
 
-1.  From the **Container Registry** blade, select **Update**.
+1.  From the **Overview** blade, select **Update**.
 
 1.  From the **Update container registry** blade, perform the following actions:
     
