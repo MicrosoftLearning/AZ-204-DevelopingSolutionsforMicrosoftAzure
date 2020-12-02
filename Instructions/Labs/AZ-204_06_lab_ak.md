@@ -73,15 +73,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  Select **Register**.
 
-#### Task 3: Enable the default client type
+#### Task 3: Enable Allow public client flows
 
 1.  In the **graphapp** application registration blade, select **Authentication** in the **Manage** section.
 
 1.  In the **Authentication** section, perform the following actions:
 
-    1.  In the **Default client type** subsection, select **Yes**.
-
-    1.  Select **Save**.
+    1.  Set **Allow public client flows** to **Yes**
 
 #### Task 4: Record unique identifiers
 
