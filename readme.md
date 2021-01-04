@@ -1,12 +1,29 @@
 # AZ-204: Developing solutions for Microsoft Azure
 
->Candidates for this exam should have subject matter expertise designing, building, testing, and maintaining cloud applications and services on Microsoft Azure.
+This course targets developers who want to expand their knowledge of cloud technologies, in particular of the Microsoft Azure Cloud. We will
+prepare you for the official Microsoft exam. All Azure services will be covered, such as different ways of hosting data and applications,
+authentication and how to monitor and troubleshoot your applications. After passing the exam you'll be able to:
+
+- Develop Azure compute solutions
+- Develop for Azure storage
+- Implement Azure security
+- Monitor, troubleshoot, and optimize Azure solutions
+- Connect to and consume Azure services and third-party services
+
+## The certification
+
+>Candidates for this exam should have subject matter expertise designing, building, testing, and maintaining cloud applications and services
+on Microsoft Azure.
 >
->Responsibilities for an Azure Developer include participating in all phases of cloud development from requirements definition and design, to development, deployment, and maintenance. performance tuning, and monitoring.
+>Responsibilities for an Azure Developer include participating in all phases of cloud development from requirements definition and design,
+to development, deployment, and maintenance. performance tuning, and monitoring.
 >
 >Azure Developers partner with cloud solution architects, cloud DBAs, cloud administrators, and clients to implement solutions.
 >
->A candidate for this exam should have 1-2 years professional development experience and experience with Microsoft Azure. In addition, the role should have ability programming in a language supported by Azure and proficiency in Azure SDKs, Azure PowerShell, Azure CLI, data storage options, data connections, APIs, app authentication and authorization, compute and container deployment, debugging, performance tuning, and monitoring.
+>A candidate for this exam should have 1-2 years professional development experience and experience with Microsoft Azure. In addition, the
+role should have ability programming in a language supported by Azure and proficiency in Azure SDKs, Azure PowerShell, Azure CLI,
+data storage options, data connections, APIs, app authentication and authorization, compute and container deployment, debugging, performance
+tuning, and monitoring.
 >
 >*Source: [Exam AZ-204: Developing Solutions for Microsoft Azure](https://docs.microsoft.com/en-us/learn/certifications/exams/az-204)*
 
