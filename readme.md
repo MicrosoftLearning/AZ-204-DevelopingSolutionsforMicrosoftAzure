@@ -10,7 +10,8 @@
 >
 >*Source: [Exam AZ-204: Developing Solutions for Microsoft Azure](https://docs.microsoft.com/en-us/learn/certifications/exams/az-204)*
 
-This repo holds the 
+This repo holds the labs for the AZ-204 course.  
+Here are some other relevant resources.
 
 ## Microsoft Learn Resources
 
@@ -22,11 +23,11 @@ This repo holds the
 - [Deploy a website with Azure App Service (6 modules, approx 4 hours)](https://docs.microsoft.com/en-us/learn/paths/deploy-a-website-with-azure-app-service/)
 - [Secure your cloud data (7 modules, approx 5.5 hours)](https://docs.microsoft.com/en-us/learn/paths/secure-your-cloud-data/)
 
-## Links
+<!-- ## Links
 
 - [AZ-204 Day 1](https://elearning.easygenerator.com/{course-guid-here})
 - [AZ-204 Day 2](https://elearning.easygenerator.com/{course-guid-here})
 - [AZ-204 Day 3](https://elearning.easygenerator.com/{course-guid-here})
 - [AZ-204 Day 4](https://elearning.easygenerator.com/{course-guid-here})
 - [AZ-204 Day 5](https://elearning.easygenerator.com/{course-guid-here})
-- [AZ-204 Day 6](https://elearning.easygenerator.com/{course-guid-here})
+- [AZ-204 Day 6](https://elearning.easygenerator.com/{course-guid-here}) -->
