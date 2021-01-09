@@ -532,7 +532,7 @@ In this exercise, you read and deleted existing messages from the Storage queue 
     1.  Add the following line of code to invoke the **SendMessageAsync** method of the **QueueClient** class by using the *greeting* variable as a parameter
 
         ```
-        await client.SendMessageAsync(greeting);        
+        await client.SendMessageAsync(Convert.ToBase64String(Encoding.UTF8.GetBytes(greeting)));        
         ```
 
     1.  Add the following line of code to render the content of the message that you sent:
@@ -550,7 +550,7 @@ In this exercise, you read and deleted existing messages from the Storage queue 
         
         Console.WriteLine($"---New Messages---");
         string greeting = "Hi, Developer!";
-        await client.SendMessageAsync(greeting);
+        await client.SendMessageAsync(Convert.ToBase64String(Encoding.UTF8.GetBytes(greeting)));
         
         Console.WriteLine($"Sent Message:\t{greeting}");
     }
