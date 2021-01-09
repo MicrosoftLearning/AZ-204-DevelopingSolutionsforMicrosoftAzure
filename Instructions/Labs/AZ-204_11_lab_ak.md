@@ -199,6 +199,7 @@ In this exercise, you created a new Azure Storage account that you'll use throug
     using Azure.Storage.Queues;
     using Azure.Storage.Queues.Models;
     using System;
+    using System.Text;
     using System.Threading.Tasks;
 
     public class Program
@@ -346,7 +347,7 @@ In this exercise, you configured your .NET project to access the Storage service
 
         foreach(QueueMessage message in messages?.Value)
         {
-            Console.WriteLine($"[{message.MessageId}]\t{message.MessageText}");
+            Console.WriteLine($"[{message.MessageId}]\t{Encoding.UTF8.GetString(Convert.FromBase64String(message.MessageText))}");
         }
     }
     ```
