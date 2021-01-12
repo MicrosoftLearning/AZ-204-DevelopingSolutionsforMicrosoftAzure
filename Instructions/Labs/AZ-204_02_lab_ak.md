@@ -96,7 +96,7 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
     1. Leave the **Subscription** text box set to its default value.
     1. In the **Resource group** section, select **Create new**, enter **Serverless**, and then select **OK**.
     1. In the **Storage account name** text box, enter **funcstor[yourname]**.
-    1. In the **Location** list, select the **(US) East US** region.
+    1. In the **Location** list, select the **(Europe) West Europe** region.
     1. In the **Performance** section, select **Standard**.
     1. In the **Account kind** list, select **StorageV2 (general purpose v2)**.
     1. In the **Replication** list, select **Locally-redundant storage (LRS)**.
@@ -128,7 +128,7 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
     1. In the **Publish** section, select **Code**.
     1. In the **Runtime stack** drop-down list, select **.NET Core**.
     1. In the **Version** drop-down list, select **3.1**.
-    1. In the **Region** drop-down list, select the **East US** region.
+    1. In the **Region** drop-down list, select the **West Europe** region.
     1. Select **Next: Hosting**.
 1. On the **Hosting** tab, perform the following actions:
     1. In the **Operating System** section, select **Linux**.

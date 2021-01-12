@@ -112,7 +112,7 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
     
     1.  In the **Resource group** text box, enter the value **ContainerCompute**.
     
-    1.  In the **Region** drop-down list, select the **(US) East US** location.
+    1.  In the **Region** drop-down list, select the **(Europe) West Europe** location.
     
     1.  Select **Review + Create**.
 
@@ -373,7 +373,7 @@ In this exercise, you used Cloud Shell to create a VM as part of an automated sc
 
     1.  In the **Resource group** drop-down list, select the existing **ContainerCompute** option.
 
-    1.  In the **Location** text box, select **East US**.
+    1.  In the **Location** text box, select **West Europe**.
 
     1.  In the **SKU** drop-down list, select **Basic**.
 
@@ -501,7 +501,7 @@ In this exercise, you created a .NET console application to display a machine’
     
     1.  In the **Resource group** drop-down list, select **ContainerCompute**.
     
-    1.  In the **Location** drop-down list, select **East US**.
+    1.  In the **Location** drop-down list, select **West Europe**.
     
     1.  In the **Number of cores** drop-down list, select **2**.
     
@@ -537,7 +537,7 @@ In this exercise, you created a .NET console application to display a machine’
     
     1.  In the **Container name** text box, enter **manualcompute**.
 
-    1.  In the **Region** drop-down list, select **(US) East US**.
+    1.  In the **Region** drop-down list, select **(Europe) West Europe**.
     
     1.  In the **Image source** section, select **Azure Container Registry**.
     

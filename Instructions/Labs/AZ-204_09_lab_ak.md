@@ -108,7 +108,7 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
     
     1.  In the **Resource group** section, select **Create new**, in the text box enter **AutomatedWorkflow**, and then select **OK**.
     
-    1.  In the **Location** list, select **East US**.
+    1.  In the **Location** list, select **West Europe**.
     
     1.  In the **Organization name** text box, enter **Contoso**.
     
@@ -144,7 +144,7 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
 
     1.  In the **Select the location** section, select **Region**.
 
-    1.  In the **Location** list, select **East US**.
+    1.  In the **Location** list, select **West Europe**.
     
     1.  In the **Log Analytics** section, select **Off**.
     
@@ -176,7 +176,7 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
     
     1.  In the **Storage account name** text box, enter **prodstor*[yourname]***.
     
-    1.  In the **Location** list, select the **(US) East US** region.
+    1.  In the **Location** list, select the **(Europe) West Europe** region.
     
     1.  In the **Performance** section, select **Standard**.
     

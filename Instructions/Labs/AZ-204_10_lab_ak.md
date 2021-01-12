@@ -157,7 +157,7 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
     
     1.  In the **Resource group** section, select **Create new**, enter **PubSubEvents**, and then select **OK**.
 
-    1.  From the **Location** drop-down list, select the **(US) East US** region.
+    1.  From the **Location** drop-down list, select the **(Europe) West Europe** region.
 
     1.  From the **Event Schema** drop-down list, select **Event Grid Schema**, and then select **Create**.
   
@@ -191,9 +191,9 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
 
     1.  In the **Operating System** section, select **Linux**.
 
-    1.  From the **Region** drop-down list, select the **East US** region.
+    1.  From the **Region** drop-down list, select the **West Europe** region.
 
-    1.  In the **Linux Plan (East US)** section, select **Create new**. 
+    1.  In the **Linux Plan (West Europe)** section, select **Create new**. 
 
     1.  In the **Name** text box, enter the value **EventPlan**, and then select **OK**.
 

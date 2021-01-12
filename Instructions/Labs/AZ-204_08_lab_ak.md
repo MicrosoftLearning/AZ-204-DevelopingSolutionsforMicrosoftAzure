@@ -117,9 +117,9 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
 
     1.  In the **Operating System** section, select **Linux**.
 
-    1.  In the **Region** drop-down list, select the **East US** region.
+    1.  In the **Region** drop-down list, select the **West Europe** region.
 
-    1.  In the **Linux Plan (East US)** section, select **Create new**, enter the value **ApiPlan** in the **Name** text box, and then select **OK**.
+    1.  In the **Linux Plan (West Europe)** section, select **Create new**, enter the value **ApiPlan** in the **Name** text box, and then select **OK**.
 
     1.  Leave the **SKU and size** section set to its default value.
 
@@ -201,7 +201,7 @@ In this exercise, you created a new Azure web app by using a container image sou
     
     1.  In the **Resource group** list, select the **ApiService** group that you created earlier in the lab.
     
-    1.  In the **Location** list, select **East US**.
+    1.  In the **Location** list, select **West Europe**.
     
     1.  In the **Organization name** text box, enter **Contoso**.
     

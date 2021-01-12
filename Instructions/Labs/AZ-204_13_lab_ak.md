@@ -111,7 +111,7 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
 
     1.  In the **Storage account name** text box, enter **contenthost*[yourname]***.
 
-    1.  In the **Location** drop-down list, select the **(US) East US** region.
+    1.  In the **Location** drop-down list, select the **(Europe) West Europe** region.
 
     1.  In the **Performance** section, select **Standard**.
 
@@ -157,9 +157,9 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
 
     1.  In the **Operating System** section, select **Linux**.
 
-    1.  In the **Region** drop-down list, select the **East US** region.
+    1.  In the **Region** drop-down list, select the **West Europe** region.
 
-    1.  In the **Linux Plan (East US)** section, select **Create new**, enter the value **MarketingPlan** in the **Name** text box, and then select **OK**.
+    1.  In the **Linux Plan (West Europe)** section, select **Create new**, enter the value **MarketingPlan** in the **Name** text box, and then select **OK**.
 
     1.  Leave the **SKU and size** section set to its default value.
 

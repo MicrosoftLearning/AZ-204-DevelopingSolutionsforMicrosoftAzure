@@ -111,7 +111,7 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
 
     1.  In the **Storage account name** text box, enter **mediastor*[yourname]***.
 
-    1.  In the **Location** drop-down list, select the **(US) East US** region.
+    1.  In the **Location** drop-down list, select the **(Europe) West Europe** region.
 
     1.  In the **Performance** section, select **Standard**.
 

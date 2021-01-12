@@ -96,7 +96,7 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
     1. Leave the **Subscription** text box set to its default value.
     1. In the **Resource group** section, select **Create new**, enter **ConfidentialStack**, and then select **OK**.
     1. In the **Storage account name** text box, enter **securestor[yourname]**.
-    1. In the **Location** drop-down list, select the **(US) East US** region.
+    1. In the **Location** drop-down list, select the **(Europe) West Europe** region.
     1. In the **Performance** section, select **Standard**.
     1. In the **Account kind** drop-down list, select **StorageV2 (general purpose v2)**.
     1. In the **Replication** drop-down list, select **Locally-redundant storage (LRS)**.
@@ -125,7 +125,7 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
     1. Leave the **Subscription** text box set to its default value.
     1. In the **Resource group** section, select **Use existing**, and then select **ConfidentialStack** in the list.
     1. In the **Key vault name** text box, enter **securevault[yourname]**.
-    1. In the **Region** drop-down list, select the **East US** region.
+    1. In the **Region** drop-down list, select the **West Europe** region.
     1. In the **Pricing tier** drop-down list, select **Standard**.
     1. Select **Review + Create**.
 1. From the **Review + Create** tab, review the options that you selected during the previous steps.
@@ -148,7 +148,7 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
     1. In the **Publish** section, select **Code**.
     1. In the **Runtime stack** drop-down list, select **.NET Core**.
     1. In the **Version** drop-down list, select **3.1**.
-    1. In the **Region** drop-down list, select the **East US** region.
+    1. In the **Region** drop-down list, select the **West Europe** region.
     1. Select **Next: Hosting**.
 1. From the **Hosting** tab, perform the following actions:
     1. In the **Operating System** section, select **Linux**.

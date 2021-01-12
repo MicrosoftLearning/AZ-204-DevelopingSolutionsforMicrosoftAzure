@@ -111,7 +111,7 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
     
     1.  In the **Server name** text box, enter **polysqlsrvr*[yourname]***.
     
-    1.  In the **Location** drop-down list, select **(US) East US**.
+    1.  In the **Location** drop-down list, select **(Europe) West Europe**.
     
     1.  In the **Server admin login** text box, enter **testuser**.
     
@@ -163,7 +163,7 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
 
     1.  In the **Apply Free Tier Discount** section, select **Do Not Apply**.
     
-    1.  In the **Location** drop-down list, select the **(US) East US** region.
+    1.  In the **Location** drop-down list, select the **(Europe) West Europe** region.
     
     1.  In the **Account Type** section, select **Non-Production**.
     
@@ -209,7 +209,7 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
     
     1.  In the **Storage account name** text box, enter **polystor*[yourname]***.
     
-    1.  In the **Location** drop-down list, select the **(US) East US** region.
+    1.  In the **Location** drop-down list, select the **(Europe) West Europe** region.
     
     1.  In the **Performance** section, select **Standard**.
     

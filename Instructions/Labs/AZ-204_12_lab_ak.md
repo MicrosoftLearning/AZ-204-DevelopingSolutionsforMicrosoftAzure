@@ -113,7 +113,7 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
     
     1.  In the **Name** text box, enter **instrm*[yourname]***.
     
-    1.  In the **Region** drop-down list, select the **(US) East US** region.
+    1.  In the **Region** drop-down list, select the **(Europe) West Europe** region.
     
     1.  In the **Resource Mode** section, select the **Classic** option.
     
@@ -165,9 +165,9 @@ https://github.com/betabitnl/AZ-204-DevelopingSolutionsforMicrosoftAzure
 
     1.  In the **Operating System** section, select **Windows**.
 
-    1.  In the **Region** drop-down list, select the **East US** region.
+    1.  In the **Region** drop-down list, select the **West Europe** region.
 
-    1.  In the **Windows Plan (East US)** section, select **Create new**, enter the value **MonitoredPlan** into the **Name** text box, and then select **OK**.
+    1.  In the **Windows Plan (West Europe)** section, select **Create new**, enter the value **MonitoredPlan** into the **Name** text box, and then select **OK**.
 
     1.  Leave the **SKU and size** section set to its default value.
 
