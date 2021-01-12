@@ -28,11 +28,11 @@ Using the above steps, you created a VHD, but it's empty without any data or fil
 1. Using the drop-down menu, select the drive letter you want to assign to the drive.
 1. Click Next.
 1. Under the Format this volume with the following settings section, make sure to use the following options:
-    File System - NTFS.
-    Allocation unit size - Default.
-    Volume label - Use the name of the drive file, but you can enter any name.
-    Perform a quick format - Formats the drive faster.
-    Enable file and folder compression - If it's not required, don't select it (optional).
+    * File System - NTFS.
+    * Allocation unit size - Default.
+    * Volume label - Use the name of the drive file, but you can enter any name.
+    * Perform a quick format - Formats the drive faster.
+    * Enable file and folder compression - If it's not required, don't select it (optional).
 1. Click Next.
 1. Click Finish.
 After completing these steps, the VHDX or VHD will be initialized, partitioned, and formatted. The VHD will mount automatically, and you can now access and save files using File Explorer.
