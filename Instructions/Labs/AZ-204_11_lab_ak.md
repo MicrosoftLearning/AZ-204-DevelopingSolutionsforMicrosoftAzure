@@ -157,6 +157,7 @@ In this exercise, you created a new Azure Storage account that you'll use throug
 
     ```
     using System;
+    using System.Text;
     using System.Threading.Tasks;
     ```
 
@@ -197,6 +198,7 @@ In this exercise, you created a new Azure Storage account that you'll use throug
     using Azure.Storage.Queues;
     using Azure.Storage.Queues.Models;
     using System;
+    using System.Text;
     using System.Threading.Tasks;
 
     public class Program
@@ -334,7 +336,7 @@ In this exercise, you configured your .NET project to access the Storage service
     ```
     public static async Task Main(string[] args)
     {
-        \\ Existing code removed for brevity
+        // Existing code removed for brevity
 
         Console.WriteLine($"---Existing Messages---");
         int batchSize = 10;
@@ -465,7 +467,7 @@ In this exercise, you configured your .NET project to access the Storage service
     ```
     public static async Task Main(string[] args)
     {
-        \\ Existing code removed for brevity
+        // Existing code removed for brevity
         
         foreach(QueueMessage message in messages?.Value)
         {
@@ -544,7 +546,7 @@ In this exercise, you read and deleted existing messages from the Storage queue 
     ```
     public static async Task Main(string[] args)
     {
-        \\ Existing code removed for brevity
+        // Existing code removed for brevity
         
         Console.WriteLine($"---New Messages---");
         string greeting = "Hi, Developer!";

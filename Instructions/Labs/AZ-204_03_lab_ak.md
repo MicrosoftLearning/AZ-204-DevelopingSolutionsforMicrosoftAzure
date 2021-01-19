@@ -416,7 +416,7 @@ In this exercise, you created a couple of placeholder containers in the storage 
     ```
     public static async Task Main(string[] args)
     {
-        \\ Existing code removed for brevity
+        // Existing code removed for brevity
         
         await EnumerateContainersAsync(serviceClient);
     }
@@ -513,7 +513,7 @@ In this exercise, you accessed existing containers by using the Azure Storage SD
     ```
     public static async Task Main(string[] args)
     {
-        \\ Existing code removed for brevity
+        // Existing code removed for brevity
         
         await EnumerateContainersAsync(serviceClient);
 
@@ -604,7 +604,7 @@ In this exercise, you accessed existing containers by using the Azure Storage SD
     ```
     public static async Task Main(string[] args)
     {
-        \\ Existing code removed for brevity
+        // Existing code removed for brevity
         
         await EnumerateContainersAsync(serviceClient);
 
@@ -718,7 +718,7 @@ In this exercise, you accessed existing containers by using the Azure Storage SD
     ```
     public static async Task Main(string[] args)
     {
-        \\ Existing code removed for brevity
+        // Existing code removed for brevity
         
         await EnumerateContainersAsync(serviceClient);
 
