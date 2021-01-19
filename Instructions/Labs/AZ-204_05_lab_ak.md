@@ -293,8 +293,8 @@ In this exercise, you used Cloud Shell to create a VM as part of an automated sc
 1.  Copy and paste the following code into the **Dockerfile** file:
 
     ```
-    # Start using the .NET Core 2.2 SDK container image
-    FROM mcr.microsoft.com/dotnet/core/sdk:2.2-alpine AS build
+    # Start using the .NET Core 3.1 SDK container image
+    FROM mcr.microsoft.com/dotnet/sdk:3.1-alpine AS build
 
     # Change current working directory
     WORKDIR /app
