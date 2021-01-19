@@ -79,7 +79,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the **Authentication** section, perform the following actions:
 
-    1.  In the **Default client type** subsection, select **Yes**.
+    1.  In the **Advanced settings** - **Allow public client flows** subsection, select **Yes**.
 
     1.  Select **Save**.
 
