@@ -79,8 +79,6 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icon for t
 
     1.  In the **Replication** drop-down list, select **Read-access geo-redundant storage (RA-GRS)**.
 
-    1.  In the **Access tier** section, ensure that **Hot** is selected.
-
     1.  Select **Review + Create**.
 
 1.  On the **Review + Create** tab, review the options that you selected during the previous steps.
@@ -161,7 +159,7 @@ In this exercise, you created an Azure Storage account and an Azure Web App that
 
 #### Task 1: Open Azure Cloud Shell
 
-1.  In the portal, select the **Cloud Shell** icon to open a new shell instance.
+1.  In the Azure portal, select the **Cloud Shell** icon to open a new shell instance.
 
     > **Note**: The **Cloud Shell** icon is represented by a greater than sign () and underscore character (\_).
 
