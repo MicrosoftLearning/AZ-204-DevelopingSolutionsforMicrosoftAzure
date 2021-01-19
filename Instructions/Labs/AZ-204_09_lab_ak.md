@@ -330,7 +330,7 @@ In this exercise, you built a basic workflow that starts when it's triggered by 
 
     1.  Select the single **GET** operation.
 
-    1.  Copy the value of the **Request URL** field. (You will use this value later in the lab.)
+    1.  Observe the value of the **Request URL** field.
 
     1.  Select **Send**.
 
