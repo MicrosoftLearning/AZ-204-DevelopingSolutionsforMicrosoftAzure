@@ -116,7 +116,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. When you receive the open command prompt, enter the following command, and then select Enter to use the **Azure Functions Core Tools** to create a new local Azure Functions project in the current directory using the **dotnet** runtime:
 
     ```powershell
-    func init --worker-runtime dotnet
+    func init --worker-runtime dotnet --force
     ```
 
     > **Note**: You can review the documentation to [create a new project][azure-functions-core-tools-new-project] using the **Azure Functions Core Tools**.
