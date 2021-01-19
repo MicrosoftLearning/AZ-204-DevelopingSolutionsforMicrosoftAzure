@@ -467,7 +467,7 @@ In this exercise, you created an Azure web app and deployed an existing web appl
 
 #### Task 1: Open Azure Cloud Shell
 
-1.  In the portal, select the **Cloud Shell** icon to open a new shell instance.
+1.  In the Azure portal, select the **Cloud Shell** icon to open a new shell instance.
 
     > **Note**: The **Cloud Shell** icon is represented by a greater than sign (\>) and underscore character (\_).
 

@@ -86,7 +86,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 3: Open Azure Cloud Shell
 
-1.  In the portal, select the **Cloud Shell** icon to open a new shell instance.
+1.  In the Azure portal, select the **Cloud Shell** icon to open a new shell instance.
 
     > **Note**: The **Cloud Shell** icon is represented by a greater than sign () and underscore character (\_).
 
@@ -345,7 +345,7 @@ In this exercise, you used Cloud Shell to create a VM as part of an automated sc
 
 #### Task 4: Open Azure Cloud Shell and store Container Registry metadata
 
-1.  In the portal, select the **Cloud Shell** icon to open a new shell instance.  
+1.  In the Azure portal, select the **Cloud Shell** icon to open a new shell instance.  
 
     > **Note**: Wait for Cloud Shell to finish connecting to an instance before moving forward with the lab.
 

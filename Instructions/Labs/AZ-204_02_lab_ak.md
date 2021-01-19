@@ -809,7 +809,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 1: Open Azure Cloud Shell and list resource groups
 
-1. In the Azure portal's navigation pane, select the **Cloud Shell** icon to open a new shell instance.
+1.  In the Azure portal, select the **Cloud Shell** icon to open a new shell instance.
     > **Note**: The **Cloud Shell** icon is represented by a greater than sign (\>) and underscore character (\_).
 1. If this is your first time opening Cloud Shell using your subscription, you can use the **Welcome to Azure Cloud Shell Wizard** to configure Cloud Shell for first-time usage. Perform the following actions in the wizard:
     1. A dialog box prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**.
