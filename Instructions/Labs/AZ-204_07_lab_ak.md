@@ -62,7 +62,6 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1. In the **Performance** section, select **Standard**.
     1. In the **Account kind** drop-down list, select **StorageV2 (general purpose v2)**.
     1. In the **Replication** drop-down list, select **Locally-redundant storage (LRS)**.
-    1. In the **Access tier** section, ensure that **Hot** is selected.
     1. Select **Review + Create**.
 1. From the **Review + Create** tab, review the options that you selected during the previous steps.
 1. Select **Create** to create the storage account by using your specified configuration.

@@ -79,8 +79,6 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icon for t
 
     1.  In the **Replication** drop-down list, select **Read-access geo-redundant storage (RA-GRS)**.
 
-    1.  In the **Access tier** section, ensure that **Hot** is selected.
-
     1.  Select **Review + Create**.
 
 1.  On the **Review + Create** tab, review the options that you selected during the previous steps.
