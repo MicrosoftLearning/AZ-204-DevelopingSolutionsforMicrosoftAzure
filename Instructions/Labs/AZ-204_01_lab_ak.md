@@ -57,13 +57,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 2: Create a Storage account
 
-1.  In the Azure portal's navigation pane, select **All services**.
+1.  In the Azure portal's navigation pane, select **More services**.
 
 1.  From the **All services** blade, select **Storage Accounts**.
 
 1.  From the **Storage accounts** blade, get your list of storage account instances.
 
-1.  From the **Storage accounts** blade, select **Add**.
+1.  From the **Storage accounts** blade, select **Create**.
 
 1.  From the **Create storage account** blade, observe the tabs from the blade, such as **Basics**, **Tags**, and **Review + Create**.
 
@@ -117,7 +117,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Name** text box, enter **images**.
     
-    1.  In the **Public access level** list, select **Blob (anonymous read access for blobs only)**, and then select **OK**.
+    1.  In the **Public access level** list, select **Blob (anonymous read access for blobs only)**, and then select **Create**.
 
 1.  In the **Containers** section, select the newly created **images** container.
 
@@ -193,7 +193,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  Select the **Application settings** tab, and then select **New application setting**.
     
-    1.  In the **Add/Edit application setting** pop-up dialog, in the **Name** text box, enter **StorageConnectionString**.
+    1.  In the **New application setting** pop-up dialog, in the **Name** text box, enter **StorageConnectionString**.
     
     1.  In the **Value** text box, enter the storage connection string that you copied earlier in this lab.
     
