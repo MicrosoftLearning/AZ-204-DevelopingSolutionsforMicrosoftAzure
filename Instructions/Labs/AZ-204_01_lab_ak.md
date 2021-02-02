@@ -57,7 +57,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 2: Create a Storage account
 
-1.  In the Azure portal's navigation pane, select **All services**.
+1.  In the Azure portal's navigation pane, select **More services**.
 
 1.  From the **All services** blade, select **Storage Accounts**.
 
