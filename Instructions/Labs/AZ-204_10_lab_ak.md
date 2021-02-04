@@ -496,7 +496,7 @@ In this exercise, you created a new subscription, validated its registration, an
             EventType = "Employees.Registration.New",
             EventTime = DateTime.Now,
             Subject = $"New Employee: {firstPerson.FullName}",
-            Data = firstPerson,
+            Data = firstPerson.ToString(),
             DataVersion = "1.0.0"
         };
         events.Add(firstEvent);
@@ -513,7 +513,7 @@ In this exercise, you created a new subscription, validated its registration, an
             EventType = "Employees.Registration.New",
             EventTime = DateTime.Now,
             Subject = $"New Employee: {secondPerson.FullName}",
-            Data = secondPerson,
+            Data = secondPerson.ToString(),
             DataVersion = "1.0.0"
         };
         events.Add(secondEvent);
