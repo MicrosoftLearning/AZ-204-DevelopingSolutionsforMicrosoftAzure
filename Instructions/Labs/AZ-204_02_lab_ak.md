@@ -35,7 +35,6 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 - Microsoft Edge
 - Windows Terminal
 - Visual Studio Code
-- Microsoft Azure Storage Explorer
 
 ### Exercise 1: Create Azure resources
 
