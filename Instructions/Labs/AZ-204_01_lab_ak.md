@@ -33,13 +33,15 @@ Sign in to your Windows 10 virtual machine (VM) by using the following credentia
 
 Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for the applications that you'll use in this lab:
     
--   Microsoft Edge
-
 -   File Explorer
 
--   Windows PowerShell
+-   Microsoft Edge
+
+-   Windows Terminal
 
 -   Visual Studio Code
+
+-   Microsoft Azure Storeage Explorer
 
 ### Exercise 1: Build a back-end API by using Azure Storage and the Web Apps feature of Azure App Service
 
@@ -57,13 +59,11 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 2: Create a Storage account
 
-1.  In the Azure portal's navigation pane, select **All services**.
-
-1.  From the **All services** blade, select **Storage Accounts**.
+1.  In the Azure portal menu pane, select **Storage Accounts**.
 
 1.  From the **Storage accounts** blade, get your list of storage account instances.
 
-1.  From the **Storage accounts** blade, select **Add**.
+1.  From the **Storage accounts** blade, select **+ Add, + New, or + Create**.
 
 1.  From the **Create storage account** blade, observe the tabs from the blade, such as **Basics**, **Tags**, and **Review + Create**.
 
@@ -87,7 +87,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  Select **Review + Create**.
 
-1.  From the **Review + Create** tab, review the options that you specified in the previous steps.
+1.  From the **Review + Create** tab, review the options that you specified in the previous steps, and ensure that validation has passed.
 
 1.  Select **Create** to create the storage account by using your specified configuration.
 
@@ -99,11 +99,11 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.	From the **Access keys** blade, select any one of the keys, and then record the value of either of the **Connection string** boxes. You'll use this value later in this lab.
 
-    > **Note**: It doesn't matter which connection string you choose. They are interchangeable.
+    > **Note**: It doesn't matter which connection string you choose. They are interchangeable. Open Notepad and paste the key for later use.
 
 #### Task 3: Upload a sample blob
 
-1.  In the Azure portal's navigation pane, select **Resource groups**.
+1.  In the Azure portal menu pane, select **Resource groups**.
 
 1.  From the **Resource groups** blade, select the **ManagedPlatform** resource group that you created earlier in this lab.
 
@@ -117,7 +117,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Name** text box, enter **images**.
     
-    1.  In the **Public access level** list, select **Blob (anonymous read access for blobs only)**, and then select **OK**.
+    1.  In the **Public access level** list, select **Blob (anonymous read access for blobs only)**, and then select **Create**.
 
 1.  In the **Containers** section, select the newly created **images** container.
 
@@ -133,7 +133,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 4: Create a web app
 
-1.  In the Azure portal's navigation pane, select **Create a resource**.
+1.  In the Azure portal menu pane, select **Create a resource**.
 
 1.  From the **New** blade, find the **Search the Marketplace** text box.
 
@@ -175,13 +175,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  Select **Review + Create**.
 
-1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
+1.  From the **Review + Create** tab, review the options that you selected during the previous steps, and ensure that validation has passed.
 
 1.  Select **Create** to create the web app by using your specified configuration. Wait for the creation task to complete before you move forward with this lab.
 
 #### Task 5: Configure the web app
 
-1.  In the Azure portal's navigation pane, select **Resource groups**.
+1.  In the Azure portal menu pane, select **Resource groups**.
 
 1.  From the **Resource groups** blade, select the **ManagedPlatform** resource group that you created earlier in this lab.
 
@@ -200,6 +200,8 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1.  Leave the **Deployment slot setting** text box set to its default value, and then select **OK** to close the pop-up dialog and return to the **Configuration** section.
     
     1.  Select **Save** from the blade to persist your settings.
+    
+    1.  Select **Continue** on the save changes pop-up prompt.
   
     Wait for your application settings to persist before you move forward with the lab.
 
@@ -337,7 +339,7 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
     1.  Select **Review + Create**.
 
-1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
+1.  From the **Review + Create** tab, review the options that you selected during the previous steps. Ensure that validation has passed.
 
 1.  Select **Create** to create the web app by using your specified configuration. Wait for the creation task to complete before you move forward with this lab.
 
@@ -366,6 +368,8 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
     1.  Select **OK** to close the pop-up dialog, and then return to the **Configuration** section.
     
     1.  Select **Save** from the blade to persist your settings.
+    
+    1.  Select **Continue** on the save changes pop-up prompt.
   
     Wait for your application settings to persist before you move forward with the lab.
 
@@ -467,11 +471,13 @@ In this exercise, you created an Azure web app and deployed an existing web appl
 
 #### Task 1: Open Azure Cloud Shell
 
-1.  In the Azure portal, select the **Cloud Shell** icon to open a new shell instance.
+1.  In the Azure portal, select the **Cloud Shell** icon next to the search box to open a new shell instance.
 
     > **Note**: The **Cloud Shell** icon is represented by a greater than sign (\>) and underscore character (\_).
 
 1.  If this is your first time opening Cloud Shell using your subscription, you can use the **Welcome to Azure Cloud Shell Wizard** to configure Cloud Shell for first-time usage. Perform the following actions in the wizard:
+    
+    1.  Click **PowerShell**.
     
     1.  A dialog box prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**.
     
