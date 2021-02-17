@@ -51,7 +51,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 2: Create a web app by using Azure App Service resource by using an httpbin container image
 
-1.  In the Azure portal's navigation pane, select **Create a resource**.
+1.  In the Azure portal menu pane, select **Create a resource**.
 
 1.  From the **New** blade, find the **Search the Marketplace** text box.
 
@@ -97,7 +97,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  Select **Review + Create**.
 
-1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
+1.  From the **Review + Create** tab, review the options that you selected during the previous steps, ensure validation has passed.
 
 1.  Select **Create** to create the web app by using your specified configuration. 
 
@@ -105,11 +105,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 3: Test the httpbin web application
 
-1.  In the Azure portal's navigation pane, select **Resource groups**.
-
-1.  From the **Resource groups** blade, select the **ApiService** resource group that you created earlier in this lab.
-
-1.  From the **ApiService** blade, select the **httpapi*[yourname]*** web app that you created earlier in this lab.
+1.  Select **Go to Resource**.
 
 1.	From the **Web App** blade, select **Browse**.
 
@@ -154,32 +150,32 @@ In this exercise, you created a new Azure web app by using a container image sou
 1.  From the **API Management** blade, select **Create**.
 
 1.  From the **API Management Service** blade, perform the following actions:
-    
-    1.  In the **Name** text box, enter **prodapi*[yourname]***.
-    
+     
     1.  Leave the **Subscription** text box set to its default value.
     
     1.  In the **Resource group** list, select the **ApiService** group that you created earlier in the lab.
     
-    1.  In the **Location** list, select **East US**.
+    1.  In the **Region** list, select **East US**.
+    
+    1.  In the **Resource Name** text box, enter **prodapi*[yourname]***.    
     
     1.  In the **Organization name** text box, enter **Contoso**.
     
-    1.  Leave the **Administrator email** text box set to its default value.
+    1.  In the **Administrator email** text box enter a valid email address.
     
     1.  In the **Pricing tier** list, select **Consumption (99.9 SLA, %)**.
     
-    1.  Select **Create**.
+    1.  Select **Review + Create**.
+
+1.  From the **Review + Create** tab, review the options that you selected during the previous steps, ensure validation has passed.
+
+1.  Select **Create** to create the web app by using your specified configuration.
 
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
 #### Task 2: Define a new API
 
-1.  In the Azure portal's navigation pane, select **Resource groups**.
-
-1.  From the **Resource groups** blade, select the **ApiService** resource group that you created earlier in this lab.
-
-1.  From the **ApiService** blade, select the **prodapi*[yourname]*** API Management account that you created earlier in this lab.
+1.  Select **Go to Resource**.
 
 1.  From the **API Management Service** blade, in the **API Management** section, select **APIs** .
 
