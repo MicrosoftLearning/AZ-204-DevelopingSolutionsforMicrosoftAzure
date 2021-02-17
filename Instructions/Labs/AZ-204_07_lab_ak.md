@@ -31,8 +31,8 @@ Sign in to your Windows 10 virtual machine (VM) by using the following credentia
 
 Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for the applications that you'll use in this lab:
 
-- Microsoft Edge
 - File Explorer
+- Microsoft Edge
 - Windows Terminal
 - Visual Studio Code
 
@@ -48,10 +48,10 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 2: Create an Azure Storage account
 
-1. In the Azure portal's navigation pane, select **All services**.
+1. In the Azure portal menu pane, select **All services**.
 1. From the **All services** blade, select **Storage Accounts**.
 1. From the **Storage accounts** blade, find your list of Storage instances.
-1. From the **Storage accounts** blade, select **Add**.
+1. From the **Storage accounts** blade, select **+ Add, + New, or + Create**.
 1. Find the tabs from the **Create storage account** blade, such as **Basics**.
     > **Note**: Each tab represents a step in the workflow to create a new storage account. You can select **Review + Create** at any time to skip the remaining tabs.
 1. From the **Basics** tab, perform the following actions:
@@ -63,19 +63,17 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1. In the **Account kind** drop-down list, select **StorageV2 (general purpose v2)**.
     1. In the **Replication** drop-down list, select **Locally-redundant storage (LRS)**.
     1. Select **Review + Create**.
-1. From the **Review + Create** tab, review the options that you selected during the previous steps.
+1. From the **Review + Create** tab, review the options that you selected during the previous steps, ensure validation has passed.
 1. Select **Create** to create the storage account by using your specified configuration.
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
-1. In the Azure portal's navigation pane, select **All services**.
-1. From the **All services** blade, select **Storage Accounts**.
-1. From the **Storage accounts** blade, select the **securestor[yourname]** storage account that you created earlier in this lab.
+1. Select **Go to Resource**.
 1. From the **Storage account** blade, find the **Settings** section, and then select the **Access keys** link.
 1. From the **Access keys** blade, select any one of the keys and record the value in either of the **Connection string** boxes. You'll use this value later in this lab.
     > **Note**: It doesn't matter which connection string you choose. They are interchangeable.
 
 #### Task 3: Create an Azure Key Vault
 
-1. In the Azure portal's navigation pane, select the **Create a resource** link.
+1. In the Azure portal menu pane, select the **Create a resource** link.
 1. From the **New** blade, find the **Search the Marketplace** text box above the list of featured services.
 1. In the search box, enter **Vault**, and then select Enter.
 1. From the **Marketplace** search results blade, select the **Key Vault** result.
@@ -89,7 +87,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1. In the **Region** drop-down list, select the **East US** region.
     1. In the **Pricing tier** drop-down list, select **Standard**.
     1. Select **Review + Create**.
-1. From the **Review + Create** tab, review the options that you selected during the previous steps.
+1. From the **Review + Create** tab, review the options that you selected during the previous steps, ensure that validation has passed.
 1. Select **Create** to create the key vault by using your specified configuration.
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
@@ -107,7 +105,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1. In the **Resource group** section, select **Use existing**, and then select **ConfidentialStack** in the list.
     1. In the **Function app name** text box, enter **securefunc[yourname]**.
     1. In the **Publish** section, select **Code**.
-    1. In the **Runtime stack** drop-down list, select **.NET Core**.
+    1. In the **Runtime stack** drop-down list, select **.NET**.
     1. In the **Version** drop-down list, select **3.1**.
     1. In the **Region** drop-down list, select the **East US** region.
     1. Select **Next: Hosting**.
@@ -116,9 +114,9 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1. In the **Storage account** drop-down list, select the **securestor[yourname]** storage account that you created earlier in this lab.
     1. In the **Plan type** drop-down list, select the **Consumption (Serverless)** option.
     1. Select **Review + Create**.
-1. From the **Review + Create** tab, review the options that you selected during the previous steps.
+1. From the **Review + Create** tab, review the options that you selected during the previous steps, ensure that validation has passed.
 1. Select **Create** to create the function app by using your specified configuration.
-    > **Note**: Wait for the creation task to complete before you move forward with this lab.
+> **Note**: Wait for the creation task to complete before you move forward with this lab.
 
 > **Review**: In this exercise, you created all the resources that you'll use for this lab.
 
@@ -126,7 +124,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 1: Configure a system-assigned managed service identity
 
-1. In the Azure portal's navigation pane, select the **Resource groups** link.
+1. In the Azure portal menu, select the **Resource groups** link.
 1. From the **Resource groups** blade, find and then select the **ConfidentialStack** resource group that you created earlier in this lab.
 1. From the **ConfidentialStack** blade, select the **securefunc[yourname]** function app that you created earlier in this lab.
 1. From the **App Service** blade, select the **Identity** option from the **Settings** section.
@@ -137,9 +135,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 2: Create a Key Vault secret
 
-1. In the Azure portal's navigation pane, select the **Resource groups** link.
-1. From the **Resource groups** blade, find and then select the **ConfidentialStack** resource group that you created earlier in this lab.
-1. From the **ConfidentialStack** blade, select the **securevault[yourname]** key vault that you created earlier in this lab.
+1. Sewlect **Go to Resource**.
 1. From the **Key Vault** blade, select the **Secrets** link in the **Settings** section.
 1. In the **Secrets** pane, select **Generate/Import**.
 1. From the **Create a secret** blade, perform the following actions:
@@ -161,18 +157,18 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 3: Configure a Key Vault access policy
 
-1. In the Azure portal's navigation pane, select the **Resource groups** link.
+1. In the Azure portal menu, select the **Resource groups** link.
 1. From the **Resource groups** blade, find and then select the **ConfidentialStack** resource group that you created earlier in this lab.
 1. From the **ConfidentialStack** blade, select the **securevault[yourname]** key vault that you created earlier in this lab.
 1. From the **Key Vault** blade, select the **Access policies** link in the **Settings** section.
 1. In the Access policies pane, select **Add Access Policy**.
 1. From the **Add access policy** blade, perform the following actions:
-    1. Select the **Select principal** link.
-    1. From the **Principal** blade, find and then select the service principal named **securefunc[yourname]**, and then select **Select**.
-        > **Note**: The system-assigned managed identity you created earlier in this lab will have the same name as the Azure Function resource.
     1. Leave the **Key permissions** list set to its default value.
     1. In the **Secret permissions** drop-down list, select the **GET** permission.
     1. Leave the **Certificate permissions** list set to its default value.
+    1. Select the **Select principal** link.
+    1. From the **Principal** blade, find and then select the service principal named **securefunc[yourname]**, and then select **Select**.
+        > **Note**: The system-assigned managed identity you created earlier in this lab will have the same name as the Azure Function resource.
     1. Leave the **Authorized application** text box set to its default value.
     1. Select **Add**.
 1. Back in the Access policies pane, select **Save**.
@@ -180,7 +176,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 4: Create a Key Vault-derived application setting
 
-1. In the Azure portal's navigation pane, select the **Resource groups** link.
+1. In the Azure portal menu pane, select the **Resource groups** link.
 1. From the **Resource groups** blade, find and then select the **ConfidentialStack** resource group that you created earlier in this lab.
 1. From the **ConfidentialStack** blade, select the **securefunc[yourname]** function app that you created earlier in this lab.
 1. From the **App Service** blade, select the **Configuration** option from the **Settings** section.
@@ -517,7 +513,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1. On the taskbar, select the **Microsoft Edge** icon.
 1. In the open browser window, go to the Azure portal (<https://portal.azure.com>).
-1. In the Azure portal's navigation pane, select the **Resource groups** link.
+1. In the Azure portal menu pane, select the **Resource groups** link.
 1. On the **Resource groups** blade, find and then select the **ConfidentialStack** resource group that you created earlier in this lab.
 1. On the **ConfidentialStack** blade, select the **securefunc[yourname]** function app that you created earlier in this lab.
 1. From the **App Service** blade, select the **Functions** option from the **Functions** section.
@@ -535,14 +531,14 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 1: Upload a sample storage blob
 
-1. In the Azure portal's navigation pane, select the **Resource groups** link.
+1. In the Azure portal menu pane, select the **Resource groups** link.
 1. From the **Resource groups** blade, find and then select the **ConfidentialStack** resource group that you created earlier in this lab.
 1. From the **ConfidentialStack** blade, select the **securestor[yourname]** storage account that you created earlier in this lab.
 1. From the **Storage account** blade, select the **Containers** link in the **Blob service** section.
 1. In the **Containers** section, select **+ Container**.
 1. In the **New container** pop-up window, perform the following actions:
     1. In the **Name** text box, enter **drop**.
-    1. In the **Public access level** drop-down list, select **Blob (anonymous read access for blobs only)**, and then select **OK**.
+    1. In the **Public access level** drop-down list, select **Blob (anonymous read access for blobs only)**, and then select **Create**.
 1. Return to the **Containers** section, and then select the newly created **drop** container.
 1. From the **Container** blade, select **Upload**.
 1. In the **Upload blob** pop-up window, perform the following actions:
@@ -696,7 +692,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. Close the currently running **Windows Terminal** application.
 1. On the taskbar, select the **Microsoft Edge** icon.
 1. In the open browser window, go to the Azure portal (<https://portal.azure.com>).
-1. In the Azure portal's navigation pane, select the **Resource groups** link.
+1. In the Azure portal menu pane, select the **Resource groups** link.
 1. On the **Resource groups** blade, find and then select the **ConfidentialStack** resource group that you created earlier in this lab.
 1. On the **ConfidentialStack** blade, select the **securefunc[yourname]** function app that you created earlier in this lab.
 1. From the **App Service** blade, select the **Functions** option from the **Functions** section.
