@@ -41,7 +41,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 -   Visual Studio Code
 
--   Microsoft Azure Storeage Explorer
+-   Microsoft Azure Storage Explorer
 
 ### Exercise 1: Build a back-end API by using Azure Storage and the Web Apps feature of Azure App Service
 
