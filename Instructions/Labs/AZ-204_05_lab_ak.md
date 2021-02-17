@@ -52,7 +52,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 2: Create a resource group
 
-1.  In the Azure portal's navigation pane, select the **Create a resource** link.
+1.  In the Azure portal menu pane, select the **Create a resource** link.
 
     > **Note**: If you can't find the **Create a resource** link, the **Create a resource** icon is a plus sign (+) character from the portal.
 
@@ -78,7 +78,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  Select **Review + Create**.
 
-1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
+1.  From the **Review + Create** tab, review the options that you selected during the previous steps, ensure validation passed.
 
 1.  Select **Create** to create the resource group by using your specified configuration.  
 
@@ -202,7 +202,7 @@ In this exercise, you used Cloud Shell to create a VM as part of an automated sc
 
 #### Task 1: Open the Cloud Shell and editor
 
-1.  In the Azure portal's navigation pane, select the **Cloud Shell** icon to open a new shell instance.  
+1.  In the Azure portal menu pane, select the **Cloud Shell** icon to open a new shell instance.  
 
     > **Note**: Wait for Cloud Shell to finish connecting to an instance before moving on with the lab.
 
@@ -315,7 +315,7 @@ In this exercise, you used Cloud Shell to create a VM as part of an automated sc
 
 #### Task 3: Create a Container Registry resource
 
-1.  In the Azure portal's navigation pane, select the **Create a resource** link.
+1.  In the Azure portal menu pane, select the **Create a resource** link.
 
 1.  From the **New** blade, find the **Search the Marketplace** text box above the list of featured services.
 
@@ -423,7 +423,7 @@ In this exercise, you created a .NET console application to display a machine’
 
 #### Task 1: Enable the admin user in Container Registry
 
-1.  In the Azure portal's navigation pane, select the **Resource groups** link.
+1.  In the Azure portal menu pane, select the **Resource groups** link.
 
 1.  From the **Resource groups** blade, find and then select the **ContainerCompute** resource group that you created earlier in this lab.
 
@@ -477,7 +477,7 @@ In this exercise, you created a .NET console application to display a machine’
 
 #### Task 3: Manually deploy a container image to Container Instances
 
-1.  In the Azure portal's navigation pane, select the **Create a resource** link.
+1.  In the Azure portal menu pane, select the **Create a resource** link.
 
 1.  From the **New** blade, find the **Search the Marketplace** text box above the list of featured services.
 
@@ -511,7 +511,7 @@ In this exercise, you created a .NET console application to display a machine’
 
     1.  Select **Review + Create**.
 
-1.  From the **Review + Create** tab, review the selected options.
+1.  From the **Review + Create** tab, review the selected options, ensure validation passed.
 
 1.  Select **Create** to create the container instance by using your specified configuration.  
 
@@ -519,7 +519,7 @@ In this exercise, you created a .NET console application to display a machine’
 
 #### Task 4: Validate that the container instance ran successfully
 
-1.  In the Azure portal's navigation pane, select the **Resource groups** link.
+1.  In the Azure portal menu pane, select the **Resource groups** link.
 
 1.  From the **Resource groups** blade, find and then select the **ContainerCompute** resource group that you created earlier in this lab.
 
@@ -543,7 +543,7 @@ In this exercise, you used multiple methods to deploy a container image to an Az
 
 #### Task 1: Open Azure Cloud Shell and list resource groups
 
-1.  In the Azure portal's navigation pane, select the **Cloud Shell** icon to open a new shell instance.
+1.  In the Azure portal menu pane, select the **Cloud Shell** icon to open a new shell instance.
 
     > **Note**: The **Cloud Shell** icon is represented by a greater than sign () and underscore character (\_).
 
