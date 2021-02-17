@@ -31,10 +31,11 @@ Sign in to your Windows 10 virtual machine (VM) by using the following credentia
 
 Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for the applications that you'll use in this lab:
 
-- Microsoft Edge
 - File Explorer
+- Microsoft Edge
 - Windows Terminal
 - Visual Studio Code
+- Microsoft Azure Storage Explorer
 
 ### Exercise 1: Create Azure resources
 
@@ -48,10 +49,10 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 2: Create an Azure Storage account
 
-1. In the Azure portal's navigation pane, select **All services**.
+1. In the Azure portal menu pane, select **All services**.
 1. On the **All services** blade, select **Storage Accounts**.
 1. On the **Storage accounts** blade, get your list of storage account instances.
-1. On the **Storage accounts** blade, select **Add**.
+1. On the **Storage accounts** blade, select **+ Add, + New, + Create**.
 1. On the **Create storage account** blade, observe the tabs on the blade, such as **Basics**, **Tags**, and **Review + Create**.
     > **Note**: Each tab represents a step in the workflow to create a new storage account. You can select **Review + Create** at any time to skip the remaining tabs.
 1. Select the **Basics** tab, and then in the tab area, perform the following actions:
@@ -63,7 +64,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1. In the **Account kind** list, select **StorageV2 (general purpose v2)**.
     1. In the **Replication** list, select **Locally-redundant storage (LRS)**.
     1. Select **Review + Create**.
-1. On the **Review + Create** tab, review the options that you specified in the previous steps.
+1. On the **Review + Create** tab, review the options that you specified in the previous steps, ensure validation has passed.
 1. Select **Create** to create the storage account by using your specified configuration.
     > **Note**: On the **Deployment** blade, wait for the creation task to complete before moving forward with this lab.
 1. In the Azure portal's navigation pane, select **All services**.
@@ -71,14 +72,15 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. On the **Storage accounts** blade, select the **funcstor[yourname]** storage account instance.
 1. From the **Storage account** blade, find the **Settings** section, and then select **Access keys**.
 1. From the **Access keys** blade, select any one of the keys, and then record the value of either of the **Connection string** boxes.
-    > **Note**: You'll use this value later in the lab. It doesn't matter which connection string you choose. They are interchangeable.
+
+> **Note**: You'll use this value later in the lab. It doesn't matter which connection string you choose. They are interchangeable.
 
 #### Task 3: Create a Function app
 
 1. In the Azure portal's navigation pane, select the **Create a resource** link.
 1. From the **New** blade, find the **Search the Marketplace** text box.
 1. In the search box, enter **Function**, and then select Enter.
-1. On the **Everything** search results blade, select the **Function App** result.
+1. On the **Function** search results blade, select the **Function App** result.
 1. On the **Function App** blade, select **Create**.
 1. Find the tabs on the **Function App** blade, such as **Basics**.
     > **Note**: Each tab represents a step in the workflow to create a new function app. You can select **Review + Create** at any time to skip the remaining tabs.
@@ -87,18 +89,19 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1. In the **Resource group** section, select **Use existing**, and then select **Serverless** in the list.
     1. In the **Function app name** text box, enter **funclogic[yourname]**.
     1. In the **Publish** section, select **Code**.
-    1. In the **Runtime stack** drop-down list, select **.NET Core**.
+    1. In the **Runtime stack** drop-down list, select **.NET**.
     1. In the **Version** drop-down list, select **3.1**.
     1. In the **Region** drop-down list, select the **East US** region.
     1. Select **Next: Hosting**.
 1. On the **Hosting** tab, perform the following actions:
-    1. In the **Operating System** section, select **Linux**.
     1. In the **Storage account** drop-down list, select the **funcstor[yourname]** storage account that you created earlier in this lab.
+    1. In the **Operating System** section, select **Linux**.
     1. In the **Plan type** drop-down list, select the **Consumption** option.
     1. Select **Review + Create**.
-1. On the **Review + Create** tab, review the options that you selected during the previous steps.
+1. On the **Review + Create** tab, review the options that you selected during the previous steps, ensure that validation has passed.
 1. Select **Create** to create the function app by using your specified configuration.
-    > **Note**: Wait for the creation task to complete before you move forward with this lab.
+    
+> **Note**: Wait for the creation task to complete before you move forward with this lab.
 
 > **Review**: In this exercise, you created all the resources that you'll use for this lab.
 
@@ -513,7 +516,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 1: Upload sample content to Azure Blob Storage
 
-1. In the Azure portal's navigation pane, select the **Resource groups** link.
+1. In the Azure portal menu pane, select the **Resource groups** link.
 1. On the **Resource groups** blade, find and then select the **Serverless** resource group that you created earlier in this lab.
 1. On the **Serverless** blade, select the **funcstor[yourname]** storage account that you created earlier in this lab.
 1. On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
@@ -521,7 +524,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the **New container** pop-up window, perform the following actions:
     1. In the **Name** text box, enter **content**.
     1. In the **Public access level** drop-down list, select **Private (no anonymous access)**.
-    1. Select **OK**.
+    1. Select **Create**.
 1. Return to the **Containers** section, and then select the recently created **content** container.
 1. On the **Container** blade, select **Upload**.
 1. In the **Upload blob** window, perform the following actions:
@@ -777,7 +780,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1. On the taskbar, select the **Microsoft Edge** icon.
 1. In the open browser window, go to the Azure portal (<https://portal.azure.com>).
-1. In the Azure portal's navigation pane, select the **Resource groups** link.
+1. In the Azure portal menu pane, select the **Resource groups** link.
 1. On the **Resource groups** blade, find and then select the **Serverless** resource group that you created earlier in this lab.
 1. On the **Serverless** blade, select the **funclogic[yourname]** function app that you created earlier in this lab.
 1. From the **App Service** blade, select the **Functions** option from the **Functions** section.
