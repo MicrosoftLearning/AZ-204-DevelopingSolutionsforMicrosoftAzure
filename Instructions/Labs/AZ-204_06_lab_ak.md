@@ -53,7 +53,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 2: Create an application registration
 
-1.  In the Azure portal's navigation pane, select **All services**.
+1.  In the Azure portal menu pane, select **All services**.
 
 1.  From the **All services** blade, select **Azure Active Directory**.
 
@@ -69,7 +69,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  In the **Redirect URI** drop-down list, select **Public client/native (mobile & desktop)**.
 
-    1.  In the **Redirect URI** text box, enter **http\://localhost**.
+    1.  In the **Redirect URI** text box, enter **https://localhost**.
 
     1.  Select **Register**.
 
@@ -105,7 +105,7 @@ In this exercise, you created a new application registration and recorded import
 
 1.  In the **File Explorer** window that opens, browse to **Allfiles (F):\\Allfiles\\Labs\\06\\Starter\\GraphClient**, and then select **Select Folder**.
 
-1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
+1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Integrated Terminal**.
 
 1.  At the open command prompt, enter the following command, and then select Enter to create a new .NET project named **GraphClient** in the current folder:
 
@@ -354,7 +354,7 @@ In this exercise, you created a new application registration and recorded import
 
 #### Task 4: Test the updated application
 
-1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
+1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Integrated Terminal**.
 
 1.  At the open command prompt, enter the following command, and then select Enter to run the .NET web application:
 
@@ -394,7 +394,7 @@ In this exercise, you acquired a token from the Microsoft identity platform by u
 
 #### Task 1: Import the Microsoft Graph SDK from NuGet
 
-1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
+1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Integrated Terminal**.
 
 1.  At the command prompt, enter the following command, and then select Enter to import version 1.21.0 of **Microsoft.Graph** from NuGet:
 
@@ -589,7 +589,7 @@ In this exercise, you acquired a token from the Microsoft identity platform by u
 
 #### Task 4: Test the updated application
 
-1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
+1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Integrated Terminal**.
 
 1.  At the open command prompt, enter the following command, and then select Enter to run the .NET web application:
 
