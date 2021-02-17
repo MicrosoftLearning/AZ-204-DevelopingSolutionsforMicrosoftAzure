@@ -33,9 +33,9 @@ Sign in to your Windows 10 virtual machine (VM) by using the following credentia
 
 Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for the applications that you'll use in this lab:
     
--   Microsoft Edge
-
 -   File Explorer
+
+-   Microsoft Edge
 
 -   Visual Studio Code
 
@@ -55,13 +55,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 2: Create an Azure SQL Database server resource
 
-1.  In the Azure portal's navigation pane, select **All services**.
+1.  In the Azure portal menu pane, select **All services**.
 
-1.  From the **All services** blade, select **SQL servers**.
+1.  In the catagory list select **Database** then select **SQL servers**.
 
 1.  From the **SQL servers** blade, find your list of SQL server instances.
 
-1.  From the **SQL servers** blade, select **Add**.
+1.  From the **SQL servers** blade, select **+ Add, + New, or + Create**.
 
 1.  From the **Create SQL Database Server** blade, observe the tabs from the blade, such as **Basics**, **Networking**, and **Additional settings**.
 
@@ -91,7 +91,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  Select **Review + Create**.
 
-1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
+1.  From the **Review + Create** tab, review the options that you selected during the previous steps, ensure validation has passed.
 
 1.  Select **Create** to create the SQL Database server by using your specified configuration.
 
@@ -103,11 +103,11 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the Azure portal's navigation pane, select **All services**.
 
-1.  From the **All services** blade, select **Azure Cosmos DB**.
+1.  In the catagory list select **Database** then select select **Azure Cosmos DB**.
 
 1.  From the **Azure Cosmos DB** blade, find your list of Azure Cosmos DB instances.
 
-1.  From the **Azure Cosmos DB** blade, select **Add**.
+1.  From the **Azure Cosmos DB** blade, select **+ Add, + New, or + Create**.
 
 1.  From the **Create Azure Cosmos DB Account** blade, observe the tabs from the blade, such as **Basics**, **Network**, and **Tags**.
 
@@ -123,11 +123,9 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **API** drop-down list, select **Core (SQL)**.
 
-    1.  In the **Notebooks (Preview)** section, select **Off**.
+    1.  In the **Location** drop-down list, select the **(US) East US** region.
 
     1.  In the **Apply Free Tier Discount** section, select **Do Not Apply**.
-    
-    1.  In the **Location** drop-down list, select the **(US) East US** region.
     
     1.  In the **Account Type** section, select **Non-Production**.
     
@@ -135,7 +133,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  Select **Review + Create**.
 
-1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
+1.  From the **Review + Create** tab, review the options that you selected during the previous steps, ensure that validation has passed.
 
 1.  Select **Create** to create the Azure Cosmos DB account by using your specified configuration.
 
@@ -159,7 +157,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **Storage accounts** blade, find your list of Storage instances.
 
-1.  From the **Storage accounts** blade, select **Add**.
+1.  From the **Storage accounts** blade, select **+ Add, + New, or + Create**.
 
 1.  From the **Create storage account** blade, observe the tabs from the blade, such as **Basics**, **Advanced**, and **Tags**.
 
@@ -183,7 +181,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
         
     1.  Select **Review + Create**.
 
-1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
+1.  From the **Review + Create** tab, review the options that you selected during the previous steps, ensure that validation has passed.
 
 1.  Select **Create** to create the storage account by using your specified configuration.
 
@@ -197,11 +195,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
 #### Task 1: Upload image blobs
 
-1.  In the Azure portal's navigation pane, select the **Resource groups** link.
-
-1.  From the **Resource groups** blade, find and select the **PolyglotData** resource group that you created earlier in this lab.
-
-1.  From the **PolyglotData** blade, select the **polystor*[yourname]*** storage account that you created earlier in this lab.
+1.  Select **Go to resource**.
 
 1.  From the **Storage account** blade, select the **Containers** link in the **Blob service** section from the blade.
 
@@ -213,7 +207,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
     
     1.  In the **Public access level** drop-down list, select **Blob (anonymous read access for blobs only)**.
     
-    1.  Select **OK**.
+    1.  Select **Create**.
 
 1.  Back in the **Containers** section, select the newly created **images** container.
 
@@ -237,7 +231,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
 #### Task 2: Upload an SQL .bacpac file
 
-1.  In the Azure portal's navigation pane, select the **Resource groups** link.
+1.  In the Azure portal menu pane, select the **Resource groups** link.
 
 1.  From the **Resource groups** blade, find and select the **PolyglotData** resource group that you created earlier in this lab.
 
@@ -387,7 +381,7 @@ In this exercise, you imported all the resources that you'll use with your web a
 
 1.  In the **File Explorer** window that opens, browse to **Allfiles (F):\\Allfiles\\Labs\\04\\Starter\\AdventureWorks**, and then select **Select Folder**.
 
-1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
+1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Integrated Terminal**.
 
 1.  At the open command prompt, enter the following command, and then select Enter to build the .NET web application:
 
@@ -439,7 +433,7 @@ In this exercise, you imported all the resources that you'll use with your web a
 
 #### Task 4: Validate the web application
 
-1.  In the **Visual Studio Code** window, access the shortcut menu or right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
+1.  In the **Visual Studio Code** window, access the shortcut menu or right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Integrated Terminal**.
 
 1.  At the open command prompt, enter the following command, and then select Enter to switch your terminal context to the **AdventureWorks.Web** folder:
 
@@ -477,7 +471,7 @@ In this exercise, you configured your ASP.NET web application to connect to your
 
 #### Task 1: Create a migration project
 
-1.  In the **Visual Studio Code** window, access the shortcut menu or right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
+1.  In the **Visual Studio Code** window, access the shortcut menu or right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Integrated Terminal**.
 
 1.  At the open command prompt, enter the following command, and then select Enter to create a new .NET console project named **AdventureWorks.Migrate** in a folder with the same name:
 
