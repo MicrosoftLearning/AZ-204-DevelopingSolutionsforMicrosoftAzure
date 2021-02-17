@@ -53,13 +53,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 2: Create a Storage account
 
-1.  In the Azure portal's navigation pane, select **All services**.
+1.  In the Azure portal menu pane, select **All services**.
 
 1.  On the **All services** blade, select **Storage Accounts**.
 
 1.  On the **Storage accounts** blade, find your list of Storage instances.
 
-1.  On the **Storage accounts** blade, select **Add**.
+1.  On the **Storage accounts** blade, select **+ Add, + New, + Create**.
 
 1.  Find the tabs on the **Create storage account** blade, such as **Basics**.
 
@@ -83,17 +83,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  Select **Review + Create**.
 
-1.  On the **Review + Create** tab, review the options that you selected during the previous steps.
+1.  On the **Review + Create** tab, review the options that you selected during the previous steps, ensure that validation has passed.
 
 1.  Select **Create** to create the storage account by using your specified configuration. 
 
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
-1.  In the Azure portal's navigation pane, select **All services**.
-
-1.  On the **All services** blade, select **Storage Accounts**.
-
-1.  On the **Storage accounts** blade, select the **mediastor*[yourname]*** storage account instance.
+1.  Click on **Go to resource**.
 
 1.  On the **Storage account** blade, find the **Settings** section, and then select the **Properties** link.
 
@@ -119,7 +115,7 @@ In this exercise, you created a new Storage account to use throughout the remain
 
 #### Task 1: Create storage account containers
 
-1.  In the Azure portal's navigation pane, select the **Resource groups** link.
+1.  In the Azure portal menu pane, select the **Resource groups** link.
 
 1.  On the **Resource groups** blade, find and then select the **StorageMedia** resource group that you created earlier in this lab.
 
@@ -141,13 +137,13 @@ In this exercise, you created a new Storage account to use throughout the remain
     
     1.  In the **Name** text box, enter **compressed-audio**.
     
-    1.  In the **Public access level** drop-down list, select **Private (no anonymous access)**, and then select **OK**.
+    1.  In the **Public access level** drop-down list, select **Private (no anonymous access)**, and then select **Create**.
 
 1.  Back in the **Containers** section, observe the updated list of containers.
 
 #### Task 2: Upload a storage account blob
 
-1.  In the Azure portal's navigation pane, select the **Resource groups** link.
+1.  In the Azure portal menu pane, select the **Resource groups** link.
 
 1.  On the **Resource groups** blade, find and then select the **StorageMedia** resource group that you created earlier in this lab.
 
@@ -634,13 +630,21 @@ In this exercise, you accessed existing containers by using the Azure Storage SD
 
 #### Task 3: Upload a new blob by using the portal
 
-1.  In the Azure portal's navigation pane, select the **Resource groups** link.
+1.  In the Azure portal menu pane, select the **Resource groups** link.
 
 1.  On the **Resource groups** blade, find and then select the **StorageMedia** resource group that you created earlier in this lab.
 
 1.  On the **StorageMedia** blade, select the **mediastor*[yourname]*** storage account that you created earlier in this lab.
 
 1.  On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
+
+1.  In the **Containers** section, select **+ Container**.
+
+1.  In the **New container** pop-up window, perform the following actions:
+    
+    1.  In the **Name** text box, enter **vector-graphics**.
+    
+    1.  In the **Public access level** drop-down list, select **Private (no anonymous access)**, and then select **Create**.
 
 1.  In the **Containers** section, select the newly created **vector-graphics** container.
 
