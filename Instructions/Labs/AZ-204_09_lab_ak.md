@@ -54,7 +54,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 2: Create an API Management resource
 
-1.  In the Azure portal's navigation pane, select **Create a resource**.
+1.  In the Azure portal menu pane, select **Create a resource**.
 
 1.  From the **New** blade, find the **Search the Marketplace** text box.
 
@@ -65,20 +65,26 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1.  From the **API Management** blade, select **Create**.
 
 1.  From the **API Management Service** blade, perform the following actions:
-    
-    1.  In the **Name** text box, enter **prodapim*[yourname]***.
-    
+       
     1.  Leave the **Subscription** text box set to its default value.
     
     1.  In the **Resource group** section, select **Create new**, in the text box enter **AutomatedWorkflow**, and then select **OK**.
     
-    1.  In the **Location** list, select **East US**.
+    1.  In the **Region** list, select **East US**.
+    
+    1.  In the **Resource Name** text box, enter **prodapim*[yourname]***.
     
     1.  In the **Organization name** text box, enter **Contoso**.
     
     1.  Leave the **Administrator email** text box set to its default value.
     
-    1.  In the **Pricing tier** list, select **Consumption (99.9 SLA, %)**, and then select **Create**.
+    1.  In the **Pricing tier** list, select **Consumption (99.9 SLA, %)**.
+    
+    1.  Select **Review + Create**.
+
+    1.  From the **Review + Create** tab, review the options that you selected during the previous steps, ensure validation has passed.
+
+    1.  Select **Create** to create the web app by using your specified configuration.
     
     > **Note**: Wait for Azure to finish creating the API Management resource prior to moving on in the lab. You will receive a notification when the resource is created.
 
@@ -106,15 +112,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
         
     1.  In the **Logic App name** field, enter **prodflow*[yourname]***.
 
-    1.  In the **Select the location** section, select **Region**.
-
-    1.  In the **Location** list, select **East US**.
+    1.  In the **Region** list, select **East US**.
     
     1.  In the **Log Analytics** section, select **Off**.
     
     1.  Select **Review + Create**.
 
-1.  On the **Review + Create** tab, review the options that you specified in the previous steps.
+1.  On the **Review + Create** tab, review the options that you specified in the previous steps, ensure validation has passed.
 
 1.  Select **Create** to create the logic app by using your specified configuration.
 
@@ -140,7 +144,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Storage account name** text box, enter **prodstor*[yourname]***.
     
-    1.  In the **Location** list, select the **(US) East US** region.
+    1.  In the **Region** list, select the **(US) East US** region.
     
     1.  In the **Performance** section, select **Standard**.
     
@@ -150,7 +154,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
         
     1.  Select **Review + Create**.
 
-1.  On the **Review + Create** tab, review the options that you specified in the previous steps.
+1.  On the **Review + Create** tab, review the options that you specified in the previous steps, ensure validation has passed.
 
 1.  Select **Create** to create the storage account by using your specified configuration.
 
@@ -158,11 +162,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 5: Upload sample content to Azure Files
 
-1.  In the Azure portal navigation pane, select the **Resource groups** link.
-
-1.  On the **Resource groups** blade, find and then select the **AutomatedWorkflow** resource group that you created earlier in this lab.
-
-1.  On the **AutomatedWorkflow** blade, select the **prodstor*[yourname]*** storage account that you created earlier in this lab.
+1.  Select **Go to Resource**
 
 1.  On the **Storage account** blade, in the **File service** section, select the **File shares** link.
 
@@ -208,7 +208,7 @@ In this exercise, you created all the resources that you'll use for this lab.
 
 #### Task 1: Create a trigger for the workflow
 
-1.  In the Azure portal navigation pane, select **Resource groups**.
+1.  In the Azure portal menu pane, select **Resource groups**.
 
 1.  On the **Resource groups** blade, select the **AutomatedWorkflow** resource group that you created earlier in this lab.
 
@@ -274,7 +274,7 @@ In this exercise, you created all the resources that you'll use for this lab.
 
 1.  In the **Designer** area, select **+ New step**, and then perform the following actions to add a **Response (Request)** action:
  
-    1.  In the **Search connectors and triggers** field, enter **response**.
+    1.  In the **Search connectors and triggers** field, enter **Request**.
        
     1.  In the **Actions** result list, select **Response**.
 
@@ -294,7 +294,7 @@ In this exercise, you built a basic workflow that starts when it's triggered by 
 
 #### Task 1: Create an API integrated with Logic Apps
 
-1.  In the Azure portal navigation pane, select **Resource groups**.
+1.  In the Azure portal menu pane, select **Resource groups**.
 
 1.  On the **Resource groups** blade, select the **AutomatedWorkflow** resource group that you created earlier in this lab.
 
