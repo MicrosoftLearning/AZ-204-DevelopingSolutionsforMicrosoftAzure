@@ -1,19 +1,19 @@
 ---
 lab:
-    title: 'Lab: Asynchronously processing messages by using Azure Queue Storage'
-    az204Module: 'Module 11: Develop message-based solutions'
-    az020Module: 'Module 10: Develop message-based solutions'
+    title: 'Lab: Monitoring services that are deployed to Azure'
+    az204Module: 'Module 11: Monitor and optimize Azure solutions'
+    az020Module: 'Module 11: Monitor and optimize Azure solutions'
     type: 'Answer Key'
 ---
 
-# Lab: Asynchronously processing messages by using Azure Queue Storage
+# Lab: Monitoring services that are deployed to Azure
 # Student lab answer key
 
 ## Microsoft Azure user interface
 
-Given the dynamic nature of Microsoft cloud tools, you might experience Azure UI changes after the development of this training content. These changes might cause the lab instructions and lab steps to not match up.
+Given the dynamic nature of Microsoft cloud tools, you might experience Azure UI changes after the development of this training content. These changes might cause the lab instructions and steps to not match up.
 
-Microsoft updates this training course when the community brings needed changes to our attention; however, because cloud updates occur frequently, you might encounter UI changes before this training content updates. **If this occurs, adapt to the changes, and then work through them in the labs as needed.**
+Microsoft updates this training course when the community brings needed changes to our attention. However, because cloud updates occur frequently, you might encounter UI changes before this training content updates. **If this occurs, adapt to the changes, and then work through them in the labs as needed.**
 
 ## Instructions
 
@@ -35,11 +35,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
 -   Microsoft Edge
 
+-   File Explorer
+
 -   Visual Studio Code
 
--   Azure Storage Explorer
+-   Windows PowerShell
 
-### Exercise 1: Create Azure resources
+### Exercise 1: Create and configure Azure resources
 
 #### Task 1: Open the Azure portal
 
@@ -47,579 +49,494 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the open browser window, go to the Azure portal (<https://portal.azure.com>).
 
-1.  Enter the email address for your Microsoft account, and then select **Next**.
+1.  From the sign-in page, enter the email address for your Microsoft account, and then select **Next**.
 
 1.  Enter the password for your Microsoft account, and then select **Sign in**.
 
-    > **Note**: If this is your first time signing in to the Azure portal, you'll be offered a tour of the portal. Select **Get Started** to skip the tour and begin using the portal.
+> **Note**: If this is your first time signing in to the Azure portal, a dialog box will display an offer to tour the portal. Select **Get Started** to skip the tour and begin using the portal.
 
-#### Task 2: Create a Storage account
+#### Task 2: Create an Application Insights resource
 
-1.  In the Azure portal's navigation pane, select **All services**.
+1.  In the Azure portal's navigation pane, select **Create a resource**.
 
-1.  On the **All services** blade, select **Storage Accounts**.
+1.  From the **New** blade, find the **Search the Marketplace** text box.
 
-1.  On the **Storage accounts** blade, get your list of storage account instances.
+1.  In the search box, enter **Insights**, and then select Enter.
 
-1.  On the **Storage accounts** blade, select **Add**.
+1.  From the **Marketplace** search results blade, select the **Application Insights** result.
 
-1.  On the **Create storage account** blade, observe the tabs on the blade, such as **Basics**, **Tags**, and **Review + Create**.
+1.  From the **Application Insights** blade, select **Create**.
 
-    > **Note**: Each tab represents a step in the workflow to create a new storage account. You can select **Review + Create** at any time to skip the remaining tabs.
+1.  Find the tabs from the second **Application Insights** blade, such as **Basics**.
 
-1.  Select the **Basics** tab, and then in the tab area, perform the following actions:
+    > **Note**: Each tab represents a step in the workflow to create a new Application Insights instance. You can select **Review + Create** at any time to skip the remaining tabs.
+
+1.  From the **Basics** tab, perform the following actions:
     
     1.  Leave the **Subscription** text box set to its default value.
     
-    1.  In the **Resource group** section, select **Create new**, enter **AsyncProcessor**, and then select **OK**.
+    1.  In the **Resource group** section, select **Create new**, enter **MonitoredAssets**, and then select **OK**.
     
-    1.  In the **Storage account name** text box, enter **asyncstor*[yourname]***.
+    1.  In the **Name** text box, enter **instrm*[yourname]***.
     
-    1.  In the **Location** list, select the **(US) East US** region.
+    1.  In the **Region** drop-down list, select the **(US) East US** region.
     
-    1.  In the **Performance** section, select **Standard**.
+    1.  In the **Resource Mode** section, select the **Classic** option.
     
-    1.  In the **Account kind** list, select **StorageV2 (general purpose v2)**.
-    
-    1.  In the **Replication** list, select **Locally-redundant storage (LRS)**.
-        
     1.  Select **Review + Create**.
 
-1.  On the **Review + Create** tab, review the options that you specified in the previous steps.
+1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
 
-1.  Select **Create** to create the storage account by using your specified configuration.
+1.  Select **Create** to create the Application Insights instance by using your specified configuration.   
 
-    > **Note**: On the **Deployment** blade, wait for the creation task to complete before moving forward with this lab.
+    > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
-1.	Select the **Go to resource** button on the **Deployment** blade to go to the newly created storage account.
+1.  In the Azure portal's navigation pane, select **Resource groups**.
 
-1.	On the **Storage account** blade, find the **Settings** section, and then select **Access keys**.
+1.  From the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
 
-1.	On the **Access keys** blade, select any one of the keys, and then record the value of either of the **Connection string** boxes. You'll use this value later in this lab.
+1.  From the **MonitoredAssets** blade, select the **instrm*[yourname]*** Application Insights account that you created earlier in this lab.
 
-    > **Note**: It doesn't matter which connection string you choose. They are interchangeable.
+1.  From the **Application Insights** blade, in the **Configure** category, select the **Properties** link.
+
+1.  In the **Properties** section, find the value of the **Instrumentation Key** text box. This key is used by client applications to connect to Application Insights.
+
+#### Task 3: Create a web app by using Azure App Services resource
+
+1.  In the Azure portal's navigation pane, select **Create a resource**.
+
+1.  From the **New** blade, find the **Search the Marketplace** text box.
+
+1.  In the search box, enter **Web**, and then select Enter.
+
+1.  From the **Marketplace** search results blade, select the **Web App** result.
+
+1.  From the **Web App** blade, select **Create**.
+
+1.  Find the tabs from the second **Web App** blade, such as **Basics**.
+
+    > **Note**: Each tab represents a step in the workflow to create a new web app. You can select **Review + Create** at any time to skip the remaining tabs.
+
+1.  From the **Basics** tab, perform the following actions:
+    
+    1.  Leave the **Subscription** text box set to its default value.
+    
+    1.  In the **Resource group** drop-down list, select **MonitoredAssets**.
+    
+    1.  In the **Name** text box, enter ***smpapi\***[yourname]***.
+
+    1.  In the **Publish** section, select **Code**.
+
+    1.  In the **Runtime stack** drop-down list, select **.NET Core 3.1 (LTS)**.
+
+    1.  In the **Operating System** section, select **Windows**.
+
+    1.  In the **Region** drop-down list, select the **East US** region.
+
+    1.  In the **Windows Plan (East US)** section, select **Create new**, enter the value **MonitoredPlan** into the **Name** text box, and then select **OK**.
+
+    1.  Leave the **SKU and size** section set to its default value.
+
+    1.  Select **Next: Monitoring**.
+
+1.  From the **Monitoring** tab, perform the following actions:
+
+    1.  In the **Enable Application Insights** section, select **Yes**.
+
+    1.  In the **Application Insights** drop-down list, select the **instrm*[yourname]*** Application Insights account that you created earlier in this lab.
+
+    1.  Select **Review + Create**.
+
+1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
+
+1.  Select **Create** to create the web app by using your specified configuration.   
+
+    > **Note**: Wait for the creation task to complete before you move forward with this lab.
+
+1.  In the Azure portal's navigation pane, select **Resource groups**.
+
+1.  From the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
+
+1.  From the **MonitoredAssets** blade, select the ***smpapi\***[yourname]*** web app that you created earlier in this lab.
+
+1.  From the **App Service** blade, in the **Settings** category, select the **Configuration** link.
+
+1.  In the **Configuration** section, perform the following actions:
+    
+    1.  Select the **Application settings** tab.
+
+    1.  Select **Show Values** to get the secrets associated with your API.
+
+    1.  Find the value corresponding to the **APPINSIGHTS\_INSTRUMENTATIONKEY** key. This value was set automatically when you built your Web Apps resource.
+
+1.  From the **App Service** blade, in the **Settings** category, select the **Properties** link.
+
+1.  In the **Properties** section, record the value of the **URL** text box. You'll use this value later in the lab to make requests against the API.
+
+#### Task 4: Configure web app autoscale options
+
+1.  From the **App Service** blade, in the **Settings** category, select the **Scale out (App Service Plan)** link.
+
+1.  In the **Scale out** section, perform the following actions:
+    
+    1.  Select **Custom autoscale**.
+    
+    1.  In the **Autoscale setting name** text box, enter **ComputeScaler**.
+    
+    1.  In the **Resource group** list, select **MonitoredAssets**.
+    
+    1.  In the **Scale mode** section, select **Scale based on a metric**.
+    
+    1.  In the **Minimum** text box in the **Instance limits** section, enter **2**.
+    
+    1.  In the **Maximum** text box in the **Instance limits** section, enter **8**.
+    
+    1.  In the **Default** text box in the **Instance limits** section, enter **3**.
+    
+    1.  Select **Add a rule**. In the **Scale rule** pop-up dialog, leave all boxes set to their default values, and then select **Add**.
+    
+    1.  Within the section, select **Save**. 
+
+    > **Note**: Wait for the save operation to complete before you move forward with this lab.
 
 #### Review
 
-In this exercise, you created a new Azure Storage account that you'll use through the remainder of the lab.
+In this exercise, you created the resources that you'll use for the remainder of the lab.
 
-### Exercise 2: Configure the Azure Storage SDK in a .NET project 
+### Exercise 2: Monitor a local web application by using Application Insights 
 
-#### Task 1: Create a .NET project
+#### Task 1: Build a .NET Web API project
 
-1.  On the **Start** screen, select the **Visual Studio Code** tile.
+1.  On the taskbar, select the **Visual Studio Code** icon.
 
-1.  On the **File** menu, select **Open Folder**.
+1.  From the **File** menu, select **Open Folder**.
 
-1.  In the **File Explorer** window that opens, browse to **Allfiles (F):\\Allfiles\\Labs\\11\\Starter\\MessageProcessor**, and then select **Select Folder**.
+1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\12\\Starter\\Api**, and then select **Select Folder**.
 
-1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
+1.  In the **Visual Studio Code** window, right-click the Explorer pane or activate the shortcut menu, and then select **Open in Terminal**.
 
-1.  At the open command prompt, enter the following command, and then select Enter to create a new .NET project named **MessageProcessor** in the current folder:
-
-    ```
-    dotnet new console --name MessageProcessor --output .
-    ```
-
-    > **Note**: The **dotnet new** command will create a new **console** project in a folder with the same name as the project.
-
-1.  At the command prompt, enter the following command, and then select Enter to import version 12.0.0 of **Azure.Storage.Queues** from NuGet:
+1.  At the **Open** command prompt, enter the following command, and then select Enter to create a new .NET Web API application named **SimpleApi** in the current directory:
 
     ```
-    dotnet add package Azure.Storage.Queues --version 12.0.0
+    dotnet new webapi --output . --name SimpleApi
     ```
 
-    > **Note**: The **dotnet add package** command will add the **Azure.Storage.Queues** package from NuGet. For more information, go to [Azure.Storage.Queues](https://www.nuget.org/packages/Azure.Storage.Queues/12.0.0).
+1.  At the command prompt, enter the following command, and then select Enter to import version 2.14.0 of **Microsoft.ApplicationInsights** from NuGet to the current project:
 
-1.  At the command prompt, enter the following command, and then select Enter to build the .NET web application:
+    ```
+    dotnet add package Microsoft.ApplicationInsights --version 2.14.0
+    ```
+
+    > **Note**: The **dotnet add package** command will add the **Microsoft.ApplicationInsights** package from NuGet. For more information, go to [Microsoft.ApplicationInsights](https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.14.0).
+
+1.  At the command prompt, enter the following command, and then select Enter to import version 2.14.0 of **Microsoft.ApplicationInsights.AspNetCore** from NuGet:
+
+    ```
+    dotnet add package Microsoft.ApplicationInsights.AspNetCore --version 2.14.0
+    ```
+
+    > **Note**: The **dotnet add package** command will add the **Microsoft.ApplicationInsights.AspNetCore** package from NuGet. For more information, go to [Microsoft.ApplicationInsights.AspNetCore](https://www.nuget.org/packages/Microsoft.ApplicationInsights.AspNetCore/2.14.0).
+
+1.  At the command prompt, enter the following command, and then select Enter to import version 2.14.0 of **Microsoft.ApplicationInsights.PerfCounterCollector** from NuGet to the current project:
+
+    ```
+    dotnet add package Microsoft.ApplicationInsights.PerfCounterCollector  --version 2.14.0
+    ```
+
+    > **Note**: The **dotnet add package** command will add the **Microsoft.ApplicationInsights.PerfCounterCollector** package from NuGet. For more information, go to [Microsoft.ApplicationInsights.PerfCounterCollector](https://www.nuget.org/packages/Microsoft.ApplicationInsights.PerfCounterCollector/2.14.0).
+
+
+1.  At the command prompt, enter the following command, and then select Enter to build the .NET web app:
+
+    ```
+    dotnet build
+    ```
+    
+#### Task 2: Update application code to disable HTTPS and use Application Insights
+
+1.  In the **Visual Studio Code** window, in the Explorer pane, select the **Startup.cs** file to open the file in the editor.
+
+1.  In the editor, in the **Startup** class, find and delete the following line of code at line 39:
+
+    ```
+    app.UseHttpsRedirection();
+    ```
+
+    > **Note**: This line of code forces the web app to use HTTPS. For this lab, this is unnecessary.
+
+1.  In the **Startup** class, add a new static string constant named **INSTRUMENTATION_KEY** with its value set to the instrumentation key that you copied from the Application Insights resource you created earlier in this lab:
+
+    ```
+    private const string INSTRUMENTATION_KEY = "{your_instrumentation_key}";
+    ```
+
+    > **Note**: For example, if your instrumentation key is ``d2bb0eed-1342-4394-9b0c-8a56d21aaa43``, your line of code would be ``private const string INSTRUMENTATION_KEY = "d2bb0eed-1342-4394-9b0c-8a56d21aaa43";``
+
+1.  Find the **ConfigureServices** method in the **Startup** class:
+
+    ```
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddControllers();
+    }
+    ```
+
+1.  Add a new line of code at the end of the **ConfigureServices** method to configure Application Insights using the provided instrumentation key:
+
+    ```    
+    services.AddApplicationInsightsTelemetry(INSTRUMENTATION_KEY);
+    ```
+
+1.  Observe the **ConfigureServices** method, which should now include:
+
+    ```
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddControllers();
+        services.AddApplicationInsightsTelemetry(INSTRUMENTATION_KEY);        
+    }
+    ```
+
+1.  Save the **Startup.cs** file.
+
+1.  At the command prompt, enter the following command, and then select Enter to build the .NET web application.
 
     ```
     dotnet build
     ```
 
-1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
+#### Task 3: Test an API application locally
 
-#### Task 2: Write code to access Azure Storage
-
-1.  In the Explorer pane of the **Visual Studio Code** window, open the **Program.cs** file.
-
-1.  On the code editor tab for the **Program.cs** file, delete all the code in the existing file.
-
-1.  Add the following line of code to import the **Azure**, **Azure.Storage.Queues**, and **Azure.Storage.Queues.Models** namespaces from the **Azure.Storage.Queues** package imported from NuGet:
-
-    ```
-    using Azure;
-    using Azure.Storage.Queues;
-    using Azure.Storage.Queues.Models;
-    ```
-    
-1.  Add the following lines of code to add **using** directives for the built-in namespaces that will be used in this file:
-
-    ```
-    using System;
-    using System.Text;
-    using System.Threading.Tasks;
-    ```
-
-1.  Enter the following code to create a new **Program** class:
-
-    ```
-    public class Program
-    {
-    }
-    ``` 
-
-1.  In the **Program** class, enter the following line of code to create a new string constant named **storageConnectionString**:
-
-    ```
-    private const string storageConnectionString = "";
-    ```
-
-1.  Update the **storageConnectionString** string constant by setting its value to the **Connection string** of the Storage account that you recorded earlier in this lab.
-
-1.  In the **Program** class, enter the following line of code to create a new string constant named **queueName** with a value of **messagequeue**:
-
-    ```
-    private const string queueName = "messagequeue";
-    ```
-
-1.  In the **Program** class, enter the following code to create a new asynchronous **Main** method:
-
-    ```
-    public static async Task Main(string[] args)
-    {
-    }
-    ```
-
-1.  Observe the **Program.cs** file, which should now include:
-
-    ```
-    using Azure;
-    using Azure.Storage.Queues;
-    using Azure.Storage.Queues.Models;
-    using System;
-    using System.Text;
-    using System.Threading.Tasks;
-
-    public class Program
-    {
-        private const string storageConnectionString = "<storage-connection-string>";
-        private const string queueName = "messagequeue";
-
-        public static async Task Main(string[] args)
-        {
-        }
-    }
-    ```
-
-#### Task 3: Validate Azure Storage access
-
-1.  In the **Main** method, add the following line of code to connect to the storage account by creating a new variable named *client* of type **QueueClient**:
-
-    ```
-    QueueClient client = new QueueClient(storageConnectionString, queueName);  
-    ```
-
-1.  In the **Main** method, add the following line of code to asynchronously create the queue if it doesn't already exist:
-
-    ```        
-    await client.CreateAsync();
-    ```
-
-1.  In the **Main** method, add the following line of code to render a header for the "Account Metadata" section:
-
-    ```
-    Console.WriteLine($"---Account Metadata---");
-    ```
-    
-1.  In the **Main** method, add the following line of code to render the Uniform Resource Identifier (URI) of the queue endpoint:
-
-    ```
-    Console.WriteLine($"Account Uri:\t{client.Uri}");
-    ```
-
-1.  Observe the **Main** method, which should now include:
-
-    ```
-    public static async Task Main(string[] args)
-    {
-        QueueClient client = new QueueClient(storageConnectionString, queueName);        
-        await client.CreateAsync();
-
-        Console.WriteLine($"---Account Metadata---");
-        Console.WriteLine($"Account Uri:\t{client.Uri}");
-    }
-    ```
-
-1.  Save the **Program.cs** file.
-
-1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
-
-1.  At the open command prompt, enter the following command, and then select Enter to run the .NET web application:
+1.  At the command prompt, enter the following command, and then select Enter to run the .NET web application.
 
     ```
     dotnet run
     ```
 
-    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\11\\Solution\\MessageProcessor** folder.
+1.  On the taskbar, open the context menu for the **Microsoft Edge** icon, and then open a new browser window.
 
-1.  Observe the output from the currently running console application. The output contains metadata for the queue endpoint.
+1.  In the open browser window, go to the **/weatherforecast** relative path of your test application that's hosted at **localhost** on port **5000**.
+    
+    > **Note**: The full URL is http://localhost:5000/weatherforecast
 
-1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
+1.  Close the browser window that's displaying the http://localhost:5000/weatherforecast address.
+
+1.  Close the currently running Visual Studio Code application.
+
+#### Task 4: Get metrics in Application Insights
+
+1.  Return to your currently open browser window that's displaying the Azure portal.
+
+1.  In the portal, select **Resource groups**.
+
+1.  From the **Resource groups** blade, find and select the **MonitoredAssets** resource group that you created earlier in this lab.
+
+1.  From the **MonitoredAssets** blade, select the **instrm*[yourname]*** Application Insights account that you created earlier in this lab.
+
+1.  From the **Application Insights** blade, in the tiles in the center of the blade, find the displayed metrics. Specifically, find the number of server requests that have occurred and the average server response time.
+
+    > **Note**: It can take up to five minutes to observe requests in the Application Insights metrics charts.
 
 #### Review
 
-In this exercise, you configured your .NET project to access the Storage service and manipulate a queue made available through the service.
+In this exercise, you created an API by using ASP.NET and configured it to stream application metrics to Application Insights. You then used the Application Insights dashboard to get performance details about your API.
 
-### Exercise 3: Add messages to the queue 
+### Exercise 3: Monitor a web app using Application Insights
 
-#### Task 1: Write code to access queue messages
+#### Task 1: Deploy an application to the web app
 
-1.  In the **Main** method, add the following line of code to render a header for the "Existing Messages" section:
+1.  On the taskbar, select the **Visual Studio Code** icon.
+
+1.  From the **File** menu, select **Open Folder**.
+
+1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\12\\Starter\\Api**, and then select **Select Folder**.
+
+1.  In the Visual Studio Code window, right-click the Explorer pane or activate the shortcut menu, and then select **Open in Terminal**.
+
+1.  At the open command prompt, enter the following command, and then select Enter to sign in to the Azure Command-Line Interface (CLI):
 
     ```
-    Console.WriteLine($"---Existing Messages---");
+    az login
     ```
 
-1.  Within the **Main** method, perform the following actions to create variables that will be used when retrieving queue messages:
-
-    1.  Add the following line of code to create a variable of type **int** named *batchSize* with a value of **10**:
-
-        ```
-        int batchSize = 10;
-        ```
-
-    1.  Add the following line of code to create a variable of type **TimeSpan** named *visibilityTimeout* with a value of **2.5 seconds**:
-
-        ```
-        TimeSpan visibilityTimeout = TimeSpan.FromSeconds(2.5d);
-        ```
-
-1.  Within the **Main** method, perform the following actions to retrieve a batch of messages asynchronously from the queue service:
-
-    1.  Add the following line of code to invoke the **ReceiveMessagesAsync** asynchronous method of the **QueueClient** class, passing in the *batchSize* and *visibilityTimeout* variables as parameters:
-
-        ```
-        client.ReceiveMessagesAsync(batchSize, visibilityTimeout);
-        ```
-
-    1.  Update the previous line of code by adding more code to process the expression asynchronously by using the **await** keyword:
-
-        ```
-        await client.ReceiveMessagesAsync(batchSize, visibilityTimeout);
-        ```
-
-    1.  Update the previous line of code by adding more code to store the result of the expression in a new variable named *messages* of type **[Response<QueueMessage[]>](https://docs.microsoft.com/dotnet/api/azure.response-1)**:
-
-        ```
-        Response<QueueMessage[]> messages = await client.ReceiveMessagesAsync(batchSize, visibilityTimeout);
-        ```
-
-1.  Within the **Main** method, perform the following actions to iterate over and render the properties of each message:
-
-    1.  Add the following line of code to create a **foreach** loop that iterates over each message that's stored in the **[Value](https://docs.microsoft.com/dotnet/api/azure.response-1.value)** property of the *messages* variable of type **[QueueMessage[]](https://docs.microsoft.com/dotnet/api/azure.storage.queues.models.queuemessage)**:
-
-        ```
-        foreach(QueueMessage message in messages?.Value)
-        {
-        }
-        ```
-
-    1.  Within the **foreach** loop, add another line of code to render the **MessageId** and **MessageText** properties of each **QueueMessage** instance:
+1.  In the browser window, perform the following actions:
     
-        ```
-        Console.WriteLine($"[{message.MessageId}]\t{message.MessageText}");
-        ```
+    1.  Enter the email address for your Microsoft account, and then select **Next**.
+    
+    1.  Enter the password for your Microsoft account, and then select **Sign in**.
 
-1.  Observe the **Main** method, which should now include:
+1.  Return to the currently open command prompt application.  
 
-    ```
-    public static async Task Main(string[] args)
-    {
-        // Existing code removed for brevity
+    > **Note**: Wait for the sign-in process to finish.
 
-        Console.WriteLine($"---Existing Messages---");
-        int batchSize = 10;
-        TimeSpan visibilityTimeout = TimeSpan.FromSeconds(2.5d);
-        
-        Response<QueueMessage[]> messages = await client.ReceiveMessagesAsync(batchSize, visibilityTimeout);
-
-        foreach(QueueMessage message in messages?.Value)
-        {
-            Console.WriteLine($"[{message.MessageId}]\t{message.MessageText}");
-        }
-    }
-    ```
-
-1.  Save the **Program.cs** file.
-
-1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
-
-1.  At the open command prompt, enter the following command, and then select Enter to build the .NET web application:
+1.  At the command prompt, enter the following command, and then select Enter to list all the apps in your **MonitoredAssets** resource group:
 
     ```
-    dotnet build
+    az webapp list --resource-group MonitoredAssets
     ```
 
-    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\11\\Solution\\MessageProcessor** folder.
-
-1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
-
-#### Task 2: Test message queue access
-
-1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
-
-1.  At the open command prompt, enter the following command, and then select Enter to run the .NET web application:
+1.  Enter the following command, and then select Enter to find the apps that have the prefix **smpapi\***:
 
     ```
-    dotnet run
+    az webapp list --resource-group MonitoredAssets --query "[?starts_with(name, 'smpapi')]"
     ```
 
-    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\11\\Solution\\MessageProcessor** folder.
-
-1.  Observe the output from the currently running console application. The output indicates that no messages are in the queue.
-
-1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
-
-1.  In the Azure portal's navigation pane, select the **Resource groups** link.
-
-1.  On the **Resource groups** blade, find and then select the **AsyncProcessor** resource group that you created earlier in this lab.
-
-1.  On the **AsyncProcessor** blade, select the **asyncstor*[yourname]*** storage account that you created earlier in this lab.
-
-1.  On the **Storage account** blade, select **Overview**. 
-
-1.  In the **Overview** section, select **Open in Explorer**.
-
-1.  In the **Azure Storage Explorer** window, select **Open Azure Storage Explorer**.
-
-    > **Note**: If this is your first time opening Storage Explorer by using the portal, you might be prompted to allow the portal to open these types of links in the future. You should accept the prompt.
-
-1.  In the **Azure Storage Explorer** application, you will notice a prompt to sign in to your Azure account. Sign in by performing the following actions:
-
-    1.  In the popup dialog, select **Sign in**.
-
-    1.  In the **Connect to Azure Storage** window, select **Add an Azure Account**, in the **Azure environment** list select **Azure**, and then select **Next**.
-
-    1.  In the **Sign in to your account** popup window, enter the email address for your Microsoft account, and then select **Next**.
-
-    1.  Still within the **Sign in to your account** popup window, enter the password for your Microsoft account, and then select **Sign in**.
-
-    1.  In the **ACCOUNT MANAGEMENT** pane, select **Apply**.
-
-    1.  Observe that you are returned back to the **EXPLORER** pane with your subscription information populated.
-
-1.  From the **Azure Storage Explorer** application, in the **EXPLORER** pane, find and expand the **asyncstor*[yourname]*** storage account that you created earlier in this lab.
-
-1.  Within the **asyncstor*[yourname]*** storage account, find and expand the **Queues** node.
-
-1.  In the **Queues** node, open the **messagequeue** queue that you created earlier in this lab by using .NET code.
-
-1.  On the **messagequeue** tab, select **Add Message**.
-
-1.  In the **Add Message** pop-up window, perform the following actions:
-
-    1.  In the **Message text** text box, enter the value **Hello World**.
-
-    1.  In the **Expires in** text box, enter the value **12**.
-
-    1.  In the **Expires in** drop-down list, select **Hours**.
-
-    1.  Ensure that the **Encode message body in Base 64** check box isn't selected.
-
-    1.  Select **OK**.
-
-1.  Return to the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
-
-1.  At the open command prompt, enter the following command, and then select Enter to run the .NET web application:
+1.  Enter the following command, and then select Enter to render out only the name of the single app that has the **smpapi\***:
 
     ```
-    dotnet run
+    az webapp list --resource-group MonitoredAssets --query "[?starts_with(name, 'smpapi')].{Name:name}" --output tsv
     ```
 
-    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\11\\Solution\\MessageProcessor** folder.
-
-1.  Observe the output from the currently running console application. The output includes the new message that you created.
-
-1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
-
-#### Task 3: Delete queued messages
-
-1.  In the Explorer pane of the **Visual Studio Code** window, open the **Program.cs** file.
-
-1.  On the code editor tab for the **Program.cs** file, find the existing **foreach** loop within the **Main** method:
+1.  Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\12\\Starter** directory that contains the deployment files:
 
     ```
-    foreach(QueueMessage message in messages?.Value)
-    {
-        Console.WriteLine($"[{message.MessageId}]\t{message.MessageText}");
-    }
+    cd F:\Allfiles\Labs\12\Starter\
     ```
 
-1.  Within the **foreach** loop, add a new line of code to invoke the **DeleteMessageAsync** method of the **QueueMessage** class, passing in the **MessageId** and **PopReceipt** properties of the *message* variable:
+1.  Enter the following command, and then select Enter to deploy the **api.zip** file to the web app that you created earlier in this lab:
 
     ```
-    await client.DeleteMessageAsync(message.MessageId, message.PopReceipt);
+    az webapp deployment source config-zip --resource-group MonitoredAssets --src api.zip --name <name-of-your-api-app>
     ```
 
-1.  Observe the **Main** method, which should now include:
+    > **Note**: Replace the *name-of-your-api-app* placeholder with the name of the web app that you created earlier in this lab. You recently queried this app’s name in the previous steps.   
 
-    ```
-    public static async Task Main(string[] args)
-    {
-        // Existing code removed for brevity
-        
-        foreach(QueueMessage message in messages?.Value)
-        {
-            Console.WriteLine($"[{message.MessageId}]\t{message.MessageText}");
-            await client.DeleteMessageAsync(message.MessageId, message.PopReceipt);
-        }
-    }
-    ```
+    > **Note**: Wait for the deployment to complete before you move forward with this lab.
 
-1.  **Save** the **Program.cs** file.
+1.  Close the currently running Visual Studio Code application.
 
-1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
+1.  Return to your currently open browser window that's displaying the Azure portal.
 
-1.  At the open command prompt, enter the following command, and then select Enter to run the .NET web application:
+1.  In the Azure portal's navigation pane, select **Resource groups**.
 
-    ```
-    dotnet run
-    ```
+1.  From the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
 
-    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\11\\Solution\\MessageProcessor** folder.
+1.  From the **MonitoredAssets** blade, select the ***smpapi\***[yourname]*** web app that you created earlier in this lab.
 
-1.  Observe the output from the currently running console application. The message that you created earlier in the lab still exists because it hasn't been deleted previously.
+1.  From the **App Service** blade, select **Browse**. A new browser window or tab will open and return a "404 (Not Found)" error.
 
-1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
+1.  In the browser address bar, update the URL by appending the suffix **/weatherforecast** to the end of the current URL, and then select Enter.
 
-1.  Return Storage Explorer, and then find and expand the **asyncstor*[yourname]*** storage account that you created earlier in this lab.
+    > **Note**: For example, if your URL is https://smpapistudent.azurewebsites.net, the new URL would be https://smpapistudent.azurewebsites.net/weatherforecast.
 
-1.  In the **asyncstor*[yourname]*** storage account, find and expand the **Queues** node.
+1.  Find the JavaScript Object Notation (JSON) array that's returned as a result of using the API.
 
-1.  In the **Queues** node, open the **messagequeue** queue that you created earlier in this lab by using .NET code.
+#### Task 2: Configure in-depth metric collection for Web Apps
 
-1.  Observe the empty list of messages in the queue.
+1.  Return to your currently open browser window that's displaying the Azure portal.
 
-    > **Note**: You might need to refresh the queue.
+1.  In the Azure portal's navigation pane, select **Resource groups**.
+
+1.  From the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
+
+1.  From the **MonitoredAssets** blade, select the ***smpapi\***[yourname]*** web app that you created earlier in this lab.
+
+1.  From the **App Service** blade, select **Application Insights**.
+
+1.  From the **Application Insights** blade, perform the following actions:
+
+    1.  Ensure that the **Application Insights** section is set to **Enable**.
+
+    1.  In the **Instrument your application** section, select the **.NET** tab.
+
+    1.  In the **Collection level** section, select **Recommended**.
+
+    1.  In the **Profiler** secton, select **On**.
+
+    1.  In the **Snapshot debugger** section, select **Off**.
+
+    1.  In the **SQL Commands** section, select **Off**.
+
+    1.  Select **Apply**.
+
+    1.  In the confirmation dialog, select **Yes**.
+
+1.  Close the **Application Insights** blade.
+
+1.  Back from the **App Service** blade, select **Browse**. A new browser window or tab will open and return a "404 (Not Found)" error.
+
+1.  In the browser address bar, update the URL by appending the suffix **/weatherforecast** to the end of the current URL, and then select Enter.
+
+    > **Note**: For example, if your URL is https://smpapistudent.azurewebsites.net, the new URL would be https://smpapistudent.azurewebsites.net/weatherforecast.
+
+1.  Observe the JSON array that's returned as a result of using the API.
+
+1.  Record the URL that you used to access the JSON array.
+
+    > **Note**: Using the example from the previous step, you would record the URL ``https://smpapistudent.azurewebsites.net/weatherforecast``.
+
+#### Task 3: Get updated metrics in Application Insights
+
+1.  Return to your currently open browser window that's displaying the Azure portal.
+
+1.  In the portal, select **Resource groups**.
+
+1.  From the **Resource groups** blade, find and select the **MonitoredAssets** resource group that you created earlier in this lab.
+
+1.  From the **MonitoredAssets** blade, select the **instrm*[yourname]*** Application Insights account that you created earlier in this lab.
+
+1.  From the **Application Insights** blade, in the tiles in the center of the blade, find the displayed metrics. Specifically, find the number of server requests that have occurred and the average server response time.
+
+    > **Note**: It can take up to five minutes to observe requests in the Application Insights metrics charts.
+
+#### Task 4: View real-time metrics in Application Insights
+
+1.  Return to your currently open browser window that's displaying the Azure portal.
+
+1.  In the portal, select **Resource groups**.
+
+1.  From the **Resource groups** blade, find and select the **MonitoredAssets** resource group that you created earlier in this lab.
+
+1.  From the **MonitoredAssets** blade, select the **instrm*[yourname]*** Application Insights account that you created earlier in this lab.
+
+1.  From the **Application Insights** blade, select **Live Metrics Stream** in the **Investigate** section.
+
+1.  On the taskbar, open the context menu for the **Microsoft Edge** icon, and then open a new browser window.
+
+1.  In the new browser window, go to the URL that you recorded earlier in this lab.
+
+1.  Observe the JSON array result.
+
+1.  Return to your currently open browser window that's displaying the Azure portal.
+
+1.  Observe the updated **Live Metrics Stream** blade.
+
+    > **Note**: The **Incoming Requests** section should update within seconds, showing the requests that you made to the web app.
 
 #### Review
 
-In this exercise, you read and deleted existing messages from the Storage queue by using the .NET library.
+In this exercise, you deployed your web application to Azure App Service and monitored your metrics from the same Application Insights instance.
 
-### Exercise 4: Queue new messages by using .NET
+### Exercise 4: Clean up your subscription 
 
-#### Task 1: Write code to create queue messages
+#### Task 1: Open Azure Cloud Shell
 
-1.  In the Explorer pane of the **Visual Studio Code** window, open the **Program.cs** file.
-
-1.  On the code editor tab for the **Program.cs** file, find the existing **Main** method.
-
-1.  Within the **Main** method, add a new line of code to render a header for the "New Messages" section:
-
-    ```
-    Console.WriteLine($"---New Messages---");
-    ```
-
-1.  In the **Main** method, perform the following actions to create and send a message asynchronously:
-
-    1.  Add the following line of code to create a new string variable named *greeting* with a value of **Hi, Developer!**:
-
-        ```
-        string greeting = "Hi, Developer!";        
-        ```
-
-    1.  Add the following line of code to invoke the **SendMessageAsync** method of the **QueueClient** class by using the *greeting* variable as a parameter
-
-        ```
-        await client.SendMessageAsync(Convert.ToBase64String(Encoding.UTF8.GetBytes(greeting)));        
-        ```
-
-    1.  Add the following line of code to render the content of the message that you sent:
-
-        ```
-        Console.WriteLine($"Sent Message:\t{greeting}");        
-        ```
-
-1.  Observe the **Main** method, which should now include:
-
-    ```
-    public static async Task Main(string[] args)
-    {
-        // Existing code removed for brevity
-        
-        Console.WriteLine($"---New Messages---");
-        string greeting = "Hi, Developer!";
-        await client.SendMessageAsync(Convert.ToBase64String(Encoding.UTF8.GetBytes(greeting)));
-        
-        Console.WriteLine($"Sent Message:\t{greeting}");
-    }
-    ```
-
-1.  **Save** the **Program.cs** file.
-
-1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
-
-1.  At the open command prompt, enter the following command, and then select Enter to run the .NET web application:
-
-    ```
-    dotnet run
-    ```
-
-    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\11\\Solution\\MessageProcessor** folder.
-
-1.  Observe the output from the currently running console application. The content of the new message that you sent should be in the output.
-
-1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
-
-#### Task 2: View queued messages by using Storage Explorer
-
-1.  Return to Storage Explorer, and then find and expand the **asyncstor*[yourname]*** storage account that you created earlier in this lab.
-
-1.  In the **asyncstor*[yourname]*** storage account, find and expand the **Queues** node.
-
-1.  In the **Queues** node, open the **messagequeue** queue that you created earlier in this lab by using .NET code.
-
-1.  Observe the single new message in the list of messages in the queue.
-
-    > **Note**: You might need to refresh the queue.
-
-#### Review
-
-In this exercise, you created new messages in the queue by using the .NET library for Storage queues.
-
-### Exercise 5: Clean up your subscription 
-
-#### Task 1: Open Azure Cloud Shell and list resource groups
-
-1.  In the Azure portal's navigation pane, select the **Cloud Shell** icon to open a new shell instance.
+1.  In the Azure portal, select the **Cloud Shell** icon to open a new shell instance.
 
     > **Note**: The **Cloud Shell** icon is represented by a greater than sign (\>) and underscore character (\_).
 
 1.  If this is your first time opening Cloud Shell using your subscription, you can use the **Welcome to Azure Cloud Shell Wizard** to configure Cloud Shell for first-time usage. Perform the following actions in the wizard:
     
-    -   A dialog box prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**. 
+    1.  A dialog box prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**. 
 
-    > **Note**: Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab. If you don't notice Cloud Shell configuration options, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
+    > **Note**: Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab. If you don't notice the Cloud Shell configuration options, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
 
-#### Task 2: Delete a resource group
+#### Task 2: Delete resource groups
 
-1.  At the command prompt, enter the following command, and then select Enter to delete the **AsyncProcessor** resource group:
+1.  Enter the following command, and then select Enter to delete the **MonitoredAssets** resource group:
 
     ```
-    az group delete --name AsyncProcessor --no-wait --yes
+    az group delete --name MonitoredAssets --no-wait --yes
     ```
     
 1.  Close the Cloud Shell pane in the portal.
 
-#### Task 3: Close the active application
+#### Task 3: Close the active applications
 
 1.  Close the currently running Microsoft Edge application.
 
 1.  Close the currently running Visual Studio Code application.
 
-1.  Close the currently running Azure Storage Explorer application.
-
 #### Review
 
-In this exercise, you cleaned up your subscription by removing the resource group that was used in this lab.
+In this exercise, you cleaned up your subscription by removing the resource groups used in this lab.
