@@ -103,7 +103,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 4: Create a custom Event Grid topic
 
-1.  In the Azure portal's navigation pane, select **Create a resource**.
+1.  In the Azure portal menu pane, select **Create a resource**.
 
 1.  On the **New** blade, find the **Search the Marketplace** text box.
 
@@ -114,14 +114,23 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1.  On the **Event Grid Topic** blade, select **Create**.
 
 1.  On the **Create Topic** blade, perform the following actions:
+   
+    1.  In the **Resource group** section, select **Create new**, enter **PubSubEvents**, and then select **OK**.
 
     1.  In the **Name** text box, enter **hrtopic*[yourname]***.
-    
-    1.  In the **Resource group** section, select **Create new**, enter **PubSubEvents**, and then select **OK**.
 
     1.  From the **Location** drop-down list, select the **(US) East US** region.
 
-    1.  From the **Event Schema** drop-down list, select **Event Grid Schema**, and then select **Create**.
+    1.  Click **Next: Advanced >**
+
+    1.  From the **Event Schema** drop-down list, select **Event Grid Schema**.
+
+    1.  Select **Review + Create**.
+
+1.  From the **Review + Create** tab, review the options that you selected during the previous steps, ensure validation has passed.
+
+1.  Select **Create** to create the web app by using your specified configuration.
+
   
     > **Note**: Wait for Azure to finish creating the topic before you continue with the lab. You'll receive a notification when the topic is created.
 
@@ -175,7 +184,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  Select **Review + Create**.
 
-1.  On the **Review + Create** tab, review the options that you selected during the previous steps.
+1.  On the **Review + Create** tab, review the options that you selected during the previous steps, ensure validation has passed.
 
 1.  Select **Create** to create the web app using your specified configuration. 
   
@@ -189,11 +198,7 @@ In this exercise, you created the Event Grid topic and a web app that you will u
 
 #### Task 1: Access the Event Grid Viewer web application
 
-1.  In the Azure portal's navigation pane, select **Resource groups**.
-
-1.  On the **Resource groups** blade, select the **PubSubEvents** resource group that you created earlier in this lab.
-
-1.  On the **PubSubEvents** blade, select the **eventviewer*[yourname]*** web app that you created earlier in this lab.
+1.  Select **Go to Resource**.
 
 1.  On the **App Service** blade, in the **Settings** category, select the **Properties** link.
 
@@ -275,7 +280,7 @@ In this exercise, you created a new subscription, validated its registration, an
 
 1.  In the **File Explorer** window that opens, browse to **Allfiles (F):\\Allfiles\\Labs\\10\\Starter\\EventPublisher**, and then select **Select Folder**.
 
-1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
+1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Intergrated Terminal**.
 
 1.  At the open command prompt, enter the following command, and then select Enter to create a new .NET project named **EventPublisher** in the current folder:
 
@@ -527,7 +532,7 @@ In this exercise, you created a new subscription, validated its registration, an
 
 1.  Save the **Program.cs** file.
 
-1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
+1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Intergrated Terminal**.
 
 1.  At the open command prompt, enter the following command, and then select Enter to run the .NET web application:
 
