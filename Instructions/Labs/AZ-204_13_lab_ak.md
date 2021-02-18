@@ -51,13 +51,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icon for t
 
 #### Task 2: Create a Storage account
 
-1.  In the Azure portal's navigation pane, select **All services**.
+1.  In the Azure portal menu pane, select **All services**.
 
 1.  On the **All services** blade, select **Storage Accounts**.
 
 1.  On the **Storage accounts** blade, find your list of Storage instances.
 
-1.  On the **Storage accounts** blade, select **Add**.
+1.  On the **Storage accounts** blade, select **+ Add, + New, or + Create**.
 
 1.  Find the tabs on the **Create storage account** blade, such as **Basics**.
 
@@ -81,7 +81,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icon for t
 
     1.  Select **Review + Create**.
 
-1.  On the **Review + Create** tab, review the options that you selected during the previous steps.
+1.  On the **Review + Create** tab, review the options that you selected during the previous steps, ensure validation has passed.
 
 1.  Select **Create** to create the storage account by using your specified configuration. 
 
@@ -135,17 +135,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icon for t
 
     1.  Select **Review + Create**.
 
-1.  On the **Review + Create** tab, review the options that you selected during the previous steps.
+1.  On the **Review + Create** tab, review the options that you selected during the previous steps, ensure validation has passsed.
 
 1.  Select **Create** to create the web app by using your specified configuration. 
 
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
-1.  In the Azure portal's navigation pane, select **Resource groups**.
-
-1.  On the **Resource groups** blade, select the **MarketingContent** resource group that you created earlier in this lab.
-
-1.  On the **MarketingContent** blade, select the **landingpage*[yourname]*** web app that you created earlier in this lab.
+1.  Select the **Go to resource** button on the **Deployment** blade to go to the newly created storage account.
 
 1.  On the **App Service** blade, in the **Settings** category, select the **Properties** link.
 
@@ -221,7 +217,7 @@ In this exercise, you created an Azure Storage account and an Azure Web App that
 
 #### Task 3: Create a Content Delivery Network profile
 
-1.  In the Azure portal's navigation pane, select **Create a resource**.
+1.  In the Azure portal menu pane, select **Create a resource**.
 
 1.  On the **New** blade, find the **Search the Marketplace** text box.
 
@@ -357,7 +353,7 @@ In this exercise, you registered the resource provider for Content Delivery Netw
 
 #### Task 1: Observe the landing page
 
-1.  In the Azure portal's navigation pane, select **Resource groups**.
+1.  In the Azure portal menu pane, select **Resource groups**.
 
 1.  On the **Resource groups** blade, select the **MarketingContent** resource group that you created earlier in this lab.
 
