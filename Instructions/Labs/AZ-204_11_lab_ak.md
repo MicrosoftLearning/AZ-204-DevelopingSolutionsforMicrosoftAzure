@@ -55,13 +55,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 2: Create a Storage account
 
-1.  In the Azure portal's navigation pane, select **All services**.
+1.  In the Azure portal menu pane, select **All services**.
 
 1.  On the **All services** blade, select **Storage Accounts**.
 
 1.  On the **Storage accounts** blade, get your list of storage account instances.
 
-1.  On the **Storage accounts** blade, select **Add**.
+1.  On the **Storage accounts** blade, select **+ Add, + New, or + Create**.
 
 1.  On the **Create storage account** blade, observe the tabs on the blade, such as **Basics**, **Tags**, and **Review + Create**.
 
@@ -85,7 +85,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
         
     1.  Select **Review + Create**.
 
-1.  On the **Review + Create** tab, review the options that you specified in the previous steps.
+1.  On the **Review + Create** tab, review the options that you specified in the previous steps, ensure validation has passed.
 
 1.  Select **Create** to create the storage account by using your specified configuration.
 
@@ -113,7 +113,7 @@ In this exercise, you created a new Azure Storage account that you'll use throug
 
 1.  In the **File Explorer** window that opens, browse to **Allfiles (F):\\Allfiles\\Labs\\11\\Starter\\MessageProcessor**, and then select **Select Folder**.
 
-1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
+1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Intergrated Terminal**.
 
 1.  At the open command prompt, enter the following command, and then select Enter to create a new .NET project named **MessageProcessor** in the current folder:
 
@@ -253,7 +253,7 @@ In this exercise, you created a new Azure Storage account that you'll use throug
 
 1.  Save the **Program.cs** file.
 
-1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
+1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Intergrated Terminal**.
 
 1.  At the open command prompt, enter the following command, and then select Enter to run the .NET web application:
 
@@ -353,7 +353,7 @@ In this exercise, you configured your .NET project to access the Storage service
 
 1.  Save the **Program.cs** file.
 
-1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
+1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Intergrated Terminal**.
 
 1.  At the open command prompt, enter the following command, and then select Enter to build the .NET web application:
 
@@ -367,7 +367,7 @@ In this exercise, you configured your .NET project to access the Storage service
 
 #### Task 2: Test message queue access
 
-1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
+1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Intergrated Terminal**.
 
 1.  At the open command prompt, enter the following command, and then select Enter to run the .NET web application:
 
@@ -381,7 +381,7 @@ In this exercise, you configured your .NET project to access the Storage service
 
 1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
 
-1.  In the Azure portal's navigation pane, select the **Resource groups** link.
+1.  In the Azure portal menu pane, select the **Resource groups** link.
 
 1.  On the **Resource groups** blade, find and then select the **AsyncProcessor** resource group that you created earlier in this lab.
 
@@ -425,11 +425,11 @@ In this exercise, you configured your .NET project to access the Storage service
 
     1.  In the **Expires in** drop-down list, select **Hours**.
 
-    1.  Ensure that the **Encode message body in Base 64** check box isn't selected.
+    1.  Change **Encoding** to **UTF8**.
 
     1.  Select **OK**.
 
-1.  Return to the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
+1.  Return to the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Intergrated Terminal**.
 
 1.  At the open command prompt, enter the following command, and then select Enter to run the .NET web application:
 
