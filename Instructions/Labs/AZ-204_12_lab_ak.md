@@ -55,9 +55,35 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 > **Note**: If this is your first time signing in to the Azure portal, a dialog box will display an offer to tour the portal. Select **Get Started** to skip the tour and begin using the portal.
 
-#### Task 2: Create an Application Insights resource
+#### Task 2: Create a Log Analytics Workspace resource and Application Insights resource
 
-1.  In the Azure portal's navigation pane, select **Create a resource**.
+1.	In the Azure portal menu pane, select **Create a resource**.
+
+1.	From the **New** blade, find the **Search the Marketplace** text box.
+
+1.	In the search box, enter **Log Analytics**, and then select Enter.
+
+1.	From the **Marketplace** search results blade, select the **Log Analytics Workspace** result.
+
+1.	From the **Log Analytics Workspace** blade, select **Create**.
+
+1.	Leave the **Subscription** text box set to its default value.
+
+2.	In the **Resource group** section, select **Create new**, enter **MonitoredAssets**, and then select **OK**. 
+
+1.	Provide a name for the new Log Analytics workspace, such as **DefaultLAWorkspace**. This name must be globally unique across all Azure Monitor subscriptions.
+
+1.	In the Region drop-down list, select the **East US** region.
+
+1.	Select **Review + Create**.
+
+1.	From the **Review + Create** tab, review the options that you selected during the previous steps, ensure that validation has passed.
+
+1.	Select **Create** to create the Application Insights instance by using your specified configuration.
+
+    > **Note**: Wait for the creation task to complete before you move forward with this lab.
+
+1.  In the Azure portal menu pane, select **Create a resource**.
 
 1.  From the **New** blade, find the **Search the Marketplace** text box.
 
@@ -75,7 +101,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  Leave the **Subscription** text box set to its default value.
     
-    1.  In the **Resource group** section, select **Create new**, enter **MonitoredAssets**, and then select **OK**.
+    1.  In the **Resource group** section, select **MonitoredAssets**.
     
     1.  In the **Name** text box, enter **instrm*[yourname]***.
     
@@ -85,17 +111,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  Select **Review + Create**.
 
-1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
+1.  From the **Review + Create** tab, review the options that you selected during the previous steps, ensure that validation has passed.
 
 1.  Select **Create** to create the Application Insights instance by using your specified configuration.   
 
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
-1.  In the Azure portal's navigation pane, select **Resource groups**.
-
-1.  From the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
-
-1.  From the **MonitoredAssets** blade, select the **instrm*[yourname]*** Application Insights account that you created earlier in this lab.
+1.  Select the **Go to resource** button on the Deployment blade to go to the newly created storage account.
 
 1.  From the **Application Insights** blade, in the **Configure** category, select the **Properties** link.
 
@@ -103,7 +125,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 3: Create a web app by using Azure App Services resource
 
-1.  In the Azure portal's navigation pane, select **Create a resource**.
+1.  In the Azure portal menu pane, select **Create a resource**.
 
 1.  From the **New** blade, find the **Search the Marketplace** text box.
 
@@ -147,17 +169,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  Select **Review + Create**.
 
-1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
+1.  From the **Review + Create** tab, review the options that you selected during the previous steps, ensure validation has passed.
 
 1.  Select **Create** to create the web app by using your specified configuration.   
 
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
-1.  In the Azure portal's navigation pane, select **Resource groups**.
-
-1.  From the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
-
-1.  From the **MonitoredAssets** blade, select the ***smpapi\***[yourname]*** web app that you created earlier in this lab.
+1.  Select the **Go to resource button** on the Deployment blade to go to the newly created storage account.
 
 1.  From the **App Service** blade, in the **Settings** category, select the **Configuration** link.
 
@@ -213,7 +231,7 @@ In this exercise, you created the resources that you'll use for the remainder of
 
 1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\12\\Starter\\Api**, and then select **Select Folder**.
 
-1.  In the **Visual Studio Code** window, right-click the Explorer pane or activate the shortcut menu, and then select **Open in Terminal**.
+1.  In the **Visual Studio Code** window, right-click the Explorer pane or activate the shortcut menu, and then select **Open in Intergrated Terminal**.
 
 1.  At the **Open** command prompt, enter the following command, and then select Enter to create a new .NET Web API application named **SimpleApi** in the current directory:
 
@@ -299,7 +317,7 @@ In this exercise, you created the resources that you'll use for the remainder of
 
 1.  Save the **Startup.cs** file.
 
-1.  At the command prompt, enter the following command, and then select Enter to build the .NET web application.
+1.  In the **Visual Studio Code** window, right-click the Explorer pane or activate the shortcut menu, and then select **Open in Intergrated Terminal**.
 
     ```
     dotnet build
