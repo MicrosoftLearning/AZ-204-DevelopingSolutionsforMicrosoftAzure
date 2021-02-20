@@ -994,7 +994,20 @@ In this exercise, you used Entity Framework and the .NET SDK for Azure Cosmos DB
     dotnet build
     ```
 
-    > **Note**: If there are any build errors, review the **AdventureWorksCosmosContext.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\04\\Solution\\AdventureWorks\\AdventureWorks.Context** folder.
+    > **Note**: If there are any build errors, review the **AdventureWorksCosmosContext.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\04\\Solution\\AdventureWorks\\AdventureWorks.Context** folder. 
+    > If the error says 
+    ```
+    services.AddScoped<IAdventureWorksProductContext, AdventureWorksCosmosContext>(provider =>
+    new AdventureWorksCosmosContext(
+        _configuration.GetConnectionString(nameof(AdventureWorksCosmosContext))
+    )
+    ```
+    you might need to do 
+     ```
+    dotnet add package Microsoft.Azure.Cosmos --version 3.4.1
+    ```
+    in the current folder.
+);
 
 1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
 
