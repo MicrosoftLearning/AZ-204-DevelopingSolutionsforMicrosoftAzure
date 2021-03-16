@@ -5,7 +5,7 @@ lab:
     type: 'Answer Key'
 ---
 
-# Lab: Deploying compute workloads by using images and containers
+# Lab 5: Deploying compute workloads by using images and containers
 # Student lab answer key
 
 ## Microsoft Azure user interface

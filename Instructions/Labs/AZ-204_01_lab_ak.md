@@ -6,7 +6,7 @@ lab:
     type: 'Answer Key'
 ---
 
-# Lab: Building a web application on Azure platform as a service offerings
+# Lab 1: Building a web application on Azure platform as a service offerings
 # Student lab answer key
 
 ## Microsoft Azure user interface

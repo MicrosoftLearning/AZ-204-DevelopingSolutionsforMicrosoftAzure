@@ -6,7 +6,7 @@ lab:
     type: 'Answer Key'
 ---
     
-# Lab: Publishing and subscribing to Event Grid events
+# Lab 10: Publishing and subscribing to Event Grid events
 # Student lab answer key
 
 ## Microsoft Azure user interface

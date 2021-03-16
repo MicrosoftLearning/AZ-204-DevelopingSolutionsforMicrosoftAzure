@@ -6,7 +6,7 @@ lab:
     type: 'Answer Key'
 ---
 
-# Lab: Asynchronously processing messages by using Azure Queue Storage
+# Lab 11: Asynchronously processing messages by using Azure Queue Storage
 # Student lab answer key
 
 ## Microsoft Azure user interface

@@ -6,7 +6,7 @@ lab:
     type: 'Answer Key'
 ---
 
-# Lab: Monitoring services that are deployed to Azure
+# Lab 12: Monitoring services that are deployed to Azure
 # Student lab answer key
 
 ## Microsoft Azure user interface

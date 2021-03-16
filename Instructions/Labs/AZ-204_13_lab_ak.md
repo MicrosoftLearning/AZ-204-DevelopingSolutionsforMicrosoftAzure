@@ -5,7 +5,7 @@ lab:
     type: 'Answer Key'
 ---
 
-# Lab: Enhancing a web application by using the Azure Content Delivery Network
+# Lab 13: Enhancing a web application by using the Azure Content Delivery Network
 # Student lab answer key
 
 ## Microsoft Azure user interface

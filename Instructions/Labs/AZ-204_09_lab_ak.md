@@ -5,7 +5,7 @@ lab:
     type: 'Answer Key'
 ---
     
-# Lab: Automate business processes with Logic Apps
+# Lab 9: Automate business processes with Logic Apps
 # Student lab answer key
 
 ## Microsoft Azure user interface
