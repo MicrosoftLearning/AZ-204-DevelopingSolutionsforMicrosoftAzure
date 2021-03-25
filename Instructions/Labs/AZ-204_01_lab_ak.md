@@ -117,7 +117,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Name** text box, enter **images**.
     
-    1.  In the **Public access level** list, select **Blob (anonymous read access for blobs only)**, and then select **OK**.
+    1.  In the **Public access level** list, select **Blob (anonymous read access for blobs only)**, and then select **Create**.
 
 1.  In the **Containers** section, select the newly created **images** container.
 
