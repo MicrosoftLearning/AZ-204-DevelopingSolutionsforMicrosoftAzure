@@ -271,7 +271,7 @@ In this exercise, you created a new Azure Storage account that you'll use throug
 
 In this exercise, you configured your .NET project to access the Storage service and manipulate a queue made available through the service.
 
-### Exercise 3: Add messages to the queue 
+### Exercise 3: Read messages from the queue
 
 #### Task 1: Write code to access queue messages
 
