@@ -123,8 +123,6 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **API** drop-down list, select **Core (SQL)**.
 
-    1.  In the **Notebooks (Preview)** section, select **Off**.
-
     1.  In the **Apply Free Tier Discount** section, select **Do Not Apply**.
     
     1.  In the **Location** drop-down list, select the **(US) East US** region.
