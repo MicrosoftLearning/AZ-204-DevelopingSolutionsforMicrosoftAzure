@@ -1,11 +1,12 @@
 ---
 lab:
-    title: 'Lab: Automate business processes with Logic Apps'
-    az204Module: 'Module 09: Develop App Service Logic Apps'
+    title: 'Lab 09: Publishing and subscribing to Event Grid events'
+    az204Module: 'Module 09: Develop event-based solutions'
+    az020Module: 'Module 09: Develop event-based solutions'
     type: 'Answer Key'
 ---
     
-# Lab: Automate business processes with Logic Apps
+# Lab: Publishing and subscribing to Event Grid events
 # Student lab answer key
 
 ## Microsoft Azure user interface
@@ -20,7 +21,7 @@ Microsoft updates this training course when the community brings needed changes 
 
 #### Sign in to the lab virtual machine
 
-Sign in to your Windows 10 virtual machine (VM) by using the following credentials:
+Sign in to your Windows 10 virtual machine (VM) using the following credentials:
     
 -   Username: **Admin**
 
@@ -34,9 +35,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
 -   Microsoft Edge
 
--   File Explorer
-
--   Windows Terminal
+-   Microsoft Visual Studio Code
 
 ### Exercise 1: Create Azure resources
 
@@ -50,301 +49,515 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  Enter the password for your Microsoft account, and then select **Sign in**.
 
-    > **Note**: If this is your first time signing in to the Azure portal, you'll be offered a tour of the portal. Select **Get Started** to skip the tour.
+    > **Note**: If this is your first time signing in to the Azure portal, you'll be offered a tour of the portal. Select **Get Started** to skip the tour and begin using the portal.
 
-#### Task 2: Create an API Management resource
+#### Task 2: Open Azure Cloud Shell
+
+1.  In the Azure portal, select the **Cloud Shell** icon to open a new shell instance.
+
+    > **Note**: The **Cloud Shell** icon is represented by a greater than sign (\>) and underscore character (\_).
+
+1.  If this is your first time opening Cloud Shell using your subscription, you can use the **Welcome to Azure Cloud Shell Wizard** to configure Cloud Shell. Perform the following actions in the wizard:
+    
+    -   When a dialog box prompts you to create a new storage account to begin using the shell, accept the default settings, and then select **Create storage**. 
+
+    > **Note**: Wait for Cloud Shell to finish its initial setup procedures before continuing with the lab. If you don't notice the **Cloud Shell** configuration options, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
+
+1.  In Azure portal, at the **Cloud Shell** command prompt enter the following command, and then select Enter to get the version of the Azure Command-Line Interface (Azure CLI) tool:
+
+    ```
+    az --version
+    ```
+
+#### Task 3: View the Microsoft.EventGrid provider registration
+
+1.  At the **Cloud Shell** command prompt in the portal, perform the following actions:
+
+    1.  Enter the following command, and then select Enter to get a list of subgroups and commands at the root level of the Azure CLI:
+
+        ```
+        az --help
+        ```
+
+    1.  Enter the following command, and then select Enter to get a list of the commands that are available for resource providers:
+
+        ```
+        az provider --help
+        ```
+
+    1.  Enter the following command, and then select Enter to list all currently registered providers:
+
+        ```
+        az provider list
+        ```
+
+    1.  Enter the following command, and then select Enter to list just the namespaces of the currently registered providers:
+
+        ```
+        az provider list --query "[].namespace"
+        ```
+
+    1.  Review the list of currently registered providers. Notice that the **Microsoft.EventGrid** provider is currently included in the list of providers.
+
+1.  Close the Cloud Shell pane.
+
+#### Task 4: Create a custom Event Grid topic
 
 1.  In the Azure portal's navigation pane, select **Create a resource**.
 
-1.  From the **New** blade, find the **Search the Marketplace** text box.
+1.  On the **New** blade, find the **Search the Marketplace** text box.
 
-1.  In the search box, enter **API**, and then select Enter.
+1.  In the search box, enter **Event Grid Topic**, and then select Enter.
 
-1.  From the **Marketplace** search results blade, select the **API Management** result.
+1.  On the **Everything** search results blade, select the **Event Grid Topic** result.
 
-1.  From the **API Management** blade, select **Create**.
+1.  On the **Event Grid Topic** blade, select **Create**.
 
-1.  From the **API Management Service** blade, perform the following actions:
+1.  On the **Create Topic** blade, perform the following actions:
+
+    1.  In the **Name** text box, enter **hrtopic*[yourname]***.
     
-    1.  In the **Name** text box, enter **prodapim*[yourname]***.
-    
-    1.  Leave the **Subscription** text box set to its default value.
-    
-    1.  In the **Resource group** section, select **Create new**, in the text box enter **AutomatedWorkflow**, and then select **OK**.
-    
-    1.  In the **Location** list, select **East US**.
-    
-    1.  In the **Organization name** text box, enter **Contoso**.
-    
-    1.  Leave the **Administrator email** text box set to its default value.
-    
-    1.  In the **Pricing tier** list, select **Consumption (99.9 SLA, %)**, and then select **Create**.
-    
-    > **Note**: Wait for Azure to finish creating the API Management resource prior to moving on in the lab. You will receive a notification when the resource is created.
+    1.  In the **Resource group** section, select **Create new**, enter **PubSubEvents**, and then select **OK**.
 
-#### Task 3: Create a Logic App resource
+    1.  From the **Location** drop-down list, select the **(US) East US** region.
 
-1.  In the navigation pane of the Azure portal, select **+ Create a resource**.
+    1.  From the **Event Schema** drop-down list, select **Event Grid Schema**, and then select **Create**.
+  
+    > **Note**: Wait for Azure to finish creating the topic before you continue with the lab. You'll receive a notification when the topic is created.
 
-1.  On the **New** blade, locate the **Search the Marketplace** field.
+#### Task 5: Deploy the Azure Event Grid viewer to a web app
 
-1.  In the search field, enter **Logic**, and then select Enter.
+1.  In the Azure portal's navigation pane, select **Create a resource**.
 
-1.  On the **Everything** search results blade, select **Logic App**.
+1.  On the **New** blade, find the **Search the Marketplace** text box.
 
-1.  On the **Logic App** blade, select **Create**.
+1.  In the search box, enter **Web**, and then select Enter.
 
-1.  On the **Logic App** blade, review the tabs on the blade, such as **Basics**, **Tags**, and **Review + Create**.
+1.  On the **Everything** search results blade, select the **Web App** result.
 
-    > **Note**: Each tab represents a step in the workflow to create a new logic app. You can select **Review + Create** at any time to skip the remaining tabs.
+1.  On the **Web App** blade, select **Create**.
 
-1.  Select the **Basics** tab, and then in the tab area, perform the following actions:
-       
-    1.  Leave the **Subscription** field set to its default value.
-    
-    1.  In the **Resource group** list, select **Use existing**, and then select the **AutomatedWorkflow** group you created earlier in the lab.
-        
-    1.  In the **Logic App name** field, enter **prodflow*[yourname]***.
+1.  On the second **Web App** blade, find the tabs on the blade, such as **Basics**.
 
-    1.  In the **Select the location** section, select **Region**.
+    > **Note**: Each tab represents a step in the workflow to create a new web app. You can select **Review + Create** at any time to skip the remaining tabs.
 
-    1.  In the **Location** list, select **East US**.
-    
-    1.  In the **Log Analytics** section, select **Off**.
-    
-    1.  Select **Review + Create**.
-
-1.  On the **Review + Create** tab, review the options that you specified in the previous steps.
-
-1.  Select **Create** to create the logic app by using your specified configuration.
-
-    > **Note**: Wait for Azure to finish creating the Logic Apps resource prior to moving on in the lab. You will receive a notification when the resource is created.
-
-#### Task 4: Create a storage account
-
-1.  In the Azure portal navigation pane, select **All services**.
-
-1.  On the **All services** blade, select **Storage Accounts**.
-
-1.  On the **Storage accounts** blade, get your list of storage account instances, and then select **Add**.
-
-1.  On the **Create storage account** blade, review the tabs on the blade, such as **Basics**, **Tags**, and **Review + Create**.
-
-    > **Note**: Each tab represents a step in the workflow to create a new storage account. You can select **Review + Create** at any time to skip the remaining tabs.
-
-1.  Select the **Basics** tab, and then in the tab area, perform the following actions:
+1.  On the **Basics** tab, perform the following actions:
     
     1.  Leave the **Subscription** text box set to its default value.
     
-    1.  In the **Resource group** section, select the **AutomatedWorkflow** group you created earlier in the lab.
-    
-    1.  In the **Storage account name** text box, enter **prodstor*[yourname]***.
-    
-    1.  In the **Location** list, select the **(US) East US** region.
-    
-    1.  In the **Performance** section, select **Standard**.
-    
-    1.  In the **Account kind** list, select **StorageV2 (general purpose v2)**.
-    
-    1.  In the **Replication** list, select **Locally-redundant storage (LRS)**.
-        
+    1.  In the **Resource group** section, select **PubSubEvents**.
+
+    1.  In the **Name** text box, enter **eventviewer*[yourname]***.
+
+    1.  In the **Publish** section, select **Docker Container**.
+
+    1.  In the **Operating System** section, select **Linux**.
+
+    1.  From the **Region** drop-down list, select the **East US** region.
+
+    1.  In the **Linux Plan (East US)** section, select **Create new**. 
+
+    1.  In the **Name** text box, enter the value **EventPlan**, and then select **OK**.
+
+    1.  Leave the **SKU and size** section set to its default value.
+
+    1.  Select **Next: Docker**.
+
+1.  On the **Docker** tab, perform the following actions:
+
+    1.  From the **Options** drop-down list, select **Single Container**.
+
+    1.  From the **Image Source** drop-down list, select **Docker Hub**.
+
+    1.  From the **Access Type** drop-down list, select **Public**.
+
+    1.  In the **Image and tag** text box, enter **microsoftlearning/azure-event-grid-viewer:latest**.
+
     1.  Select **Review + Create**.
 
-1.  On the **Review + Create** tab, review the options that you specified in the previous steps.
+1.  On the **Review + Create** tab, review the options that you selected during the previous steps.
 
-1.  Select **Create** to create the storage account by using your specified configuration.
+1.  Select **Create** to create the web app using your specified configuration. 
+  
+    > **Note**: Wait for Azure to finish creating the web app before you continue with the lab. You'll receive a notification when the app is created.
 
-    > **Note**: On the **Deployment** blade, wait for the creation task to complete before moving on in this lab.
+#### Review
 
-#### Task 5: Upload sample content to Azure Files
+In this exercise, you created the Event Grid topic and a web app that you will use throughout the remainder of the lab.
 
-1.  In the Azure portal navigation pane, select the **Resource groups** link.
+### Exercise 2: Create an Event Grid subscription
 
-1.  On the **Resource groups** blade, find and then select the **AutomatedWorkflow** resource group that you created earlier in this lab.
+#### Task 1: Access the Event Grid Viewer web application
 
-1.  On the **AutomatedWorkflow** blade, select the **prodstor*[yourname]*** storage account that you created earlier in this lab.
+1.  In the Azure portal's navigation pane, select **Resource groups**.
 
-1.  On the **Storage account** blade, in the **File service** section, select the **File shares** link.
+1.  On the **Resource groups** blade, select the **PubSubEvents** resource group that you created earlier in this lab.
 
-1.  In the **File shares** section, select **+ File share**.
+1.  On the **PubSubEvents** blade, select the **eventviewer*[yourname]*** web app that you created earlier in this lab.
 
-1.  In the **File share** pop-up dialog box, perform the following actions:
+1.  On the **App Service** blade, in the **Settings** category, select the **Properties** link.
+
+1.  In the **Properties** section, record the value of the **URL** text box. You'll use this value later in the lab.
+
+1.  Select **Overview**.
+
+1.  In the **Overview** section, select **Browse**.
+
+1.  Observe the currently running **Azure Event Grid viewer** web application. Leave this web application running for the remainder of the lab.
+
+    > **Note**: This web application will update in real-time as events are sent to its endpoint. We will use this to monitor events throughout the lab.
+
+1.  Return to your currently open browser window that's displaying the Azure portal.
+
+#### Task 2: Create new subscription
+
+1.  In the Azure portal's navigation pane, select **Resource groups**.
+
+1.  On the **Resource groups** blade, select the **PubSubEvents** resource group that you created earlier in this lab.
+
+1.  On the **PubSubEvents** blade, select the **hrtopic*[yourname]*** Event Grid topic that you created earlier in this lab.
+
+1.  On the **Event Grid Topic** blade, select **+ Event Subscription**.
+
+1.  On the **Create Event Subscription** blade, perform the following actions:
+
+    1.  In the **Name** text box, enter **basicsub**.
+
+    1.  In the **Event Schema** list, select **Event Grid Schema**.
     
-    1.  In the **Name** text box, enter **metadata**.
-    
-    1.  In the **Quota** text box, enter **1** (GiB).
-    
+    1.  In the **Endpoint Type** list, select **Web Hook**.
+
+    1.  Select **Endpoint**.
+
+    1.  In the **Select Web Hook** dialog box, in the **Subscriber Endpoint** text box, enter the **Web App URL** value that you recorded earlier, ensure it uses an **https://** prefix, add the suffix **/api/updates**, and then select **Confirm Selection**.
+
+        > **Note**: For example, if your **Web App URL** value is **http://eventviewerstudent.azurewebsites.net/**, then your **Subscriber Endpoint** would be **https://eventviewerstudent.azurewebsites.net/api/updates**.
+
     1.  Select **Create**.
+  
+    > **Note**: Wait for Azure to finish creating the subscription before you continue with the lab. You'll receive a notification when the subscription is created.
 
-1.  Back in the **File shares** section, select the recently created **metadata** share.
+#### Task 3: Observe the subscription validation event
 
-1.	On the **File share** blade, select **Upload**.
+1.  Return to the browser window displaying the **Azure Event Grid viewer** web application.
 
-1.	In the **Upload files** dialog box, perform the following actions:
+1.  Review the **Microsoft.EventGrid.SubscriptionValidationEvent** event that was created as part of the subscription creation process.
 
-    1.  In the **Files** section, select the **Folder** icon.
+1.  Select the event and review its JSON content.
 
-    1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\09\\Starter**, select the following files, and then select **Open**:
+1.  Return to your currently open browser window with the Azure portal.
 
-        -   **item_00.json**
-        
-        -   **item_01.json**
-        
-        -   **item_02.json**
-        
-        -   **item_03.json**
-        
-        -   **item_04.json** 
+#### Task 4: Record subscription credentials
 
-    1.  Ensure that the **Overwrite if files already exist** check box is selected, and then select **Upload**. 
-    
-    > **Note**: Wait for the blob to upload before you continue with this lab.
+1.  In the Azure portal's navigation pane, select **Resource groups**.
 
-#### Review
+1.  On the **Resource groups** blade, select the **PubSubEvents** resource group that you created earlier in this lab.
 
-In this exercise, you created all the resources that you'll use for this lab.
+1.  On the **PubSubEvents** blade, select the **hrtopic*[yourname]*** Event Grid topic that you created earlier in this lab.
 
-### Exercise 2: Implement a workflow using Logic Apps
+1.  On the **Event Grid Topic** blade, record the value of the **Topic Endpoint** field. You'll use this value later in the lab.
 
-#### Task 1: Create a trigger for the workflow
+1.  In the **Settings** category, select the **Access keys** link.
 
-1.  In the Azure portal navigation pane, select **Resource groups**.
-
-1.  On the **Resource groups** blade, select the **AutomatedWorkflow** resource group that you created earlier in this lab.
-
-1.  On the **AutomatedWorkflow** blade, select the **prodflow*[yourname]*** logic app that you created earlier in this lab.
-
-1.  On the **Logic Apps Designer** blade, select the **Blank Logic App** template.
-
-1.  In the **Designer** area, perform the following actions to add a **When a HTTP request is received (Request)** trigger:
-    
-    1.  In the **Search connectors and triggers** field, enter **HTTP**.
-    
-    1.  In the category list, select **Request**.
-    
-    1.  In the **Triggers** result list, select **When a HTTP request is received**.
-
-1.  In the **When a HTTP request is received** area, perform the following actions to configure the **When a HTTP request is received (Request)** trigger:
-    
-    1.  In the **Add new parameter** list, select **Method**.
-
-    1.  In the **Method** list, select **GET**.
-
-#### Task 2: Create an action to query Azure Storage file shares
-
-1.  In the **Designer** area, select **+ New step**, and then perform the following actions to add a **List files (Azure File Storage)** action:
-    
-    1.  In the **Search connectors and triggers** field, enter **files**.
-    
-    1.  In the category list, select **Azure File Storage**.
-    
-    1.  In the **Actions** result list, select **List files**.
-    
-    1.  In the **Connection Name** field, enter **filesConnection**.
-    
-    1.  In the **Storage Account** section, select the **prodstor*[yourname]*** storage account that you created earlier in this lab, and then select **Create**.
-    
-    1.  Wait for the connector resource to finish creating.
-
-        > **Note**: These resources take one to five minutes to create.
-
-1.  In the **List files** area, in the **Folder** text box, enter **/metadata**.
-    
-#### Task 3: Create an action to project list item properties
-
-1.  In the **Designer** area, select **+ New step**.
-
-1.  In the **Designer** area, perform the following actions to add an **Select (Data Operations)** action:
-    
-    1.  In the **Search connectors and triggers** field, enter **select**.
-    
-    1.  In the category list, select **Data Operations**.
-    
-    1.  In the **Actions** result list, select **Select**.
-
-1.  In the **Select** area, perform the following actions to configure the **Select (Data Operations)** action:
-    
-    1.  In the **From** field, in the **Dynamic content** list, within the **List files** category, select **value**. 
-    
-    1.  In the **Map** field, select **Switch to text mode**.
-
-    1.  In the **Map** field, in the **Dynamic content** list, within the **List files** category, select **Name**.
-    
-#### Task 4: Build an HTTP response action
-
-1.  In the **Designer** area, select **+ New step**, and then perform the following actions to add a **Response (Request)** action:
- 
-    1.  In the **Search connectors and triggers** field, enter **response**.
-       
-    1.  In the **Actions** result list, select **Response**.
-
-1.  In the **Response** area, perform the following actions to configure the **Response (Request)** action:
-
-    1.  In the **Status Code** text box, enter **200**.
-
-    1.  On the **Body** field, in the **Dynamic content** list, within the **Select** category, select **Output**.
-
-1.  In the **Designer** area, select **Save**.
+1.  In the **Access keys** section, record the value of the **Key 1** text box. You'll use this value later in the lab.
 
 #### Review
 
-In this exercise, you built a basic workflow that starts when it's triggered by an HTTP GET request. It then queries a storage service, enumerates the results, and then returns those results as an HTTP response.
+In this exercise, you created a new subscription, validated its registration, and then recorded the credentials required to publish a new event to the topic.
 
-### Exercise 3: Use Azure API Management as a proxy for Logic Apps
+### Exercise 3: Publish Event Grid events from .NET
 
-#### Task 1: Create an API integrated with Logic Apps
+#### Task 1: Create a .NET project
 
-1.  In the Azure portal navigation pane, select **Resource groups**.
+1.  On the **Start** screen, select the **Visual Studio Code** tile.
 
-1.  On the **Resource groups** blade, select the **AutomatedWorkflow** resource group that you created earlier in this lab.
+1.  From the **File** menu, select **Open Folder**.
 
-1.  On the **AutomatedWorkflow** blade, select the **prodapim*[yourname]*** API Management resource that you created earlier in this lab.
+1.  In the **File Explorer** window that opens, browse to **Allfiles (F):\\Allfiles\\Labs\\10\\Starter\\EventPublisher**, and then select **Select Folder**.
 
-1.  From the **API Management Service** blade, in the **API Management** section, select **APIs**.
+1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
 
-1.  In the **Add a new API** section, select **Logic App**.
+1.  At the open command prompt, enter the following command, and then select Enter to create a new .NET project named **EventPublisher** in the current folder:
 
-1.  In the **Create from Logic App** dialog box, perform the following actions:
+    ```
+    dotnet new console --name EventPublisher --output .
+    ```
 
-    1.  Select **Full**.
+    > **Note**: The **dotnet new** command will create a new **console** project in a folder with the same name as the project.
 
-    1.  In the **Logic App** section, select **Browse**. 
+1.  At the command prompt, enter the following command, and then select Enter to import version 3.2.0 of **Microsoft.Azure.EventGrid** from NuGet:
+
+    ```
+    dotnet add package Microsoft.Azure.EventGrid --version 3.2.0
+    ```
+
+    > **Note**: The **dotnet add package** command will add the **Microsoft.Azure.EventGrid** package from NuGet. For more information, go to [Microsoft.Azure.EventGrid](https://www.nuget.org/packages/Microsoft.Azure.EventGrid/3.2.0).
+
+1.  At the command prompt, enter the following command, and then select Enter to build the .NET web application:
+
+    ```
+    dotnet build
+    ```
+
+1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
+
+#### Task 2: Modify the Program class to connect to Event Grid
+
+1.  In the Explorer pane of the **Visual Studio Code** window, open the **Program.cs** file.
+
+1.  On the code editor tab for the **Program.cs** file, delete all the code in the existing file.
+
+1.  Add the following line of code to import the **Microsoft.Azure.EventGrid**, and **Microsoft.Azure.EventGrid.Models** namespaces from the **Microsoft.Azure.EventGrid** package imported from NuGet:
+
+    ```
+    using Microsoft.Azure.EventGrid;
+    using Microsoft.Azure.EventGrid.Models;
+    ```
     
-    1.  In the **Select Logic App to import** dialog box, select the **prodflow*[yourname]*** Logic App that you created earlier in this lab, and then select **Select**.
-    
-    1.  In the **Display name** text box, enter **Metadata Lookup**.
-    
-    1.  In the **Name** text box, enter **metadata-lookup**.
+1.  Add the following lines of code to add **using** directives for the built-in namespaces that will be used in this file:
 
-    1.  Leave the **API URL suffix** text box empty.
+    ```
+    using System;
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+    ```
 
-    1.  Select **Create**. 
+1.  Enter the following code to create a new **Program** class:
 
-    > **Note**: Wait for the new API to finish being created.
+    ```
+    public class Program
+    {
+    }
+    ``` 
 
-#### Task 2: Test the API operation
+1.  In the **Program** class, enter the following line of code to create a new string constant named **topicEndpoint**:
 
-1.  From the **Design** tab, select **Test**.
+    ```
+    private const string topicEndpoint = "";
+    ```
 
-1.  On the **Test** tab, perform the following actions:
+1.  Update the **topicEndpoint** string constant by setting its value to the **Topic Endpoint** of the Event Grid topic that you recorded earlier in this lab.
 
-    1.  Select the single **GET** operation.
+1.  In the **Program** class, enter the following line of code to create a new string constant named **topicKey**:
 
-    1.  Observe the value of the **Request URL** field.
+    ```
+    private const string topicKey = "";
+    ```
 
-    1.  Select **Send**.
+1.  Update the **topicKey** string constant by setting its value to the **Key** of the Event Grid topic that you recorded earlier in this lab.
 
-    1.  In the **HTTP response** section, observe the JSON results of the test request.
+1.  In the **Program** class, enter the following code to create a new asynchronous **Main** method:
 
-1.	Return to your browser window with the Azure portal.
+    ```
+    public static async Task Main(string[] args)
+    {
+    }
+    ```
+
+1.  Observe the **Program.cs** file, which should now include the following lines of code:
+
+    ```
+    using Microsoft.Azure.EventGrid;
+    using Microsoft.Azure.EventGrid.Models;
+    using System;
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+
+    public class Program
+    {
+        private const string topicEndpoint = "<topic-endpoint>";
+        private const string topicKey = "<topic-key>";
+        
+        public static async Task Main(string[] args)
+        {
+        }
+    }
+    ```
+
+#### Task 3: Publish new events
+
+1.  In the **Main** method, perform the following actions to publish a list of events to your topic endpoint:
+
+    1.  Add the following line of code to create a new variable named **credentials** of type **[TopicCredentials]()**, using the **topicKey** string constant as a constructor parameter:
+
+        ```
+        TopicCredentials credentials = new TopicCredentials(topicKey);
+        ```
+
+    1.  Add the following line of code to create a new variable named **client** of type **[EventGridClient]()**, using the **credentials** variable as a constructor parameter:
+
+        ```
+        EventGridClient client = new EventGridClient(credentials);
+        ```
+
+    1.  Add the following line of code to create a new variable named **events** of type **List<EventGridEvent>**.
+
+        ```
+        List<EventGridEvent> events = new List<EventGridEvent>();
+        ```
+
+    1.  Add the following lines of code to create a new variable named **firstPerson** of an anonymous type:
+
+        ```
+        var firstPerson = new
+        {
+            FullName = "Alba Sutton",
+            Address = "4567 Pine Avenue, Edison, WA 97202"
+        };
+        ```
+
+    1.  Add the following block of code to create a new variable named **firstEvent** of type **EventGridEvent**, and then populate the **EventGridEvent** variable with sample data:
+
+        ```
+        EventGridEvent firstEvent = new EventGridEvent
+        {
+            Id = Guid.NewGuid().ToString(),
+            EventType = "Employees.Registration.New",
+            EventTime = DateTime.Now,
+            Subject = $"New Employee: {firstPerson.FullName}",
+            Data = firstPerson,
+            DataVersion = "1.0.0"
+        };
+        ```
+
+    1.  Add the following line of code to add the **firstEvent** instance to your **events** list:
+
+        ```
+        events.Add(firstEvent);
+        ```
+
+    1.  Add the following line of code to create a new variable named **secondPerson** of an anonymous type:
+
+        ```
+        var secondPerson = new
+        {
+            FullName = "Alexandre Doyon",
+            Address = "456 College Street, Bow, WA 98107"
+        };
+        ```
+
+    1.  Add the following block of code to create a new variable named **secondEvent** of type **EventGridEvent**, and then populate the **EventGridEvent** variable with sample data:
+
+        ```
+        EventGridEvent secondEvent = new EventGridEvent
+        {
+            Id = Guid.NewGuid().ToString(),
+            EventType = "Employees.Registration.New",
+            EventTime = DateTime.Now,
+            Subject = $"New Employee: {secondPerson.FullName}",
+            Data = secondPerson,
+            DataVersion = "1.0.0"
+        };
+        ```
+
+    1.  Add the following line of code to add the **secondEvent** instance to your **events** list:
+
+        ```
+        events.Add(secondEvent);
+        ```
+
+    1.  Add the following line of code to obtain the **Hostname** from the **topicEndpoint** variable:
+
+        ```
+        string topicHostname = new Uri(topicEndpoint).Host;
+        ```
+
+    1.  Add the following line of code to invoke the **[EventGridClient.PublishEventsAsync](https://docs.microsoft.com/dotnet/api/microsoft.azure.eventgrid.eventgridclient.publisheventswithhttpmessagesasync)** method using the **topicHostname** and **events** variables as parameters:
+
+        ```
+        await client.PublishEventsAsync(topicHostname, events);
+        ```
+
+    1.  Add the following line of code to render the **Events published** message to the console:
+
+        ```
+        Console.WriteLine("Events published");
+        ```
+
+1.  Review the **Main** method, which should now include:
+
+    ```
+    public static async Task Main(string[] args)
+    {
+        TopicCredentials credentials = new TopicCredentials(topicKey);
+        EventGridClient client = new EventGridClient(credentials);
+
+        List<EventGridEvent> events = new List<EventGridEvent>();
+
+        var firstPerson = new
+        {
+            FullName = "Alba Sutton",
+            Address = "4567 Pine Avenue, Edison, WA 97202"
+        };
+
+        EventGridEvent firstEvent = new EventGridEvent
+        {
+            Id = Guid.NewGuid().ToString(),
+            EventType = "Employees.Registration.New",
+            EventTime = DateTime.Now,
+            Subject = $"New Employee: {firstPerson.FullName}",
+            Data = firstPerson,
+            DataVersion = "1.0.0"
+        };
+        events.Add(firstEvent);
+
+        var secondPerson = new
+        {
+            FullName = "Alexandre Doyon",
+            Address = "456 College Street, Bow, WA 98107"
+        };
+        
+        EventGridEvent secondEvent = new EventGridEvent
+        {
+            Id = Guid.NewGuid().ToString(),
+            EventType = "Employees.Registration.New",
+            EventTime = DateTime.Now,
+            Subject = $"New Employee: {secondPerson.FullName}",
+            Data = secondPerson,
+            DataVersion = "1.0.0"
+        };
+        events.Add(secondEvent);
+
+        string topicHostname = new Uri(topicEndpoint).Host;
+        await client.PublishEventsAsync(topicHostname, events);
+
+        Console.WriteLine("Events published");
+    }
+    ```
+
+1.  Save the **Program.cs** file.
+
+1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
+
+1.  At the open command prompt, enter the following command, and then select Enter to run the .NET web application:
+
+    ```
+    dotnet run
+    ```
+
+    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\10\\Solution\\EventPublisher** folder.
+
+1.  Observe the success message output from the currently running console application.
+
+1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
+
+#### Task 4: Observe published events
+
+1.  Return to the browser window with the **Azure Event Grid viewer** web application.
+
+1.  Review the **Employees.Registration.New** events that were created by your console application.
+
+1.  Select any of the events and review its JSON content.
+
+1.  Return to the Azure portal.
 
 #### Review
 
-In this exercise, you used Azure API Management as a proxy to trigger your Logic App workflow.
+In this exercise, you published new events to your Event Grid topic using a .NET console application.
 
 ### Exercise 4: Clean up your subscription 
 
-#### Task 1: Open Azure Cloud Shell and list resource groups
+#### Task 1: Open Azure Cloud Shell
 
 1.  In Azure portal, select the **Cloud Shell** icon to open a new shell instance.
 
@@ -358,17 +571,19 @@ In this exercise, you used Azure API Management as a proxy to trigger your Logic
 
 #### Task 2: Delete resource groups
 
-1.  Enter the following command, and then select Enter to delete the **AutomatedWorkflow** resource group:
+1.  Enter the following command, and then select Enter to delete the **PubSubEvents** resource group:
 
     ```
-    az group delete --name AutomatedWorkflow --no-wait --yes
+    az group delete --name PubSubEvents --no-wait --yes
     ```
-
-1.  Close the Cloud Shell pane.
+    
+1.  Close the Cloud Shell pane in the portal.
 
 #### Task 3: Close the active applications
 
--   Close the currently running Microsoft Edge application.
+1.  Close the currently running Microsoft Edge application.
+
+1.  Close the currently running Visual Studio Code application.
 
 #### Review
 

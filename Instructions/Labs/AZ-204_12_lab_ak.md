@@ -1,19 +1,18 @@
 ---
 lab:
-    title: 'Lab: Monitoring services that are deployed to Azure'
-    az204Module: 'Module 12: Monitor and optimize Azure solutions'
-    az020Module: 'Module 11: Monitor and optimize Azure solutions'
+    title: 'Lab 12: Enhancing a web application by using the Azure Content Delivery Network'
+    az204Module: 'Module 12: Integrate caching and content delivery within solutions'
     type: 'Answer Key'
 ---
 
-# Lab: Monitoring services that are deployed to Azure
+# Lab: Enhancing a web application by using the Azure Content Delivery Network
 # Student lab answer key
 
 ## Microsoft Azure user interface
 
-Given the dynamic nature of Microsoft cloud tools, you might experience Azure UI changes after the development of this training content. These changes might cause the lab instructions and steps to not match up.
+Given the dynamic nature of Microsoft cloud tools, you might experience Azure UI changes after the development of this training content. These changes might cause the lab instructions and lab steps to not match up.
 
-Microsoft updates this training course when the community brings needed changes to our attention. However, because cloud updates occur frequently, you might encounter UI changes before this training content updates. **If this occurs, adapt to the changes, and then work through them in the labs as needed.**
+Microsoft updates this training course when the community brings needed changes to our attention; however, because cloud updates occur frequently, you might encounter UI changes before this training content updates. **If this occurs, adapt to the changes, and then work through them in the labs as needed.**
 
 ## Instructions
 
@@ -31,17 +30,11 @@ Sign in to your Windows 10 virtual machine (VM) by using the following credentia
 
 #### Review the installed applications
 
-Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for the applications that you'll use in this lab:
+Find the taskbar on your Windows 10 desktop. The taskbar contains the icon for the application that you'll use in this lab:
     
 -   Microsoft Edge
 
--   File Explorer
-
--   Visual Studio Code
-
--   Windows PowerShell
-
-### Exercise 1: Create and configure Azure resources
+### Exercise 1: Create Azure resources
 
 #### Task 1: Open the Azure portal
 
@@ -49,469 +42,554 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the open browser window, go to the Azure portal (<https://portal.azure.com>).
 
-1.  From the sign-in page, enter the email address for your Microsoft account, and then select **Next**.
+1.  Enter the email address for your Microsoft account, and then select **Next**.
 
 1.  Enter the password for your Microsoft account, and then select **Sign in**.
 
-> **Note**: If this is your first time signing in to the Azure portal, a dialog box will display an offer to tour the portal. Select **Get Started** to skip the tour and begin using the portal.
+    > **Note**: If this is your first time signing in to the Azure portal, you'll be offered a tour of the portal. Select **Get Started** to skip the tour and begin using the portal.
 
-#### Task 2: Create an Application Insights resource
 
-1.  In the Azure portal's navigation pane, select **Create a resource**.
+#### Task 2: Create a Storage account
 
-1.  From the **New** blade, find the **Search the Marketplace** text box.
+1.  In the Azure portal's navigation pane, select **All services**.
 
-1.  In the search box, enter **Insights**, and then select Enter.
+1.  On the **All services** blade, select **Storage Accounts**.
 
-1.  From the **Marketplace** search results blade, select the **Application Insights** result.
+1.  On the **Storage accounts** blade, find your list of Storage instances.
 
-1.  From the **Application Insights** blade, select **Create**.
+1.  On the **Storage accounts** blade, select **Add**.
 
-1.  Find the tabs from the second **Application Insights** blade, such as **Basics**.
+1.  Find the tabs on the **Create storage account** blade, such as **Basics**.
 
-    > **Note**: Each tab represents a step in the workflow to create a new Application Insights instance. You can select **Review + Create** at any time to skip the remaining tabs.
+    > **Note**: Each tab represents a step in the workflow to create a new storage account. You can select **Review + Create** at any time to skip the remaining tabs.
 
-1.  From the **Basics** tab, perform the following actions:
+1.  On the **Basics** tab, perform the following actions:
     
     1.  Leave the **Subscription** text box set to its default value.
-    
-    1.  In the **Resource group** section, select **Create new**, enter **MonitoredAssets**, and then select **OK**.
-    
-    1.  In the **Name** text box, enter **instrm*[yourname]***.
-    
-    1.  In the **Region** drop-down list, select the **(US) East US** region.
-    
-    1.  In the **Resource Mode** section, select the **Classic** option.
-    
+
+    1.  In the **Resource group** section, select **Create new**, enter **MarketingContent**, and then select **OK**.
+
+    1.  In the **Storage account name** text box, enter **contenthost*[yourname]***.
+
+    1.  In the **Location** drop-down list, select the **(US) East US** region.
+
+    1.  In the **Performance** section, select **Standard**.
+
+    1.  In the **Account kind** drop-down list, select **StorageV2 (general purpose v2)**.
+
+    1.  In the **Replication** drop-down list, select **Read-access geo-redundant storage (RA-GRS)**.
+
     1.  Select **Review + Create**.
 
-1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
+1.  On the **Review + Create** tab, review the options that you selected during the previous steps.
 
-1.  Select **Create** to create the Application Insights instance by using your specified configuration.   
+1.  Select **Create** to create the storage account by using your specified configuration. 
 
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
-
-1.  In the Azure portal's navigation pane, select **Resource groups**.
-
-1.  From the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
-
-1.  From the **MonitoredAssets** blade, select the **instrm*[yourname]*** Application Insights account that you created earlier in this lab.
-
-1.  From the **Application Insights** blade, in the **Configure** category, select the **Properties** link.
-
-1.  In the **Properties** section, find the value of the **Instrumentation Key** text box. This key is used by client applications to connect to Application Insights.
-
-#### Task 3: Create a web app by using Azure App Services resource
+    
+#### Task 3: Create a web app by using Azure App Service
 
 1.  In the Azure portal's navigation pane, select **Create a resource**.
 
-1.  From the **New** blade, find the **Search the Marketplace** text box.
+1.  On the **New** blade, find the **Search the Marketplace** text box.
 
 1.  In the search box, enter **Web**, and then select Enter.
 
-1.  From the **Marketplace** search results blade, select the **Web App** result.
+1.  On the **Everything** search results blade, select the **Web App** result.
 
-1.  From the **Web App** blade, select **Create**.
+1.  On the **Web App** blade, select **Create**.
 
-1.  Find the tabs from the second **Web App** blade, such as **Basics**.
+1.  On the second **Web App** blade, find the tabs on the blade, such as **Basics**.
 
     > **Note**: Each tab represents a step in the workflow to create a new web app. You can select **Review + Create** at any time to skip the remaining tabs.
 
-1.  From the **Basics** tab, perform the following actions:
+1.  On the **Basics** tab, perform the following actions:
     
     1.  Leave the **Subscription** text box set to its default value.
     
-    1.  In the **Resource group** drop-down list, select **MonitoredAssets**.
-    
-    1.  In the **Name** text box, enter ***smpapi\***[yourname]***.
+    1.  In the **Resource group** section, select **MarketingContent**.
 
-    1.  In the **Publish** section, select **Code**.
+    1.  In the **Name** text box, enter **landingpage*[yourname]***.
 
-    1.  In the **Runtime stack** drop-down list, select **.NET Core 3.1 (LTS)**.
+    1.  In the **Publish** section, select **Docker Container**.
 
-    1.  In the **Operating System** section, select **Windows**.
+    1.  In the **Operating System** section, select **Linux**.
 
     1.  In the **Region** drop-down list, select the **East US** region.
 
-    1.  In the **Windows Plan (East US)** section, select **Create new**, enter the value **MonitoredPlan** into the **Name** text box, and then select **OK**.
+    1.  In the **Linux Plan (East US)** section, select **Create new**, enter the value **MarketingPlan** in the **Name** text box, and then select **OK**.
 
     1.  Leave the **SKU and size** section set to its default value.
 
-    1.  Select **Next: Monitoring**.
+    1.  Select **Next: Docker**.
 
-1.  From the **Monitoring** tab, perform the following actions:
+1.  On the **Docker** tab, perform the following actions:
 
-    1.  In the **Enable Application Insights** section, select **Yes**.
+    1.  In the **Options** drop-down list, select **Single Container**.
 
-    1.  In the **Application Insights** drop-down list, select the **instrm*[yourname]*** Application Insights account that you created earlier in this lab.
+    1.  In the **Image Source** drop-down list, select **Docker Hub**.
+
+    1.  In the **Access Type** drop-down list, select **Public**.
+
+    1.  In the **Image and tag** text box, enter **microsoftlearning/edx-html-landing-page:latest**.
 
     1.  Select **Review + Create**.
 
-1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
+1.  On the **Review + Create** tab, review the options that you selected during the previous steps.
 
-1.  Select **Create** to create the web app by using your specified configuration.   
+1.  Select **Create** to create the web app by using your specified configuration. 
 
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
 1.  In the Azure portal's navigation pane, select **Resource groups**.
 
-1.  From the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
+1.  On the **Resource groups** blade, select the **MarketingContent** resource group that you created earlier in this lab.
 
-1.  From the **MonitoredAssets** blade, select the ***smpapi\***[yourname]*** web app that you created earlier in this lab.
+1.  On the **MarketingContent** blade, select the **landingpage*[yourname]*** web app that you created earlier in this lab.
 
-1.  From the **App Service** blade, in the **Settings** category, select the **Configuration** link.
+1.  On the **App Service** blade, in the **Settings** category, select the **Properties** link.
 
-1.  In the **Configuration** section, perform the following actions:
-    
-    1.  Select the **Application settings** tab.
-
-    1.  Select **Show Values** to get the secrets associated with your API.
-
-    1.  Find the value corresponding to the **APPINSIGHTS\_INSTRUMENTATIONKEY** key. This value was set automatically when you built your Web Apps resource.
-
-1.  From the **App Service** blade, in the **Settings** category, select the **Properties** link.
-
-1.  In the **Properties** section, record the value of the **URL** text box. You'll use this value later in the lab to make requests against the API.
-
-#### Task 4: Configure web app autoscale options
-
-1.  From the **App Service** blade, in the **Settings** category, select the **Scale out (App Service Plan)** link.
-
-1.  In the **Scale out** section, perform the following actions:
-    
-    1.  Select **Custom autoscale**.
-    
-    1.  In the **Autoscale setting name** text box, enter **ComputeScaler**.
-    
-    1.  In the **Resource group** list, select **MonitoredAssets**.
-    
-    1.  In the **Scale mode** section, select **Scale based on a metric**.
-    
-    1.  In the **Minimum** text box in the **Instance limits** section, enter **2**.
-    
-    1.  In the **Maximum** text box in the **Instance limits** section, enter **8**.
-    
-    1.  In the **Default** text box in the **Instance limits** section, enter **3**.
-    
-    1.  Select **Add a rule**. In the **Scale rule** pop-up dialog, leave all boxes set to their default values, and then select **Add**.
-    
-    1.  Within the section, select **Save**. 
-
-    > **Note**: Wait for the save operation to complete before you move forward with this lab.
+1.  In the **Properties** section, record the value of the **URL** text box. You'll use this value later in the lab.
 
 #### Review
 
-In this exercise, you created the resources that you'll use for the remainder of the lab.
+In this exercise, you created an Azure Storage account and an Azure Web App that you'll use later in this lab.
 
-### Exercise 2: Monitor a local web application by using Application Insights 
-
-#### Task 1: Build a .NET Web API project
-
-1.  On the taskbar, select the **Visual Studio Code** icon.
-
-1.  From the **File** menu, select **Open Folder**.
-
-1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\12\\Starter\\Api**, and then select **Select Folder**.
-
-1.  In the **Visual Studio Code** window, right-click the Explorer pane or activate the shortcut menu, and then select **Open in Terminal**.
-
-1.  At the **Open** command prompt, enter the following command, and then select Enter to create a new .NET Web API application named **SimpleApi** in the current directory:
-
-    ```
-    dotnet new webapi --output . --name SimpleApi
-    ```
-
-1.  At the command prompt, enter the following command, and then select Enter to import version 2.14.0 of **Microsoft.ApplicationInsights** from NuGet to the current project:
-
-    ```
-    dotnet add package Microsoft.ApplicationInsights --version 2.14.0
-    ```
-
-    > **Note**: The **dotnet add package** command will add the **Microsoft.ApplicationInsights** package from NuGet. For more information, go to [Microsoft.ApplicationInsights](https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.14.0).
-
-1.  At the command prompt, enter the following command, and then select Enter to import version 2.14.0 of **Microsoft.ApplicationInsights.AspNetCore** from NuGet:
-
-    ```
-    dotnet add package Microsoft.ApplicationInsights.AspNetCore --version 2.14.0
-    ```
-
-    > **Note**: The **dotnet add package** command will add the **Microsoft.ApplicationInsights.AspNetCore** package from NuGet. For more information, go to [Microsoft.ApplicationInsights.AspNetCore](https://www.nuget.org/packages/Microsoft.ApplicationInsights.AspNetCore/2.14.0).
-
-1.  At the command prompt, enter the following command, and then select Enter to import version 2.14.0 of **Microsoft.ApplicationInsights.PerfCounterCollector** from NuGet to the current project:
-
-    ```
-    dotnet add package Microsoft.ApplicationInsights.PerfCounterCollector  --version 2.14.0
-    ```
-
-    > **Note**: The **dotnet add package** command will add the **Microsoft.ApplicationInsights.PerfCounterCollector** package from NuGet. For more information, go to [Microsoft.ApplicationInsights.PerfCounterCollector](https://www.nuget.org/packages/Microsoft.ApplicationInsights.PerfCounterCollector/2.14.0).
-
-
-1.  At the command prompt, enter the following command, and then select Enter to build the .NET web app:
-
-    ```
-    dotnet build
-    ```
-    
-#### Task 2: Update application code to disable HTTPS and use Application Insights
-
-1.  In the **Visual Studio Code** window, in the Explorer pane, select the **Startup.cs** file to open the file in the editor.
-
-1.  In the editor, in the **Startup** class, find and delete the following line of code at line 39:
-
-    ```
-    app.UseHttpsRedirection();
-    ```
-
-    > **Note**: This line of code forces the web app to use HTTPS. For this lab, this is unnecessary.
-
-1.  In the **Startup** class, add a new static string constant named **INSTRUMENTATION_KEY** with its value set to the instrumentation key that you copied from the Application Insights resource you created earlier in this lab:
-
-    ```
-    private const string INSTRUMENTATION_KEY = "{your_instrumentation_key}";
-    ```
-
-    > **Note**: For example, if your instrumentation key is ``d2bb0eed-1342-4394-9b0c-8a56d21aaa43``, your line of code would be ``private const string INSTRUMENTATION_KEY = "d2bb0eed-1342-4394-9b0c-8a56d21aaa43";``
-
-1.  Find the **ConfigureServices** method in the **Startup** class:
-
-    ```
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddControllers();
-    }
-    ```
-
-1.  Add a new line of code at the end of the **ConfigureServices** method to configure Application Insights using the provided instrumentation key:
-
-    ```    
-    services.AddApplicationInsightsTelemetry(INSTRUMENTATION_KEY);
-    ```
-
-1.  Observe the **ConfigureServices** method, which should now include:
-
-    ```
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddControllers();
-        services.AddApplicationInsightsTelemetry(INSTRUMENTATION_KEY);        
-    }
-    ```
-
-1.  Save the **Startup.cs** file.
-
-1.  At the command prompt, enter the following command, and then select Enter to build the .NET web application.
-
-    ```
-    dotnet build
-    ```
-
-#### Task 3: Test an API application locally
-
-1.  At the command prompt, enter the following command, and then select Enter to run the .NET web application.
-
-    ```
-    dotnet run
-    ```
-
-1.  On the taskbar, open the context menu for the **Microsoft Edge** icon, and then open a new browser window.
-
-1.  In the open browser window, go to the **/weatherforecast** relative path of your test application that's hosted at **localhost** on port **5000**.
-    
-    > **Note**: The full URL is http://localhost:5000/weatherforecast
-
-1.  Close the browser window that's displaying the http://localhost:5000/weatherforecast address.
-
-1.  Close the currently running Visual Studio Code application.
-
-#### Task 4: Get metrics in Application Insights
-
-1.  Return to your currently open browser window that's displaying the Azure portal.
-
-1.  In the portal, select **Resource groups**.
-
-1.  From the **Resource groups** blade, find and select the **MonitoredAssets** resource group that you created earlier in this lab.
-
-1.  From the **MonitoredAssets** blade, select the **instrm*[yourname]*** Application Insights account that you created earlier in this lab.
-
-1.  From the **Application Insights** blade, in the tiles in the center of the blade, find the displayed metrics. Specifically, find the number of server requests that have occurred and the average server response time.
-
-    > **Note**: It can take up to five minutes to observe requests in the Application Insights metrics charts.
-
-#### Review
-
-In this exercise, you created an API by using ASP.NET and configured it to stream application metrics to Application Insights. You then used the Application Insights dashboard to get performance details about your API.
-
-### Exercise 3: Monitor a web app using Application Insights
-
-#### Task 1: Deploy an application to the web app
-
-1.  On the taskbar, select the **Visual Studio Code** icon.
-
-1.  From the **File** menu, select **Open Folder**.
-
-1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\12\\Starter\\Api**, and then select **Select Folder**.
-
-1.  In the Visual Studio Code window, right-click the Explorer pane or activate the shortcut menu, and then select **Open in Terminal**.
-
-1.  At the open command prompt, enter the following command, and then select Enter to sign in to the Azure Command-Line Interface (CLI):
-
-    ```
-    az login
-    ```
-
-1.  In the browser window, perform the following actions:
-    
-    1.  Enter the email address for your Microsoft account, and then select **Next**.
-    
-    1.  Enter the password for your Microsoft account, and then select **Sign in**.
-
-1.  Return to the currently open command prompt application.  
-
-    > **Note**: Wait for the sign-in process to finish.
-
-1.  At the command prompt, enter the following command, and then select Enter to list all the apps in your **MonitoredAssets** resource group:
-
-    ```
-    az webapp list --resource-group MonitoredAssets
-    ```
-
-1.  Enter the following command, and then select Enter to find the apps that have the prefix **smpapi\***:
-
-    ```
-    az webapp list --resource-group MonitoredAssets --query "[?starts_with(name, 'smpapi')]"
-    ```
-
-1.  Enter the following command, and then select Enter to render out only the name of the single app that has the **smpapi\***:
-
-    ```
-    az webapp list --resource-group MonitoredAssets --query "[?starts_with(name, 'smpapi')].{Name:name}" --output tsv
-    ```
-
-1.  Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\12\\Starter** directory that contains the deployment files:
-
-    ```
-    cd F:\Allfiles\Labs\12\Starter\
-    ```
-
-1.  Enter the following command, and then select Enter to deploy the **api.zip** file to the web app that you created earlier in this lab:
-
-    ```
-    az webapp deployment source config-zip --resource-group MonitoredAssets --src api.zip --name <name-of-your-api-app>
-    ```
-
-    > **Note**: Replace the *name-of-your-api-app* placeholder with the name of the web app that you created earlier in this lab. You recently queried this app’s name in the previous steps.   
-
-    > **Note**: Wait for the deployment to complete before you move forward with this lab.
-
-1.  Close the currently running Visual Studio Code application.
-
-1.  Return to your currently open browser window that's displaying the Azure portal.
-
-1.  In the Azure portal's navigation pane, select **Resource groups**.
-
-1.  From the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
-
-1.  From the **MonitoredAssets** blade, select the ***smpapi\***[yourname]*** web app that you created earlier in this lab.
-
-1.  From the **App Service** blade, select **Browse**. A new browser window or tab will open and return a "404 (Not Found)" error.
-
-1.  In the browser address bar, update the URL by appending the suffix **/weatherforecast** to the end of the current URL, and then select Enter.
-
-    > **Note**: For example, if your URL is https://smpapistudent.azurewebsites.net, the new URL would be https://smpapistudent.azurewebsites.net/weatherforecast.
-
-1.  Find the JavaScript Object Notation (JSON) array that's returned as a result of using the API.
-
-#### Task 2: Configure in-depth metric collection for Web Apps
-
-1.  Return to your currently open browser window that's displaying the Azure portal.
-
-1.  In the Azure portal's navigation pane, select **Resource groups**.
-
-1.  From the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
-
-1.  From the **MonitoredAssets** blade, select the ***smpapi\***[yourname]*** web app that you created earlier in this lab.
-
-1.  From the **App Service** blade, select **Application Insights**.
-
-1.  From the **Application Insights** blade, perform the following actions:
-
-    1.  Ensure that the **Application Insights** section is set to **Enable**.
-
-    1.  In the **Instrument your application** section, select the **.NET** tab.
-
-    1.  In the **Collection level** section, select **Recommended**.
-
-    1.  In the **Profiler** secton, select **On**.
-
-    1.  In the **Snapshot debugger** section, select **Off**.
-
-    1.  In the **SQL Commands** section, select **Off**.
-
-    1.  Select **Apply**.
-
-    1.  In the confirmation dialog, select **Yes**.
-
-1.  Close the **Application Insights** blade.
-
-1.  Back from the **App Service** blade, select **Browse**. A new browser window or tab will open and return a "404 (Not Found)" error.
-
-1.  In the browser address bar, update the URL by appending the suffix **/weatherforecast** to the end of the current URL, and then select Enter.
-
-    > **Note**: For example, if your URL is https://smpapistudent.azurewebsites.net, the new URL would be https://smpapistudent.azurewebsites.net/weatherforecast.
-
-1.  Observe the JSON array that's returned as a result of using the API.
-
-1.  Record the URL that you used to access the JSON array.
-
-    > **Note**: Using the example from the previous step, you would record the URL ``https://smpapistudent.azurewebsites.net/weatherforecast``.
-
-#### Task 3: Get updated metrics in Application Insights
-
-1.  Return to your currently open browser window that's displaying the Azure portal.
-
-1.  In the portal, select **Resource groups**.
-
-1.  From the **Resource groups** blade, find and select the **MonitoredAssets** resource group that you created earlier in this lab.
-
-1.  From the **MonitoredAssets** blade, select the **instrm*[yourname]*** Application Insights account that you created earlier in this lab.
-
-1.  From the **Application Insights** blade, in the tiles in the center of the blade, find the displayed metrics. Specifically, find the number of server requests that have occurred and the average server response time.
-
-    > **Note**: It can take up to five minutes to observe requests in the Application Insights metrics charts.
-
-#### Task 4: View real-time metrics in Application Insights
-
-1.  Return to your currently open browser window that's displaying the Azure portal.
-
-1.  In the portal, select **Resource groups**.
-
-1.  From the **Resource groups** blade, find and select the **MonitoredAssets** resource group that you created earlier in this lab.
-
-1.  From the **MonitoredAssets** blade, select the **instrm*[yourname]*** Application Insights account that you created earlier in this lab.
-
-1.  From the **Application Insights** blade, select **Live Metrics Stream** in the **Investigate** section.
-
-1.  On the taskbar, open the context menu for the **Microsoft Edge** icon, and then open a new browser window.
-
-1.  In the new browser window, go to the URL that you recorded earlier in this lab.
-
-1.  Observe the JSON array result.
-
-1.  Return to your currently open browser window that's displaying the Azure portal.
-
-1.  Observe the updated **Live Metrics Stream** blade.
-
-    > **Note**: The **Incoming Requests** section should update within seconds, showing the requests that you made to the web app.
-
-#### Review
-
-In this exercise, you deployed your web application to Azure App Service and monitored your metrics from the same Application Insights instance.
-
-### Exercise 4: Clean up your subscription 
+### Exercise 2: Configure Content Delivery Network and endpoints
 
 #### Task 1: Open Azure Cloud Shell
 
 1.  In the Azure portal, select the **Cloud Shell** icon to open a new shell instance.
+
+    > **Note**: The **Cloud Shell** icon is represented by a greater than sign () and underscore character (\_).
+
+1.  If this is your first time opening Cloud Shell using your subscription, you can use the **Welcome to Azure Cloud Shell Wizard** to configure Cloud Shell for first-time usage. Perform the following actions in the wizard:
+    
+    -   A dialog box prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**. 
+
+    > **Note**: Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab. If you don't notice the **Cloud Shell** configuration options, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
+
+1.  At the **Cloud Shell** command prompt in the portal, enter the following command, and then select Enter to get the version of the Azure Command-Line Interface (Azure CLI) tool:
+
+    ```
+    az --version
+    ```
+
+#### Task 2: Register the Microsoft.CDN provider
+
+1.  At the **Cloud Shell** command prompt in the portal, perform the following actions:
+
+    1.  Enter the following command, and then select Enter to get a list of subgroups and commands at the root level of the Azure CLI:
+
+        ```
+        az --help
+        ```
+
+    1.  Enter the following command, and then select Enter to get a list of the commands that are available for resource providers:
+
+        ```
+        az provider --help
+        ```
+
+    1.  Enter the following command, and then select Enter to list all currently registered providers:
+
+        ```
+        az provider list
+        ```
+
+    1.  Enter the following command, and then select Enter to list just the namespaces of the currently registered providers:
+
+        ```
+        az provider list --query "[].namespace"
+        ```
+
+    1.  Observe the list of currently registered providers. The **Microsoft.CDN** provider isn't currently in the list of providers.
+
+    1.  Enter the following command, and then select Enter to get the required flags to register a new provider:
+
+        ```
+        az provider register --help
+        ```
+
+    1.  Enter the following command, and then select Enter to register the **Microsoft.CDN** namespace with your current subscription:
+
+        ```
+        az provider register --namespace Microsoft.CDN
+        ```
+
+1.  Close the Cloud Shell pane in the portal.
+
+#### Task 3: Create a Content Delivery Network profile
+
+1.  In the Azure portal's navigation pane, select **Create a resource**.
+
+1.  On the **New** blade, find the **Search the Marketplace** text box.
+
+1.  In the search box, enter **CDN**, and then select Enter.
+
+1.  On the **Everything** search results blade, select the **CDN** result.
+
+1.  On the **CDN** blade, select **Create**.
+
+1.  On the **CDN profile** blade, perform the following actions:
+
+    1.  In the **Name** text box, enter **contentdeliverynetwork**.
+    
+    1.  Leave the **Subscription** text box set to its default value.
+
+    1.  In the **Resource group** section, select **MarketingContent**.
+    
+    1.  Leave the **Resource group location** drop-down list set to its default value.
+
+    1.  In the **Pricing tier** drop-down list, select **Standard Akamai**.
+
+    1.  Ensure that the **Create a new CDN endpoint now** check box is cleared.
+
+    1.  Select **Create**.
+  
+    > **Note**: Wait for Azure to finish creating the CDN profile before you move forward with the lab. You'll receive a notification when the app is created.
+
+#### Task 4: Configure Storage containers
+
+1.  In the Azure portal's navigation pane, select **Resource groups**.
+
+1.  On the **Resource groups** blade, select the **MarketingContent** resource group that you created earlier in this lab.
+
+1.  On the **MarketingContent** blade, select the **contenthost*[yourname]*** storage account that you created earlier in this lab.
+
+1.  On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
+
+1.  In the **Containers** section, select **+ Container**.
+
+1.  In the **New container** pop-up window, perform the following actions:
+    
+    1.  In the **Name** text box, enter **media**.
+    
+    1.  In the **Public access level** drop-down list, select **Blob (anonymous read access for blobs only)**, 
+    
+    1.  Select **OK**.
+
+1.  Back in the **Containers** section, select **+ Container** again.
+
+1.  In the **New container** pop-up window, perform the following actions:
+    
+    1.  In the **Name** text box, enter **video**.
+    
+    1.  In the **Public access level** drop-down list, select **Blob (anonymous read access for blobs only)**, 
+    
+    1.  Select **OK**.
+
+1.  Observe the updated list of containers.
+
+#### Task 5: Create Content Delivery Network endpoints
+
+1.  In the Azure portal's navigation pane, select the **Resource groups** link.
+
+1.  On the **Resource groups** blade, find and then select the **MarketingContent** resource group that you created earlier in this lab.
+
+1.  On the **MarketingContent** blade, select the **contentdeliverynetwork** CDN profile that you created earlier in this lab.
+
+1.  On the **CDN profile** blade, select **+ Endpoint**.
+
+1.  In the **Add an endpoint** pop-up dialog box, perform the following actions:
+
+    1.  In the **Name** text box, enter **cdnmedia*[yourname]***.
+
+    1.  In the **Origin type** drop-down list, select **Storage**.
+
+    1.  In the **Origin hostname** drop-down list, select the **contenthost*[yourname]*.blob.core.windows.net** option for the Storage account that you created earlier in this lab.
+
+    1.  In the **Origin path** text box, enter **/media**.
+
+    1.  Leave the **Origin host header** text box set to its default value.
+
+    1.  Leave the **Protocol** and **Origin port** sections set to their default values.
+
+    1.  In the **Optimized for** drop-down list, select **General web delivery**.
+
+    1.  Select **Add**.
+
+1.  Back on the **CDN profile** blade, select **+ Endpoint** again.
+
+1.  In the **Add an endpoint** pop-up dialog box, perform the following actions:
+
+    1.  In the **Name** text box, enter **cdnvideo*[yourname]***.
+
+    1.  In the **Origin type** drop-down list, select **Storage**.
+
+    1.  In the **Origin hostname** drop-down list, select the **contenthost*[yourname]*.blob.core.windows.net** option for the Storage account that you created earlier in this lab.
+
+    1.  In the **Origin path** text box, enter **/video**.
+
+    1.  Leave the **Origin host header** text box set to its default value.
+
+    1.  Leave the **Protocol** and **Origin port** sections set to their default values.
+
+    1.  In the **Optimized for** drop-down list, select **Video on demand media streaming**.
+
+    1.  Select **Add**.
+
+1.  Back on the **CDN profile** blade, select **+ Endpoint** again.
+
+1.  In the **Add an endpoint** pop-up dialog box, perform the following actions:
+
+    1.  In the **Name** text box, enter **cdnweb*[yourname]***.
+
+    1.  In the **Origin type** drop-down list, select **Web App**.
+
+    1.  In the **Origin hostname** drop-down list, select the **landingpage*[yourname]*.azurewebsites.net** option for the Web App that you created earlier in this lab.
+
+    1.  Leave the **Origin path** text box set to its default value.
+
+    1.  Leave the **Origin host header** text box set to its default value.
+
+    1.  Leave the **Protocol** and **Origin port** sections set to their default values.
+
+    1.  In the **Optimized for** drop-down list, select **General web delivery**.
+
+    1.  Select **Add**.
+
+#### Review
+
+In this exercise, you registered the resource provider for Content Delivery Network and then used the provider to create both CDN profile and endpoint resources.
+
+### Exercise 3: Upload and configure static web content
+
+#### Task 1: Observe the landing page
+
+1.  In the Azure portal's navigation pane, select **Resource groups**.
+
+1.  On the **Resource groups** blade, select the **MarketingContent** resource group that you created earlier in this lab.
+
+1.  On the **MarketingContent** blade, select the **landingpage*[yourname]*** web app that you created earlier in this lab.
+
+1.  On the **App Service** blade, select **Browse**. A new browser window or tab will open and return the current website.
+
+1.  Observe the error message displayed on the screen. The website won't work until you configure the specified settings to reference multimedia content.
+
+1.  Return to your currently open browser window that's displaying the Azure portal.
+
+#### Task 2: Upload Storage blobs
+
+1.  In the Azure portal's navigation pane, select **Resource groups**.
+
+1.  On the **Resource groups** blade, select the **MarketingContent** resource group that you created earlier in this lab.
+
+1.  On the **MarketingContent** blade, select the **contenthost*[yourname]*** storage account that you created earlier in this lab.
+
+1.  On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
+
+1.  In the **Containers** section, select the **media** container.
+
+1.  On the **Container** blade, select **Upload**.
+
+1.  In the **Upload blob** pop-up window, perform the following actions:
+    
+    1.  In the **Files** section, select the **Folder** icon.
+    
+    1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\13\\Starter**, select the following files, and then select **Open**:
+
+        -   **campus.jpg**
+        
+        -   **conference.jpg**
+        
+        -   **poster.jpg**
+    
+    1.  Ensure that **Overwrite if files already exist** is selected, and then select **Upload**.  
+
+    > **Note**: Wait for the blob to upload before you continue with this lab.
+
+1.  Back on the **Container** blade, select **Properties** in the **Settings** section.
+
+1.  Record the value in the **URL** text box. You will use this value later in the lab.
+
+1.  Close the **Container** blade.
+
+1.  Back on the **Containers** blade, select the **video** container.
+
+1.  On the **Container** blade, select **Upload**.
+
+1.  In the **Upload blob** pop-up window, perform the following actions:
+    
+    1.  In the **Files** section, select the **Folder** icon.
+    
+    1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\13\\Starter**, select the **welcome.mp4** file, and then select **Open**.
+    
+    1.  Ensure that **Overwrite if files already exist** is selected, and then select **Upload**.  
+
+    > **Note**: Wait for the blob to upload before you continue with this lab.
+
+1.  Back on the **Container** blade, select **Properties** in the **Settings** section.
+
+1.  Record the value in the **URL** text box. You will use this value later in the lab.
+
+#### Task 3: Configure Web App settings
+
+1.  In the Azure portal's navigation pane, select **Resource groups**.
+
+1.  On the **Resource groups** blade, select the **MarketingContent** resource group that you created earlier in this lab.
+
+1.  On the **MarketingContent** blade, select the **landingpage*[yourname]*** web app that you created earlier in this lab.
+
+1.  On the **App Service** blade, in the **Settings** category, select the **Configuration** link.
+
+1.  In the **Configuration** section, perform the following actions:
+    
+    1.  Select the **Application settings** tab, and then select **New application setting**.
+    
+    1.  In the **Add/Edit application setting** pop-up window, in the **Name** text box, enter **CDNMediaEndpoint**.
+    
+    1.  In the **Value** text box, enter the **URI** value of the **media** container in the **contenthost*[yourname]*** storage account that you recorded earlier in this lab.
+    
+    1.  Leave the **deployment slot setting** text box set to its default value, and then select **OK** to close the pop-up window.
+    
+    1.  Return to the **Configuration** section, and then select **New application setting**.
+    
+    1.  In the **Add/Edit application setting** pop-up window, in the **Name** text box, enter **CDNVideoEndpoint**.
+    
+    1.  In the **Value** text box, enter the **URI** value of the **video** container in the **contenthost*[yourname]*** storage account that you recorded earlier in this lab.
+    
+    1.  Leave the **deployment slot setting** text box set to its default value, and then select **OK** to close the pop-up window.
+    
+    1.  Return to the **Configuration** section, and then select **Save** on the blade to persist your settings.  
+
+    > **Note**: Wait for your application settings to persist before you move forward with the lab.
+
+#### Task 4: Validate the corrected landing page
+
+1.  In the Azure portal's navigation pane, select **Resource groups**.
+
+1.  On the **Resource groups** blade, select the **MarketingContent** resource group that you created earlier in this lab.
+
+1.  On the **MarketingContent** blade, select the **landingpage*[yourname]*** web app that you created earlier in this lab.
+
+1.  On the **App Service** blade, select **Restart**. This operation will restart the Web App.
+
+    > **Note**: Wait for the restart operation to complete before you move forward with the lab. You'll receive a notification when the operation is done.
+
+1.  Back on the **App Service** blade, select **Browse**. A new browser window or tab will open and return the current website.
+
+1.  Observe the updated website rendering multimedia content of various types.
+
+1.  Return to your currently open browser window that's displaying the Azure portal.
+
+#### Review
+
+In this exercise, you uploaded multimedia content as blobs to Storage containers and then updated your Web App to point directly to the storage blobs.
+
+### Exercise 4: Use Content Delivery Network endpoints
+
+#### Task 1: Retrieve endpoint URIs
+
+1.  In the Azure portal's navigation pane, select the **Resource groups** link.
+
+1.  On the **Resource groups** blade, find and then select the **MarketingContent** resource group that you created earlier in this lab.
+
+1.  On the **MarketingContent** blade, select the **contentdeliverynetwork** CDN profile that you created earlier in this lab.
+
+1.  On the **CDN profile** blade, select the **cdnmedia*[yourname]*** endpoint.
+
+1.  On the **Endpoint** blade, copy the value of the **Endpoint hostname** text box. You will use this value later in the lab.
+
+1.  Close the **Endpoint** blade.
+
+1.  Back on the **CDN profile** blade, select the **cdnvideo*[yourname]*** endpoint.
+
+1.  On the **Endpoint** blade, copy the value of the **Endpoint hostname** text box. You will use this value later in the lab.
+
+1.  Close the **Endpoint** blade.
+
+#### Task 2: Test multimedia content
+
+1.  Construct a URL for the **campus.jpg** resource by combining the **Endpoint hostname** URL from the **cdnmedia*[yourname]*** endpoint that you copied earlier in the lab with a relative path of **/campus.jpg**.
+
+    > **Note**: For example, if your **Endpoint hostname** URL is **https://cdnmediastudent.azureedge.net/**, your newly constructed URL would be **https://cdnmediastudent.azureedge.net/campus.jpg**.
+
+1.  Construct a URL for the **conference.jpg** resource by combining the **Endpoint hostname** URL from the **cdnmedia*[yourname]*** endpoint that you copied earlier in the lab with a relative path of **/conference.jpg**.
+
+    > **Note**: For example, if your **Endpoint hostname** URL is **https://cdnmediastudent.azureedge.net/**, your newly constructed URL would be **https://cdnmediastudent.azureedge.net/conference.jpg**.
+
+1.  Construct a URL for the **poster.jpg** resource by combining the **Endpoint hostname** URL from the **cdnmedia*[yourname]*** endpoint that you copied earlier in the lab with a relative path of **/poster.jpg**.
+
+    > **Note**: For example, if your **Endpoint hostname** URL is **https://cdnmediastudent.azureedge.net/**, your newly constructed URL would be **https://cdnmediastudent.azureedge.net/poster.jpg**.
+
+1.  Construct a URL for the **welcome.mp4** resource by combining the **Endpoint hostname** URL from the **cdnvideo*[yourname]*** endpoint that you copied earlier in the lab with a relative path of **/welcome.mp4**.
+
+    > **Note**: For example, if your **Endpoint hostname** URL is **https://cdnvideostudent.azureedge.net/**, your newly constructed URL would be **https://cdnvideostudent.azureedge.net/welcome.mp4**.
+
+1.  On the taskbar, right-click the **Microsoft Edge** icon or activate the shortcut menu, and then select **New window**.
+
+1.  In the new browser window, go to the URL that you constructed for the **campus.jpg** media resource, and then verify that the resource was successfully found.
+
+    > **Note**: If the content isn't available yet, the CDN endpoint is still initializing. This initialization process can take anywhere from 5 to 15 minutes.
+
+1.  Go to the URL that you constructed for the **conference.jpg** media resource, and then verify that the resource was successfully found.
+
+1.  Go to the URL that you constructed for the **poster.jpg** media resource, and then verify that the resource was successfully found.
+
+1.  Go to the URL that you constructed for the **welcome.mp4** video resource, and then verify that the resource was successfully found.
+
+1.  Close the browser window that you created in this task.
+
+#### Task 3: Update the Web App settings
+
+1.  In the Azure portal's navigation pane, select **Resource groups**.
+
+1.  On the **Resource groups** blade, select the **MarketingContent** resource group that you created earlier in this lab.
+
+1.  On the **MarketingContent** blade, select the **landingpage*[yourname]*** web app that you created earlier in this lab.
+
+1.  On the **App Service** blade, in the **Settings** category, select the **Configuration** link.
+
+1.  In the **Configuration** section, perform the following actions:
+    
+    1.  Select the **Application settings** tab.
+    
+    1.  Select the existing **CDNMediaEndpoint** application setting.
+
+    1.  In the **Add/Edit application setting** pop-up dialog box, update the **Value** text box by entering the **Endpoint hostname** URL from the **cdnmedia*[yourname]*** endpoint that you copied earlier in the lab, and then select **OK**.
+    
+    1.  Select the existing **CDNVideoEndpoint** application setting.
+
+    1.  In the **Add/Edit application setting** pop-up dialog box, update the **Value** text box by entering the **Endpoint hostname** URL from the **cdnvideo*[yourname]*** endpoint that you copied earlier in the lab, and then selec **OK**.
+    
+    1.  Select **Save** on the blade to persist your settings.  
+
+    > **Note**: Wait for your application settings to persist before you move forward with the lab.
+
+1.  Back in the **Configuration** section, select **Overview**.
+
+1.  In the **Overview** section, select **Restart**. This operation will restart the Web App.
+
+    > **Note**: Wait for the restart operation to complete before you move forward with the lab. You'll receive a notification when the operation is done.
+
+#### Task 4: Test the web content
+
+1.  In the Azure portal's navigation pane, select the **Resource groups** link.
+
+1.  On the **Resource groups** blade, find and then select the **MarketingContent** resource group that you created earlier in this lab.
+
+1.  On the **MarketingContent** blade, select the **contentdeliverynetwork** CDN profile that you created earlier in this lab.
+
+1.  On the **CDN profile** blade, select the **cdnweb*[yourname]*** endpoint.
+
+1.  On the **Endpoint** blade, copy the value of the **Endpoint hostname** text box.
+
+1.  On the taskbar, right-click the **Microsoft Edge** icon or activate the shortcut menu, and then select **New window**.
+
+1.  In the new browser window, go to the **Endpoint hostname** URL for the **cdnweb*[yourname]*** endpoint.
+
+1.  Observe the website and multimedia content that are all served using Content Delivery Network.
+
+#### Review
+
+In this exercise, you updated your Web App to use Content Delivery Network to serve multimedia content and to serve the web application itself.
+
+### Exercise 5: Clean up your subscription 
+
+#### Task 1: Open Azure Cloud Shell and list resource groups
+
+1.  In the Azure portal's navigation pane, select the **Cloud Shell** icon to open a new shell instance.
 
     > **Note**: The **Cloud Shell** icon is represented by a greater than sign (\>) and underscore character (\_).
 
@@ -519,24 +597,22 @@ In this exercise, you deployed your web application to Azure App Service and mon
     
     1.  A dialog box prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**. 
 
-    > **Note**: Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab. If you don't notice the Cloud Shell configuration options, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
+    > **Note**: Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab. If you don't notice Cloud Shell configuration options, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
 
-#### Task 2: Delete resource groups
+#### Task 2: Delete a resource group
 
-1.  Enter the following command, and then select Enter to delete the **MonitoredAssets** resource group:
+1.  Enter the following command, and then select Enter to delete the **MarketingContent** resource group:
 
     ```
-    az group delete --name MonitoredAssets --no-wait --yes
+    az group delete --name MarketingContent --no-wait --yes
     ```
     
 1.  Close the Cloud Shell pane in the portal.
 
-#### Task 3: Close the active applications
+#### Task 3: Close the active application
 
-1.  Close the currently running Microsoft Edge application.
-
-1.  Close the currently running Visual Studio Code application.
+1.     the currently running Microsoft Edge application.
 
 #### Review
 
-In this exercise, you cleaned up your subscription by removing the resource groups used in this lab.
+In this exercise, you cleaned up your subscription by removing the resource group that was used in this lab.
