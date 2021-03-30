@@ -542,7 +542,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the **Containers** section, select **+ Container**.
 1. In the **New container** pop-up window, perform the following actions:
     1. In the **Name** text box, enter **drop**.
-    1. In the **Public access level** drop-down list, select **Blob (anonymous read access for blobs only)**, and then select **OK**.
+    1. In the **Public access level** drop-down list, select **Blob (anonymous read access for blobs only)**, and then select **Create**.
 1. Return to the **Containers** section, and then select the newly created **drop** container.
 1. From the **Container** blade, select **Upload**.
 1. In the **Upload blob** pop-up window, perform the following actions:

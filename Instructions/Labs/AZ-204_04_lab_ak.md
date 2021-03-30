@@ -211,7 +211,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
     
     1.  In the **Public access level** drop-down list, select **Blob (anonymous read access for blobs only)**.
     
-    1.  Select **OK**.
+    1.  Select **Create**.
 
 1.  Back in the **Containers** section, select the newly created **images** container.
 

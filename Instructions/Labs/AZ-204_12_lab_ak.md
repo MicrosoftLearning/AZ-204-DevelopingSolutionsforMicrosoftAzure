@@ -267,7 +267,7 @@ In this exercise, you created an Azure Storage account and an Azure Web App that
     
     1.  In the **Public access level** drop-down list, select **Blob (anonymous read access for blobs only)**, 
     
-    1.  Select **OK**.
+    1.  Select **Create**.
 
 1.  Back in the **Containers** section, select **+ Container** again.
 
@@ -277,7 +277,7 @@ In this exercise, you created an Azure Storage account and an Azure Web App that
     
     1.  In the **Public access level** drop-down list, select **Blob (anonymous read access for blobs only)**, 
     
-    1.  Select **OK**.
+    1.  Select **Create**.
 
 1.  Observe the updated list of containers.
 
