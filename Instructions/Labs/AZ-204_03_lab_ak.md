@@ -59,7 +59,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **Storage accounts** blade, find your list of Storage instances.
 
-1.  On the **Storage accounts** blade, select **Add**.
+1.  On the **Storage accounts** blade, select **New**.
 
 1.  Find the tabs on the **Create storage account** blade, such as **Basics**.
 

@@ -51,7 +51,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the Azure portal's navigation pane, select **All services**.
 1. On the **All services** blade, select **Storage Accounts**.
 1. On the **Storage accounts** blade, get your list of storage account instances.
-1. On the **Storage accounts** blade, select **Add**.
+1. On the **Storage accounts** blade, select **New**.
 1. On the **Create storage account** blade, observe the tabs on the blade, such as **Basics**, **Tags**, and **Review + Create**.
     > **Note**: Each tab represents a step in the workflow to create a new storage account. You can select **Review + Create** at any time to skip the remaining tabs.
 1. Select the **Basics** tab, and then in the tab area, perform the following actions:
