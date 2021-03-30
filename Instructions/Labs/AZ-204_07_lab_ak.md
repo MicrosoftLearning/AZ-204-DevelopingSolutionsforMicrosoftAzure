@@ -7,7 +7,8 @@ lab:
     type: 'Answer Key'
 ---
 
-# Lab: Access resource secrets more securely across services | Student lab answer key
+# Lab 07: Access resource secrets more securely across services
+# Student lab answer key
 
 ## Microsoft Azure user interface
 

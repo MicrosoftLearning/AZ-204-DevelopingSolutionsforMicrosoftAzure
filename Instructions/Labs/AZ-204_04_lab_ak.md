@@ -7,7 +7,7 @@ lab:
     type: 'Answer Key'
 ---
 
-# Lab: Constructing a polyglot data solution
+# Lab 04: Constructing a polyglot data solution
 # Student lab answer key
 
 ## Microsoft Azure user interface
