@@ -87,7 +87,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1. In the **Resource group** section, select **Use existing**, and then select **Serverless** in the list.
     1. In the **Function app name** text box, enter **funclogic[yourname]**.
     1. In the **Publish** section, select **Code**.
-    1. In the **Runtime stack** drop-down list, select **.NET Core**.
+    1. In the **Runtime stack** drop-down list, select **.NET**.
     1. In the **Version** drop-down list, select **3.1**.
     1. In the **Region** drop-down list, select the **East US** region.
     1. Select **Next: Hosting**.
@@ -530,7 +530,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1. Ensure that the **Overwrite if files already exist** check box is selected, and then select **Upload**.
       > **Note**: Wait for the blob to upload before you continue with this lab.
 
-#### Task 2: Create a Blob-triggered function
+#### Task 2: Create a HTTP-triggered function
 
 1. On the taskbar, select the **Windows Terminal** icon.
 1. Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\02\\Starter\\func** empty directory:
@@ -539,16 +539,16 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     cd F:\Allfiles\Labs\02\Starter\func
     ```
 
-1. When you receive the open command prompt, enter the following command, and then select Enter to use the **Azure Functions Core Tools** to create a new function named **GetSettingInfo** using the **Blob trigger** template:
+1. When you receive the open command prompt, enter the following command, and then select Enter to use the **Azure Functions Core Tools** to create a new function named **GetSettingInfo** using the **HTTP trigger** template:
 
     ```powershell
-    func new --template "Blob trigger" --name "GetSettingInfo"
+    func new --template "HTTP trigger" --name "GetSettingInfo"
     ```
 
     > **Note**: You can review the documentation to [create a new function][azure-functions-core-tools-new-function] using the **Azure Functions Core Tools**.
 1. Close the currently running **Windows Terminal** application.
 
-#### Task 3: Write Blob-inputted function code
+#### Task 3: Write HTTP-triggered and blob-inputted function code
 
 1. On the **Start** screen, select the **Visual Studio Code** tile.
 1. From the **File** menu, select **Open Folder**.
@@ -559,18 +559,36 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     ```csharp
     using System;
     using System.IO;
+    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Mvc;
     using Microsoft.Azure.WebJobs;
-    using Microsoft.Azure.WebJobs.Host;
+    using Microsoft.Azure.WebJobs.Extensions.Http;
+    using Microsoft.AspNetCore.Http;
     using Microsoft.Extensions.Logging;
-
+    using Newtonsoft.Json;
+    
     namespace func
     {
         public static class GetSettingInfo
         {
             [FunctionName("GetSettingInfo")]
-            public static void Run([BlobTrigger("samples-workitems/{name}", Connection = "")]Stream myBlob, string name, ILogger log)
+            public static async Task<IActionResult> Run(
+                [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
+                ILogger log)
             {
-                log.LogInformation($"C# Blob trigger function Processed blob\n Name:{name} \n Size: {myBlob.Length} Bytes");
+                log.LogInformation("C# HTTP trigger function processed a request.");
+    
+                string name = req.Query["name"];
+    
+                string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+                dynamic data = JsonConvert.DeserializeObject(requestBody);
+                name = name ?? data?.name;
+    
+                string responseMessage = string.IsNullOrEmpty(name)
+                    ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
+                    : $"Hello, {name}. This HTTP triggered function executed successfully.";
+    
+                return new OkObjectResult(responseMessage);
             }
         }
     }
@@ -674,7 +692,30 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1. Select **Save** to save your changes to the **GetSettingInfo.cs** file.
 
-#### Task 4: Test the Blob-inputted function by using httprepl
+#### Task 4: Register Azure Storage blob extensions
+
+1. On the taskbar, select the **Windows Terminal** icon.
+1. Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\02\\Starter\\func** empty directory:
+
+    ```powershell
+    cd F:\Allfiles\Labs\02\Starter\func
+    ```
+
+1. When you receive the open command prompt, enter the following command, and then select Enter to **register** the [Microsoft.Azure.WebJobs.Extensions.Storage](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Storage/4.0.4) extension:
+
+    ```powershell
+    func extensions install --package Microsoft.Azure.WebJobs.Extensions.Storage --version 4.0.4
+    ```
+
+1. Enter the following command, and then select Enter to validate the extensions were installed correctly by **building** the .NET project:
+
+    ```powershell
+    dotnet build
+    ```
+
+1. Close all currently running instances of the **Windows Terminal** application.
+
+#### Task 5: Test the function by using httprepl
 
 1. On the taskbar, select the **Windows Terminal** icon.
 1. Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\02\\Starter\\func** empty directory:
