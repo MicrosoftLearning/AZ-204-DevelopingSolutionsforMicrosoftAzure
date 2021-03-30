@@ -530,7 +530,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1. Ensure that the **Overwrite if files already exist** check box is selected, and then select **Upload**.
       > **Note**: Wait for the blob to upload before you continue with this lab.
 
-#### Task 2: Create a Blob-triggered function
+#### Task 2: Create a HTTP-triggered function
 
 1. On the taskbar, select the **Windows Terminal** icon.
 1. Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\02\\Starter\\func** empty directory:
@@ -548,7 +548,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     > **Note**: You can review the documentation to [create a new function][azure-functions-core-tools-new-function] using the **Azure Functions Core Tools**.
 1. Close the currently running **Windows Terminal** application.
 
-#### Task 3: Write Blob-inputted function code
+#### Task 3: Write HTTP-triggered and blob-inputted function code
 
 1. On the **Start** screen, select the **Visual Studio Code** tile.
 1. From the **File** menu, select **Open Folder**.
@@ -692,7 +692,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1. Select **Save** to save your changes to the **GetSettingInfo.cs** file.
 
-#### Task 4: Test the Blob-inputted function by using httprepl
+#### Task 4: Test the function by using httprepl
 
 1. On the taskbar, select the **Windows Terminal** icon.
 1. Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\02\\Starter\\func** empty directory:
