@@ -338,7 +338,7 @@ In this exercise, you built a proxy tier between your App Service resource and a
 
 1.  If this is your first time opening Cloud Shell using your subscription, you can use the **Welcome to Azure Cloud Shell Wizard** to configure Cloud Shell for first-time usage. Perform the following actions in the wizard:
     
-    -   A dialog box prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**. 
+    -   A dialog box prompts you to configure the shell. Select **Bash**, review the selected subscription, and then select **Create storage**. 
 
     > **Note**: Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab. If you don't notice Cloud Shell configuration options, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
 
