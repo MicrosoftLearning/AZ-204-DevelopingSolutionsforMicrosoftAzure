@@ -38,8 +38,9 @@ public class Program
         );
 
         await client.SendEventAsync(firstEvent);
-        await client.SendEventAsync(secondEvent);
+        Console.WriteLine("First event published");
 
-        Console.WriteLine("Events published");
+        await client.SendEventAsync(secondEvent);
+        Console.WriteLine("Second event published");
     }
 }
