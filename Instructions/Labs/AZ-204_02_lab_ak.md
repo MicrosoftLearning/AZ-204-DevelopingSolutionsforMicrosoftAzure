@@ -692,7 +692,30 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1. Select **Save** to save your changes to the **GetSettingInfo.cs** file.
 
-#### Task 4: Test the function by using httprepl
+#### Task 4: Register Azure Storage blob extensions
+
+1. On the taskbar, select the **Windows Terminal** icon.
+1. Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\02\\Starter\\func** empty directory:
+
+    ```powershell
+    cd F:\Allfiles\Labs\02\Starter\func
+    ```
+
+1. When you receive the open command prompt, enter the following command, and then select Enter to **register** the [Microsoft.Azure.WebJobs.Extensions.Storage](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Storage/4.0.4) extension:
+
+    ```powershell
+    func extensions install --package Microsoft.Azure.WebJobs.Extensions.Storage --version 4.0.4
+    ```
+
+1. Enter the following command, and then select Enter to validate the extensions were installed correctly by **building** the .NET project:
+
+    ```powershell
+    dotnet build
+    ```
+
+1. Close all currently running instances of the **Windows Terminal** application.
+
+#### Task 5: Test the function by using httprepl
 
 1. On the taskbar, select the **Windows Terminal** icon.
 1. Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\02\\Starter\\func** empty directory:
