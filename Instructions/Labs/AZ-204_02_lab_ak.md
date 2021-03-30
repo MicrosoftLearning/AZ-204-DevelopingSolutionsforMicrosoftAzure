@@ -853,7 +853,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1.  In the Azure portal, select the **Cloud Shell** icon to open a new shell instance.
     > **Note**: The **Cloud Shell** icon is represented by a greater than sign (\>) and underscore character (\_).
 1. If this is your first time opening Cloud Shell using your subscription, you can use the **Welcome to Azure Cloud Shell Wizard** to configure Cloud Shell for first-time usage. Perform the following actions in the wizard:
-    1. A dialog box prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**.
+    1. A dialog box prompts you to configure the shell. Select **Bash**, review the selected subscription, and then select **Create storage**.
     > **Note**: Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab. If Cloud Shell configuration options don't display, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
 
 #### Task 2: Delete a resource group
