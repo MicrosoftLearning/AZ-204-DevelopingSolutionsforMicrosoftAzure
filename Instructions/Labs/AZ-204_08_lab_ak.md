@@ -166,6 +166,8 @@ In this exercise, you created a new Azure web app by using a container image sou
     1.  In the **Organization name** text box, enter **Contoso**.
     
     1.  Leave the **Administrator email** text box set to its default value.
+
+        > **Note**: If this field is empty, you can enter any non-working email address.
     
     1.  In the **Pricing tier** list, select **Consumption (99.9 SLA, %)**.
     
