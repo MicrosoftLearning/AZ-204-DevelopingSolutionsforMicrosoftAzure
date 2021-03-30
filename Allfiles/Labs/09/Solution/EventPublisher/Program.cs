@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.Azure.EventGrid;
-using Microsoft.Azure.EventGrid.Models;
+using Azure;
+using Azure.Messaging.EventGrid;
 
 public class Program
 {
@@ -12,48 +11,36 @@ public class Program
 
     public static async Task Main(string[] args)
     {
-        TopicCredentials credentials = new TopicCredentials(topicKey);
-        EventGridClient client = new EventGridClient(credentials);
-
-        List<EventGridEvent> events = new List<EventGridEvent>();
-
-        var firstPerson = new
-        {
-            FullName = "Alba Sutton",
-            Address = "4567 Pine Avenue, Edison, WA 97202"
-        };
+        Uri endpoint = new Uri(topicEndpoint);
+        AzureKeyCredential credential = new AzureKeyCredential(topicKey);
+        EventGridPublisherClient client = new EventGridPublisherClient(endpoint, credential);
         
-        EventGridEvent firstEvent = new EventGridEvent
-        {
-            Id = Guid.NewGuid().ToString(),
-            EventType = "Employees.Registration.New",
-            EventTime = DateTime.Now,
-            Subject = $"New Employee: {firstPerson.FullName}",
-            Data = firstPerson,
-            DataVersion = "1.0.0"
-        };
-        events.Add(firstEvent);
+        EventGridEvent firstEvent = new EventGridEvent(
+            subject: $"New Employee: Alba Sutton",
+            eventType: "Employees.Registration.New",
+            dataVersion: "1.0",
+            data: new
+            {
+                FullName = "Alba Sutton",
+                Address = "4567 Pine Avenue, Edison, WA 97202"
+            }
+        );
 
-        var secondPerson = new
-        {
-            FullName = "Alexandre Doyon",
-            Address = "456 College Street, Bow, WA 98107"
-        };
-        
-        EventGridEvent secondEvent = new EventGridEvent
-        {
-            Id = Guid.NewGuid().ToString(),
-            EventType = "Employees.Registration.New",
-            EventTime = DateTime.Now,
-            Subject = $"New Employee: {secondPerson.FullName}",
-            Data = secondPerson,
-            DataVersion = "1.0.0"
-        };
-        events.Add(secondEvent);
+        EventGridEvent secondEvent = new EventGridEvent(
+            subject: $"New Employee: Alexandre Doyon",
+            eventType: "Employees.Registration.New",
+            dataVersion: "1.0",
+            data: new
+            {
+                FullName = "Alexandre Doyon",
+                Address = "456 College Street, Bow, WA 98107"
+            }
+        );
 
-        string topicHostname = new Uri(topicEndpoint).Host;
-        await client.PublishEventsAsync(topicHostname, events);
+        await client.SendEventAsync(firstEvent);
+        Console.WriteLine("First event published");
 
-        Console.WriteLine("Events published");
+        await client.SendEventAsync(secondEvent);
+        Console.WriteLine("Second event published");
     }
 }
