@@ -7,7 +7,7 @@ lab:
     type: 'Answer Key'
 ---
 
-# Lab: Creating a multi-tier solution by using services in Azure
+# Lab 08: Creating a multi-tier solution by using services in Azure
 # Student lab answer key
 
 ## Microsoft Azure user interface

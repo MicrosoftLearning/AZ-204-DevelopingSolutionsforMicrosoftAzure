@@ -7,7 +7,7 @@ lab:
     type: 'Answer Key'
 ---
 
-# Lab: Retrieving Azure Storage resources and metadata by using the Azure Storage SDK for .NET
+# Lab 03: Retrieving Azure Storage resources and metadata by using the Azure Storage SDK for .NET
 # Student lab answer key
 
 ## Microsoft Azure user interface
