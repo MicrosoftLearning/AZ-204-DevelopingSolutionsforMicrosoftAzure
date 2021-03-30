@@ -539,10 +539,10 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     cd F:\Allfiles\Labs\02\Starter\func
     ```
 
-1. When you receive the open command prompt, enter the following command, and then select Enter to use the **Azure Functions Core Tools** to create a new function named **GetSettingInfo** using the **Blob trigger** template:
+1. When you receive the open command prompt, enter the following command, and then select Enter to use the **Azure Functions Core Tools** to create a new function named **GetSettingInfo** using the **HTTP trigger** template:
 
     ```powershell
-    func new --template "Blob trigger" --name "GetSettingInfo"
+    func new --template "HTTP trigger" --name "GetSettingInfo"
     ```
 
     > **Note**: You can review the documentation to [create a new function][azure-functions-core-tools-new-function] using the **Azure Functions Core Tools**.
@@ -559,18 +559,36 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     ```csharp
     using System;
     using System.IO;
+    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Mvc;
     using Microsoft.Azure.WebJobs;
-    using Microsoft.Azure.WebJobs.Host;
+    using Microsoft.Azure.WebJobs.Extensions.Http;
+    using Microsoft.AspNetCore.Http;
     using Microsoft.Extensions.Logging;
-
+    using Newtonsoft.Json;
+    
     namespace func
     {
         public static class GetSettingInfo
         {
             [FunctionName("GetSettingInfo")]
-            public static void Run([BlobTrigger("samples-workitems/{name}", Connection = "")]Stream myBlob, string name, ILogger log)
+            public static async Task<IActionResult> Run(
+                [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
+                ILogger log)
             {
-                log.LogInformation($"C# Blob trigger function Processed blob\n Name:{name} \n Size: {myBlob.Length} Bytes");
+                log.LogInformation("C# HTTP trigger function processed a request.");
+    
+                string name = req.Query["name"];
+    
+                string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+                dynamic data = JsonConvert.DeserializeObject(requestBody);
+                name = name ?? data?.name;
+    
+                string responseMessage = string.IsNullOrEmpty(name)
+                    ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
+                    : $"Hello, {name}. This HTTP triggered function executed successfully.";
+    
+                return new OkObjectResult(responseMessage);
             }
         }
     }
