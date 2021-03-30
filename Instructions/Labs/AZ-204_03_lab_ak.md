@@ -1,6 +1,7 @@
 ---
 lab:
-    title: 'Lab 03: Retrieving Azure Storage resources and metadata by using the Azure Storage SDK for .NET'
+    az204Title: 'Lab 03: Retrieving Azure Storage resources and metadata by using the Azure Storage SDK for .NET'
+    az020Title: 'Lab 03: Retrieving Azure Storage resources and metadata by using the Azure Storage SDK for .NET'
     az204Module: 'Module 03: Develop solutions that use blob storage'
     az020Module: 'Module 03: Develop solutions that use blob storage'
     type: 'Answer Key'

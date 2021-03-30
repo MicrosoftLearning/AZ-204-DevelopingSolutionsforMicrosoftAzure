@@ -1,6 +1,7 @@
 ---
 lab:
-    title: 'Lab 07: Access resource secrets more securely across services'
+    az204Title: 'Lab 07: Access resource secrets more securely across services'
+    az020Title: 'Lab 07: Access resource secrets more securely across services'
     az204Module: 'Module 07: Implement secure cloud solutions'
     az020Module: 'Module 07: Implement secure cloud solutions'
     type: 'Answer Key'

@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab 12: Enhancing a web application by using the Azure Content Delivery Network'
+    az204Title: 'Lab 12: Enhancing a web application by using the Azure Content Delivery Network'
     az204Module: 'Module 12: Integrate caching and content delivery within solutions'
     type: 'Answer Key'
 ---
