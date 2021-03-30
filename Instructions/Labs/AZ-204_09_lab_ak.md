@@ -285,13 +285,13 @@ In this exercise, you created a new subscription, validated its registration, an
 
     > **Note**: The **dotnet new** command will create a new **console** project in a folder with the same name as the project.
 
-1.  At the command prompt, enter the following command, and then select Enter to import version 3.2.0 of **Microsoft.Azure.EventGrid** from NuGet:
+1.  At the command prompt, enter the following command, and then select Enter to import version 4.1.0 of **Azure.Messaging.EventGrid** from NuGet:
 
     ```
-    dotnet add package Microsoft.Azure.EventGrid --version 3.2.0
+    dotnet add package Azure.Messaging.EventGrid --version 4.1.0
     ```
 
-    > **Note**: The **dotnet add package** command will add the **Microsoft.Azure.EventGrid** package from NuGet. For more information, go to [Microsoft.Azure.EventGrid](https://www.nuget.org/packages/Microsoft.Azure.EventGrid/3.2.0).
+    > **Note**: The **dotnet add package** command will add the **Microsoft.Azure.EventGrid** package from NuGet. For more information, go to [Azure.Messaging.EventGrid](https://www.nuget.org/packages/Azure.Messaging.EventGrid/4.1.0).
 
 1.  At the command prompt, enter the following command, and then select Enter to build the .NET web application:
 
