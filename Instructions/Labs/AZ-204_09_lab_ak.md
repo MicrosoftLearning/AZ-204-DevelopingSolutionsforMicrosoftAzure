@@ -1,6 +1,7 @@
 ---
 lab:
-    title: 'Lab 09: Publishing and subscribing to Event Grid events'
+    az204Title: 'Lab 09: Publishing and subscribing to Event Grid events'
+    az020Title: 'Lab 09: Publishing and subscribing to Event Grid events'
     az204Module: 'Module 09: Develop event-based solutions'
     az020Module: 'Module 09: Develop event-based solutions'
     type: 'Answer Key'

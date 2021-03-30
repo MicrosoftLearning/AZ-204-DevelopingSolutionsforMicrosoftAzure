@@ -83,7 +83,7 @@
 
 - Disable PowerShell 7 update notifications
 
-  1. [Create an environment variable](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_update_notifications?view=powershell-7) named ``POWERSHELL_UPDATECHECK``
+  1. [Create an environment variable](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_update_notifications?view=powershell-7) named ``POWERSHELL_UPDATECHECK``
   
   1. Set the value of the environment variable to ``Off`` (case-sensitive)
 
