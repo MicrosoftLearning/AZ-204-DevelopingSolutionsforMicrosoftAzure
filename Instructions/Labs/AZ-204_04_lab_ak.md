@@ -61,7 +61,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **SQL servers** blade, find your list of SQL server instances.
 
-1.  From the **SQL servers** blade, select **Add**.
+1.  From the **SQL servers** blade, select **New**.
 
 1.  From the **Create SQL Database Server** blade, observe the tabs from the blade, such as **Basics**, **Networking**, and **Additional settings**.
 
@@ -107,7 +107,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **Azure Cosmos DB** blade, find your list of Azure Cosmos DB instances.
 
-1.  From the **Azure Cosmos DB** blade, select **Add**.
+1.  From the **Azure Cosmos DB** blade, select **New**.
 
 1.  From the **Create Azure Cosmos DB Account** blade, observe the tabs from the blade, such as **Basics**, **Network**, and **Tags**.
 
@@ -157,7 +157,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **Storage accounts** blade, find your list of Storage instances.
 
-1.  From the **Storage accounts** blade, select **Add**.
+1.  From the **Storage accounts** blade, select **New**.
 
 1.  From the **Create storage account** blade, observe the tabs from the blade, such as **Basics**, **Advanced**, and **Tags**.
 
