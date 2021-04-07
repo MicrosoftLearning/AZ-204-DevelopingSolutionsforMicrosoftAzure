@@ -7,7 +7,8 @@ lab:
     type: 'Answer Key'
 ---
 
-# Lab: Implement task processing logic by using Azure Functions | Student lab answer key
+# Lab 02: Implement task processing logic by using Azure Functions
+# Student lab answer key
 
 ## Microsoft Azure user interface
 
