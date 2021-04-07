@@ -274,7 +274,7 @@ In this exercise, you created a new subscription, validated its registration, an
 
 1. From the **File** menu, select **Open Folder**.
 
-1. In the **File Explorer** window that opens, browse to **Allfiles (F):\\Allfiles\\Labs\\10\\Starter\\EventPublisher**, and then select **Select Folder**.
+1. In the **File Explorer** window that opens, browse to **Allfiles (F):\\Allfiles\\Labs\\09\\Starter\\EventPublisher**, and then select **Select Folder**.
 
 1. In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
 
@@ -498,7 +498,7 @@ In this exercise, you created a new subscription, validated its registration, an
     dotnet run
     ```
 
-    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\10\\Solution\\EventPublisher** folder.
+    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\09\\Solution\\EventPublisher** folder.
 
 1. Observe the success message output from the currently running console application.
 

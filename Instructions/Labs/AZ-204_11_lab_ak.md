@@ -212,7 +212,7 @@ In this exercise, you created the resources that you'll use for the remainder of
 
 1.  From the **File** menu, select **Open Folder**.
 
-1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\12\\Starter\\Api**, and then select **Select Folder**.
+1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\11\\Starter\\Api**, and then select **Select Folder**.
 
 1.  In the **Visual Studio Code** window, right-click the Explorer pane or activate the shortcut menu, and then select **Open in Terminal**.
 
@@ -350,7 +350,7 @@ In this exercise, you created an API by using ASP.NET and configured it to strea
 
 1.  From the **File** menu, select **Open Folder**.
 
-1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\12\\Starter\\Api**, and then select **Select Folder**.
+1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\11\\Starter\\Api**, and then select **Select Folder**.
 
 1.  In the Visual Studio Code window, right-click the Explorer pane or activate the shortcut menu, and then select **Open in Terminal**.
 
@@ -388,7 +388,7 @@ In this exercise, you created an API by using ASP.NET and configured it to strea
     az webapp list --resource-group MonitoredAssets --query "[?starts_with(name, 'smpapi')].{Name:name}" --output tsv
     ```
 
-1.  Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\12\\Starter** directory that contains the deployment files:
+1.  Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\11\\Starter** directory that contains the deployment files:
 
     ```
     cd F:\Allfiles\Labs\12\Starter\

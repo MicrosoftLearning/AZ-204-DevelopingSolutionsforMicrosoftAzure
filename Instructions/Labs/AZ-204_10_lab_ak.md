@@ -112,7 +112,7 @@ In this exercise, you created a new Azure Storage account that you'll use throug
 
 1.  On the **File** menu, select **Open Folder**.
 
-1.  In the **File Explorer** window that opens, browse to **Allfiles (F):\\Allfiles\\Labs\\11\\Starter\\MessageProcessor**, and then select **Select Folder**.
+1.  In the **File Explorer** window that opens, browse to **Allfiles (F):\\Allfiles\\Labs\\10\\Starter\\MessageProcessor**, and then select **Select Folder**.
 
 1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
 
@@ -262,7 +262,7 @@ In this exercise, you created a new Azure Storage account that you'll use throug
     dotnet run
     ```
 
-    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\11\\Solution\\MessageProcessor** folder.
+    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\10\\Solution\\MessageProcessor** folder.
 
 1.  Observe the output from the currently running console application. The output contains metadata for the queue endpoint.
 
@@ -362,7 +362,7 @@ In this exercise, you configured your .NET project to access the Storage service
     dotnet build
     ```
 
-    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\11\\Solution\\MessageProcessor** folder.
+    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\10\\Solution\\MessageProcessor** folder.
 
 1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
 
@@ -376,7 +376,7 @@ In this exercise, you configured your .NET project to access the Storage service
     dotnet run
     ```
 
-    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\11\\Solution\\MessageProcessor** folder.
+    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\10\\Solution\\MessageProcessor** folder.
 
 1.  Observe the output from the currently running console application. The output indicates that no messages are in the queue.
 
@@ -438,7 +438,7 @@ In this exercise, you configured your .NET project to access the Storage service
     dotnet run
     ```
 
-    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\11\\Solution\\MessageProcessor** folder.
+    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\10\\Solution\\MessageProcessor** folder.
 
 1.  Observe the output from the currently running console application. The output includes the new message that you created.
 
@@ -488,7 +488,7 @@ In this exercise, you configured your .NET project to access the Storage service
     dotnet run
     ```
 
-    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\11\\Solution\\MessageProcessor** folder.
+    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\10\\Solution\\MessageProcessor** folder.
 
 1.  Observe the output from the currently running console application. The message that you created earlier in the lab still exists because it hasn't been deleted previously.
 
@@ -567,7 +567,7 @@ In this exercise, you read and deleted existing messages from the Storage queue 
     dotnet run
     ```
 
-    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\11\\Solution\\MessageProcessor** folder.
+    > **Note**: If there are any build errors, review the **Program.cs** file in the **Allfiles (F):\\Allfiles\\Labs\\10\\Solution\\MessageProcessor** folder.
 
 1.  Observe the output from the currently running console application. The content of the new message that you sent should be in the output.
 
