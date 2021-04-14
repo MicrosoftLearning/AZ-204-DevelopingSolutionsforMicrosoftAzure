@@ -481,7 +481,7 @@ In this exercise, you created a .NET console application to display a machine’
 
 1.  From the **New** blade, find the **Search the Marketplace** text box above the list of featured services.
 
-1.  In the search box, enter **Container instance**, and then select Enter.
+1.  In the search box, enter **container instances**, and then select Enter.
 
 1.  From the **Marketplace** search results blade, select the **Container Instances** result.
 
