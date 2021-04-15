@@ -79,7 +79,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1. In the Azure portal's navigation pane, select the **Create a resource** link.
 1. From the **New** blade, find the **Search the Marketplace** text box above the list of featured services.
-1. In the search box, enter **Vault**, and then select Enter.
+1. In the search box, enter **Key Vault**, and then select Enter.
 1. From the **Marketplace** search results blade, select the **Key Vault** result.
 1. From the **Key Vault** blade, select **Create**.
 1. Find the tabs from the **Create key vault** blade, such as **Basics**.
