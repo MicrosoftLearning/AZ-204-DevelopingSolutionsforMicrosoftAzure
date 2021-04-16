@@ -391,7 +391,7 @@ In this exercise, you created an API by using ASP.NET and configured it to strea
 1.  Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\11\\Starter** directory that contains the deployment files:
 
     ```
-    cd F:\Allfiles\Labs\12\Starter\
+    cd F:\Allfiles\Labs\11\Starter\
     ```
 
 1.  Enter the following command, and then select Enter to deploy the **api.zip** file to the web app that you created earlier in this lab:

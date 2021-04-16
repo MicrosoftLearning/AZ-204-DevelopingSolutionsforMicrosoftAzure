@@ -387,7 +387,7 @@ In this exercise, you registered the resource provider for Content Delivery Netw
     
     1.  In the **Files** section, select the **Folder** icon.
     
-    1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\13\\Starter**, select the following files, and then select **Open**:
+    1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\12\\Starter**, select the following files, and then select **Open**:
 
         -   **campus.jpg**
         
@@ -413,7 +413,7 @@ In this exercise, you registered the resource provider for Content Delivery Netw
     
     1.  In the **Files** section, select the **Folder** icon.
     
-    1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\13\\Starter**, select the **welcome.mp4** file, and then select **Open**.
+    1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\12\\Starter**, select the **welcome.mp4** file, and then select **Open**.
     
     1.  Ensure that **Overwrite if files already exist** is selected, and then select **Upload**.  
 
