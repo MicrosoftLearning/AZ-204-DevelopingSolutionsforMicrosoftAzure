@@ -84,7 +84,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Account kind** list, select **StorageV2 (general purpose v2)**.
     
-    1.  In the **Replication** list, select **Locally-redundant storage (LRS)**.
+    1.  In the **Redundancy** list, select **Locally-redundant storage (LRS)**.
     
     1.  Select **Review + Create**.
 
@@ -96,7 +96,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.	Select the **Go to resource** button from the **Deployment** blade to go to the newly created storage account.
 
-1.	From the **Storage account** blade, find the **Settings** section, and then select **Access keys**.
+1.	From the **Storage account** blade, find the **Security + networking** section, and then select **Access keys**.
 
 1.	From the **Access keys** blade, select any one of the keys, and then record the value of either of the **Connection string** boxes. You'll use this value later in this lab.
 
@@ -110,7 +110,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **ManagedPlatform** blade, select the **imgstor*[yourname]*** storage account that you created earlier in this lab.
 
-1.  From the **Storage Account** blade, in the **Blob service** section, select the **Containers** link.
+1.  From the **Storage Account** blade, in the **Data storage** section, select the **Containers** link.
 
 1.  In the **Containers** section, select **+ Container**.
 
@@ -136,7 +136,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the Azure portal's navigation pane, select **Create a resource**.
 
-1.  From the **New** blade, find the **Search the Marketplace** text box.
+1.  From the **Create a resource** blade, find the **Search services and marketplace** text box.
 
 1.  In the search box, enter **Web**, and then select Enter.
 
@@ -168,7 +168,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  Leave the **SKU and size** section set to its default value.
 
-    1.  Select **Next: Monitoring**.
+    1.  Select tab entitled **Monitoring**.
 
 1.  From the **Monitoring** tab, perform the following actions:
 
@@ -188,7 +188,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **ManagedPlatform** blade, select the **imgapi*[yourname]*** web app that you created earlier in this lab.
 
-1.  From the **Web App** blade, in the **Settings** section, select the **Configuration** link.
+1.  From the **App Service** blade, in the **Settings** section, select the **Configuration** link.
 
 1.  In the **Configuration** section, perform the following actions:
     
@@ -204,9 +204,9 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
   
     Wait for your application settings to persist before you move forward with the lab.
 
-1.  From the **Web App** blade in the **Settings** section, select the **Properties** link.
+1.  From the **App Service** blade in the **Settings** section, select the **Properties** link.
 
-1.  In the **Properties** section, copy the value of the **URL** text box. You'll use this value later in the lab.
+1.  In the **Properties** section, copy the value of the **URL** hyperlink. You'll use this value later in the lab.
 
     > **Note**: At this point, the web server at this URL will return a 404 error. You have not deployed any code to the Web App yet. You will deploy code to the Web App later in this lab.
 
