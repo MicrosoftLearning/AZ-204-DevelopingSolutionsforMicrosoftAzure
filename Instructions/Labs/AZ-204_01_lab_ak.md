@@ -300,7 +300,7 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.  In the Azure portal's navigation pane, select **Create a resource**.
 
-1.  From the **New** blade, find the **Search the Marketplace** text box.
+1.  From the **Create a resource** blade, find the **Search services and marketplace** text box.
 
 1.  In the search box, enter **Web**, and then select Enter.
 
@@ -330,7 +330,7 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
     1.  In the **Windows Plan (East US)** section, select **ManagedPlan (S1)**.
 
-    1.  Select **Next: Monitoring**.
+    1.  Select tab entitled **Monitoring**.
 
 1.  From the **Monitoring** tab, perform the following actions:
 
@@ -350,7 +350,7 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.  From the **ManagedPlatform** blade, select the **imgweb*[yourname]*** web app that you created earlier in this lab.
 
-1.  From the **Web App** blade, in the **Settings** section, select the **Configuration** link.
+1.  From the **App Service** blade, in the **Settings** section, select the **Configuration** link.
 
 1.  In the **Configuration** section, perform the following actions:
     
@@ -440,7 +440,7 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.	From the **ManagedPlatform** blade, select the **imgweb*[yourname]*** web app that you created earlier in this lab.
 
-1.	From the **Web App** blade, select **Browse**.
+1.	From the **App Service** blade, select **Browse**.
 
 1.	Observe the list of images in the gallery. The gallery should list a single image that was uploaded to Storage earlier in the lab.
 
