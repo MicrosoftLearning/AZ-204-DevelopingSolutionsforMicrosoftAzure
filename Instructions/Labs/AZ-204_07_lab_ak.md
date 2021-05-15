@@ -169,7 +169,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. From the **Key Vault** blade, select the **Access policies** link in the **Settings** section.
 1. In the Access policies pane, select **Add Access Policy**.
 1. From the **Add access policy** blade, perform the following actions:
-    1. Select the **Select principal** link.
+    1. Select the link **None selected** on the right of the **Select principal** label.
     1. From the **Principal** blade, find and then select the service principal named **securefunc[yourname]**, and then select **Select**.
         > **Note**: The system-assigned managed identity you created earlier in this lab will have the same name as the Azure Function resource.
     1. Leave the **Key permissions** list set to its default value.
