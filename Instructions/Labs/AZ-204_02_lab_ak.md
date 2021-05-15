@@ -136,7 +136,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     "AzureWebJobsStorage": "UseDevelopmentStorage=true",
     ```
 
-1. Update the value of the **AzureWebJobsStorage** by setting it to the **connection string** of the storage account that you recorded earlier in this lab.
+1. Update the value of the **AzureWebJobsStorage** by setting it to the **connection string** of the storage account that you recorded earlier in this lab. Save the **local.settings.json** file before continue.
 
 #### Task 3: Build and validate a project
 
@@ -691,6 +691,8 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
             => new OkObjectResult(json);
     }
     ```
+
+    > **Note**: You can have an error on the code because you don't install the right package for the blob storage yet.
 
 1. Select **Save** to save your changes to the **GetSettingInfo.cs** file.
 
