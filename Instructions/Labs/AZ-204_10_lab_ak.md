@@ -421,12 +421,12 @@ In this exercise, you configured your .NET project to access the Storage service
 1.  In the **Add Message** pop-up window, perform the following actions:
 
     1.  In the **Message text** text box, enter the value **Hello World**.
+    
+    1.  Ensure that value **UTF8** is selected in the combo **Encoding**.
 
     1.  In the **Expires in** text box, enter the value **12**.
 
     1.  In the **Expires in** drop-down list, select **Hours**.
-
-    1.  Ensure that the **Encode message body in Base 64** check box isn't selected.
 
     1.  Select **OK**.
 
