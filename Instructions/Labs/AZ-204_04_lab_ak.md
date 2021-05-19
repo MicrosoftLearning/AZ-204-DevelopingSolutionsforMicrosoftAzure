@@ -128,8 +128,6 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Location** drop-down list, select the **(US) East US** region.
     
-    1.  In the **Account Type** section, select **Non-Production**.
-    
     1.  In the **Multi-region Writes** section, select **Disable**.
     
     1.  Select **Review + Create**.
@@ -176,9 +174,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Performance** section, select **Standard**.
     
-    1.  In the **Account kind** drop-down list, select **StorageV2 (general purpose v2)**.
-    
-    1.  In the **Replication** drop-down list, select **Locally-redundant storage (LRS)**.
+    1.  In the **Redundancy** drop-down list, select **Locally-redundant storage (LRS)**.
         
     1.  Select **Review + Create**.
 
@@ -282,7 +278,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
     1.  Leave the **Subscription** list set to its default value.
 
-    1.  Select the **Storage** option.
+    1.  Below the **Storage** label, click the **Select backup** link.
 
     1.  From the **Storage accounts** blade, select the **polystor*[yourname]*** storage account that you created earlier in this lab. 
 
