@@ -62,8 +62,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1. In the **Storage account name** text box, enter **securestor[yourname]**.
     1. In the **Location** drop-down list, select the **(US) East US** region.
     1. In the **Performance** section, select **Standard**.
-    1. In the **Account kind** drop-down list, select **StorageV2 (general purpose v2)**.
-    1. In the **Replication** drop-down list, select **Locally-redundant storage (LRS)**.
+    1. In the **Redundancy** drop-down list, select **Locally-redundant storage (LRS)**.
     1. Select **Review + Create**.
 1. From the **Review + Create** tab, review the options that you selected during the previous steps.
 1. Select **Create** to create the storage account by using your specified configuration.
@@ -71,14 +70,14 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the Azure portal's navigation pane, select **All services**.
 1. From the **All services** blade, select **Storage Accounts**.
 1. From the **Storage accounts** blade, select the **securestor[yourname]** storage account that you created earlier in this lab.
-1. From the **Storage account** blade, find the **Settings** section, and then select the **Access keys** link.
+1. From the **Storage account** blade, find the **Security and networking** section, and then select the **Access keys** link.
 1. From the **Access keys** blade, select any one of the keys and record the value in either of the **Connection string** boxes. You'll use this value later in this lab.
     > **Note**: It doesn't matter which connection string you choose. They are interchangeable.
 
 #### Task 3: Create an Azure Key Vault
 
 1. In the Azure portal's navigation pane, select the **Create a resource** link.
-1. From the **New** blade, find the **Search the Marketplace** text box above the list of featured services.
+1. From the **Create a resource** blade, find the **Search services and marketplace** text box above the list of featured services.
 1. In the search box, enter **Key Vault**, and then select Enter.
 1. From the **Marketplace** search results blade, select the **Key Vault** result.
 1. From the **Key Vault** blade, select **Create**.
@@ -98,7 +97,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 #### Task 4: Create an Azure Functions app
 
 1. In the Azure portal's navigation pane, select the **Create a resource** link.
-1. From the **New** blade, find the **Search the Marketplace** text box above the list of featured services.
+1. From the **Create a resource** blade, find the **Search services and marketplace** text box above the list of featured services.
 1. In the search box, enter **Function**, and then select Enter.
 1. From the **Marketplace** search results blade, select the **Function App** result.
 1. From the **Function App** blade, select **Create**.
@@ -540,7 +539,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the Azure portal's navigation pane, select the **Resource groups** link.
 1. From the **Resource groups** blade, find and then select the **ConfidentialStack** resource group that you created earlier in this lab.
 1. From the **ConfidentialStack** blade, select the **securestor[yourname]** storage account that you created earlier in this lab.
-1. From the **Storage account** blade, select the **Containers** link in the **Blob service** section.
+1. From the **Storage account** blade, select the **Containers** link in the **Data storage** section.
 1. In the **Containers** section, select **+ Container**.
 1. In the **New container** pop-up window, perform the following actions:
     1. In the **Name** text box, enter **drop**.
@@ -558,7 +557,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the new browser window, go to the URL that you copied for the blob.
 1. The JavaScript Object Notation (JSON) contents of the blob should now display. Close the browser window with the JSON contents.
 1. Return to the browser window with the Azure portal, and then close the **Blob** blade.
-1. Return to the **Container** blade, and then select **Change access level policy**.
+1. Return to the **Container** blade, and then select **Change access level**.
 1. In the **Change access level** pop-up window, perform the following actions:
     1. In the **Public access level** drop-down list, select **Private (no anonymous access)**.
     1. Select **OK**.
