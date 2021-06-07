@@ -54,7 +54,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the Azure portal's navigation pane, select **Create a resource**.
 
-1.  From the **New** blade, find the **Search the Marketplace** text box.
+1.  From the **Create a resource** blade, find the **Search services and marketplace** text box.
 
 1.  In the search box, enter **Web**, and then select Enter.
 
@@ -156,7 +156,7 @@ In this exercise, you created a new Azure web app by using a container image sou
 
 1.  From the **API Management Service** blade, perform the following actions:
     
-    1.  In the **Name** text box, enter **prodapi*[yourname]***.
+    1.  In the **Resource name** text box, enter **prodapi*[yourname]***.
     
     1.  Leave the **Subscription** text box set to its default value.
     
