@@ -122,7 +122,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1. From the **Location** drop-down list, select the **(US) East US** region.
 
-    1. Select the **Advanced** tab. From the **Event Schema** drop-down list, select **Event Grid Schema**, and then select **Review + Create** followed by **Create**.
+    1. Select the **Advanced** tab. 
+    
+    1. From the **Event Schema** drop-down list, select **Event Grid Schema**.
+
+    1. Select **Review + Create**.
+
+    3. **Create**.
   
     > **Note**: Wait for Azure to finish creating the topic before you continue with the lab. You'll receive a notification when the topic is created.
 
@@ -228,7 +234,7 @@ In this exercise, you created the Event Grid topic and a web app that you will u
 
     1. In the **Endpoint Type** list, select **Web Hook**.
 
-    1. Select the **Select an endpoint** link.
+    1. Select **Select an endpoint**.
 
     1. In the **Select Web Hook** dialog box, in the **Subscriber Endpoint** text box, enter the **Web App URL** value that you recorded earlier, ensure it uses an **https://** prefix, add the suffix **/api/updates**, and then select **Confirm Selection**.
 
