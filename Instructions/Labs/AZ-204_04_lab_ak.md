@@ -276,7 +276,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
     1.  Leave the **Subscription** list set to its default value.
 
-    1.  Select the **Storage** option.
+    1.  In the **Storage** section, select **Select backup**.
 
     1.  From the **Storage accounts** blade, select the **polystor*[yourname]*** storage account that you created earlier in this lab. 
 

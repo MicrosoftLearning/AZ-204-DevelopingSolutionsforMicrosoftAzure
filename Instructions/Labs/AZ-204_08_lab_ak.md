@@ -156,7 +156,7 @@ In this exercise, you created a new Azure web app by using a container image sou
 
 1.  From the **API Management Service** blade, perform the following actions:
     
-    1.  In the **Name** text box, enter **prodapi*[yourname]***.
+    1.  In the **Resource name** text box, enter **prodapi*[yourname]***.
     
     1.  Leave the **Subscription** text box set to its default value.
     

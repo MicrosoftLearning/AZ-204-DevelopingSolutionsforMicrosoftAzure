@@ -558,7 +558,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the new browser window, go to the URL that you copied for the blob.
 1. The JavaScript Object Notation (JSON) contents of the blob should now display. Close the browser window with the JSON contents.
 1. Return to the browser window with the Azure portal, and then close the **Blob** blade.
-1. Return to the **Container** blade, and then select **Change access level policy**.
+1. Return to the **Container** blade, and then select **Change access level**.
 1. In the **Change access level** pop-up window, perform the following actions:
     1. In the **Public access level** drop-down list, select **Private (no anonymous access)**.
     1. Select **OK**.
