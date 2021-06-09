@@ -106,9 +106,11 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **All services** blade, select **Azure Cosmos DB**.
 
-1.  From the **Azure Cosmos DB** blade, find your list of Azure Cosmos DB instances.
+1.  From the **Azure Cosmos DB** blade, observe your list of Azure Cosmos DB instances.
 
 1.  From the **Azure Cosmos DB** blade, select **New**.
+
+1.  From the **Select API option** blade, select **Core (SQL) - Recommended**.
 
 1.  From the **Create Azure Cosmos DB Account** blade, observe the tabs from the blade, such as **Basics**, **Network**, and **Tags**.
 
@@ -122,13 +124,9 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **AccountName** text box, enter **polycosmos*[yourname]***.
     
-    1.  In the **API** drop-down list, select **Core (SQL)**.
-
-    1.  In the **Apply Free Tier Discount** section, select **Do Not Apply**.
-    
     1.  In the **Location** drop-down list, select the **(US) East US** region.
     
-    1.  In the **Multi-region Writes** section, select **Disable**.
+    1.  In the **Capacity mode** section, select **Serverless**.
     
     1.  Select **Review + Create**.
 
@@ -198,7 +196,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
 1.  From the **PolyglotData** blade, select the **polystor*[yourname]*** storage account that you created earlier in this lab.
 
-1.  From the **Storage account** blade, select the **Containers** link in the **Blob service** section from the blade.
+1.  From the **Storage account** blade, select the **Containers** link in the **Data storage** section from the blade.
 
 1.  In the **Containers** section, select **+ Container**.
 
@@ -212,9 +210,9 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
 1.  Back in the **Containers** section, select the newly created **images** container.
 
-1.  From the **Container** blade, find the **Settings** section from the blade, and then select the **Properties** link.
+1.  From the **Container** blade, find the **Settings** section from the blade, and then select the **Endpoints** link.
 
-1.  In the Properties pane, record the value in the **URL** text box. You'll use this value later in this lab.
+1.  In the Properties pane, record the value in the **Blob service** text box. You'll use this value later in this lab.
 
 1.  Find and select the **Overview** link from the blade.
 
@@ -238,7 +236,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
 1.  From the **PolyglotData** blade, select the **polystor*[yourname]*** storage account that you created earlier in this lab.
 
-1.  From the **Storage account** blade, select the **Containers** link in the **Blob service** section from the blade.
+1.  From the **Storage account** blade, select the **Containers** link in the **Data storage** section from the blade.
 
 1.  In the **Containers** section, select **+ Container**.
 
