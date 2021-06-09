@@ -424,7 +424,7 @@ In this exercise, you configured your .NET project to access the Storage service
 
     1.  In the **Expires in** drop-down list, select **Hours**.
 
-    1.  Ensure that the **Encode message body in Base 64** check box isn't selected.
+    1.  In the **Encoding** section, select **UTF8**.
 
     1.  Select **OK**.
 
