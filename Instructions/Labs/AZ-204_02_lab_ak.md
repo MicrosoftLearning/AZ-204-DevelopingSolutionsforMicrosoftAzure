@@ -77,7 +77,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 #### Task 3: Create a Function app
 
 1. In the Azure portal's navigation pane, select the **Create a resource** link.
-1. From the **Create a resource** blade, find the **Search services and marketplace** text box.
+1. From the **Create a resource** blade, find the **Search the Marketplace** text box.
 1. In the search box, enter **Function**, and then select Enter.
 1. On the **Everything** search results blade, select the **Function App** result.
 1. On the **Function App** blade, select **Create**.
