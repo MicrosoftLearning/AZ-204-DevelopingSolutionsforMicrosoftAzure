@@ -208,7 +208,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **App Services** blade in the **Settings** section, select the **Properties** link.
 
-1.  In the **Properties** section, copy the value of the **URL** text box. You'll use this value later in the lab.
+1.  In the **Properties** section, copy the value of the **URL** hyperlink. You'll use this value later in the lab.
 
     > **Note**: At this point, the web server at this URL will return a 404 error. You have not deployed any code to the Web App yet. You will deploy code to the Web App later in this lab.
 

@@ -92,10 +92,10 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1. In the **Version** drop-down list, select **3.1**.
     1. In the **Region** drop-down list, select the **East US** region.
     1. Select **Next: Hosting**.
-1. On the **Hosting** tab, perform the following actions:
-    1. In the **Operating System** section, select **Linux**.
+1. On the **Hosting** tab, perform the following actions:    
     1. In the **Storage account** drop-down list, select the **funcstor[yourname]** storage account that you created earlier in this lab.
-    1. In the **Plan type** drop-down list, select the **Consumption** option.
+    1. In the **Operating System** section, select **Linux**.
+    1. In the **Plan type** drop-down list, select the **Consumption (Serverless)** option.
     1. Select **Review + Create**.
 1. On the **Review + Create** tab, review the options that you selected during the previous steps.
 1. Select **Create** to create the function app by using your specified configuration.
@@ -522,7 +522,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the **New container** pop-up window, perform the following actions:
     1. In the **Name** text box, enter **content**.
     1. In the **Public access level** drop-down list, select **Private (no anonymous access)**.
-    1. Select **OK**.
+    1. Select **Create**.
 1. Return to the **Containers** section, and then select the recently created **content** container.
 1. On the **Container** blade, select **Upload**.
 1. In the **Upload blob** window, perform the following actions:
