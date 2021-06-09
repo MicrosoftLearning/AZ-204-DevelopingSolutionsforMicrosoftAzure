@@ -78,9 +78,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  In the **Performance** section, select **Standard**.
 
-    1.  In the **Account kind** drop-down list, select **StorageV2 (general purpose v2)**.
-
-    1.  In the **Replication** drop-down list, select **Read-access geo-redundant storage (RA-GRS)**.
+    1.  In the **Redundancy** drop-down list, select **Locally-redundant storage (LRS)**.
 
     1.  Select **Review + Create**.
 
@@ -96,13 +94,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **Storage accounts** blade, select the **mediastor*[yourname]*** storage account instance.
 
-1.  On the **Storage account** blade, find the **Settings** section, and then select the **Properties** link.
+1.  On the **Storage account** blade, find the **Settings** section, and then select the **Endpoints** link.
 
-1.  In the **Properties** section, record the value of the **Primary Blob Service Endpoint** text box.
+1.  In the **Endpoints** section, record the value of the **Blob Service** text box.
 
-    > **Note**: You'll use this value later in the lab.
+    > **Note**: You'll use this endpoint value later in the lab.
 
-1.  Still on the **Storage account** blade, find the **Settings** section, and then select the **Access keys** link.
+1.  Still on the **Storage account** blade, find the **Security + networking** section, and then select the **Access keys** link.
 
 1.  In the **Access keys** section, perform the following actions:
 
@@ -126,7 +124,7 @@ In this exercise, you created a new Storage account to use throughout the remain
 
 1.  On the **StorageMedia** blade, select the **mediastor*[yourname]*** storage account that you created earlier in this lab.
 
-1.  On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
+1.  On the **Storage account** blade, select the **Containers** link in the **Data storage** section.
 
 1.  In the **Containers** section, select **+ Container**.
 
@@ -154,7 +152,7 @@ In this exercise, you created a new Storage account to use throughout the remain
 
 1.  On the **StorageMedia** blade, select the **mediastor*[yourname]*** storage account that you created earlier in this lab.
 
-1.  On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
+1.  On the **Storage account** blade, select the **Containers** link in the **Data storage** section.
 
 1.  In the **Containers** section, select the recently created **raster-graphics** container.
 
@@ -641,7 +639,7 @@ In this exercise, you accessed existing containers by using the Azure Storage SD
 
 1.  On the **StorageMedia** blade, select the **mediastor*[yourname]*** storage account that you created earlier in this lab.
 
-1.  On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
+1.  On the **Storage account** blade, select the **Containers** link in the **Data storage** section.
 
 1.  In the **Containers** section, select the newly created **vector-graphics** container.
 

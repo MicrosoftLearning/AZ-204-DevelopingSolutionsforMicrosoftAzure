@@ -62,8 +62,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1. In the **Storage account name** text box, enter **funcstor[yourname]**.
     1. In the **Location** list, select the **(US) East US** region.
     1. In the **Performance** section, select **Standard**.
-    1. In the **Account kind** list, select **StorageV2 (general purpose v2)**.
-    1. In the **Replication** list, select **Locally-redundant storage (LRS)**.
+    1. In the **Redundancy** list, select **Locally-redundant storage (LRS)**.
     1. Select **Review + Create**.
 1. On the **Review + Create** tab, review the options that you specified in the previous steps.
 1. Select **Create** to create the storage account by using your specified configuration.
@@ -71,14 +70,14 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the Azure portal's navigation pane, select **All services**.
 1. On the **All services** blade, select **Storage Accounts**.
 1. On the **Storage accounts** blade, select the **funcstor[yourname]** storage account instance.
-1. From the **Storage account** blade, find the **Settings** section, and then select **Access keys**.
+1. From the **Storage account** blade, find the **Security + networking** section, and then select **Access keys**.
 1. From the **Access keys** blade, select any one of the keys, and then record the value of either of the **Connection string** boxes.
     > **Note**: You'll use this value later in the lab. It doesn't matter which connection string you choose. They are interchangeable.
 
 #### Task 3: Create a Function app
 
 1. In the Azure portal's navigation pane, select the **Create a resource** link.
-1. From the **New** blade, find the **Search the Marketplace** text box.
+1. From the **Create a resource** blade, find the **Search services and marketplace** text box.
 1. In the search box, enter **Function**, and then select Enter.
 1. On the **Everything** search results blade, select the **Function App** result.
 1. On the **Function App** blade, select **Create**.
@@ -93,10 +92,10 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1. In the **Version** drop-down list, select **3.1**.
     1. In the **Region** drop-down list, select the **East US** region.
     1. Select **Next: Hosting**.
-1. On the **Hosting** tab, perform the following actions:
-    1. In the **Operating System** section, select **Linux**.
+1. On the **Hosting** tab, perform the following actions:    
     1. In the **Storage account** drop-down list, select the **funcstor[yourname]** storage account that you created earlier in this lab.
-    1. In the **Plan type** drop-down list, select the **Consumption** option.
+    1. In the **Operating System** section, select **Linux**.
+    1. In the **Plan type** drop-down list, select the **Consumption (Serverless)** option.
     1. Select **Review + Create**.
 1. On the **Review + Create** tab, review the options that you selected during the previous steps.
 1. Select **Create** to create the function app by using your specified configuration.
@@ -137,6 +136,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     ```
 
 1. Update the value of the **AzureWebJobsStorage** by setting it to the **connection string** of the storage account that you recorded earlier in this lab.
+1. Save the **local.settings.json** file.
 
 #### Task 3: Build and validate a project
 
@@ -518,12 +518,12 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the Azure portal's navigation pane, select the **Resource groups** link.
 1. On the **Resource groups** blade, find and then select the **Serverless** resource group that you created earlier in this lab.
 1. On the **Serverless** blade, select the **funcstor[yourname]** storage account that you created earlier in this lab.
-1. On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
+1. On the **Storage account** blade, select the **Containers** link in the **Data storage** section.
 1. In the **Containers** section, select **+ Container**.
 1. In the **New container** pop-up window, perform the following actions:
     1. In the **Name** text box, enter **content**.
     1. In the **Public access level** drop-down list, select **Private (no anonymous access)**.
-    1. Select **OK**.
+    1. Select **Create**.
 1. Return to the **Containers** section, and then select the recently created **content** container.
 1. On the **Container** blade, select **Upload**.
 1. In the **Upload blob** window, perform the following actions:
