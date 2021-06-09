@@ -94,13 +94,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **Storage accounts** blade, select the **mediastor*[yourname]*** storage account instance.
 
-1.  On the **Storage account** blade, find the **Security + networking** section, and then select the **Properties** link.
+1.  On the **Storage account** blade, find the **Settings** section, and then select the **Endpoints** link.
 
-1.  In the **Properties** section, record the value of the **Primary Blob Service Endpoint** text box.
+1.  In the **Properties** section, record the value of the **Blob Service** text box.
 
-    > **Note**: You'll use this value later in the lab.
+    > **Note**: You'll use this endpoint value later in the lab.
 
-1.  Still on the **Storage account** blade, find the **Settings** section, and then select the **Access keys** link.
+1.  Still on the **Storage account** blade, find the **Security + networking** section, and then select the **Access keys** link.
 
 1.  In the **Access keys** section, perform the following actions:
 
