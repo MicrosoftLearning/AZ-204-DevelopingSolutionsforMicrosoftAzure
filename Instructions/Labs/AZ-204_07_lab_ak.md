@@ -130,7 +130,8 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the Azure portal's navigation pane, select the **Resource groups** link.
 1. From the **Resource groups** blade, find and then select the **ConfidentialStack** resource group that you created earlier in this lab.
 1. From the **ConfidentialStack** blade, select the **securefunc[yourname]** function app that you created earlier in this lab.
-1. From the **App Service** blade, select the **Identity** option from the **Settings** section.
+    > **Note**: There will be two resources; a function app and application insights resource, with the same name. Make sure you select the function app resource.
+1. From the **Function App** blade, select the **Identity** option from the **Settings** section.
 1. From the **Identity** pane, find the **System assigned** tab, and then perform the following actions:
     1. In the **Status** section, select **On**, and then select **Save**.
     1. In the confirmation dialog box, select **Yes**.
