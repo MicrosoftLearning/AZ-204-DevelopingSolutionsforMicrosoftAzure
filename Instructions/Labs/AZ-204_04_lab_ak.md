@@ -106,9 +106,11 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **All services** blade, select **Azure Cosmos DB**.
 
-1.  From the **Azure Cosmos DB** blade, find your list of Azure Cosmos DB instances.
+1.  From the **Azure Cosmos DB** blade, observe your list of Azure Cosmos DB instances.
 
 1.  From the **Azure Cosmos DB** blade, select **New**.
+
+1.  From the **Select API option** blade, select **Core (SQL) - Recommended**.
 
 1.  From the **Create Azure Cosmos DB Account** blade, observe the tabs from the blade, such as **Basics**, **Network**, and **Tags**.
 
@@ -122,15 +124,9 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **AccountName** text box, enter **polycosmos*[yourname]***.
     
-    1.  In the **API** drop-down list, select **Core (SQL)**.
-
-    1.  In the **Apply Free Tier Discount** section, select **Do Not Apply**.
-    
     1.  In the **Location** drop-down list, select the **(US) East US** region.
     
-    1.  In the **Account Type** section, select **Non-Production**.
-    
-    1.  In the **Multi-region Writes** section, select **Disable**.
+    1.  In the **Capacity mode** section, select **Serverless**.
     
     1.  Select **Review + Create**.
 
