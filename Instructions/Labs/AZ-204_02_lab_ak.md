@@ -136,6 +136,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     ```
 
 1. Update the value of the **AzureWebJobsStorage** by setting it to the **connection string** of the storage account that you recorded earlier in this lab.
+1. Save the **local.settings.json** file.
 
 #### Task 3: Build and validate a project
 
