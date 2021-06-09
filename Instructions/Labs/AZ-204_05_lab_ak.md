@@ -56,7 +56,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     > **Note**: If you can't find the **Create a resource** link, the **Create a resource** icon is a plus sign (+) character from the portal.
 
-1.  From the **New** blade, find the **Search the Marketplace** text box above the list of featured services.
+1.  From the **Create a resource** blade, find the **Search services and marketplace** text box.
 
 1.  In the search box, enter the text **Resource Group**, and then select Enter.
 
@@ -317,7 +317,7 @@ In this exercise, you used Cloud Shell to create a VM as part of an automated sc
 
 1.  In the Azure portal's navigation pane, select the **Create a resource** link.
 
-1.  From the **New** blade, find the **Search the Marketplace** text box above the list of featured services.
+1.  From the **Create a resource** blade, find the **Search services and marketplace** text box.
 
 1.  In the search box, enter **Container Registry**, and then select Enter.
 
@@ -479,7 +479,7 @@ In this exercise, you created a .NET console application to display a machine’
 
 1.  In the Azure portal's navigation pane, select the **Create a resource** link.
 
-1.  From the **New** blade, find the **Search the Marketplace** text box above the list of featured services.
+1.  From the **Create a resource** blade, find the **Search services and marketplace** text box.
 
 1.  In the search box, enter **container instances**, and then select Enter.
 

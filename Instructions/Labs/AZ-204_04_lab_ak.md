@@ -200,7 +200,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
 1.  From the **PolyglotData** blade, select the **polystor*[yourname]*** storage account that you created earlier in this lab.
 
-1.  From the **Storage account** blade, select the **Containers** link in the **Blob service** section from the blade.
+1.  From the **Storage account** blade, select the **Containers** link in the **Data storage** section from the blade.
 
 1.  In the **Containers** section, select **+ Container**.
 
@@ -240,7 +240,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
 1.  From the **PolyglotData** blade, select the **polystor*[yourname]*** storage account that you created earlier in this lab.
 
-1.  From the **Storage account** blade, select the **Containers** link in the **Blob service** section from the blade.
+1.  From the **Storage account** blade, select the **Containers** link in the **Data storage** section from the blade.
 
 1.  In the **Containers** section, select **+ Container**.
 

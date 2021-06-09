@@ -70,14 +70,14 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the Azure portal's navigation pane, select **All services**.
 1. On the **All services** blade, select **Storage Accounts**.
 1. On the **Storage accounts** blade, select the **funcstor[yourname]** storage account instance.
-1. From the **Storage account** blade, find the **Settings** section, and then select **Access keys**.
+1. From the **Storage account** blade, find the **Security + networking** section, and then select **Access keys**.
 1. From the **Access keys** blade, select any one of the keys, and then record the value of either of the **Connection string** boxes.
     > **Note**: You'll use this value later in the lab. It doesn't matter which connection string you choose. They are interchangeable.
 
 #### Task 3: Create a Function app
 
 1. In the Azure portal's navigation pane, select the **Create a resource** link.
-1. From the **New** blade, find the **Search the Marketplace** text box.
+1. From the **Create a resource** blade, find the **Search services and marketplace** text box.
 1. In the search box, enter **Function**, and then select Enter.
 1. On the **Everything** search results blade, select the **Function App** result.
 1. On the **Function App** blade, select **Create**.
@@ -517,7 +517,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the Azure portal's navigation pane, select the **Resource groups** link.
 1. On the **Resource groups** blade, find and then select the **Serverless** resource group that you created earlier in this lab.
 1. On the **Serverless** blade, select the **funcstor[yourname]** storage account that you created earlier in this lab.
-1. On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
+1. On the **Storage account** blade, select the **Containers** link in the **Data storage** section.
 1. In the **Containers** section, select **+ Container**.
 1. In the **New container** pop-up window, perform the following actions:
     1. In the **Name** text box, enter **content**.

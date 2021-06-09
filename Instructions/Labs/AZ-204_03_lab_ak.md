@@ -94,7 +94,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **Storage accounts** blade, select the **mediastor*[yourname]*** storage account instance.
 
-1.  On the **Storage account** blade, find the **Settings** section, and then select the **Properties** link.
+1.  On the **Storage account** blade, find the **Security + networking** section, and then select the **Properties** link.
 
 1.  In the **Properties** section, record the value of the **Primary Blob Service Endpoint** text box.
 
@@ -124,7 +124,7 @@ In this exercise, you created a new Storage account to use throughout the remain
 
 1.  On the **StorageMedia** blade, select the **mediastor*[yourname]*** storage account that you created earlier in this lab.
 
-1.  On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
+1.  On the **Storage account** blade, select the **Containers** link in the **Data storage** section.
 
 1.  In the **Containers** section, select **+ Container**.
 
@@ -152,7 +152,7 @@ In this exercise, you created a new Storage account to use throughout the remain
 
 1.  On the **StorageMedia** blade, select the **mediastor*[yourname]*** storage account that you created earlier in this lab.
 
-1.  On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
+1.  On the **Storage account** blade, select the **Containers** link in the **Data storage** section.
 
 1.  In the **Containers** section, select the recently created **raster-graphics** container.
 
@@ -639,7 +639,7 @@ In this exercise, you accessed existing containers by using the Azure Storage SD
 
 1.  On the **StorageMedia** blade, select the **mediastor*[yourname]*** storage account that you created earlier in this lab.
 
-1.  On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
+1.  On the **Storage account** blade, select the **Containers** link in the **Data storage** section.
 
 1.  In the **Containers** section, select the newly created **vector-graphics** container.
 

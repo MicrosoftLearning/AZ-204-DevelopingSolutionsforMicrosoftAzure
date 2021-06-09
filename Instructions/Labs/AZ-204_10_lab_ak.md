@@ -92,7 +92,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.	Select the **Go to resource** button on the **Deployment** blade to go to the newly created storage account.
 
-1.	On the **Storage account** blade, find the **Settings** section, and then select **Access keys**.
+1.	On the **Storage account** blade, find the **Security + networking** section, and then select **Access keys**.
 
 1.	On the **Access keys** blade, select any one of the keys, and then record the value of either of the **Connection string** boxes. You'll use this value later in this lab.
 

@@ -60,7 +60,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the Azure portal's navigation pane, select **Create a resource**.
 
-1.  From the **New** blade, find the **Search the Marketplace** text box.
+1.  From the **Create a resource** blade, find the **Search services and marketplace** text box.
 
 1.  In the search box, enter **Insights**, and then select Enter.
 
@@ -106,7 +106,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the Azure portal's navigation pane, select **Create a resource**.
 
-1.  From the **New** blade, find the **Search the Marketplace** text box.
+1.  From the **Create a resource** blade, find the **Search services and marketplace** text box.
 
 1.  In the search box, enter **Web App**, and then select Enter.
 
@@ -137,6 +137,10 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1.  In the **Windows Plan (East US)** section, select **Create new**, enter the value **MonitoredPlan** into the **Name** text box, and then select **OK**.
 
     1.  Leave the **SKU and size** section set to its default value.
+
+    1.  Select **Next: Deployment (Preview)**.
+
+1.  From the **Deployment (Preview)** tab, perform the following actions:
 
     1.  Select **Next: Monitoring**.
 

@@ -94,7 +94,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.	Select the **Go to resource** button from the **Deployment** blade to go to the newly created storage account.
 
-1.	From the **Storage account** blade, find the **Settings** section, and then select **Access keys**.
+1.	From the **Storage account** blade, find the **Security + networking** section, and then select **Access keys**.
 
 1.	From the **Access keys** blade, select any one of the keys, and then record the value of either of the **Connection string** boxes. You'll use this value later in this lab.
 
@@ -108,7 +108,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **ManagedPlatform** blade, select the **imgstor*[yourname]*** storage account that you created earlier in this lab.
 
-1.  From the **Storage Account** blade, in the **Blob service** section, select the **Containers** link.
+1.  From the **Storage Account** blade, in the **Data storage** section, select the **Containers** link.
 
 1.  In the **Containers** section, select **+ Container**.
 
@@ -134,7 +134,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the Azure portal's navigation pane, select **Create a resource**.
 
-1.  From the **New** blade, find the **Search the Marketplace** text box.
+1.  From the **Create a resource** blade, find the **Search services and marketplace** text box.
 
 1.  In the search box, enter **Web App**, and then select Enter.
 
@@ -165,6 +165,10 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     1.  In the **Windows Plan (East US)** section, select **Create new**, enter the value **ManagedPlan** in the **Name** text box, and then select **OK**.
 
     1.  Leave the **SKU and size** section set to its default value.
+
+    1.  Select **Next: Deployment (Preview)**.
+
+1.  From the **Deployment (Preview)** tab, perform the following actions:
 
     1.  Select **Next: Monitoring**.
 
@@ -298,7 +302,7 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.  In the Azure portal's navigation pane, select **Create a resource**.
 
-1.  From the **New** blade, find the **Search the Marketplace** text box.
+1.  From the **Create a resource** blade, find the **Search services and marketplace** text box.
 
 1.  In the search box, enter **Web App**, and then select Enter.
 
@@ -327,6 +331,10 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
     1.  In the **Region** drop-down list, select the **East US** region.
 
     1.  In the **Windows Plan (East US)** section, select **ManagedPlan (S1)**.
+
+    1.  Select **Next: Deployment (Preview)**.
+
+1.  From the **Deployment (Preview)** tab, perform the following actions:
 
     1.  Select **Next: Monitoring**.
 

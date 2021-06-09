@@ -255,7 +255,7 @@ In this exercise, you created an Azure Storage account and an Azure Web App that
 
 1.  On the **MarketingContent** blade, select the **contenthost*[yourname]*** storage account that you created earlier in this lab.
 
-1.  On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
+1.  On the **Storage account** blade, select the **Containers** link in the **Data storage** section.
 
 1.  In the **Containers** section, select **+ Container**.
 
@@ -375,7 +375,7 @@ In this exercise, you registered the resource provider for Content Delivery Netw
 
 1.  On the **MarketingContent** blade, select the **contenthost*[yourname]*** storage account that you created earlier in this lab.
 
-1.  On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
+1.  On the **Storage account** blade, select the **Containers** link in the **Data storage** section.
 
 1.  In the **Containers** section, select the **media** container.
 
