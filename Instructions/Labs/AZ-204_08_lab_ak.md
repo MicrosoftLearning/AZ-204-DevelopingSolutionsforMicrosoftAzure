@@ -56,13 +56,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **New** blade, find the **Search the Marketplace** text box.
 
-1.  In the search box, enter **Web**, and then select Enter.
+1.  In the search box, enter **Web App**, and then select Enter.
 
 1.  From the **Marketplace** search results blade, select the **Web App** result.
 
 1.  From the **Web App** blade, select **Create**.
 
-1.  From the second **Web App** blade, find the tabs from the blade, such as **Basics**.
+1.  From the **Create Web App** blade, find the tabs from the blade, such as **Basics**.
 
     > **Note**: Each tab represents a step in the workflow to create a new web app. You can select **Review + Create** at any time to skip the remaining tabs.
 
@@ -112,7 +112,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **ApiService** blade, select the **httpapi*[yourname]*** web app that you created earlier in this lab.
 
-1.	From the **Web App** blade, select **Browse**.
+1.	From the **App Services** blade, select **Browse**.
 
 1.  Within the web application, perform the following actions:
 
@@ -130,9 +130,9 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  Close the browser window for the web application.
 
-1.  Find the **Web App** blade for the **httpapi*[yourname]*** web app back in the Azure portal.
+1.  Find the **App Services** blade for the **httpapi*[yourname]*** web app back in the Azure portal.
 
-1.  From the **Web App** blade, in the **Settings** section, select the **Properties** link.
+1.  From the **App Services** blade, in the **Settings** section, select the **Properties** link.
 
 1.  In the **Properties** section, record the value of the **URL** text box. You'll use this value later in the lab to make requests against the API.
 
