@@ -166,7 +166,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1.  Leave the **SKU and size** section set to its default value.
 
-    1.  Select tab entitled **Monitoring**.
+    1.  Select **Next: Monitoring**.
 
 1.  From the **Monitoring** tab, perform the following actions:
 
