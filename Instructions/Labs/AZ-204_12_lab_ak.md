@@ -91,13 +91,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icon for t
 
 1.  On the **New** blade, find the **Search the Marketplace** text box.
 
-1.  In the search box, enter **Web**, and then select Enter.
+1.  In the search box, enter **Web App**, and then select Enter.
 
 1.  On the **Everything** search results blade, select the **Web App** result.
 
 1.  On the **Web App** blade, select **Create**.
 
-1.  On the second **Web App** blade, find the tabs on the blade, such as **Basics**.
+1.  On the **Create Web App** blade, find the tabs on the blade, such as **Basics**.
 
     > **Note**: Each tab represents a step in the workflow to create a new web app. You can select **Review + Create** at any time to skip the remaining tabs.
 

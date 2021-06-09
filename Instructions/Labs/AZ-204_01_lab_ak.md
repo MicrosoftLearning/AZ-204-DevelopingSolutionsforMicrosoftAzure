@@ -136,13 +136,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **New** blade, find the **Search the Marketplace** text box.
 
-1.  In the search box, enter **Web**, and then select Enter.
+1.  In the search box, enter **Web App**, and then select Enter.
 
 1.  From the **Marketplace** search results blade, select the **Web App** result.
 
 1.  From the **Web App** blade, select **Create**.
 
-1.  From the second **Web App** blade, find the tabs from the blade, such as **Basics**.
+1.  From the **Create Web App** blade, find the tabs from the blade, such as **Basics**.
 
     > **Note**: Each tab represents a step in the workflow to create a new web app. You can select **Review + Create** at any time to skip the remaining tabs.
 
@@ -186,7 +186,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **ManagedPlatform** blade, select the **imgapi*[yourname]*** web app that you created earlier in this lab.
 
-1.  From the **Web App** blade, in the **Settings** section, select the **Configuration** link.
+1.  From the **App Services** blade, in the **Settings** section, select the **Configuration** link.
 
 1.  In the **Configuration** section, perform the following actions:
     
@@ -202,7 +202,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
   
     Wait for your application settings to persist before you move forward with the lab.
 
-1.  From the **Web App** blade in the **Settings** section, select the **Properties** link.
+1.  From the **App Services** blade in the **Settings** section, select the **Properties** link.
 
 1.  In the **Properties** section, copy the value of the **URL** text box. You'll use this value later in the lab.
 
@@ -280,7 +280,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.	From the **ManagedPlatform** blade, select the **imgapi*[yourname]*** web app that you created earlier in this lab.
 
-1.	From the **Web App** blade, select **Browse**.
+1.	From the **App Services** blade, select **Browse**.
 
 1.	Perform a GET request to the root of the website, and then observe the JavaScript Object Notation (JSON) array that's returned. This array should contain the URL for your single uploaded image in your Storage account.
 
@@ -300,13 +300,13 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.  From the **New** blade, find the **Search the Marketplace** text box.
 
-1.  In the search box, enter **Web**, and then select Enter.
+1.  In the search box, enter **Web App**, and then select Enter.
 
 1.  From the **Marketplace** search results blade, select the **Web App** result.
 
 1.  From the **Web App** blade, select **Create**.
 
-1.  From the second **Web App** blade, find the tabs from the blade, such as **Basics**.
+1.  From the **Create Web App** blade, find the tabs from the blade, such as **Basics**.
 
     > **Note**: Each tab represents a step in the workflow to create a new web app. You can select **Review + Create** at any time to skip the remaining tabs.
 
@@ -348,7 +348,7 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.  From the **ManagedPlatform** blade, select the **imgweb*[yourname]*** web app that you created earlier in this lab.
 
-1.  From the **Web App** blade, in the **Settings** section, select the **Configuration** link.
+1.  From the **App Services** blade, in the **Settings** section, select the **Configuration** link.
 
 1.  In the **Configuration** section, perform the following actions:
     
@@ -438,7 +438,7 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.	From the **ManagedPlatform** blade, select the **imgweb*[yourname]*** web app that you created earlier in this lab.
 
-1.	From the **Web App** blade, select **Browse**.
+1.	From the **App Services** blade, select **Browse**.
 
 1.	Observe the list of images in the gallery. The gallery should list a single image that was uploaded to Storage earlier in the lab.
 
