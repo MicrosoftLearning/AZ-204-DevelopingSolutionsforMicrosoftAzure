@@ -70,14 +70,14 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1. In the Azure portal's navigation pane, select **All services**.
 1. From the **All services** blade, select **Storage Accounts**.
 1. From the **Storage accounts** blade, select the **securestor[yourname]** storage account that you created earlier in this lab.
-1. From the **Storage account** blade, find the **Security and networking** section, and then select the **Access keys** link.
+1. From the **Storage account** blade, find the **Security + networking** section, and then select the **Access keys** link.
 1. From the **Access keys** blade, select any one of the keys and record the value in either of the **Connection string** boxes. You'll use this value later in this lab.
     > **Note**: It doesn't matter which connection string you choose. They are interchangeable.
 
 #### Task 3: Create an Azure Key Vault
 
 1. In the Azure portal's navigation pane, select the **Create a resource** link.
-1. From the **Create a resource** blade, find the **Search services and marketplace** text box above the list of featured services.
+1. From the **Create a resource** blade, find the **Search services and marketplace** text box.
 1. In the search box, enter **Key Vault**, and then select Enter.
 1. From the **Marketplace** search results blade, select the **Key Vault** result.
 1. From the **Key Vault** blade, select **Create**.
@@ -97,7 +97,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 #### Task 4: Create an Azure Functions app
 
 1. In the Azure portal's navigation pane, select the **Create a resource** link.
-1. From the **Create a resource** blade, find the **Search services and marketplace** text box above the list of featured services.
+1. From the **Create a resource** blade, find the **Search services and marketplace** text box.
 1. In the search box, enter **Function**, and then select Enter.
 1. From the **Marketplace** search results blade, select the **Function App** result.
 1. From the **Function App** blade, select **Create**.

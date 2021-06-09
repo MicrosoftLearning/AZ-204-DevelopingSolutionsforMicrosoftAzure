@@ -80,9 +80,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Performance** section, select **Standard**.
     
-    1.  In the **Account kind** list, select **StorageV2 (general purpose v2)**.
-    
-    1.  In the **Replication** list, select **Locally-redundant storage (LRS)**.
+    1.  In the **Redundancy** list, select **Locally-redundant storage (LRS)**.
         
     1.  Select **Review + Create**.
 
@@ -94,7 +92,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.	Select the **Go to resource** button on the **Deployment** blade to go to the newly created storage account.
 
-1.	On the **Storage account** blade, find the **Settings** section, and then select **Access keys**.
+1.	On the **Storage account** blade, find the **Security + networking** section, and then select **Access keys**.
 
 1.	On the **Access keys** blade, select any one of the keys, and then record the value of either of the **Connection string** boxes. You'll use this value later in this lab.
 
@@ -426,7 +424,7 @@ In this exercise, you configured your .NET project to access the Storage service
 
     1.  In the **Expires in** drop-down list, select **Hours**.
 
-    1.  Ensure that the **Encode message body in Base 64** check box isn't selected.
+    1.  In the **Encoding** section, select **UTF8**.
 
     1.  Select **OK**.
 
