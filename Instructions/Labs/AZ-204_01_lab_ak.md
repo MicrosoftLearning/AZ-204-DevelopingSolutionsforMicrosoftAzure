@@ -328,7 +328,7 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
     1.  In the **Windows Plan (East US)** section, select **ManagedPlan (S1)**.
 
-    1.  Select tab entitled **Monitoring**.
+    1.  Select **Next: Monitoring**.
 
 1.  From the **Monitoring** tab, perform the following actions:
 
