@@ -298,7 +298,7 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.  In the Azure portal's navigation pane, select **Create a resource**.
 
-1.  From the **New** blade, find the **Search the Marketplace** text box.
+1.  From the **Create a resource** blade, find the **Search services and marketplace** text box.
 
 1.  In the search box, enter **Web App**, and then select Enter.
 
