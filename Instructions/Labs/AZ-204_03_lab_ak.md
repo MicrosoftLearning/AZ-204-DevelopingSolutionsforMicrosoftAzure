@@ -96,7 +96,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **Storage account** blade, find the **Settings** section, and then select the **Endpoints** link.
 
-1.  In the **Properties** section, record the value of the **Blob Service** text box.
+1.  In the **Endpoints** section, record the value of the **Blob Service** text box.
 
     > **Note**: You'll use this endpoint value later in the lab.
 
