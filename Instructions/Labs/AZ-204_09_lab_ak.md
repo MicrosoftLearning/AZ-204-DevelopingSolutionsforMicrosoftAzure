@@ -106,7 +106,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1. In the Azure portal's navigation pane, select **Create a resource**.
 
-1. On the **New** blade, find the **Search the Marketplace** text box.
+1. On the **Create a resource** blade, find the **Search services and marketplace** text box.
 
 1. In the search box, enter **Event Grid Topic**, and then select Enter.
 
@@ -122,7 +122,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     1. From the **Location** drop-down list, select the **(US) East US** region.
 
-    1. From the **Event Schema** drop-down list, select **Event Grid Schema**, and then select **Create**.
+    1. Select the **Advanced** tab. From the **Event Schema** drop-down list, select **Event Grid Schema**, and then select **Review + Create** followed by **Create**.
   
     > **Note**: Wait for Azure to finish creating the topic before you continue with the lab. You'll receive a notification when the topic is created.
 
@@ -130,9 +130,9 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1. In the Azure portal's navigation pane, select **Create a resource**.
 
-1. On the **New** blade, find the **Search the Marketplace** text box.
+1. On the **Create a resource** blade, find the **Search services and marketplace** text box.
 
-1. In the search box, enter **Web**, and then select Enter.
+1. In the search box, enter **Web App**, and then select Enter.
 
 1. On the **Everything** search results blade, select the **Web App** result.
 
@@ -228,7 +228,7 @@ In this exercise, you created the Event Grid topic and a web app that you will u
 
     1. In the **Endpoint Type** list, select **Web Hook**.
 
-    1. Select **Endpoint**.
+    1. Select the **Select an endpoint** link.
 
     1. In the **Select Web Hook** dialog box, in the **Subscriber Endpoint** text box, enter the **Web App URL** value that you recorded earlier, ensure it uses an **https://** prefix, add the suffix **/api/updates**, and then select **Confirm Selection**.
 
