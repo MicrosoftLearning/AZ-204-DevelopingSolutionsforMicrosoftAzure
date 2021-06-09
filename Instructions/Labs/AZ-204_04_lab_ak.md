@@ -176,9 +176,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
     
     1.  In the **Performance** section, select **Standard**.
     
-    1.  In the **Account kind** drop-down list, select **StorageV2 (general purpose v2)**.
-    
-    1.  In the **Replication** drop-down list, select **Locally-redundant storage (LRS)**.
+    1.  In the **Redundancy** drop-down list, select **Locally-redundant storage (LRS)**.
         
     1.  Select **Review + Create**.
 
@@ -202,7 +200,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
 1.  From the **PolyglotData** blade, select the **polystor*[yourname]*** storage account that you created earlier in this lab.
 
-1.  From the **Storage account** blade, select the **Containers** link in the **Blob service** section from the blade.
+1.  From the **Storage account** blade, select the **Containers** link in the **Data storage** section from the blade.
 
 1.  In the **Containers** section, select **+ Container**.
 
@@ -216,9 +214,9 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
 1.  Back in the **Containers** section, select the newly created **images** container.
 
-1.  From the **Container** blade, find the **Settings** section from the blade, and then select the **Properties** link.
+1.  From the **Container** blade, find the **Settings** section from the blade, and then select the **Endpoints** link.
 
-1.  In the Properties pane, record the value in the **URL** text box. You'll use this value later in this lab.
+1.  In the Properties pane, record the value in the **Blob service** text box. You'll use this value later in this lab.
 
 1.  Find and select the **Overview** link from the blade.
 
@@ -242,7 +240,7 @@ In this exercise, you created all the Azure resources that you'll need for a pol
 
 1.  From the **PolyglotData** blade, select the **polystor*[yourname]*** storage account that you created earlier in this lab.
 
-1.  From the **Storage account** blade, select the **Containers** link in the **Blob service** section from the blade.
+1.  From the **Storage account** blade, select the **Containers** link in the **Data storage** section from the blade.
 
 1.  In the **Containers** section, select **+ Container**.
 
