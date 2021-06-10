@@ -210,7 +210,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the **Properties** section, copy the value of the **URL** hyperlink. You'll use this value later in the lab.
 
-    > **Note**: At this point, the web server at this URL will return a 404 error. You have not deployed any code to the Web App yet. You will deploy code to the Web App later in this lab.
+    > **Note**: At this point, the web server at this URL will return a placeholder webpage. You have not deployed any code to the Web App yet. You will deploy code to the Web App later in this lab.
 
 #### Task 6: Deploy an ASP.NET web application to Web Apps
 
