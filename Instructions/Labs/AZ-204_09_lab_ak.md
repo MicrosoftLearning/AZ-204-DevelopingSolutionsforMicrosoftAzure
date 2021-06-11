@@ -8,7 +8,6 @@ lab:
 ---
     
 # Lab 09: Publishing and subscribing to Event Grid events
-# Student lab answer key
 
 ## Microsoft Azure user interface
 

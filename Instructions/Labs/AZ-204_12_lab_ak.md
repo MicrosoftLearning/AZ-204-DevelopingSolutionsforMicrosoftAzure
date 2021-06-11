@@ -6,7 +6,6 @@ lab:
 ---
 
 # Lab 12: Enhancing a web application by using the Azure Content Delivery Network
-# Student lab answer key
 
 ## Microsoft Azure user interface
 

@@ -8,7 +8,6 @@ lab:
 ---
 
 # Lab 11: Monitoring services that are deployed to Azure
-# Student lab answer key
 
 ## Microsoft Azure user interface
 

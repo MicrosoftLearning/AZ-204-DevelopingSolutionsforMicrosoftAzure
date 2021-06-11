@@ -8,7 +8,6 @@ lab:
 ---
 
 # Lab 03: Retrieving Azure Storage resources and metadata by using the Azure Storage SDK for .NET
-# Student lab answer key
 
 ## Microsoft Azure user interface
 

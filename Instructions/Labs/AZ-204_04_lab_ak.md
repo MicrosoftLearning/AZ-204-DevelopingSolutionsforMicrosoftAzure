@@ -8,7 +8,6 @@ lab:
 ---
 
 # Lab 04: Constructing a polyglot data solution
-# Student lab answer key
 
 ## Microsoft Azure user interface
 

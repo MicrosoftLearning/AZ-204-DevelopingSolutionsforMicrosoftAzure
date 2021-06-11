@@ -8,7 +8,6 @@ lab:
 ---
 
 # Lab 07: Access resource secrets more securely across services
-# Student lab answer key
 
 ## Microsoft Azure user interface
 

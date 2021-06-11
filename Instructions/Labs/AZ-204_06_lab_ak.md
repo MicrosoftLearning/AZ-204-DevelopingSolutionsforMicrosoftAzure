@@ -8,7 +8,6 @@ lab:
 ---
 
 # Lab 06: Authenticating to and querying Microsoft Graph by using MSAL and .NET SDKs
-# Student lab answer key
 
 ## Microsoft Azure user interface
 

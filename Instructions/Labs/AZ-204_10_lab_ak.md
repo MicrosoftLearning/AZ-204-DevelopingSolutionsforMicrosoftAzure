@@ -8,7 +8,6 @@ lab:
 ---
 
 # Lab 10: Asynchronously processing messages by using Azure Queue Storage
-# Student lab answer key
 
 ## Microsoft Azure user interface
 
