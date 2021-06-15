@@ -29,8 +29,7 @@ public class Program
         Database database = await client.CreateDatabaseIfNotExistsAsync("Retail");
 
         Container container = await database.CreateContainerIfNotExistsAsync("Online",
-            partitionKeyPath: $"/{nameof(Model.Category)}",
-            throughput: 1000
+            partitionKeyPath: $"/{nameof(Model.Category)}"
         );
 
         int count = 0;
