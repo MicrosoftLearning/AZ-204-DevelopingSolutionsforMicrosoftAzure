@@ -30,11 +30,12 @@ namespace AdventureWorks.Web
 
         public void ConfigureProductService(IServiceCollection services)
         {            
-            services.AddScoped<IAdventureWorksProductContext, AdventureWorksSqlContext>(provider =>
-                new AdventureWorksSqlContext(
-                    _configuration.GetConnectionString(nameof(AdventureWorksSqlContext))
-                )
-            );
+            services.AddScoped<IAdventureWorksProductContext, AdventureWorksCosmosContext>(provider =>
+    new AdventureWorksCosmosContext(
+        _configuration.GetConnectionString(nameof(AdventureWorksCosmosContext))
+    )
+);
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
