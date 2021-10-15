@@ -1,9 +1,16 @@
 # AZ-204: Developing solutions for Microsoft Azure
 
+**All of the lab instructions were updated on 10/15/2021.** We will be closing all currently open issues and PRs and encourage everyone to review the new instructions and then submit new changes going forward.
+
+> **Note**: There are new directions below for downloading the *allfiles.zip* The automated build process is offline.
+
 - **Direct students** to [https://aka.ms/az204labs](https://aka.ms/az204labs) for an easy-to-use list of lab instructions.
-- **[Download Latest Student Handbook and AllFiles Content](../../releases/latest)**
+- **[Download the AllFiles content](Allfiles/allfiles-20211015.zip)**
 - **Are you a MCT?** - Have a look at our [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
-- **Need to manually build the lab instructions?** - Instructions are available in the [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) repository
+- **Need to manually build the lab instructions?** - Instructions are available in the [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) repository 
+<!-- 
+
+- **[Download Latest Student Handbook and AllFiles Content](../../releases/latest)**-->
 
 ## What are we doing?
 
