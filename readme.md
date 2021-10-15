@@ -5,7 +5,7 @@
 > **Note**: There are new directions below for downloading the *allfiles.zip* The automated build process is offline.
 
 - **Direct students** to [https://aka.ms/az204labs](https://aka.ms/az204labs) for an easy-to-use list of lab instructions.
-- **[Download the AllFiles content](./allfiles/allfiles-20211015.zip)**
+- **[Download the AllFiles content](../allfiles/allfiles-20211015.zip)**
 - **Are you a MCT?** - Have a look at our [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
 - **Need to manually build the lab instructions?** - Instructions are available in the [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) repository 
 <!-- 
