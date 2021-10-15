@@ -1,0 +1,4317 @@
+[
+  {
+    "id": "0481d7e1-4970-4efa-a560-020f6579918d",
+    "Name": "LL Fork",
+    "Category": "Forks",
+    "Description": "Stout design absorbs shock and offers more precise steering.",
+    "Products": [
+      {
+        "id": "fb8502be-07eb-4134-ab06-c3a9959a52ae",
+        "Name": "LL Fork",
+        "Number": "FK-1639",
+        "Category": "Forks",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 148.22,
+        "Photo": "fork.jpg"
+      }
+    ],
+    "Photo": "fork.jpg"
+  },
+  {
+    "id": "ca18ecfd-2023-4fa7-a556-0321153bca34",
+    "Name": "ML Road Frame-W",
+    "Category": "Road Frames",
+    "Description": "Made from the same aluminum alloy as our top-of-the line HL frame, the ML features a lightweight down-tube milled to the perfect diameter for optimal strength. Women's version.",
+    "Products": [
+      {
+        "id": "22df26f2-60bc-493e-a14a-5500633e9f7e",
+        "Name": "ML Road Frame-W - Yellow, 40",
+        "Number": "FR-R72Y-40",
+        "Category": "Road Frames",
+        "Color": "Yellow",
+        "Size": "40",
+        "Weight": 1006.97,
+        "ListPrice": 594.83,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "207b54da-5404-415d-8578-9a45082e3bf1",
+        "Name": "ML Road Frame-W - Yellow, 42",
+        "Number": "FR-R72Y-42",
+        "Category": "Road Frames",
+        "Color": "Yellow",
+        "Size": "42",
+        "Weight": 1025.11,
+        "ListPrice": 594.83,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "22976fa7-0ad0-40f9-b4f9-ba10279ea1a3",
+        "Name": "ML Road Frame-W - Yellow, 38",
+        "Number": "FR-R72Y-38",
+        "Category": "Road Frames",
+        "Color": "Yellow",
+        "Size": "38",
+        "Weight": 988.83,
+        "ListPrice": 594.83,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "a0fad492-ac24-4fcf-8d2a-d21d06386ae1",
+        "Name": "ML Road Frame-W - Yellow, 44",
+        "Number": "FR-R72Y-44",
+        "Category": "Road Frames",
+        "Color": "Yellow",
+        "Size": "44",
+        "Weight": 1043.26,
+        "ListPrice": 594.83,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "8487bfe0-2138-471e-9c6d-fdb3a67e7d86",
+        "Name": "ML Road Frame-W - Yellow, 48",
+        "Number": "FR-R72Y-48",
+        "Category": "Road Frames",
+        "Color": "Yellow",
+        "Size": "48",
+        "Weight": 1061.4,
+        "ListPrice": 594.83,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "219e2f87-26a9-483b-b968-04578e943096",
+    "Name": "Men's Bib-Shorts",
+    "Category": "Bib-Shorts",
+    "Description": "Designed for the AWC team with stay-put straps, moisture-control, chamois padding, and leg grippers.",
+    "Products": [
+      {
+        "id": "9f60af1e-4c11-4e90-baea-48e834e8b4c2",
+        "Name": "Men's Bib-Shorts, S",
+        "Number": "SB-M891-S",
+        "Category": "Bib-Shorts",
+        "Color": "Multi",
+        "Size": "S",
+        "Weight": null,
+        "ListPrice": 89.99,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "e1df75a4-9986-489e-a5de-ad3da824eb5e",
+        "Name": "Men's Bib-Shorts, L",
+        "Number": "SB-M891-L",
+        "Category": "Bib-Shorts",
+        "Color": "Multi",
+        "Size": "L",
+        "Weight": null,
+        "ListPrice": 89.99,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "e0cbec04-f4fc-450f-9780-f8ea7691febd",
+        "Name": "Men's Bib-Shorts, M",
+        "Number": "SB-M891-M",
+        "Category": "Bib-Shorts",
+        "Color": "Multi",
+        "Size": "M",
+        "Weight": null,
+        "ListPrice": 89.99,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "0d48c51d-7603-4010-9265-0491805bb010",
+    "Name": "ML Mountain Frame",
+    "Category": "Mountain Frames",
+    "Description": "The ML frame is a heat-treated aluminum frame made with the same detail and quality as our HL frame. It offers superior performance. Women's version.",
+    "Products": [
+      {
+        "id": "aed1c9c4-c139-45d2-b38e-0a0a9f518665",
+        "Name": "ML Mountain Frame - Black, 40",
+        "Number": "FR-M63B-40",
+        "Category": "Mountain Frames",
+        "Color": "Black",
+        "Size": "40",
+        "Weight": 1256.44,
+        "ListPrice": 348.76,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "c2009b69-f15a-47ec-b710-1809d299318a",
+        "Name": "ML Mountain Frame - Black, 48",
+        "Number": "FR-M63B-48",
+        "Category": "Mountain Frames",
+        "Color": "Black",
+        "Size": "48",
+        "Weight": 1292.73,
+        "ListPrice": 348.76,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "3f2135d4-ec5f-4e30-bde8-5444518f0637",
+        "Name": "ML Mountain Frame - Black, 44",
+        "Number": "FR-M63B-44",
+        "Category": "Mountain Frames",
+        "Color": "Black",
+        "Size": "44",
+        "Weight": 1274.59,
+        "ListPrice": 348.76,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "f06999a1-3aa7-4e85-b8cb-049eb2c391fa",
+    "Name": "Touring-Panniers",
+    "Category": "Panniers",
+    "Description": "Durable, water-proof nylon construction with easy access. Large enough for weekend trips.",
+    "Products": [
+      {
+        "id": "56334fff-91d4-495e-bf98-933bc1010f23",
+        "Name": "Touring-Panniers, Large",
+        "Number": "PA-T100",
+        "Category": "Panniers",
+        "Color": "Grey",
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 125.0,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "f570e0d1-e978-4ff2-b5b1-08f01ab60219",
+    "Name": "Hitch Rack - 4-Bike",
+    "Category": "Bike Racks",
+    "Description": "Carries 4 bikes securely; steel construction, fits 2\" receiver hitch.",
+    "Products": [
+      {
+        "id": "7a0c4bbd-9679-4f59-9ebc-9daf3439a38a",
+        "Name": "Hitch Rack - 4-Bike",
+        "Number": "RA-H123",
+        "Category": "Bike Racks",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 120.0,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "e3cdc5dd-27c3-4891-9d5e-0d46d1b8457f",
+    "Name": "LL Mountain Tire",
+    "Category": "Tires and Tubes",
+    "Description": "Comparible traction, less expensive wire bead casing.",
+    "Products": [
+      {
+        "id": "76060a93-949c-48ea-9b31-a593d6c14983",
+        "Name": "LL Mountain Tire",
+        "Number": "TI-M267",
+        "Category": "Tires and Tubes",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 24.99,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "45fe0d77-6645-473c-a116-1232baea8d43",
+    "Name": "Men's Sports Shorts",
+    "Category": "Shorts",
+    "Description": "Men's 8-panel racing shorts - lycra with an elastic waistband and leg grippers.",
+    "Products": [
+      {
+        "id": "34b08c1f-99d1-43c4-8ef7-2cd754b6665d",
+        "Name": "Men's Sports Shorts, S",
+        "Number": "SH-M897-S",
+        "Category": "Shorts",
+        "Color": "Black",
+        "Size": "S",
+        "Weight": null,
+        "ListPrice": 59.99,
+        "Photo": "shorts_male.jpg"
+      },
+      {
+        "id": "714184c5-669b-4cf1-a802-30e7b1ea7722",
+        "Name": "Men's Sports Shorts, L",
+        "Number": "SH-M897-L",
+        "Category": "Shorts",
+        "Color": "Black",
+        "Size": "L",
+        "Weight": null,
+        "ListPrice": 59.99,
+        "Photo": "shorts_male.jpg"
+      },
+      {
+        "id": "bd3ffe40-fe2e-44cb-a4e0-81786c3a751f",
+        "Name": "Men's Sports Shorts, XL",
+        "Number": "SH-M897-X",
+        "Category": "Shorts",
+        "Color": "Black",
+        "Size": "XL",
+        "Weight": null,
+        "ListPrice": 59.99,
+        "Photo": "shorts_male.jpg"
+      },
+      {
+        "id": "db37b435-74b9-43d3-b363-abbead107bc4",
+        "Name": "Men's Sports Shorts, M",
+        "Number": "SH-M897-M",
+        "Category": "Shorts",
+        "Color": "Black",
+        "Size": "M",
+        "Weight": null,
+        "ListPrice": 59.99,
+        "Photo": "shorts_male.jpg"
+      }
+    ],
+    "Photo": "shorts_male.jpg"
+  },
+  {
+    "id": "cca597fb-195f-4ec5-bf5c-15b98d176f4c",
+    "Name": "HL Mountain Front Wheel",
+    "Category": "Wheels",
+    "Description": "High-performance mountain replacement wheel.",
+    "Products": [
+      {
+        "id": "3c8ffff6-a8dc-45a3-963b-a6284ced7596",
+        "Name": "HL Mountain Front Wheel",
+        "Number": "FW-M928",
+        "Category": "Wheels",
+        "Color": "Black",
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 300.215,
+        "Photo": "wheel.jpg"
+      }
+    ],
+    "Photo": "wheel.jpg"
+  },
+  {
+    "id": "dfe49035-7720-4ff4-b28b-16250ee46259",
+    "Name": "Road-350-W",
+    "Category": "Road Bikes",
+    "Description": "Cross-train, race, or just socialize on a sleek, aerodynamic bike designed for a woman.  Advanced seat technology provides comfort all day.",
+    "Products": [
+      {
+        "id": "0c61e8af-003d-4e4b-b5b7-02f01a26be26",
+        "Name": "Road-350-W Yellow, 44",
+        "Number": "BK-R79Y-44",
+        "Category": "Road Bikes",
+        "Color": "Yellow",
+        "Size": "44",
+        "Weight": 7316.41,
+        "ListPrice": 1700.99,
+        "Photo": "roadster_yellow_f.jpg"
+      },
+      {
+        "id": "237b16d9-53f2-4fd4-befe-48209e57aec3",
+        "Name": "Road-350-W Yellow, 40",
+        "Number": "BK-R79Y-40",
+        "Category": "Road Bikes",
+        "Color": "Yellow",
+        "Size": "40",
+        "Weight": 6962.61,
+        "ListPrice": 1700.99,
+        "Photo": "roadster_yellow_f.jpg"
+      },
+      {
+        "id": "ec4284dc-85fa-44a8-89ec-77fc9b71720a",
+        "Name": "Road-350-W Yellow, 48",
+        "Number": "BK-R79Y-48",
+        "Category": "Road Bikes",
+        "Color": "Yellow",
+        "Size": "48",
+        "Weight": 7447.95,
+        "ListPrice": 1700.99,
+        "Photo": "roadster_yellow_f.jpg"
+      },
+      {
+        "id": "80bd3f8b-42c7-43d8-91f5-9fb6175287af",
+        "Name": "Road-350-W Yellow, 42",
+        "Number": "BK-R79Y-42",
+        "Category": "Road Bikes",
+        "Color": "Yellow",
+        "Size": "42",
+        "Weight": 7153.11,
+        "ListPrice": 1700.99,
+        "Photo": "roadster_yellow_f.jpg"
+      }
+    ],
+    "Photo": "roadster_yellow_f.jpg"
+  },
+  {
+    "id": "20efe3f1-a2f8-4dde-b74b-18265f61f863",
+    "Name": "Long-Sleeve Logo Jersey",
+    "Category": "Jerseys",
+    "Description": "Unisex long-sleeve AWC logo microfiber cycling jersey",
+    "Products": [
+      {
+        "id": "34cf5ef5-c077-4ea0-914a-084814d5cbd5",
+        "Name": "Long-Sleeve Logo Jersey, L",
+        "Number": "LJ-0192-L",
+        "Category": "Jerseys",
+        "Color": "Multi",
+        "Size": "L",
+        "Weight": null,
+        "ListPrice": 49.99,
+        "Photo": "awc_jersey_male.jpg"
+      },
+      {
+        "id": "6ec47ec9-c041-4dda-b686-2125d539ce9b",
+        "Name": "Long-Sleeve Logo Jersey, XL",
+        "Number": "LJ-0192-X",
+        "Category": "Jerseys",
+        "Color": "Multi",
+        "Size": "XL",
+        "Weight": null,
+        "ListPrice": 49.99,
+        "Photo": "awc_jersey_male.jpg"
+      },
+      {
+        "id": "6a290063-a0cf-432a-8110-2ea0fda14308",
+        "Name": "Long-Sleeve Logo Jersey, M",
+        "Number": "LJ-0192-M",
+        "Category": "Jerseys",
+        "Color": "Multi",
+        "Size": "M",
+        "Weight": null,
+        "ListPrice": 49.99,
+        "Photo": "awc_jersey_male.jpg"
+      },
+      {
+        "id": "fd449c82-a259-4fae-8584-6ca0255faf68",
+        "Name": "Long-Sleeve Logo Jersey, S",
+        "Number": "LJ-0192-S",
+        "Category": "Jerseys",
+        "Color": "Multi",
+        "Size": "S",
+        "Weight": null,
+        "ListPrice": 49.99,
+        "Photo": "awc_jersey_male.jpg"
+      }
+    ],
+    "Photo": "awc_jersey_male.jpg"
+  },
+  {
+    "id": "a4b205df-955a-494e-8428-1898aea76f24",
+    "Name": "HL Road Tire",
+    "Category": "Tires and Tubes",
+    "Description": "Lightweight carbon reinforced  for an unrivaled ride at an un-compromised weight.",
+    "Products": [
+      {
+        "id": "c86de56a-5048-4b89-b7c7-56bc75c9bcee",
+        "Name": "HL Road Tire",
+        "Number": "TI-R982",
+        "Category": "Tires and Tubes",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 32.6,
+        "Photo": "street_tires.jpg"
+      }
+    ],
+    "Photo": "street_tires.jpg"
+  },
+  {
+    "id": "29321d47-1e4c-4aac-887c-19634328c25e",
+    "Name": "Classic Vest",
+    "Category": "Vests",
+    "Description": "Light-weight, wind-resistant, packs to fit into a pocket.",
+    "Products": [
+      {
+        "id": "eb423ef3-409d-46fe-b35b-d69970820314",
+        "Name": "Classic Vest, S",
+        "Number": "VE-C304-S",
+        "Category": "Vests",
+        "Color": "Blue",
+        "Size": "S",
+        "Weight": null,
+        "ListPrice": 63.5,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "3211f5a8-b6c4-48bd-9aa4-d69cb40d97dd",
+        "Name": "Classic Vest, L",
+        "Number": "VE-C304-L",
+        "Category": "Vests",
+        "Color": "Blue",
+        "Size": "L",
+        "Weight": null,
+        "ListPrice": 63.5,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "2e52f96e-64a1-4069-911c-e3fd6e094a1e",
+        "Name": "Classic Vest, M",
+        "Number": "VE-C304-M",
+        "Category": "Vests",
+        "Color": "Blue",
+        "Size": "M",
+        "Weight": null,
+        "ListPrice": 63.5,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "7b17ebf1-cb73-4934-9689-1dc26cf22d9c",
+    "Name": "Headlights - Dual-Beam",
+    "Category": "Lights",
+    "Description": "Rechargeable dual-beam headlight.",
+    "Products": [
+      {
+        "id": "417db6cb-f38f-4b0d-87e7-e1ebf7456c3a",
+        "Name": "Headlights - Dual-Beam",
+        "Number": "LT-H902",
+        "Category": "Lights",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 34.99,
+        "Photo": "double_headlight.jpg"
+      }
+    ],
+    "Photo": "double_headlight.jpg"
+  },
+  {
+    "id": "42e1c597-6dd9-4071-b1a5-1dc5cdcbdbca",
+    "Name": "Road-650",
+    "Category": "Road Bikes",
+    "Description": "Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.",
+    "Products": [
+      {
+        "id": "1da14e09-6d71-4e2a-9ee9-1bdfdfd8a109",
+        "Name": "Road-650 Red, 62",
+        "Number": "BK-R50R-62",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "62",
+        "Weight": 9071.8,
+        "ListPrice": 782.99,
+        "Photo": "superlight_red.jpg"
+      },
+      {
+        "id": "74645b12-3ce9-49a6-bd96-2cd814b37420",
+        "Name": "Road-650 Black, 58",
+        "Number": "BK-R50B-58",
+        "Category": "Road Bikes",
+        "Color": "Black",
+        "Size": "58",
+        "Weight": 8976.55,
+        "ListPrice": 782.99,
+        "Photo": "superlight_black.jpg"
+      },
+      {
+        "id": "a2db196d-6640-49ea-a84f-2e87ca6f50c6",
+        "Name": "Road-650 Black, 60",
+        "Number": "BK-R50B-60",
+        "Category": "Road Bikes",
+        "Color": "Black",
+        "Size": "60",
+        "Weight": 9026.44,
+        "ListPrice": 782.99,
+        "Photo": "superlight_black.jpg"
+      },
+      {
+        "id": "136e2865-e0da-4624-963a-31349279ab1a",
+        "Name": "Road-650 Black, 52",
+        "Number": "BK-R50B-52",
+        "Category": "Road Bikes",
+        "Color": "Black",
+        "Size": "52",
+        "Weight": 8808.72,
+        "ListPrice": 782.99,
+        "Photo": "superlight_black.jpg"
+      },
+      {
+        "id": "664867e5-4ab3-4783-96f9-42efde92f49b",
+        "Name": "Road-650 Red, 60",
+        "Number": "BK-R50R-60",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "60",
+        "Weight": 9026.44,
+        "ListPrice": 782.99,
+        "Photo": "superlight_red.jpg"
+      },
+      {
+        "id": "3da5fa6e-9e0f-4896-ac10-948c27f4eb79",
+        "Name": "Road-650 Red, 48",
+        "Number": "BK-R50R-48",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "48",
+        "Weight": 8677.18,
+        "ListPrice": 782.99,
+        "Photo": "superlight_red.jpg"
+      },
+      {
+        "id": "6711d6bc-664f-4890-9f69-af1de321d055",
+        "Name": "Road-650 Red, 58",
+        "Number": "BK-R50R-58",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "58",
+        "Weight": 8976.55,
+        "ListPrice": 782.99,
+        "Photo": "superlight_red.jpg"
+      },
+      {
+        "id": "07cfe1ea-8a37-4d2a-835f-bc8d37e564af",
+        "Name": "Road-650 Red, 52",
+        "Number": "BK-R50R-52",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "52",
+        "Weight": 8808.72,
+        "ListPrice": 782.99,
+        "Photo": "superlight_red.jpg"
+      },
+      {
+        "id": "a7e2179e-137c-497e-a5e6-c9ea64935fb0",
+        "Name": "Road-650 Black, 48",
+        "Number": "BK-R50B-48",
+        "Category": "Road Bikes",
+        "Color": "Black",
+        "Size": "48",
+        "Weight": 8677.18,
+        "ListPrice": 782.99,
+        "Photo": "superlight_black.jpg"
+      },
+      {
+        "id": "f247aaae-12e3-4048-a37b-cce4a8999e81",
+        "Name": "Road-650 Red, 44",
+        "Number": "BK-R50R-44",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "44",
+        "Weight": 8513.88,
+        "ListPrice": 782.99,
+        "Photo": "superlight_red.jpg"
+      },
+      {
+        "id": "c82a8309-63d3-4c0c-ad71-e91272397095",
+        "Name": "Road-650 Black, 62",
+        "Number": "BK-R50B-62",
+        "Category": "Road Bikes",
+        "Color": "Black",
+        "Size": "62",
+        "Weight": 9071.8,
+        "ListPrice": 782.99,
+        "Photo": "superlight_black.jpg"
+      },
+      {
+        "id": "11d563ac-115c-4f0d-a1e5-e946eee8b38b",
+        "Name": "Road-650 Black, 44",
+        "Number": "BK-R50B-44",
+        "Category": "Road Bikes",
+        "Color": "Black",
+        "Size": "44",
+        "Weight": 8513.88,
+        "ListPrice": 782.99,
+        "Photo": "superlight_black.jpg"
+      }
+    ],
+    "Photo": "superlight_red.jpg"
+  },
+  {
+    "id": "bd8ba6f8-7e16-4fa3-b3b3-2036dd4a2ae0",
+    "Name": "Racing Socks",
+    "Category": "Socks",
+    "Description": "Thin, lightweight and durable with cuffs that stay up.",
+    "Products": [
+      {
+        "id": "b9c7eb0a-1dd1-4a1d-b4c3-1dad83a8ea7e",
+        "Name": "Racing Socks, M",
+        "Number": "SO-R809-M",
+        "Category": "Socks",
+        "Color": "White",
+        "Size": "M",
+        "Weight": null,
+        "ListPrice": 8.99,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "c0a16305-74b7-4fae-b5c9-3e8bd0e44762",
+        "Name": "Racing Socks, L",
+        "Number": "SO-R809-L",
+        "Category": "Socks",
+        "Color": "White",
+        "Size": "L",
+        "Weight": null,
+        "ListPrice": 8.99,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "474fb654-3c96-4cb9-82df-2152eeffbdb0",
+    "Name": "Cycling Cap",
+    "Category": "Caps",
+    "Description": "Traditional style with a flip-up brim; one-size fits all.",
+    "Products": [
+      {
+        "id": "b9ede243-a6f4-4629-b1d4-ffe1aedc6de7",
+        "Name": "AWC Logo Cap",
+        "Number": "CA-1098",
+        "Category": "Caps",
+        "Color": "Multi",
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 8.99,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "218b016c-7454-4193-b518-21955c783d72",
+    "Name": "LL Road Pedal",
+    "Category": "Pedals",
+    "Description": "Clipless pedals - aluminum.",
+    "Products": [
+      {
+        "id": "2c7dd8c3-4c55-475f-ba58-f4baca520d72",
+        "Name": "LL Road Pedal",
+        "Number": "PD-R347",
+        "Category": "Pedals",
+        "Color": "Silver/Black",
+        "Size": null,
+        "Weight": 189.0,
+        "ListPrice": 40.49,
+        "Photo": "clipless_pedals.jpg"
+      }
+    ],
+    "Photo": "clipless_pedals.jpg"
+  },
+  {
+    "id": "a08dd61a-6155-4051-9a11-223232ea51cd",
+    "Name": "Women's Mountain Shorts",
+    "Category": "Shorts",
+    "Description": "Heavy duty, abrasion-resistant shorts feature seamless, lycra inner shorts with anti-bacterial chamois for comfort.",
+    "Products": [
+      {
+        "id": "22616fd2-b99f-4f7d-acf6-33dff66d42d2",
+        "Name": "Women's Mountain Shorts, S",
+        "Number": "SH-W890-S",
+        "Category": "Shorts",
+        "Color": "Black",
+        "Size": "S",
+        "Weight": null,
+        "ListPrice": 69.99,
+        "Photo": "shorts_female.jpg"
+      },
+      {
+        "id": "968e3610-e583-42e8-8ab6-484a799b1774",
+        "Name": "Women's Mountain Shorts, M",
+        "Number": "SH-W890-M",
+        "Category": "Shorts",
+        "Color": "Black",
+        "Size": "M",
+        "Weight": null,
+        "ListPrice": 69.99,
+        "Photo": "shorts_female.jpg"
+      },
+      {
+        "id": "1a66b244-5ca0-4153-b539-ae048d14faec",
+        "Name": "Women's Mountain Shorts, L",
+        "Number": "SH-W890-L",
+        "Category": "Shorts",
+        "Color": "Black",
+        "Size": "L",
+        "Weight": null,
+        "ListPrice": 69.99,
+        "Photo": "shorts_female.jpg"
+      }
+    ],
+    "Photo": "shorts_female.jpg"
+  },
+  {
+    "id": "4d332ecc-48b3-4e04-b7e7-227f3ac2a7ec",
+    "Name": "HL Road Frame",
+    "Category": "Road Frames",
+    "Description": "Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.",
+    "Products": [
+      {
+        "id": "56c85873-4993-41b4-8096-1067cfd7e4bd",
+        "Name": "HL Road Frame - Red, 56",
+        "Number": "FR-R92R-56",
+        "Category": "Road Frames",
+        "Color": "Red",
+        "Size": "56",
+        "Weight": 1016.04,
+        "ListPrice": 1431.5,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "052e4f8b-0a2a-46b2-9f42-10febcfae416",
+        "Name": "HL Road Frame - Red, 62",
+        "Number": "FR-R92R-62",
+        "Category": "Road Frames",
+        "Color": "Red",
+        "Size": "62",
+        "Weight": 1043.26,
+        "ListPrice": 1431.5,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "5dce9c8c-fb94-46f8-b826-11658f6a3682",
+        "Name": "HL Road Frame - Black, 62",
+        "Number": "FR-R92B-62",
+        "Category": "Road Frames",
+        "Color": "Black",
+        "Size": "62",
+        "Weight": 1043.26,
+        "ListPrice": 1431.5,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "e4902656-a4bc-4b08-9d47-4f3da0fd76c3",
+        "Name": "HL Road Frame - Black, 44",
+        "Number": "FR-R92B-44",
+        "Category": "Road Frames",
+        "Color": "Black",
+        "Size": "44",
+        "Weight": 961.61,
+        "ListPrice": 1431.5,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "557b603b-407b-41a4-ae34-4f7747866dba",
+        "Name": "HL Road Frame - Black, 48",
+        "Number": "FR-R92B-48",
+        "Category": "Road Frames",
+        "Color": "Black",
+        "Size": "48",
+        "Weight": 979.75,
+        "ListPrice": 1431.5,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "43dd68d6-14a4-461f-9069-55309d90ea7e",
+        "Name": "HL Road Frame - Black, 58",
+        "Number": "FR-R92B-58",
+        "Category": "Road Frames",
+        "Color": "Black",
+        "Size": "58",
+        "Weight": 1016.04,
+        "ListPrice": 1431.5,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "0ed082b3-fbba-43af-9149-8741b9fc78c8",
+        "Name": "HL Road Frame - Black, 52",
+        "Number": "FR-R92B-52",
+        "Category": "Road Frames",
+        "Color": "Black",
+        "Size": "52",
+        "Weight": 997.9,
+        "ListPrice": 1431.5,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "9540ff17-2712-4c90-a3d1-8ce5568b2462",
+        "Name": "HL Road Frame - Red, 58",
+        "Number": "FR-R92R-58",
+        "Category": "Road Frames",
+        "Color": "Red",
+        "Size": "58",
+        "Weight": 1016.04,
+        "ListPrice": 1431.5,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "fcfea68f-310e-4e6e-9f99-bb17d011ebae",
+        "Name": "HL Road Frame - Red, 52",
+        "Number": "FR-R92R-52",
+        "Category": "Road Frames",
+        "Color": "Red",
+        "Size": "52",
+        "Weight": 997.9,
+        "ListPrice": 1431.5,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "07befc9a-7634-402b-b234-d7797733baaf",
+        "Name": "HL Road Frame - Red, 48",
+        "Number": "FR-R92R-48",
+        "Category": "Road Frames",
+        "Color": "Red",
+        "Size": "48",
+        "Weight": 979.75,
+        "ListPrice": 1431.5,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "a88d3b54-2cae-43f2-8c6e-ea1d97b46a7c",
+        "Name": "HL Road Frame - Red, 44",
+        "Number": "FR-R92R-44",
+        "Category": "Road Frames",
+        "Color": "Red",
+        "Size": "44",
+        "Weight": 961.61,
+        "ListPrice": 1431.5,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "ce1b1064-6679-4212-8f56-2b2617ec56a5",
+    "Name": "HL Mountain Tire",
+    "Category": "Tires and Tubes",
+    "Description": "Incredible traction, lightweight carbon reinforced.",
+    "Products": [
+      {
+        "id": "ddad25f5-0445-4b5c-8466-6446930ad8b8",
+        "Name": "HL Mountain Tire",
+        "Number": "TI-M823",
+        "Category": "Tires and Tubes",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 35.0,
+        "Photo": "mb_tires.jpg"
+      }
+    ],
+    "Photo": "mb_tires.jpg"
+  },
+  {
+    "id": "47f7c450-d16a-4cea-be6e-2d6c8c8f81ee",
+    "Name": "Sport-100",
+    "Category": "Helmets",
+    "Description": "Universal fit, well-vented, lightweight , snap-on visor.",
+    "Products": [
+      {
+        "id": "a25a44fb-c2de-4268-958f-110b8d7621e2",
+        "Name": "Sport-100 Helmet, Black",
+        "Number": "HL-U509",
+        "Category": "Helmets",
+        "Color": "Black",
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 34.99,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "fd7c0858-4179-48c2-865b-abd5dfc7bc1d",
+        "Name": "Sport-100 Helmet, Blue",
+        "Number": "HL-U509-B",
+        "Category": "Helmets",
+        "Color": "Blue",
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 34.99,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "2e1ef41a-c08a-4ff6-8ada-bde58b64a712",
+        "Name": "Sport-100 Helmet, Red",
+        "Number": "HL-U509-R",
+        "Category": "Helmets",
+        "Color": "Red",
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 34.99,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "059a2000-7549-4b49-8e0c-2de6b2771ef4",
+    "Name": "HL Touring Seat/Saddle",
+    "Category": "Saddles",
+    "Description": "Cut-out shell for a more comfortable ride.",
+    "Products": [
+      {
+        "id": "0e158724-934d-4a64-991f-94fec00bdea8",
+        "Name": "HL Touring Seat/Saddle",
+        "Number": "SE-T924",
+        "Category": "Saddles",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 52.64,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "be9cdc56-f4ab-40f1-b338-2e08e0627abd",
+    "Name": "ML Mountain Pedal",
+    "Category": "Pedals",
+    "Description": "Lightweight, durable, clipless pedal with adjustable tension.",
+    "Products": [
+      {
+        "id": "274c86dc-439e-4469-9de8-7e9bd6455d0d",
+        "Name": "ML Mountain Pedal",
+        "Number": "PD-M340",
+        "Category": "Pedals",
+        "Color": "Silver/Black",
+        "Size": null,
+        "Weight": 215.0,
+        "ListPrice": 62.09,
+        "Photo": "pedal.jpg"
+      }
+    ],
+    "Photo": "pedal.jpg"
+  },
+  {
+    "id": "7706a8fd-9513-40bc-95e8-301b55b67db2",
+    "Name": "HL Fork",
+    "Category": "Forks",
+    "Description": "High-performance carbon road fork with curved legs.",
+    "Products": [
+      {
+        "id": "553229b3-1ad9-4a71-a21c-2af4332cfce9",
+        "Name": "HL Fork",
+        "Number": "FK-9939",
+        "Category": "Forks",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 229.49,
+        "Photo": "fork.jpg"
+      }
+    ],
+    "Photo": "fork.jpg"
+  },
+  {
+    "id": "95946bd4-c6d9-4344-8066-317d8957ea21",
+    "Name": "LL Road Rear Wheel",
+    "Category": "Wheels",
+    "Description": "Replacement road rear wheel for entry-level cyclist.",
+    "Products": [
+      {
+        "id": "78d01117-8dcd-465f-9dc7-94a2cdc35582",
+        "Name": "LL Road Rear Wheel",
+        "Number": "RW-R623",
+        "Category": "Wheels",
+        "Color": "Black",
+        "Size": null,
+        "Weight": 1050.0,
+        "ListPrice": 112.565,
+        "Photo": "wheel.jpg"
+      }
+    ],
+    "Photo": "wheel.jpg"
+  },
+  {
+    "id": "9da82e49-80ad-4918-9a54-31f4b0c8eabb",
+    "Name": "HL Touring Handlebars",
+    "Category": "Handlebars",
+    "Description": "A light yet stiff aluminum bar for long distance riding.",
+    "Products": [
+      {
+        "id": "cb524e92-4fa8-4f6c-9993-60796856c654",
+        "Name": "HL Touring Handlebars",
+        "Number": "HB-T928",
+        "Category": "Handlebars",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 91.57,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "39afbba9-0f6c-44ee-b5e1-32fa93f897e6",
+    "Name": "LL Headset",
+    "Category": "Headsets",
+    "Description": "Threadless headset provides quality at an economical price.",
+    "Products": [
+      {
+        "id": "bb6bd7b3-a34d-4d64-822e-781fa6838e19",
+        "Name": "LL Headset",
+        "Number": "HS-0296",
+        "Category": "Headsets",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 34.2,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "a7e65199-84a8-437e-ad55-360c1df1d788",
+    "Name": "LL Road Handlebars",
+    "Category": "Handlebars",
+    "Description": "Unique shape provides easier reach to the levers.",
+    "Products": [
+      {
+        "id": "acdae407-b40e-435e-8e84-1bfc33013e81",
+        "Name": "LL Road Handlebars",
+        "Number": "HB-R504",
+        "Category": "Handlebars",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 44.54,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "d968d774-778e-4399-a3c5-375176418229",
+    "Name": "ML Mountain Rear Wheel",
+    "Category": "Wheels",
+    "Description": "Replacement mountain wheel for the casual to serious rider.",
+    "Products": [
+      {
+        "id": "b2f7cf9b-a7bf-49ab-9cca-9f6e791cd693",
+        "Name": "ML Mountain Rear Wheel",
+        "Number": "RW-M762",
+        "Category": "Wheels",
+        "Color": "Black",
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 236.025,
+        "Photo": "wheel.jpg"
+      }
+    ],
+    "Photo": "wheel.jpg"
+  },
+  {
+    "id": "ddc67a2f-024a-4446-9b54-3c679baba708",
+    "Name": "LL Road Frame",
+    "Category": "Road Frames",
+    "Description": "The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.",
+    "Products": [
+      {
+        "id": "18fc5d72-a012-4dc7-bb35-0d01a84d0219",
+        "Name": "LL Road Frame - Black, 52",
+        "Number": "FR-R38B-52",
+        "Category": "Road Frames",
+        "Color": "Black",
+        "Size": "52",
+        "Weight": 1088.62,
+        "ListPrice": 337.22,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "2140f256-f705-4d67-975d-32de03265838",
+        "Name": "LL Road Frame - Black, 58",
+        "Number": "FR-R38B-58",
+        "Category": "Road Frames",
+        "Color": "Black",
+        "Size": "58",
+        "Weight": 1115.83,
+        "ListPrice": 337.22,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "799a56ff-5ad2-41b3-bfac-528b477ad129",
+        "Name": "LL Road Frame - Red, 58",
+        "Number": "FR-R38R-58",
+        "Category": "Road Frames",
+        "Color": "Red",
+        "Size": "58",
+        "Weight": 1115.83,
+        "ListPrice": 337.22,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "137d319d-44ad-42b2-ab61-60b9ce52b5f2",
+        "Name": "LL Road Frame - Red, 44",
+        "Number": "FR-R38R-44",
+        "Category": "Road Frames",
+        "Color": "Red",
+        "Size": "44",
+        "Weight": 1052.33,
+        "ListPrice": 337.22,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "c455e0b3-d716-419d-abf0-7e03efdd2e26",
+        "Name": "LL Road Frame - Red, 52",
+        "Number": "FR-R38R-52",
+        "Category": "Road Frames",
+        "Color": "Red",
+        "Size": "52",
+        "Weight": 1088.62,
+        "ListPrice": 337.22,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "1784bb14-d1f5-4b24-92da-9127ad179302",
+        "Name": "LL Road Frame - Red, 60",
+        "Number": "FR-R38R-60",
+        "Category": "Road Frames",
+        "Color": "Red",
+        "Size": "60",
+        "Weight": 1124.9,
+        "ListPrice": 337.22,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "5247be33-50bf-4527-8a30-a39aae500a8e",
+        "Name": "LL Road Frame - Black, 62",
+        "Number": "FR-R38B-62",
+        "Category": "Road Frames",
+        "Color": "Black",
+        "Size": "62",
+        "Weight": 1133.98,
+        "ListPrice": 337.22,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "7e73aa1f-8569-4d87-9f80-ac2e513e0803",
+        "Name": "LL Road Frame - Red, 62",
+        "Number": "FR-R38R-62",
+        "Category": "Road Frames",
+        "Color": "Red",
+        "Size": "62",
+        "Weight": 1133.98,
+        "ListPrice": 337.22,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "aa95e2a5-e7c4-4b74-b1ea-b52ee3b51537",
+        "Name": "LL Road Frame - Black, 60",
+        "Number": "FR-R38B-60",
+        "Category": "Road Frames",
+        "Color": "Black",
+        "Size": "60",
+        "Weight": 1124.9,
+        "ListPrice": 337.22,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "c9967889-f490-4a66-943a-bce432e938d8",
+        "Name": "LL Road Frame - Black, 44",
+        "Number": "FR-R38B-44",
+        "Category": "Road Frames",
+        "Color": "Black",
+        "Size": "44",
+        "Weight": 1052.33,
+        "ListPrice": 337.22,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "35213547-275f-4767-805d-c8a4b8e13745",
+        "Name": "LL Road Frame - Red, 48",
+        "Number": "FR-R38R-48",
+        "Category": "Road Frames",
+        "Color": "Red",
+        "Size": "48",
+        "Weight": 1070.47,
+        "ListPrice": 337.22,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "3b5f29b6-a441-4ff7-a0fa-fad10e2ceb4c",
+        "Name": "LL Road Frame - Black, 48",
+        "Number": "FR-R38B-48",
+        "Category": "Road Frames",
+        "Color": "Black",
+        "Size": "48",
+        "Weight": 1070.47,
+        "ListPrice": 337.22,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "b98a3207-56fc-405c-a040-3c7a90cc7890",
+    "Name": "Touring Pedal",
+    "Category": "Pedals",
+    "Description": "A stable pedal for all-day riding.",
+    "Products": [
+      {
+        "id": "6967c816-3ebb-45fa-8547-cef00e08573e",
+        "Name": "Touring Pedal",
+        "Number": "PD-T852",
+        "Category": "Pedals",
+        "Color": "Silver/Black",
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 80.99,
+        "Photo": "clipless_pedals.jpg"
+      }
+    ],
+    "Photo": "clipless_pedals.jpg"
+  },
+  {
+    "id": "aa77697c-6d1c-48f1-845c-3cb089498715",
+    "Name": "ML Mountain Frame-W",
+    "Category": "Mountain Frames",
+    "Description": "The ML frame is a heat-treated aluminum frame made with the same detail and quality as our HL frame. It offers superior performance. Men's version.",
+    "Products": [
+      {
+        "id": "82025c63-7b28-412d-92c1-408e0e6ae646",
+        "Name": "ML Mountain Frame-W - Silver, 46",
+        "Number": "FR-M63S-46",
+        "Category": "Mountain Frames",
+        "Color": "Silver",
+        "Size": "46",
+        "Weight": 1292.73,
+        "ListPrice": 364.09,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "ba3646b0-1487-426e-ab4e-57d42e6f9233",
+        "Name": "ML Mountain Frame-W - Silver, 38",
+        "Number": "FR-M63S-38",
+        "Category": "Mountain Frames",
+        "Color": "Silver",
+        "Size": "38",
+        "Weight": 1238.3,
+        "ListPrice": 364.09,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "d4a2fcad-1e63-4ebd-863c-5a7c48d5b8d9",
+        "Name": "ML Mountain Frame-W - Silver, 42",
+        "Number": "FR-M63S-42",
+        "Category": "Mountain Frames",
+        "Color": "Silver",
+        "Size": "42",
+        "Weight": 1274.59,
+        "ListPrice": 364.09,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "0d879312-a7d3-441d-9d23-b6550bab3814",
+        "Name": "ML Mountain Frame - Black, 38",
+        "Number": "FR-M63B-38",
+        "Category": "Mountain Frames",
+        "Color": "Black",
+        "Size": "38",
+        "Weight": 1238.3,
+        "ListPrice": 348.76,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "a7dde43e-f7d5-4075-a0c1-c866ad7aa154",
+        "Name": "ML Mountain Frame-W - Silver, 40",
+        "Number": "FR-M63S-40",
+        "Category": "Mountain Frames",
+        "Color": "Silver",
+        "Size": "40",
+        "Weight": 1256.44,
+        "ListPrice": 364.09,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "2194e65b-9c13-46e1-a655-3ebff8a96719",
+    "Name": "Mountain Bottle Cage",
+    "Category": "Bottles and Cages",
+    "Description": "Tough aluminum cage holds bottle securly on tough terrain.",
+    "Products": [
+      {
+        "id": "684491de-63f8-4632-90e3-36773c4e63bd",
+        "Name": "Mountain Bottle Cage",
+        "Number": "BC-M005",
+        "Category": "Bottles and Cages",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 9.99,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "90cef1a7-d817-403e-814c-40e305eeefef",
+    "Name": "Minipump",
+    "Category": "Pumps",
+    "Description": "Designed for convenience. Fits in your pocket. Aluminum barrel. 160psi rated.",
+    "Products": [
+      {
+        "id": "aaf7a076-9ee3-46bf-a69f-414d847e858b",
+        "Name": "Minipump",
+        "Number": "PU-0452",
+        "Category": "Pumps",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 19.99,
+        "Photo": "handpump.jpg"
+      }
+    ],
+    "Photo": "handpump.jpg"
+  },
+  {
+    "id": "8bbeb399-5a87-4e40-9f52-462fb54f2183",
+    "Name": "LL Mountain Seat/Saddle 2",
+    "Category": "Saddles",
+    "Description": "Synthetic leather. Features gel for increased comfort.",
+    "Products": [
+      {
+        "id": "4dab53c5-31e7-47d6-a5a0-940f8d4dad22",
+        "Name": "LL Mountain Seat/Saddle",
+        "Number": "SE-M236",
+        "Category": "Saddles",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 27.12,
+        "Photo": "saddle.jpg"
+      }
+    ],
+    "Photo": "saddle.jpg"
+  },
+  {
+    "id": "cfeef30f-f059-4447-92a8-47001e69f3db",
+    "Name": "Hydration Pack",
+    "Category": "Hydration Packs",
+    "Description": "Versatile 70 oz hydration pack offers extra storage, easy-fill access, and a waist belt.",
+    "Products": [
+      {
+        "id": "a99d90c0-05e2-4e44-ad90-c55c9f0784de",
+        "Name": "Hydration Pack - 70 oz.",
+        "Number": "HY-1023-70",
+        "Category": "Hydration Packs",
+        "Color": "Silver",
+        "Size": "70",
+        "Weight": null,
+        "ListPrice": 54.99,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "00ce9171-8944-4d49-ba37-485c1d122f5c",
+    "Name": "LL Road Seat/Saddle 1",
+    "Category": "Saddles",
+    "Description": "Lightweight foam-padded saddle.",
+    "Products": [
+      {
+        "id": "31b9bc62-792b-4e7a-a24d-411dc76e0271",
+        "Name": "LL Road Seat/Saddle",
+        "Number": "SE-R581",
+        "Category": "Saddles",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 27.12,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "10e0c8fd-ca13-437b-8e22-51853ae160a7",
+    "Name": "Front Derailleur",
+    "Category": "Derailleurs",
+    "Description": "Wide-link design.",
+    "Products": [
+      {
+        "id": "448e9e7b-9548-4a4c-abb3-853686aa7517",
+        "Name": "Front Derailleur",
+        "Number": "FD-2342",
+        "Category": "Derailleurs",
+        "Color": "Silver",
+        "Size": null,
+        "Weight": 88.0,
+        "ListPrice": 91.49,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "e878fcaa-61cc-4014-988a-51f52643f7aa",
+    "Name": "Touring Rear Wheel",
+    "Category": "Wheels",
+    "Description": "Excellent aerodynamic rims guarantee a smooth ride.",
+    "Products": [
+      {
+        "id": "30d2254d-e26d-4586-b4c5-e8ccb8a059b8",
+        "Name": "Touring Rear Wheel",
+        "Number": "RW-T905",
+        "Category": "Wheels",
+        "Color": "Black",
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 245.01,
+        "Photo": "wheel.jpg"
+      }
+    ],
+    "Photo": "wheel.jpg"
+  },
+  {
+    "id": "15702f98-bd92-4fe8-86bc-52f5fd049d3d",
+    "Name": "ML Road Rear Wheel",
+    "Category": "Wheels",
+    "Description": "Aluminum alloy rim with stainless steel spokes; built for speed.",
+    "Products": [
+      {
+        "id": "cf739f9a-0af0-4810-b229-c431a31d7779",
+        "Name": "ML Road Rear Wheel",
+        "Number": "RW-R762",
+        "Category": "Wheels",
+        "Color": "Black",
+        "Size": null,
+        "Weight": 1000.0,
+        "ListPrice": 275.385,
+        "Photo": "wheel.jpg"
+      }
+    ],
+    "Photo": "wheel.jpg"
+  },
+  {
+    "id": "d60ed2a5-c100-4c54-89a1-531404c4a20f",
+    "Name": "HL Touring Frame",
+    "Category": "Touring Frames",
+    "Description": "The HL aluminum frame is custom-shaped for both good looks and strength; it will withstand the most rigorous challenges of daily riding. Men's version.",
+    "Products": [
+      {
+        "id": "e9aae947-6bc3-4909-8937-3e1cdcec8a8f",
+        "Name": "HL Touring Frame - Blue, 54",
+        "Number": "FR-T98U-54",
+        "Category": "Touring Frames",
+        "Color": "Blue",
+        "Size": "54",
+        "Weight": 1378.91,
+        "ListPrice": 1003.91,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "137675a7-34cd-4b7a-abe1-4e0eeb79b65d",
+        "Name": "HL Touring Frame - Yellow, 46",
+        "Number": "FR-T98Y-46",
+        "Category": "Touring Frames",
+        "Color": "Yellow",
+        "Size": "46",
+        "Weight": 1342.63,
+        "ListPrice": 1003.91,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "b01951a4-a581-4d10-9dc2-515da180f1b8",
+        "Name": "HL Touring Frame - Blue, 60",
+        "Number": "FR-T98U-60",
+        "Category": "Touring Frames",
+        "Color": "Blue",
+        "Size": "60",
+        "Weight": 1397.06,
+        "ListPrice": 1003.91,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "c49679bd-96a9-4176-a7ed-5bc6d6444647",
+        "Name": "HL Touring Frame - Yellow, 60",
+        "Number": "FR-T98Y-60",
+        "Category": "Touring Frames",
+        "Color": "Yellow",
+        "Size": "60",
+        "Weight": 1397.06,
+        "ListPrice": 1003.91,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "12b1f317-c39b-48d0-b1a7-8018c60aea53",
+        "Name": "HL Touring Frame - Yellow, 54",
+        "Number": "FR-T98Y-54",
+        "Category": "Touring Frames",
+        "Color": "Yellow",
+        "Size": "54",
+        "Weight": 1378.91,
+        "ListPrice": 1003.91,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "c4244f0c-abce-451b-a895-83c0e6d1f448",
+        "Name": "HL Touring Frame - Blue, 50",
+        "Number": "FR-T98U-50",
+        "Category": "Touring Frames",
+        "Color": "Blue",
+        "Size": "50",
+        "Weight": 1360.77,
+        "ListPrice": 1003.91,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "105ec6e5-30c5-4fe3-a08b-cb324c85323d",
+        "Name": "HL Touring Frame - Yellow, 50",
+        "Number": "FR-T98Y-50",
+        "Category": "Touring Frames",
+        "Color": "Yellow",
+        "Size": "50",
+        "Weight": 1360.77,
+        "ListPrice": 1003.91,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "8bbd3437-a58b-41a0-9503-fc14b23e7678",
+        "Name": "HL Touring Frame - Blue, 46",
+        "Number": "FR-T98U-46",
+        "Category": "Touring Frames",
+        "Color": "Blue",
+        "Size": "46",
+        "Weight": 1342.63,
+        "ListPrice": 1003.91,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "aca920b2-d0f9-49f3-b879-573202b08c2f",
+    "Name": "Chain",
+    "Category": "Chains",
+    "Description": "Superior shifting performance.",
+    "Products": [
+      {
+        "id": "5d27e2a5-27ec-4ccb-ba2c-fc980ffe6708",
+        "Name": "Chain",
+        "Number": "CH-0234",
+        "Category": "Chains",
+        "Color": "Silver",
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 20.24,
+        "Photo": "silver_chain.jpg"
+      }
+    ],
+    "Photo": "silver_chain.jpg"
+  },
+  {
+    "id": "6d2fcce4-ffce-4662-a3f8-5d18f0eedcd8",
+    "Name": "Mountain-400-W",
+    "Category": "Mountain Bikes",
+    "Description": "This bike delivers a high-level of performance on a budget. It is responsive and maneuverable, and offers peace-of-mind when you decide to go off-road.",
+    "Products": [
+      {
+        "id": "7a927632-99a4-4f24-adce-0062d2d113d9",
+        "Name": "Mountain-400-W Silver, 38",
+        "Number": "BK-M38S-38",
+        "Category": "Mountain Bikes",
+        "Color": "Silver",
+        "Size": "38",
+        "Weight": 11952.1,
+        "ListPrice": 769.49,
+        "Photo": "hotrodbike_f.jpg"
+      },
+      {
+        "id": "0a72791c-a984-4733-ae4e-2b4373cfd7cd",
+        "Name": "Mountain-400-W Silver, 40",
+        "Number": "BK-M38S-40",
+        "Category": "Mountain Bikes",
+        "Color": "Silver",
+        "Size": "40",
+        "Weight": 12142.6,
+        "ListPrice": 769.49,
+        "Photo": "hotrodbike_f.jpg"
+      },
+      {
+        "id": "0b0c8ee4-ff2d-438e-9cac-464783b86191",
+        "Name": "Mountain-400-W Silver, 46",
+        "Number": "BK-M38S-46",
+        "Category": "Mountain Bikes",
+        "Color": "Silver",
+        "Size": "46",
+        "Weight": 12437.44,
+        "ListPrice": 769.49,
+        "Photo": "hotrodbike_f.jpg"
+      },
+      {
+        "id": "4ea4fe06-aaea-42d4-a9d9-69f6a9a4a042",
+        "Name": "Mountain-400-W Silver, 42",
+        "Number": "BK-M38S-42",
+        "Category": "Mountain Bikes",
+        "Color": "Silver",
+        "Size": "42",
+        "Weight": 12305.9,
+        "ListPrice": 769.49,
+        "Photo": "hotrodbike_f.jpg"
+      }
+    ],
+    "Photo": "hotrodbike_f.jpg"
+  },
+  {
+    "id": "b35598f6-b413-4138-8081-5dc7d4c64b64",
+    "Name": "Mountain Pump",
+    "Category": "Pumps",
+    "Description": "Simple and light-weight. Emergency patches stored in handle.",
+    "Products": [
+      {
+        "id": "57169f80-fafb-4678-8f51-fe1f131d0c83",
+        "Name": "Mountain Pump",
+        "Number": "PU-M044",
+        "Category": "Pumps",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 24.99,
+        "Photo": "bikepump.jpg"
+      }
+    ],
+    "Photo": "bikepump.jpg"
+  },
+  {
+    "id": "5f115aa4-0553-4478-84b3-5dcf3abe0d08",
+    "Name": "ML Fork",
+    "Category": "Forks",
+    "Description": "Composite road fork with an aluminum steerer tube.",
+    "Products": [
+      {
+        "id": "f5fa4e2f-b976-48a4-bf79-85632f697d2e",
+        "Name": "ML Fork",
+        "Number": "FK-5136",
+        "Category": "Forks",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 175.49,
+        "Photo": "fork.jpg"
+      }
+    ],
+    "Photo": "fork.jpg"
+  },
+  {
+    "id": "4a17c43a-1a55-41bb-bc97-612f47cedeb3",
+    "Name": "LL Touring Seat/Saddle",
+    "Category": "Saddles",
+    "Description": "Comfortable, ergonomically shaped gel saddle.",
+    "Products": [
+      {
+        "id": "7874a1d6-7a5b-412f-a2eb-c2f457b9603d",
+        "Name": "LL Touring Seat/Saddle",
+        "Number": "SE-T312",
+        "Category": "Saddles",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 27.12,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "1fadb88f-af88-4e94-bb1e-6158c48e6b40",
+    "Name": "Headlights - Weatherproof",
+    "Category": "Lights",
+    "Description": "Rugged weatherproof headlight.",
+    "Products": [
+      {
+        "id": "fc362c1a-4b9c-4d5f-a6d3-0775846c61f0",
+        "Name": "Headlights - Weatherproof",
+        "Number": "LT-H903",
+        "Category": "Lights",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 44.99,
+        "Photo": "single_headlight.jpg"
+      }
+    ],
+    "Photo": "single_headlight.jpg"
+  },
+  {
+    "id": "f9327e5d-f8b6-40c5-bfa9-63f886bdfc24",
+    "Name": "Rear Derailleur",
+    "Category": "Derailleurs",
+    "Description": "Wide-link design.",
+    "Products": [
+      {
+        "id": "5ebfcf02-4e3e-443a-ad60-5aeef28dac76",
+        "Name": "Rear Derailleur",
+        "Number": "RD-2308",
+        "Category": "Derailleurs",
+        "Color": "Silver",
+        "Size": null,
+        "Weight": 215.0,
+        "ListPrice": 121.46,
+        "Photo": "sprocket.jpg"
+      }
+    ],
+    "Photo": "sprocket.jpg"
+  },
+  {
+    "id": "deeea9bc-3c8c-4e73-b6b0-64c81a5d99e3",
+    "Name": "Touring Tire Tube",
+    "Category": "Tires and Tubes",
+    "Description": "General purpose tube.",
+    "Products": [
+      {
+        "id": "179fec38-cab5-4a47-bcff-31cfc9e43a3c",
+        "Name": "Touring Tire Tube",
+        "Number": "TT-T092",
+        "Category": "Tires and Tubes",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 4.99,
+        "Photo": "innertube.jpg"
+      }
+    ],
+    "Photo": "innertube.jpg"
+  },
+  {
+    "id": "36b1a76a-dff3-4a55-86f9-65eb1cb18d7b",
+    "Name": "Mountain Bike Socks",
+    "Category": "Socks",
+    "Description": "Combination of natural and synthetic fibers stays dry and provides just the right cushioning.",
+    "Products": [
+      {
+        "id": "161c035e-21b3-4e14-8e44-af508f35d80a",
+        "Name": "Mountain Bike Socks, L",
+        "Number": "SO-B909-L",
+        "Category": "Socks",
+        "Color": "White",
+        "Size": "L",
+        "Weight": null,
+        "ListPrice": 9.5,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "18f95f47-1540-4e02-8f1f-cc1bcb6828d0",
+        "Name": "Mountain Bike Socks, M",
+        "Number": "SO-B909-M",
+        "Category": "Socks",
+        "Color": "White",
+        "Size": "M",
+        "Weight": null,
+        "ListPrice": 9.5,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "a75483fe-3c47-4aa4-93cf-664b51192987",
+    "Name": "Full-Finger Gloves",
+    "Category": "Gloves",
+    "Description": "Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.",
+    "Products": [
+      {
+        "id": "76fac097-1fb3-456b-8fb9-2c7a613771b4",
+        "Name": "Full-Finger Gloves, S",
+        "Number": "GL-F110-S",
+        "Category": "Gloves",
+        "Color": "Black",
+        "Size": "S",
+        "Weight": null,
+        "ListPrice": 37.99,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "6116f9d4-8a1d-4022-a642-9c445c197203",
+        "Name": "Full-Finger Gloves, L",
+        "Number": "GL-F110-L",
+        "Category": "Gloves",
+        "Color": "Black",
+        "Size": "L",
+        "Weight": null,
+        "ListPrice": 37.99,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "1084221e-1890-443e-9d87-afcad6358355",
+        "Name": "Full-Finger Gloves, M",
+        "Number": "GL-F110-M",
+        "Category": "Gloves",
+        "Color": "Black",
+        "Size": "M",
+        "Weight": null,
+        "ListPrice": 37.99,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "29521f66-2926-471f-867b-668b0b9ec2b0",
+    "Name": "LL Mountain Rear Wheel",
+    "Category": "Wheels",
+    "Description": "Replacement mountain wheel for entry-level rider.",
+    "Products": [
+      {
+        "id": "e6c39f58-995f-4786-a309-df3812d8b30f",
+        "Name": "LL Mountain Rear Wheel",
+        "Number": "RW-M423",
+        "Category": "Wheels",
+        "Color": "Black",
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 87.745,
+        "Photo": "wheel.jpg"
+      }
+    ],
+    "Photo": "wheel.jpg"
+  },
+  {
+    "id": "e7e17f11-a7fd-4c3c-b701-68f0ae26143e",
+    "Name": "Cable Lock",
+    "Category": "Locks",
+    "Description": "Wraps to fit front and rear tires, carrier and 2 keys included.",
+    "Products": [
+      {
+        "id": "56ffd7b9-1014-4640-b1bd-b2649589b4d7",
+        "Name": "Cable Lock",
+        "Number": "LO-C100",
+        "Category": "Locks",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 25.0,
+        "Photo": "bike_lock.jpg"
+      }
+    ],
+    "Photo": "bike_lock.jpg"
+  },
+  {
+    "id": "71d47afd-da3a-43f1-83ad-69c71f96ef33",
+    "Name": "Rear Brakes",
+    "Category": "Brakes",
+    "Description": "",
+    "Products": [
+      {
+        "id": "5946f163-93f0-4141-b17e-55d9778cc274",
+        "Name": "Rear Brakes",
+        "Number": "RB-9231",
+        "Category": "Brakes",
+        "Color": "Silver",
+        "Size": null,
+        "Weight": 317.0,
+        "ListPrice": 106.5,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "8da73708-8dae-44ae-ac6c-6e37022c1ffe",
+    "Name": "HL Mountain Pedal",
+    "Category": "Pedals",
+    "Description": "Stainless steel; designed to shed mud easily.",
+    "Products": [
+      {
+        "id": "a05464e8-6b4d-42b3-a4d6-8683136f4b66",
+        "Name": "HL Mountain Pedal",
+        "Number": "PD-M562",
+        "Category": "Pedals",
+        "Color": "Silver/Black",
+        "Size": null,
+        "Weight": 185.0,
+        "ListPrice": 80.99,
+        "Photo": "pedal.jpg"
+      }
+    ],
+    "Photo": "pedal.jpg"
+  },
+  {
+    "id": "84138622-1ea6-489f-9c98-6e3924cfbac0",
+    "Name": "LL Touring Handlebars",
+    "Category": "Handlebars",
+    "Description": "Unique shape reduces fatigue for entry level riders.",
+    "Products": [
+      {
+        "id": "a2f1352e-45d0-42c4-aef3-60033073bb66",
+        "Name": "LL Touring Handlebars",
+        "Number": "HB-T721",
+        "Category": "Handlebars",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 46.09,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "fca0665b-b956-489a-a5ec-6f0b4aa14d02",
+    "Name": "Mountain-100",
+    "Category": "Mountain Bikes",
+    "Description": "Top-of-the-line competition mountain bike. Performance-enhancing options include the innovative HL Frame, super-smooth front suspension, and traction for all terrain.",
+    "Products": [
+      {
+        "id": "ca74b54e-fc30-4464-8b83-019bfd1b2dbb",
+        "Name": "Mountain-100 Silver, 38",
+        "Number": "BK-M82S-38",
+        "Category": "Mountain Bikes",
+        "Color": "Silver",
+        "Size": "38",
+        "Weight": 9230.56,
+        "ListPrice": 3399.99,
+        "Photo": "superlight_silver.jpg"
+      },
+      {
+        "id": "dea33347-fcd3-4346-aa0f-068cd6b3ad06",
+        "Name": "Mountain-100 Black, 38",
+        "Number": "BK-M82B-38",
+        "Category": "Mountain Bikes",
+        "Color": "Black",
+        "Size": "38",
+        "Weight": 9230.56,
+        "ListPrice": 3374.99,
+        "Photo": "superlight_black.jpg"
+      },
+      {
+        "id": "155fd77e-d6d6-43f0-8a5b-4a8305eb45cd",
+        "Name": "Mountain-100 Silver, 44",
+        "Number": "BK-M82S-44",
+        "Category": "Mountain Bikes",
+        "Color": "Silver",
+        "Size": "44",
+        "Weight": 9584.36,
+        "ListPrice": 3399.99,
+        "Photo": "superlight_silver.jpg"
+      },
+      {
+        "id": "bbfff5a5-4bdc-49a9-a5ad-7584adffe808",
+        "Name": "Mountain-100 Silver, 42",
+        "Number": "BK-M82S-42",
+        "Category": "Mountain Bikes",
+        "Color": "Silver",
+        "Size": "42",
+        "Weight": 9421.06,
+        "ListPrice": 3399.99,
+        "Photo": "superlight_silver.jpg"
+      },
+      {
+        "id": "ba5551df-c9ee-4b43-b3ca-8c19d0f9384d",
+        "Name": "Mountain-100 Silver, 48",
+        "Number": "BK-M82S-48",
+        "Category": "Mountain Bikes",
+        "Color": "Silver",
+        "Size": "48",
+        "Weight": 9715.9,
+        "ListPrice": 3399.99,
+        "Photo": "superlight_silver.jpg"
+      },
+      {
+        "id": "1b486300-7e64-4c5d-a9ba-a8368e20c5a0",
+        "Name": "Mountain-100 Black, 48",
+        "Number": "BK-M82B-48",
+        "Category": "Mountain Bikes",
+        "Color": "Black",
+        "Size": "48",
+        "Weight": 9715.9,
+        "ListPrice": 3374.99,
+        "Photo": "superlight_black.jpg"
+      },
+      {
+        "id": "02935111-a546-4c6d-941f-be12d42c158e",
+        "Name": "Mountain-100 Black, 42",
+        "Number": "BK-M82B-42",
+        "Category": "Mountain Bikes",
+        "Color": "Black",
+        "Size": "42",
+        "Weight": 9421.06,
+        "ListPrice": 3374.99,
+        "Photo": "superlight_black.jpg"
+      },
+      {
+        "id": "7920bc3b-8fd4-4610-93d2-e693a66b6474",
+        "Name": "Mountain-100 Black, 44",
+        "Number": "BK-M82B-44",
+        "Category": "Mountain Bikes",
+        "Color": "Black",
+        "Size": "44",
+        "Weight": 9584.36,
+        "ListPrice": 3374.99,
+        "Photo": "superlight_black.jpg"
+      }
+    ],
+    "Photo": "superlight_silver.jpg"
+  },
+  {
+    "id": "a96ff80d-d52a-432f-9701-731bef16efcc",
+    "Name": "Women's Tights",
+    "Category": "Tights",
+    "Description": "Warm spandex tights for winter riding; seamless chamois construction eliminates pressure points.",
+    "Products": [
+      {
+        "id": "4d8e186c-b8c9-4c64-b411-4995dd87e316",
+        "Name": "Women's Tights, M",
+        "Number": "TG-W091-M",
+        "Category": "Tights",
+        "Color": "Black",
+        "Size": "M",
+        "Weight": null,
+        "ListPrice": 74.99,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "7de86c98-4f5b-4155-8572-c977f14ebaeb",
+        "Name": "Women's Tights, S",
+        "Number": "TG-W091-S",
+        "Category": "Tights",
+        "Color": "Black",
+        "Size": "S",
+        "Weight": null,
+        "ListPrice": 74.99,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "e378c2f3-54f6-4ea9-b049-e8bb32b5bdfd",
+        "Name": "Women's Tights, L",
+        "Number": "TG-W091-L",
+        "Category": "Tights",
+        "Color": "Black",
+        "Size": "L",
+        "Weight": null,
+        "ListPrice": 74.99,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "3bcc63d6-9340-4b93-b5f2-73fa90758bf5",
+    "Name": "Touring Tire",
+    "Category": "Tires and Tubes",
+    "Description": "High-density rubber.",
+    "Products": [
+      {
+        "id": "9d5ca300-5302-41e1-bca5-8ce5b93f26a5",
+        "Name": "Touring Tire",
+        "Number": "TI-T723",
+        "Category": "Tires and Tubes",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 28.99,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "02200aa0-c369-4d77-a67c-75973efda81b",
+    "Name": "ML Road Handlebars",
+    "Category": "Handlebars",
+    "Description": "Anatomically shaped aluminum tube bar will suit all riders.",
+    "Products": [
+      {
+        "id": "33fa1a03-38d6-405e-be9b-eea92f3d204f",
+        "Name": "ML Road Handlebars",
+        "Number": "HB-R720",
+        "Category": "Handlebars",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 61.92,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "980c8cd0-4903-41f2-9ffc-773c7fe4c254",
+    "Name": "ML Road Front Wheel",
+    "Category": "Wheels",
+    "Description": "Sturdy alloy features a quick-release hub.",
+    "Products": [
+      {
+        "id": "6ea94fbf-b9aa-43fc-84e8-91d508dde751",
+        "Name": "ML Road Front Wheel",
+        "Number": "FW-R762",
+        "Category": "Wheels",
+        "Color": "Black",
+        "Size": null,
+        "Weight": 850.0,
+        "ListPrice": 248.385,
+        "Photo": "wheel.jpg"
+      }
+    ],
+    "Photo": "wheel.jpg"
+  },
+  {
+    "id": "3770c5e3-8dc9-43c7-b735-7aff21645d96",
+    "Name": "Road-250",
+    "Category": "Road Bikes",
+    "Description": "Alluminum-alloy frame provides a light, stiff ride, whether you are racing in the velodrome or on a demanding club ride on country roads.",
+    "Products": [
+      {
+        "id": "c9fd1df4-9512-420a-b379-067108033b75",
+        "Name": "Road-250 Red, 52",
+        "Number": "BK-R89R-52",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "52",
+        "Weight": 6994.36,
+        "ListPrice": 2443.35,
+        "Photo": "racer_red.jpg"
+      },
+      {
+        "id": "9d165ddf-8f5d-41c7-9bb8-13f41a3d1f62",
+        "Name": "Road-250 Black, 48",
+        "Number": "BK-R89B-48",
+        "Category": "Road Bikes",
+        "Color": "Black",
+        "Size": "48",
+        "Weight": 6862.82,
+        "ListPrice": 2443.35,
+        "Photo": "racer_black.jpg"
+      },
+      {
+        "id": "0aa71ad6-afaf-43c6-9745-35d815b50a5b",
+        "Name": "Road-250 Red, 44",
+        "Number": "BK-R89R-44",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "44",
+        "Weight": 6699.52,
+        "ListPrice": 2443.35,
+        "Photo": "racer_red.jpg"
+      },
+      {
+        "id": "1ff419b5-52af-4f7e-aeae-4fec5e99de35",
+        "Name": "Road-250 Black, 44",
+        "Number": "BK-R89B-44",
+        "Category": "Road Bikes",
+        "Color": "Black",
+        "Size": "44",
+        "Weight": 6699.52,
+        "ListPrice": 2443.35,
+        "Photo": "racer_black.jpg"
+      },
+      {
+        "id": "115ddade-70e3-43f9-80dc-638daea271c4",
+        "Name": "Road-250 Red, 48",
+        "Number": "BK-R89R-48",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "48",
+        "Weight": 6862.82,
+        "ListPrice": 2443.35,
+        "Photo": "racer_red.jpg"
+      },
+      {
+        "id": "74fe3957-cbc3-450a-ab92-849bd13530e2",
+        "Name": "Road-250 Black, 52",
+        "Number": "BK-R89B-52",
+        "Category": "Road Bikes",
+        "Color": "Black",
+        "Size": "52",
+        "Weight": 6994.36,
+        "ListPrice": 2443.35,
+        "Photo": "racer_black.jpg"
+      },
+      {
+        "id": "1c530fe8-a169-4adc-b3dc-b11a48245e63",
+        "Name": "Road-250 Black, 58",
+        "Number": "BK-R89B-58",
+        "Category": "Road Bikes",
+        "Color": "Black",
+        "Size": "58",
+        "Weight": 7112.29,
+        "ListPrice": 2443.35,
+        "Photo": "racer_black.jpg"
+      },
+      {
+        "id": "df629c11-8d8b-4774-9d52-ecb64dc95212",
+        "Name": "Road-250 Red, 58",
+        "Number": "BK-R89R-58",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "58",
+        "Weight": 7162.19,
+        "ListPrice": 2443.35,
+        "Photo": "racer_red.jpg"
+      }
+    ],
+    "Photo": "racer_red.jpg"
+  },
+  {
+    "id": "3cdf61d6-6209-436f-b235-82e8f159208b",
+    "Name": "ML Road Pedal",
+    "Category": "Pedals",
+    "Description": "Lightweight aluminum alloy construction.",
+    "Products": [
+      {
+        "id": "216ad46f-bc3f-4862-b0e9-2e261e5a6059",
+        "Name": "ML Road Pedal",
+        "Number": "PD-R563",
+        "Category": "Pedals",
+        "Color": "Silver/Black",
+        "Size": null,
+        "Weight": 168.0,
+        "ListPrice": 62.09,
+        "Photo": "clipless_pedals.jpg"
+      }
+    ],
+    "Photo": "clipless_pedals.jpg"
+  },
+  {
+    "id": "aa977b32-acd8-4c53-a560-88a02ac1954d",
+    "Name": "LL Mountain Front Wheel",
+    "Category": "Wheels",
+    "Description": "Replacement mountain wheel for entry-level rider.",
+    "Products": [
+      {
+        "id": "d7b1d161-182e-44f6-a9ff-9c1eba76613b",
+        "Name": "LL Mountain Front Wheel",
+        "Number": "FW-M423",
+        "Category": "Wheels",
+        "Color": "Black",
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 60.745,
+        "Photo": "wheel.jpg"
+      }
+    ],
+    "Photo": "wheel.jpg"
+  },
+  {
+    "id": "ecddd0d7-2db2-464d-b2da-89bffc6276aa",
+    "Name": "Mountain-300",
+    "Category": "Mountain Bikes",
+    "Description": "For true trail addicts.  An extremely durable bike that will go anywhere and keep you in control on challenging terrain - without breaking your budget.",
+    "Products": [
+      {
+        "id": "16078dbe-388d-4c18-aa8f-0c8f48035468",
+        "Name": "Mountain-300 Black, 48",
+        "Number": "BK-M47B-48",
+        "Category": "Mountain Bikes",
+        "Color": "Black",
+        "Size": "48",
+        "Weight": 11983.85,
+        "ListPrice": 1079.99,
+        "Photo": "hotrodbike_black.jpg"
+      },
+      {
+        "id": "07c2a548-0452-47b4-9dce-6edb0a30c85e",
+        "Name": "Mountain-300 Black, 44",
+        "Number": "BK-M47B-44",
+        "Category": "Mountain Bikes",
+        "Color": "Black",
+        "Size": "44",
+        "Weight": 11852.31,
+        "ListPrice": 1079.99,
+        "Photo": "hotrodbike_black.jpg"
+      },
+      {
+        "id": "580d4322-be03-4c91-83d2-ee33ec6008ab",
+        "Name": "Mountain-300 Black, 40",
+        "Number": "BK-M47B-40",
+        "Category": "Mountain Bikes",
+        "Color": "Black",
+        "Size": "40",
+        "Weight": 11689.01,
+        "ListPrice": 1079.99,
+        "Photo": "hotrodbike_black.jpg"
+      },
+      {
+        "id": "f06c2cbf-0901-4c08-80ed-fb4e87171b3b",
+        "Name": "Mountain-300 Black, 38",
+        "Number": "BK-M47B-38",
+        "Category": "Mountain Bikes",
+        "Color": "Black",
+        "Size": "38",
+        "Weight": 11498.51,
+        "ListPrice": 1079.99,
+        "Photo": "hotrodbike_black.jpg"
+      }
+    ],
+    "Photo": "hotrodbike_black.jpg"
+  },
+  {
+    "id": "0434f63a-a361-4d0b-a9fc-8ac2a866ce85",
+    "Name": "ML Mountain Tire",
+    "Category": "Tires and Tubes",
+    "Description": "Great traction, high-density rubber.",
+    "Products": [
+      {
+        "id": "daff9e11-6254-432d-8c4f-f06e52687184",
+        "Name": "ML Mountain Tire",
+        "Number": "TI-M602",
+        "Category": "Tires and Tubes",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 29.99,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "c88d1136-a8bb-46bb-94aa-8c1854f813cc",
+    "Name": "Fender Set - Mountain",
+    "Category": "Fenders",
+    "Description": "Clip-on fenders fit most mountain bikes.",
+    "Products": [
+      {
+        "id": "e6e76c7f-c145-4cad-a9e8-b1e4e845a2c0",
+        "Name": "Fender Set - Mountain",
+        "Number": "FE-6654",
+        "Category": "Fenders",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 21.98,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "5cefbb6e-3b7e-414f-ac1b-8f6df741fb21",
+    "Name": "ML Mountain Seat/Saddle 2",
+    "Category": "Saddles",
+    "Description": "Designed to absorb shock.",
+    "Products": [
+      {
+        "id": "30222244-0fd8-4d28-8448-f2e658bf52bd",
+        "Name": "ML Mountain Seat/Saddle",
+        "Number": "SE-M798",
+        "Category": "Saddles",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 39.14,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "68c6cb29-d94a-40c5-aaad-90aa6e7c5ea1",
+    "Name": "ML Crankset",
+    "Category": "Cranksets",
+    "Description": "High-strength crank arm.",
+    "Products": [
+      {
+        "id": "d3a7a02c-a3d5-4a04-9454-0c4e43772b78",
+        "Name": "ML Crankset",
+        "Number": "CS-6583",
+        "Category": "Cranksets",
+        "Color": "Black",
+        "Size": null,
+        "Weight": 635.0,
+        "ListPrice": 256.49,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "3b78edff-2aa9-4ac1-8c3d-94090b5f53a9",
+    "Name": "Mountain-200",
+    "Category": "Mountain Bikes",
+    "Description": "Serious back-country riding. Perfect for all levels of competition. Uses the same HL Frame as the Mountain-100.",
+    "Products": [
+      {
+        "id": "20799030-420c-496a-9922-09189c2b457e",
+        "Name": "Mountain-200 Silver, 46",
+        "Number": "BK-M68S-46",
+        "Category": "Mountain Bikes",
+        "Color": "Silver",
+        "Size": "46",
+        "Weight": 10945.13,
+        "ListPrice": 2319.99,
+        "Photo": "hotrodbike_silver.jpg"
+      },
+      {
+        "id": "2b0af5b9-7571-4621-b760-47df599f9650",
+        "Name": "Mountain-200 Black, 42",
+        "Number": "BK-M68B-42",
+        "Category": "Mountain Bikes",
+        "Color": "Black",
+        "Size": "42",
+        "Weight": 10781.83,
+        "ListPrice": 2294.99,
+        "Photo": "hotrodbike_black.jpg"
+      },
+      {
+        "id": "ce4849b4-56e6-4b50-808b-9bde67cc4704",
+        "Name": "Mountain-200 Silver, 42",
+        "Number": "BK-M68S-42",
+        "Category": "Mountain Bikes",
+        "Color": "Silver",
+        "Size": "42",
+        "Weight": 10781.83,
+        "ListPrice": 2319.99,
+        "Photo": "hotrodbike_silver.jpg"
+      },
+      {
+        "id": "33f42284-e216-4b98-ba48-b4ee18a01fa0",
+        "Name": "Mountain-200 Black, 46",
+        "Number": "BK-M68B-46",
+        "Category": "Mountain Bikes",
+        "Color": "Black",
+        "Size": "46",
+        "Weight": 10945.13,
+        "ListPrice": 2294.99,
+        "Photo": "hotrodbike_black.jpg"
+      },
+      {
+        "id": "82cb8f9b-b8bb-4841-98d3-bcdb807c4dd8",
+        "Name": "Mountain-200 Black, 38",
+        "Number": "BK-M68B-38",
+        "Category": "Mountain Bikes",
+        "Color": "Black",
+        "Size": "38",
+        "Weight": 10591.33,
+        "ListPrice": 2294.99,
+        "Photo": "hotrodbike_black.jpg"
+      },
+      {
+        "id": "3a45d835-abae-4806-ac03-c53abcd3b974",
+        "Name": "Mountain-200 Silver, 38",
+        "Number": "BK-M68S-38",
+        "Category": "Mountain Bikes",
+        "Color": "Silver",
+        "Size": "38",
+        "Weight": 10591.33,
+        "ListPrice": 2319.99,
+        "Photo": "hotrodbike_silver.jpg"
+      }
+    ],
+    "Photo": "hotrodbike_silver.jpg"
+  },
+  {
+    "id": "95450545-adf7-48f3-899e-964de8920dc6",
+    "Name": "HL Mountain Rear Wheel",
+    "Category": "Wheels",
+    "Description": "High-performance mountain replacement wheel.",
+    "Products": [
+      {
+        "id": "35d02edc-1120-41fb-b5df-8655a93b3353",
+        "Name": "HL Mountain Rear Wheel",
+        "Number": "RW-M928",
+        "Category": "Wheels",
+        "Color": "Black",
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 327.215,
+        "Photo": "wheel.jpg"
+      }
+    ],
+    "Photo": "wheel.jpg"
+  },
+  {
+    "id": "3494e8ff-7daf-4860-abf6-97842048e272",
+    "Name": "ML Road Frame",
+    "Category": "Road Frames",
+    "Description": "Made from the same aluminum alloy as our top-of-the line HL frame, the ML features a lightweight down-tube milled to the perfect diameter for optimal strength. Men's version.",
+    "Products": [
+      {
+        "id": "b2e48e8c-63a5-469a-ba4c-4f5ebb1104a4",
+        "Name": "ML Road Frame - Red, 60",
+        "Number": "FR-R72R-60",
+        "Category": "Road Frames",
+        "Color": "Red",
+        "Size": "60",
+        "Weight": 1079.54,
+        "ListPrice": 594.83,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "b673189c-c042-413b-8194-73bc44b0492c",
+        "Name": "ML Road Frame - Red, 48",
+        "Number": "FR-R72R-48",
+        "Category": "Road Frames",
+        "Color": "Red",
+        "Size": "48",
+        "Weight": 1025.11,
+        "ListPrice": 594.83,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "459e041c-3234-409e-b4cd-81728f8a2398",
+        "Name": "ML Road Frame - Red, 44",
+        "Number": "FR-R72R-44",
+        "Category": "Road Frames",
+        "Color": "Red",
+        "Size": "44",
+        "Weight": 1006.97,
+        "ListPrice": 594.83,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "55ea276b-82d8-4ccb-9ab1-9b1b75b15a83",
+        "Name": "ML Road Frame - Red, 52",
+        "Number": "FR-R72R-52",
+        "Category": "Road Frames",
+        "Color": "Red",
+        "Size": "52",
+        "Weight": 1043.26,
+        "ListPrice": 594.83,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "df4ce1e2-ba9a-4657-b999-ccfa6c55d9c1",
+        "Name": "ML Road Frame - Red, 58",
+        "Number": "FR-R72R-58",
+        "Category": "Road Frames",
+        "Color": "Red",
+        "Size": "58",
+        "Weight": 1070.47,
+        "ListPrice": 594.83,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "816360e1-3dee-4568-bf2f-9828243d887b",
+    "Name": "HL Bottom Bracket",
+    "Category": "Bottom Brackets",
+    "Description": "Aluminum alloy cups and a hollow axle.",
+    "Products": [
+      {
+        "id": "230c47c5-08b2-4ce3-b706-69c0bdd62965",
+        "Name": "HL Bottom Bracket",
+        "Number": "BB-9108",
+        "Category": "Bottom Brackets",
+        "Color": null,
+        "Size": null,
+        "Weight": 170.0,
+        "ListPrice": 121.49,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "14b56f2a-d4aa-40a4-b9a2-984f165ed702",
+    "Name": "Half-Finger Gloves",
+    "Category": "Gloves",
+    "Description": "Full padding, improved finger flex, durable palm, adjustable closure.",
+    "Products": [
+      {
+        "id": "fa710215-925f-4959-81df-538e72a6a255",
+        "Name": "Half-Finger Gloves, L",
+        "Number": "GL-H102-L",
+        "Category": "Gloves",
+        "Color": "Black",
+        "Size": "L",
+        "Weight": null,
+        "ListPrice": 24.49,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "9d458fd5-392d-4ab1-afef-6a5548e48858",
+        "Name": "Half-Finger Gloves, M",
+        "Number": "GL-H102-M",
+        "Category": "Gloves",
+        "Color": "Black",
+        "Size": "M",
+        "Weight": null,
+        "ListPrice": 24.49,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "9e1db5c3-539d-4061-9433-d762dc195cd8",
+        "Name": "Half-Finger Gloves, S",
+        "Number": "GL-H102-S",
+        "Category": "Gloves",
+        "Color": "Black",
+        "Size": "S",
+        "Weight": null,
+        "ListPrice": 24.49,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "aa10d9e6-e33f-4da8-ace1-992fcd6bb171",
+    "Name": "Touring-2000",
+    "Category": "Touring Bikes",
+    "Description": "The plush custom saddle keeps you riding all day,  and there's plenty of space to add panniers and bike bags to the newly-redesigned carrier.  This bike has stability when fully-loaded.",
+    "Products": [
+      {
+        "id": "c0009006-715f-4b76-a05a-1a0d3adfb49a",
+        "Name": "Touring-2000 Blue, 46",
+        "Number": "BK-T44U-46",
+        "Category": "Touring Bikes",
+        "Color": "Blue",
+        "Size": "46",
+        "Weight": 12305.9,
+        "ListPrice": 1214.85,
+        "Photo": "julianax_r_02_blue.jpg"
+      },
+      {
+        "id": "6dcfe2a3-3555-44e4-9116-6f6dbe448b8b",
+        "Name": "Touring-2000 Blue, 54",
+        "Number": "BK-T44U-54",
+        "Category": "Touring Bikes",
+        "Color": "Blue",
+        "Size": "54",
+        "Weight": 12555.37,
+        "ListPrice": 1214.85,
+        "Photo": "julianax_r_02_blue.jpg"
+      },
+      {
+        "id": "84abda8f-0007-4bca-9a61-b2dea58866c3",
+        "Name": "Touring-2000 Blue, 50",
+        "Number": "BK-T44U-50",
+        "Category": "Touring Bikes",
+        "Color": "Blue",
+        "Size": "50",
+        "Weight": 12437.44,
+        "ListPrice": 1214.85,
+        "Photo": "julianax_r_02_blue.jpg"
+      },
+      {
+        "id": "f1bb3957-8d27-47f3-91ec-c71822d11436",
+        "Name": "Touring-2000 Blue, 60",
+        "Number": "BK-T44U-60",
+        "Category": "Touring Bikes",
+        "Color": "Blue",
+        "Size": "60",
+        "Weight": 12655.16,
+        "ListPrice": 1214.85,
+        "Photo": "julianax_r_02_blue.jpg"
+      }
+    ],
+    "Photo": "julianax_r_02_blue.jpg"
+  },
+  {
+    "id": "e7b00dff-8136-4947-b503-994584cc89e7",
+    "Name": "LL Road Tire",
+    "Category": "Tires and Tubes",
+    "Description": "Same great treads as more expensive tire with a less expensive wire bead casing.",
+    "Products": [
+      {
+        "id": "15b569a6-d172-42c2-a420-62ab5946cc80",
+        "Name": "LL Road Tire",
+        "Number": "TI-R092",
+        "Category": "Tires and Tubes",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 21.49,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "782c991b-a660-4561-a3f4-9bbd74259747",
+    "Name": "HL Mountain Handlebars",
+    "Category": "Handlebars",
+    "Description": "Flat bar strong enough for the pro circuit.",
+    "Products": [
+      {
+        "id": "6aa0f921-0f09-4f99-8d3c-335946873553",
+        "Name": "HL Mountain Handlebars",
+        "Number": "HB-M918",
+        "Category": "Handlebars",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 120.27,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "c9fcc804-2cd7-4b8a-b186-9c409cc19df9",
+    "Name": "ML Mountain Handlebars",
+    "Category": "Handlebars",
+    "Description": "Tough aluminum alloy bars for downhill.",
+    "Products": [
+      {
+        "id": "ae6020df-d9c9-4d34-9795-1f80e6bbf5a5",
+        "Name": "ML Mountain Handlebars",
+        "Number": "HB-M763",
+        "Category": "Handlebars",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 61.92,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "09caa74e-f47b-4fca-b206-9d3e46df9751",
+    "Name": "ML Bottom Bracket",
+    "Category": "Bottom Brackets",
+    "Description": "Aluminum alloy cups; large diameter spindle.",
+    "Products": [
+      {
+        "id": "71ab847f-d091-42d6-b735-7b0c2d82fc84",
+        "Name": "ML Bottom Bracket",
+        "Number": "BB-8107",
+        "Category": "Bottom Brackets",
+        "Color": null,
+        "Size": null,
+        "Weight": 168.0,
+        "ListPrice": 101.24,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "2489ddc5-1c89-4dec-af22-b0112ccec467",
+    "Name": "HL Road Handlebars",
+    "Category": "Handlebars",
+    "Description": "Designed for racers; high-end anatomically shaped bar from aluminum alloy.",
+    "Products": [
+      {
+        "id": "5c5327b9-ad2e-4c33-8d74-edf49e0c2dd8",
+        "Name": "HL Road Handlebars",
+        "Number": "HB-R956",
+        "Category": "Handlebars",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 120.27,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "7c738101-c01e-45a2-a0e0-b28aeba1dc40",
+    "Name": "Patch kit",
+    "Category": "Tires and Tubes",
+    "Description": "Includes 8 different size patches, glue and sandpaper.",
+    "Products": [
+      {
+        "id": "36e638e4-68df-411b-930a-daad57221aa6",
+        "Name": "Patch Kit/8 Patches",
+        "Number": "PK-7098",
+        "Category": "Tires and Tubes",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 2.29,
+        "Photo": "tirepatch_kit.jpg"
+      }
+    ],
+    "Photo": "tirepatch_kit.jpg"
+  },
+  {
+    "id": "6ba9f3b6-e08b-4ac2-a725-b41114c2a283",
+    "Name": "ML Headset",
+    "Category": "Headsets",
+    "Description": "Sealed cartridge keeps dirt out.",
+    "Products": [
+      {
+        "id": "23b5d52b-8c29-4059-b899-75c53b5ee2e6",
+        "Name": "ML Headset",
+        "Number": "HS-2451",
+        "Category": "Headsets",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 102.29,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "c3ff3f93-60a8-4957-b076-b7d0984ee70f",
+    "Name": "ML Mountain Front Wheel",
+    "Category": "Wheels",
+    "Description": "Replacement mountain wheel for the casual to serious rider.",
+    "Products": [
+      {
+        "id": "5e3e5033-9a77-4dca-8b7f-dfed78efa08a",
+        "Name": "ML Mountain Front Wheel",
+        "Number": "FW-M762",
+        "Category": "Wheels",
+        "Color": "Black",
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 209.025,
+        "Photo": "wheel.jpg"
+      }
+    ],
+    "Photo": "wheel.jpg"
+  },
+  {
+    "id": "d566eb0f-6945-43d8-bc40-bb3d2f4ef7ed",
+    "Name": "ML Road Tire",
+    "Category": "Tires and Tubes",
+    "Description": "Higher density rubber.",
+    "Products": [
+      {
+        "id": "d1016cc5-c12b-4f05-915c-70fa062e4a64",
+        "Name": "ML Road Tire",
+        "Number": "TI-R628",
+        "Category": "Tires and Tubes",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 24.99,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "02a562e2-4dfa-4778-bbac-bbddcecf99b0",
+    "Name": "HL Road Front Wheel",
+    "Category": "Wheels",
+    "Description": "Strong wheel with double-walled rim.",
+    "Products": [
+      {
+        "id": "727a3cd5-8d40-4884-a7e4-dfd3ffdeb164",
+        "Name": "HL Road Front Wheel",
+        "Number": "FW-R820",
+        "Category": "Wheels",
+        "Color": "Black",
+        "Size": null,
+        "Weight": 650.0,
+        "ListPrice": 330.06,
+        "Photo": "wheel.jpg"
+      }
+    ],
+    "Photo": "wheel.jpg"
+  },
+  {
+    "id": "98726f80-e9b9-4141-9cf5-bd2ef07dce25",
+    "Name": "HL Mountain Seat/Saddle 2",
+    "Category": "Saddles",
+    "Description": "Anatomic design for a full-day of riding in comfort. Durable leather.",
+    "Products": [
+      {
+        "id": "a96a5024-87de-488a-bf81-bc0c81f6cd18",
+        "Name": "HL Mountain Seat/Saddle",
+        "Number": "SE-M940",
+        "Category": "Saddles",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 52.64,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "63a2199f-f5b5-49bd-bcfc-bec1d1d16d8b",
+    "Name": "ML Touring Seat/Saddle",
+    "Category": "Saddles",
+    "Description": "New design relieves pressure for long rides.",
+    "Products": [
+      {
+        "id": "072acb72-7796-4bd0-9bbb-6efc29ac336c",
+        "Name": "ML Touring Seat/Saddle",
+        "Number": "SE-T762",
+        "Category": "Saddles",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 39.14,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "fdd5407b-c2db-49d1-a86b-c13a2e3582a2",
+    "Name": "HL Mountain Frame",
+    "Category": "Mountain Frames",
+    "Description": "Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.",
+    "Products": [
+      {
+        "id": "f246acaa-a80b-40ec-9208-02edef885129",
+        "Name": "HL Mountain Frame - Silver, 38",
+        "Number": "FR-M94S-38",
+        "Category": "Mountain Frames",
+        "Color": "Silver",
+        "Size": "38",
+        "Weight": 1215.62,
+        "ListPrice": 1364.5,
+        "Photo": "frame_silver.jpg"
+      },
+      {
+        "id": "1909c60c-c490-411d-b3e6-12ddd7832482",
+        "Name": "HL Mountain Frame - Silver, 44",
+        "Number": "FR-M94S-44",
+        "Category": "Mountain Frames",
+        "Color": "Silver",
+        "Size": "44",
+        "Weight": 1251.91,
+        "ListPrice": 1364.5,
+        "Photo": "frame_silver.jpg"
+      },
+      {
+        "id": "b181ec1f-ca20-4724-b2eb-15f3e455142e",
+        "Name": "HL Mountain Frame - Silver, 48",
+        "Number": "FR-M94S-52",
+        "Category": "Mountain Frames",
+        "Color": "Silver",
+        "Size": "48",
+        "Weight": 1270.05,
+        "ListPrice": 1364.5,
+        "Photo": "frame_silver.jpg"
+      },
+      {
+        "id": "cb443286-6b25-409f-a10b-1ad4eeb4bd4e",
+        "Name": "HL Mountain Frame - Black, 44",
+        "Number": "FR-M94B-44",
+        "Category": "Mountain Frames",
+        "Color": "Black",
+        "Size": "44",
+        "Weight": 1251.91,
+        "ListPrice": 1349.6,
+        "Photo": "frame_black.jpg"
+      },
+      {
+        "id": "0c548577-3171-4ce2-b9a0-1ed526849de8",
+        "Name": "HL Mountain Frame - Black, 38",
+        "Number": "FR-M94B-38",
+        "Category": "Mountain Frames",
+        "Color": "Black",
+        "Size": "38",
+        "Weight": 1215.62,
+        "ListPrice": 1349.6,
+        "Photo": "frame_black.jpg"
+      },
+      {
+        "id": "1fee0573-6676-432d-8d6d-41ba9faa5865",
+        "Name": "HL Mountain Frame - Black, 48",
+        "Number": "FR-M94B-48",
+        "Category": "Mountain Frames",
+        "Color": "Black",
+        "Size": "48",
+        "Weight": 1270.05,
+        "ListPrice": 1349.6,
+        "Photo": "frame_black.jpg"
+      },
+      {
+        "id": "8ae32663-8d6f-457d-8343-5b181fec43a7",
+        "Name": "HL Mountain Frame - Silver, 42",
+        "Number": "FR-M94S-42",
+        "Category": "Mountain Frames",
+        "Color": "Silver",
+        "Size": "42",
+        "Weight": 1233.76,
+        "ListPrice": 1364.5,
+        "Photo": "frame_silver.jpg"
+      },
+      {
+        "id": "27db28f8-5ab8-4091-b94e-6f1b2d8e7ab0",
+        "Name": "HL Mountain Frame - Black, 42",
+        "Number": "FR-M94B-42",
+        "Category": "Mountain Frames",
+        "Color": "Black",
+        "Size": "42",
+        "Weight": 1233.76,
+        "ListPrice": 1349.6,
+        "Photo": "frame_black.jpg"
+      },
+      {
+        "id": "a189d86e-d923-4336-b13d-a5db6f426540",
+        "Name": "HL Mountain Frame - Silver, 46",
+        "Number": "FR-M94S-46",
+        "Category": "Mountain Frames",
+        "Color": "Silver",
+        "Size": "46",
+        "Weight": 1288.2,
+        "ListPrice": 1364.5,
+        "Photo": "frame_silver.jpg"
+      },
+      {
+        "id": "50abebcb-451e-42b9-8dbb-e5c4a34470e9",
+        "Name": "HL Mountain Frame - Black, 46",
+        "Number": "FR-M94B-46",
+        "Category": "Mountain Frames",
+        "Color": "Black",
+        "Size": "46",
+        "Weight": 1288.2,
+        "ListPrice": 1349.6,
+        "Photo": "frame_black.jpg"
+      }
+    ],
+    "Photo": "frame_silver.jpg"
+  },
+  {
+    "id": "94ffb702-0cbc-4e3f-b840-c51f0d11c8f6",
+    "Name": "Road-150",
+    "Category": "Road Bikes",
+    "Description": "This bike is ridden by race winners. Developed with the Adventure Works Cycles professional race team, it has a extremely light heat-treated aluminum frame, and steering that allows precision control.",
+    "Products": [
+      {
+        "id": "30819b88-f0d3-4e7a-8105-19f6fac2cefb",
+        "Name": "Road-150 Red, 56",
+        "Number": "BK-R93R-56",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "56",
+        "Weight": 6658.7,
+        "ListPrice": 3578.27,
+        "Photo": "superlight_red.jpg"
+      },
+      {
+        "id": "c19e1136-5da4-4b40-8758-54a85d7ea494",
+        "Name": "Road-150 Red, 44",
+        "Number": "BK-R93R-44",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "44",
+        "Weight": 6245.93,
+        "ListPrice": 3578.27,
+        "Photo": "superlight_red.jpg"
+      },
+      {
+        "id": "bc621e1f-2553-4fdc-b22e-5e44a9003569",
+        "Name": "Road-150 Red, 62",
+        "Number": "BK-R93R-62",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "62",
+        "Weight": 6803.85,
+        "ListPrice": 3578.27,
+        "Photo": "superlight_red.jpg"
+      },
+      {
+        "id": "5e085ba0-3cd5-487f-85bb-79ed1c701f23",
+        "Name": "Road-150 Red, 52",
+        "Number": "BK-R93R-52",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "52",
+        "Weight": 6540.77,
+        "ListPrice": 3578.27,
+        "Photo": "superlight_red.jpg"
+      },
+      {
+        "id": "d10b7cc1-455e-435b-a08f-ec5b1c5776e9",
+        "Name": "Road-150 Red, 48",
+        "Number": "BK-R93R-48",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "48",
+        "Weight": 6409.23,
+        "ListPrice": 3578.27,
+        "Photo": "superlight_red.jpg"
+      }
+    ],
+    "Photo": "superlight_red.jpg"
+  },
+  {
+    "id": "90f759c1-2073-4d9f-854b-c6b6f3bf9162",
+    "Name": "LL Road Front Wheel",
+    "Category": "Wheels",
+    "Description": "Replacement road front wheel for entry-level cyclist.",
+    "Products": [
+      {
+        "id": "9e66de78-decb-438a-b9a9-023c773c60a2",
+        "Name": "LL Road Front Wheel",
+        "Number": "FW-R623",
+        "Category": "Wheels",
+        "Color": "Black",
+        "Size": null,
+        "Weight": 900.0,
+        "ListPrice": 85.565,
+        "Photo": "wheel.jpg"
+      }
+    ],
+    "Photo": "wheel.jpg"
+  },
+  {
+    "id": "52e7f2c1-dbff-4518-927d-c7d46f9ed32e",
+    "Name": "Touring-1000",
+    "Category": "Touring Bikes",
+    "Description": "Travel in style and comfort. Designed for maximum comfort and safety. Wide gear range takes on all hills. High-tech aluminum alloy construction provides durability without added weight.",
+    "Products": [
+      {
+        "id": "68c0a818-2985-46eb-8255-0fb70919fa24",
+        "Name": "Touring-1000 Blue, 50",
+        "Number": "BK-T79U-50",
+        "Category": "Touring Bikes",
+        "Color": "Blue",
+        "Size": "50",
+        "Weight": 11530.26,
+        "ListPrice": 2384.07,
+        "Photo": "julianax_r_02_blue.jpg"
+      },
+      {
+        "id": "83b77413-8c8a-4af1-93e4-136edb7ff15f",
+        "Name": "Touring-1000 Yellow, 46",
+        "Number": "BK-T79Y-46",
+        "Category": "Touring Bikes",
+        "Color": "Yellow",
+        "Size": "46",
+        "Weight": 11398.72,
+        "ListPrice": 2384.07,
+        "Photo": "julianax_r_02_yellow.jpg"
+      },
+      {
+        "id": "1220b0f0-064d-46b7-8507-1fa758b77b9c",
+        "Name": "Touring-1000 Yellow, 54",
+        "Number": "BK-T79Y-54",
+        "Category": "Touring Bikes",
+        "Color": "Yellow",
+        "Size": "54",
+        "Weight": 11648.19,
+        "ListPrice": 2384.07,
+        "Photo": "julianax_r_02_yellow.jpg"
+      },
+      {
+        "id": "12280a8c-7578-4367-ba71-214bcc1e4792",
+        "Name": "Touring-1000 Blue, 54",
+        "Number": "BK-T79U-54",
+        "Category": "Touring Bikes",
+        "Color": "Blue",
+        "Size": "54",
+        "Weight": 11648.19,
+        "ListPrice": 2384.07,
+        "Photo": "julianax_r_02_blue.jpg"
+      },
+      {
+        "id": "5ec991ad-8761-4a61-a318-312df3a78604",
+        "Name": "Touring-1000 Yellow, 50",
+        "Number": "BK-T79Y-50",
+        "Category": "Touring Bikes",
+        "Color": "Yellow",
+        "Size": "50",
+        "Weight": 11530.26,
+        "ListPrice": 2384.07,
+        "Photo": "julianax_r_02_yellow.jpg"
+      },
+      {
+        "id": "bcd1a5a9-6140-4dc9-9620-689dc7e4c155",
+        "Name": "Touring-1000 Yellow, 60",
+        "Number": "BK-T79Y-60",
+        "Category": "Touring Bikes",
+        "Color": "Yellow",
+        "Size": "60",
+        "Weight": 11747.98,
+        "ListPrice": 2384.07,
+        "Photo": "julianax_r_02_yellow.jpg"
+      },
+      {
+        "id": "86990d54-6efb-4c53-9974-6c3b0297e222",
+        "Name": "Touring-1000 Blue, 46",
+        "Number": "BK-T79U-46",
+        "Category": "Touring Bikes",
+        "Color": "Blue",
+        "Size": "46",
+        "Weight": 11398.72,
+        "ListPrice": 2384.07,
+        "Photo": "julianax_r_02_blue.jpg"
+      },
+      {
+        "id": "dd70cf36-449a-43fd-839d-a84ee14c849a",
+        "Name": "Touring-1000 Blue, 60",
+        "Number": "BK-T79U-60",
+        "Category": "Touring Bikes",
+        "Color": "Blue",
+        "Size": "60",
+        "Weight": 11747.98,
+        "ListPrice": 2384.07,
+        "Photo": "julianax_r_02_blue.jpg"
+      }
+    ],
+    "Photo": "julianax_r_02_blue.jpg"
+  },
+  {
+    "id": "8cfbe7f2-eec3-4ba6-8187-c8a3614f1f0b",
+    "Name": "Mountain Tire Tube",
+    "Category": "Tires and Tubes",
+    "Description": "Self-sealing tube.",
+    "Products": [
+      {
+        "id": "01a8c3fc-ed52-458e-a634-d5b6e2accfed",
+        "Name": "Mountain Tire Tube",
+        "Number": "TT-M928",
+        "Category": "Tires and Tubes",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 4.99,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "90b1b93d-ebc8-44a2-ac08-cdd1d20ca39c",
+    "Name": "Bike Wash",
+    "Category": "Cleaners",
+    "Description": "Washes off the toughest road grime; dissolves grease, environmentally safe. 1-liter bottle.",
+    "Products": [
+      {
+        "id": "3c40b5ad-e328-4715-88a7-ec3220f02acf",
+        "Name": "Bike Wash - Dissolver",
+        "Number": "CL-9009",
+        "Category": "Cleaners",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 7.95,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "2771d2d2-2e35-4c12-966e-ce9070df6d53",
+    "Name": "Road Tire Tube",
+    "Category": "Tires and Tubes",
+    "Description": "Conventional all-purpose tube.",
+    "Products": [
+      {
+        "id": "ea442bd7-f69b-42d9-aa71-95e10b648f52",
+        "Name": "Road Tire Tube",
+        "Number": "TT-R982",
+        "Category": "Tires and Tubes",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 3.99,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "809668a3-d492-41fb-a196-cfe092a12aa2",
+    "Name": "HL Crankset",
+    "Category": "Cranksets",
+    "Description": "Triple crankset; alumunim crank arm; flawless shifting.",
+    "Products": [
+      {
+        "id": "2c4a8956-7b72-48fe-b028-699e117b1daa",
+        "Name": "HL Crankset",
+        "Number": "CS-9183",
+        "Category": "Cranksets",
+        "Color": "Black",
+        "Size": null,
+        "Weight": 575.0,
+        "ListPrice": 404.99,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "8456bb94-b4dd-4a47-a76b-d0e54ab4285d",
+    "Name": "Road-450",
+    "Category": "Road Bikes",
+    "Description": "A true multi-sport bike that offers streamlined riding and a revolutionary design. Aerodynamic design lets you ride with the pros, and the gearing will conquer hilly roads.",
+    "Products": [
+      {
+        "id": "40d5effa-c0c4-479f-af66-5f1bf8ed3bfb",
+        "Name": "Road-450 Red, 58",
+        "Number": "BK-R68R-58",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "58",
+        "Weight": 8069.37,
+        "ListPrice": 1457.99,
+        "Photo": "roadster_red.jpg"
+      },
+      {
+        "id": "040a4b7d-4060-4507-aa92-7508b434797e",
+        "Name": "Road-450 Red, 52",
+        "Number": "BK-R68R-52",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "52",
+        "Weight": 7901.54,
+        "ListPrice": 1457.99,
+        "Photo": "roadster_red.jpg"
+      },
+      {
+        "id": "181a90cb-3678-490e-8418-78f73fb5343d",
+        "Name": "Road-450 Red, 60",
+        "Number": "BK-R68R-60",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "60",
+        "Weight": 8119.26,
+        "ListPrice": 1457.99,
+        "Photo": "roadster_red.jpg"
+      },
+      {
+        "id": "c72c9978-0b04-46b3-9de6-948feca1c86e",
+        "Name": "Road-450 Red, 48",
+        "Number": "BK-R68R-48",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "48",
+        "Weight": 7770.0,
+        "ListPrice": 1457.99,
+        "Photo": "roadster_red.jpg"
+      },
+      {
+        "id": "f8b5e26a-3d33-4e39-b500-cc21a133062e",
+        "Name": "Road-450 Red, 44",
+        "Number": "BK-R68R-44",
+        "Category": "Road Bikes",
+        "Color": "Red",
+        "Size": "44",
+        "Weight": 7606.7,
+        "ListPrice": 1457.99,
+        "Photo": "roadster_red.jpg"
+      }
+    ],
+    "Photo": "roadster_red.jpg"
+  },
+  {
+    "id": "66c63844-2a24-473c-96d5-d3b3fd57d834",
+    "Name": "LL Touring Frame",
+    "Category": "Touring Frames",
+    "Description": "Lightweight butted aluminum frame provides a more upright riding position for a trip around town.  Our ground-breaking design provides optimum comfort.",
+    "Products": [
+      {
+        "id": "ccd4fa47-7194-4bd0-909b-1fa4bd7916a7",
+        "Name": "LL Touring Frame - Blue, 58",
+        "Number": "FR-T67U-58",
+        "Category": "Touring Frames",
+        "Color": "Blue",
+        "Size": "58",
+        "Weight": 1433.34,
+        "ListPrice": 333.42,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "285fd682-c647-49d1-b8f3-368a43c9cda0",
+        "Name": "LL Touring Frame - Yellow, 50",
+        "Number": "FR-T67Y-50",
+        "Category": "Touring Frames",
+        "Color": "Yellow",
+        "Size": "50",
+        "Weight": 1406.13,
+        "ListPrice": 333.42,
+        "Photo": "frame.jpg"
+      },
+      {
+        "id": "b78eccca-fa88-4071-9110-410585127e46",
+        "Name": "LL Touring Frame - Blue, 50",
+        "Number": "FR-T67U-50",
+        "Category": "Touring Frames",
+        "Color": "Blue",
+        "Size": "50",
+        "Weight": 1406.13,
+        "ListPrice": 333.42,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "109cb7bc-6ec6-4a36-85c8-55b843b2ab12",
+        "Name": "LL Touring Frame - Yellow, 44",
+        "Number": "FR-T67Y-44",
+        "Category": "Touring Frames",
+        "Color": "Yellow",
+        "Size": "44",
+        "Weight": 1369.84,
+        "ListPrice": 333.42,
+        "Photo": "frame.jpg"
+      },
+      {
+        "id": "08a211a5-dcd2-42d0-9276-64d92d4890a6",
+        "Name": "LL Touring Frame - Blue, 62",
+        "Number": "FR-T67U-62",
+        "Category": "Touring Frames",
+        "Color": "Blue",
+        "Size": "62",
+        "Weight": 1451.49,
+        "ListPrice": 333.42,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "0ff799c9-dd11-4b81-aaf7-65410017405b",
+        "Name": "LL Touring Frame - Blue, 54",
+        "Number": "FR-T67U-54",
+        "Category": "Touring Frames",
+        "Color": "Blue",
+        "Size": "54",
+        "Weight": 1424.27,
+        "ListPrice": 333.42,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "5d17ff1c-f50e-438f-a4e9-7c400fb762e7",
+        "Name": "LL Touring Frame - Yellow, 58",
+        "Number": "FR-T67Y-58",
+        "Category": "Touring Frames",
+        "Color": "Yellow",
+        "Size": "58",
+        "Weight": 1433.34,
+        "ListPrice": 333.42,
+        "Photo": "frame.jpg"
+      },
+      {
+        "id": "e9c17be7-f4dc-465e-ab73-c0198f37bfdd",
+        "Name": "LL Touring Frame - Blue, 44",
+        "Number": "FR-T67U-44",
+        "Category": "Touring Frames",
+        "Color": "Blue",
+        "Size": "44",
+        "Weight": 1369.84,
+        "ListPrice": 333.42,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "8d4d52a6-8abc-4c05-be4d-c067faf1a64e",
+        "Name": "LL Touring Frame - Yellow, 62",
+        "Number": "FR-T67Y-62",
+        "Category": "Touring Frames",
+        "Color": "Yellow",
+        "Size": "62",
+        "Weight": 1451.49,
+        "ListPrice": 333.42,
+        "Photo": "frame.jpg"
+      },
+      {
+        "id": "2536e3b2-d4da-49e6-965a-f612c2c8914f",
+        "Name": "LL Touring Frame - Yellow, 54",
+        "Number": "FR-T67Y-54",
+        "Category": "Touring Frames",
+        "Color": "Yellow",
+        "Size": "54",
+        "Weight": 1424.27,
+        "ListPrice": 333.42,
+        "Photo": "frame.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "2bf795f4-2666-4691-af14-d490c7334a8a",
+    "Name": "Road-750",
+    "Category": "Road Bikes",
+    "Description": "Entry level adult bike; offers a comfortable ride cross-country or down the block. Quick-release hubs and rims.",
+    "Products": [
+      {
+        "id": "87b81a1a-a5b5-43d2-a20d-0230800490b9",
+        "Name": "Road-750 Black, 58",
+        "Number": "BK-R19B-58",
+        "Category": "Road Bikes",
+        "Color": "Black",
+        "Size": "58",
+        "Weight": 9430.14,
+        "ListPrice": 539.99,
+        "Photo": "roadster_black.jpg"
+      },
+      {
+        "id": "ae638923-2b67-4679-b90e-abbab17dca31",
+        "Name": "Road-750 Black, 52",
+        "Number": "BK-R19B-52",
+        "Category": "Road Bikes",
+        "Color": "Black",
+        "Size": "52",
+        "Weight": 9262.31,
+        "ListPrice": 539.99,
+        "Photo": "roadster_black.jpg"
+      },
+      {
+        "id": "44ce4802-409f-43ab-9b27-ca53421805be",
+        "Name": "Road-750 Black, 44",
+        "Number": "BK-R19B-44",
+        "Category": "Road Bikes",
+        "Color": "Black",
+        "Size": "44",
+        "Weight": 8967.47,
+        "ListPrice": 539.99,
+        "Photo": "roadster_black.jpg"
+      },
+      {
+        "id": "3de9a212-1d49-40b6-b10a-f564d981dbde",
+        "Name": "Road-750 Black, 48",
+        "Number": "BK-R19B-48",
+        "Category": "Road Bikes",
+        "Color": "Black",
+        "Size": "48",
+        "Weight": 9130.77,
+        "ListPrice": 539.99,
+        "Photo": "roadster_black.jpg"
+      }
+    ],
+    "Photo": "roadster_black.jpg"
+  },
+  {
+    "id": "feeb8440-446e-4df8-9482-d529c4fc5e8f",
+    "Name": "ML Road Seat/Saddle 2",
+    "Category": "Saddles",
+    "Description": "Rubber bumpers absorb bumps.",
+    "Products": [
+      {
+        "id": "49845afe-a8cc-4354-a5d4-09d35bf7fb9e",
+        "Name": "ML Road Seat/Saddle",
+        "Number": "SE-R908",
+        "Category": "Saddles",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 39.14,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "6beccf2d-eacd-496b-995b-d692567565cd",
+    "Name": "Short-Sleeve Classic Jersey",
+    "Category": "Jerseys",
+    "Description": "Short sleeve classic breathable jersey with superior moisture control, front zipper, and 3 back pockets.",
+    "Products": [
+      {
+        "id": "906d42f6-c21f-4d20-b528-02ffdb55fd1e",
+        "Name": "Short-Sleeve Classic Jersey, XL",
+        "Number": "SJ-0194-X",
+        "Category": "Jerseys",
+        "Color": "Yellow",
+        "Size": "XL",
+        "Weight": null,
+        "ListPrice": 53.99,
+        "Photo": "awc_tee_male_yellow.jpg"
+      },
+      {
+        "id": "bbbf003b-367d-4d71-af71-10f50b6234a0",
+        "Name": "Short-Sleeve Classic Jersey, M",
+        "Number": "SJ-0194-M",
+        "Category": "Jerseys",
+        "Color": "Yellow",
+        "Size": "M",
+        "Weight": null,
+        "ListPrice": 53.99,
+        "Photo": "awc_tee_male_yellow.jpg"
+      },
+      {
+        "id": "2d9f59b8-9f24-46eb-98ad-553e48bb9db9",
+        "Name": "Short-Sleeve Classic Jersey, L",
+        "Number": "SJ-0194-L",
+        "Category": "Jerseys",
+        "Color": "Yellow",
+        "Size": "L",
+        "Weight": null,
+        "ListPrice": 53.99,
+        "Photo": "awc_tee_male_yellow.jpg"
+      },
+      {
+        "id": "05b2e20f-2399-4cb3-9b49-b28d6649c104",
+        "Name": "Short-Sleeve Classic Jersey, S",
+        "Number": "SJ-0194-S",
+        "Category": "Jerseys",
+        "Color": "Yellow",
+        "Size": "S",
+        "Weight": null,
+        "ListPrice": 53.99,
+        "Photo": "awc_tee_male_yellow.jpg"
+      }
+    ],
+    "Photo": "awc_tee_male_yellow.jpg"
+  },
+  {
+    "id": "866dbad3-5999-4329-beac-d826d959d9a1",
+    "Name": "Mountain-500",
+    "Category": "Mountain Bikes",
+    "Description": "Suitable for any type of riding, on or off-road. Fits any budget. Smooth-shifting with a comfortable ride.",
+    "Products": [
+      {
+        "id": "f5752c9c-56ba-41a7-83fd-139da28c15fa",
+        "Name": "Mountain-500 Black, 42",
+        "Number": "BK-M18B-42",
+        "Category": "Mountain Bikes",
+        "Color": "Black",
+        "Size": "42",
+        "Weight": 12596.19,
+        "ListPrice": 539.99,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "cad60945-183e-4ab3-a70c-3f5bac6bf134",
+        "Name": "Mountain-500 Silver, 52",
+        "Number": "BK-M18S-52",
+        "Category": "Mountain Bikes",
+        "Color": "Silver",
+        "Size": "52",
+        "Weight": 13008.96,
+        "ListPrice": 564.99,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "e8cec794-e8e2-4312-96a7-4832e573d3fc",
+        "Name": "Mountain-500 Silver, 44",
+        "Number": "BK-M18S-44",
+        "Category": "Mountain Bikes",
+        "Color": "Silver",
+        "Size": "44",
+        "Weight": 12759.49,
+        "ListPrice": 564.99,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "b8d1b5d9-8a39-4097-a04a-56e95559b534",
+        "Name": "Mountain-500 Silver, 42",
+        "Number": "BK-M18S-42",
+        "Category": "Mountain Bikes",
+        "Color": "Silver",
+        "Size": "42",
+        "Weight": 12596.19,
+        "ListPrice": 564.99,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "77ef419f-481f-40b9-bdb9-7e6678e550e3",
+        "Name": "Mountain-500 Silver, 48",
+        "Number": "BK-M18S-48",
+        "Category": "Mountain Bikes",
+        "Color": "Silver",
+        "Size": "48",
+        "Weight": 12891.03,
+        "ListPrice": 564.99,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "69ee3b55-e142-4e4f-aed8-af02978fbe87",
+        "Name": "Mountain-500 Black, 52",
+        "Number": "BK-M18B-52",
+        "Category": "Mountain Bikes",
+        "Color": "Black",
+        "Size": "52",
+        "Weight": 13008.96,
+        "ListPrice": 539.99,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "b96c057b-6416-4851-8d59-bcb37c8e6e51",
+        "Name": "Mountain-500 Silver, 40",
+        "Number": "BK-M18S-40",
+        "Category": "Mountain Bikes",
+        "Color": "Silver",
+        "Size": "40",
+        "Weight": 12405.69,
+        "ListPrice": 564.99,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "28287157-3f06-487b-8531-bee8a37329e4",
+        "Name": "Mountain-500 Black, 40",
+        "Number": "BK-M18B-40",
+        "Category": "Mountain Bikes",
+        "Color": "Black",
+        "Size": "40",
+        "Weight": 12405.69,
+        "ListPrice": 539.99,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "c7852127-2fb8-4959-b5a3-de5a8d6445e4",
+        "Name": "Mountain-500 Black, 44",
+        "Number": "BK-M18B-44",
+        "Category": "Mountain Bikes",
+        "Color": "Black",
+        "Size": "44",
+        "Weight": 12759.49,
+        "ListPrice": 539.99,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "75752e26-a3b6-4264-9b06-f23a4fbdc5a7",
+        "Name": "Mountain-500 Black, 48",
+        "Number": "BK-M18B-48",
+        "Category": "Mountain Bikes",
+        "Color": "Black",
+        "Size": "48",
+        "Weight": 12891.03,
+        "ListPrice": 539.99,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "6eab8607-d927-40e1-af30-d8a2a953050c",
+    "Name": "All-Purpose Bike Stand",
+    "Category": "Bike Stands",
+    "Description": "Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.",
+    "Products": [
+      {
+        "id": "c7bb564b-a637-40f5-b21b-cbf7e4f713be",
+        "Name": "All-Purpose Bike Stand",
+        "Number": "ST-1401",
+        "Category": "Bike Stands",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 159.0,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "217e7475-d3f4-46fa-836a-d9e53103e71b",
+    "Name": "LL Bottom Bracket",
+    "Category": "Bottom Brackets",
+    "Description": "Chromoly steel.",
+    "Products": [
+      {
+        "id": "fa3c65cd-0a22-47e3-bdf6-53f1dc138c43",
+        "Name": "LL Bottom Bracket",
+        "Number": "BB-7421",
+        "Category": "Bottom Brackets",
+        "Color": null,
+        "Size": null,
+        "Weight": 223.0,
+        "ListPrice": 53.99,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "f5a6ec78-4451-45db-955f-db197de8b059",
+    "Name": "Touring-3000",
+    "Category": "Touring Bikes",
+    "Description": "All-occasion value bike with our basic comfort and safety features. Offers wider, more stable tires for a ride around town or weekend trip.",
+    "Products": [
+      {
+        "id": "5646c15a-68ad-4234-b328-254706cbccc5",
+        "Name": "Touring-3000 Yellow, 44",
+        "Number": "BK-T18Y-44",
+        "Category": "Touring Bikes",
+        "Color": "Yellow",
+        "Size": "44",
+        "Weight": 13049.78,
+        "ListPrice": 742.35,
+        "Photo": "julianax_r_02_yellow.jpg"
+      },
+      {
+        "id": "bed79f64-a53d-44a3-ace8-2baa425a5a54",
+        "Name": "Touring-3000 Yellow, 58",
+        "Number": "BK-T18Y-58",
+        "Category": "Touring Bikes",
+        "Color": "Yellow",
+        "Size": "58",
+        "Weight": 13512.45,
+        "ListPrice": 742.35,
+        "Photo": "julianax_r_02_yellow.jpg"
+      },
+      {
+        "id": "4f638e15-2ed0-4193-90ce-47da580e01dd",
+        "Name": "Touring-3000 Blue, 44",
+        "Number": "BK-T18U-44",
+        "Category": "Touring Bikes",
+        "Color": "Blue",
+        "Size": "44",
+        "Weight": 13049.78,
+        "ListPrice": 742.35,
+        "Photo": "julianax_r_02_blue.jpg"
+      },
+      {
+        "id": "23d89cee-9f44-4f3e-b289-63de6ba2b737",
+        "Name": "Touring-3000 Blue, 58",
+        "Number": "BK-T18U-58",
+        "Category": "Touring Bikes",
+        "Color": "Blue",
+        "Size": "58",
+        "Weight": 13562.34,
+        "ListPrice": 742.35,
+        "Photo": "julianax_r_02_blue.jpg"
+      },
+      {
+        "id": "d28b3872-5173-40a4-b12f-655524386cc7",
+        "Name": "Touring-3000 Yellow, 62",
+        "Number": "BK-T18Y-62",
+        "Category": "Touring Bikes",
+        "Color": "Yellow",
+        "Size": "62",
+        "Weight": 13607.7,
+        "ListPrice": 742.35,
+        "Photo": "julianax_r_02_yellow.jpg"
+      },
+      {
+        "id": "a3ee6897-52fe-42e4-92ec-7a91e7bb905a",
+        "Name": "Touring-3000 Blue, 54",
+        "Number": "BK-T18U-54",
+        "Category": "Touring Bikes",
+        "Color": "Blue",
+        "Size": "54",
+        "Weight": 13462.55,
+        "ListPrice": 742.35,
+        "Photo": "julianax_r_02_blue.jpg"
+      },
+      {
+        "id": "df85e805-af87-4fab-a668-c80f2a5b8a69",
+        "Name": "Touring-3000 Yellow, 50",
+        "Number": "BK-T18Y-50",
+        "Category": "Touring Bikes",
+        "Color": "Yellow",
+        "Size": "50",
+        "Weight": 13213.08,
+        "ListPrice": 742.35,
+        "Photo": "julianax_r_02_yellow.jpg"
+      },
+      {
+        "id": "060192c9-bcd9-4260-b729-d6bcfadfb08e",
+        "Name": "Touring-3000 Blue, 62",
+        "Number": "BK-T18U-62",
+        "Category": "Touring Bikes",
+        "Color": "Blue",
+        "Size": "62",
+        "Weight": 13607.7,
+        "ListPrice": 742.35,
+        "Photo": "julianax_r_02_blue.jpg"
+      },
+      {
+        "id": "de305b62-88fc-465b-b23d-d8c0f7e6d361",
+        "Name": "Touring-3000 Blue, 50",
+        "Number": "BK-T18U-50",
+        "Category": "Touring Bikes",
+        "Color": "Blue",
+        "Size": "50",
+        "Weight": 13213.08,
+        "ListPrice": 742.35,
+        "Photo": "julianax_r_02_blue.jpg"
+      },
+      {
+        "id": "192becd1-f465-4194-88a2-ee57fed3a3c5",
+        "Name": "Touring-3000 Yellow, 54",
+        "Number": "BK-T18Y-54",
+        "Category": "Touring Bikes",
+        "Color": "Yellow",
+        "Size": "54",
+        "Weight": 13344.62,
+        "ListPrice": 742.35,
+        "Photo": "julianax_r_02_yellow.jpg"
+      }
+    ],
+    "Photo": "julianax_r_02_yellow.jpg"
+  },
+  {
+    "id": "6da78798-3793-4b8e-829e-dba9d140b1d4",
+    "Name": "Touring Front Wheel",
+    "Category": "Wheels",
+    "Description": "Aerodynamic rims for smooth riding.",
+    "Products": [
+      {
+        "id": "8d1cdb07-4fa1-4ac1-840f-a16c3dca5009",
+        "Name": "Touring Front Wheel",
+        "Number": "FW-T905",
+        "Category": "Wheels",
+        "Color": "Black",
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 218.01,
+        "Photo": "wheel.jpg"
+      }
+    ],
+    "Photo": "wheel.jpg"
+  },
+  {
+    "id": "699c2ac5-5406-46d2-863d-dcfb23fc7943",
+    "Name": "LL Mountain Handlebars",
+    "Category": "Handlebars",
+    "Description": "All-purpose bar for on or off-road.",
+    "Products": [
+      {
+        "id": "b59b7bf2-7afc-4a74-b063-f942f1e0da19",
+        "Name": "LL Mountain Handlebars",
+        "Number": "HB-M243",
+        "Category": "Handlebars",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 44.54,
+        "Photo": "handlebar.jpg"
+      }
+    ],
+    "Photo": "handlebar.jpg"
+  },
+  {
+    "id": "35677b42-72ca-4d9e-a966-dd874b83ef45",
+    "Name": "HL Road Pedal",
+    "Category": "Pedals",
+    "Description": "Top-of-the-line clipless pedals with adjustable tension.",
+    "Products": [
+      {
+        "id": "44e96967-ab99-41ed-8b41-5bc70a5ca1a9",
+        "Name": "HL Road Pedal",
+        "Number": "PD-R853",
+        "Category": "Pedals",
+        "Color": "Silver/Black",
+        "Size": null,
+        "Weight": 149.0,
+        "ListPrice": 80.99,
+        "Photo": "clipless_pedals.jpg"
+      }
+    ],
+    "Photo": "clipless_pedals.jpg"
+  },
+  {
+    "id": "0d3a6ad7-6891-4de9-b14f-e1a841eb220c",
+    "Name": "HL Road Seat/Saddle 2",
+    "Category": "Saddles",
+    "Description": "Lightweight kevlar racing saddle. Leather.",
+    "Products": [
+      {
+        "id": "2befe629-4b2a-41a1-a009-df13ead69105",
+        "Name": "HL Road Seat/Saddle",
+        "Number": "SE-R995",
+        "Category": "Saddles",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 52.64,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "1099a23a-c9ed-41b1-8cc1-e2c1c54a10c8",
+    "Name": "Front Brakes",
+    "Category": "Brakes",
+    "Description": "All-weather brake pads; provides superior stopping by applying more surface to the rim.",
+    "Products": [
+      {
+        "id": "c1813164-1b4b-42d1-9007-4e5f9aee0e19",
+        "Name": "Front Brakes",
+        "Number": "FB-9873",
+        "Category": "Brakes",
+        "Color": "Silver",
+        "Size": null,
+        "Weight": 317.0,
+        "ListPrice": 106.5,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "8123f7e2-a5f4-4047-b69d-e74313dfebce",
+    "Name": "LL Mountain Pedal",
+    "Category": "Pedals",
+    "Description": "Expanded platform so you can ride in any shoes; great for all-around riding.",
+    "Products": [
+      {
+        "id": "9fdd0c65-b2b0-4c6c-8704-3a9747be5174",
+        "Name": "LL Mountain Pedal",
+        "Number": "PD-M282",
+        "Category": "Pedals",
+        "Color": "Silver/Black",
+        "Size": null,
+        "Weight": 218.0,
+        "ListPrice": 40.49,
+        "Photo": "pedal.jpg"
+      }
+    ],
+    "Photo": "pedal.jpg"
+  },
+  {
+    "id": "f85f84f2-9ce0-4ecc-9c29-e78021ffc877",
+    "Name": "Road-550-W",
+    "Category": "Road Bikes",
+    "Description": "Same technology as all of our Road series bikes, but the frame is sized for a woman.  Perfect all-around bike for road or racing.",
+    "Products": [
+      {
+        "id": "a359ab09-16f2-4726-a60f-0dfdb1c9527e",
+        "Name": "Road-550-W Yellow, 42",
+        "Number": "BK-R64Y-42",
+        "Category": "Road Bikes",
+        "Color": "Yellow",
+        "Size": "42",
+        "Weight": 8223.59,
+        "ListPrice": 1120.49,
+        "Photo": "racer02_yellow_f.jpg"
+      },
+      {
+        "id": "a35a1c35-c128-4697-951e-4199062e78f3",
+        "Name": "Road-550-W Yellow, 40",
+        "Number": "BK-R64Y-40",
+        "Category": "Road Bikes",
+        "Color": "Yellow",
+        "Size": "40",
+        "Weight": 8060.29,
+        "ListPrice": 1120.49,
+        "Photo": "racer02_yellow_f.jpg"
+      },
+      {
+        "id": "c90cc877-804c-4ce7-afc3-4c8791a13dfb",
+        "Name": "Road-550-W Yellow, 48",
+        "Number": "BK-R64Y-48",
+        "Category": "Road Bikes",
+        "Color": "Yellow",
+        "Size": "48",
+        "Weight": 8473.06,
+        "ListPrice": 1120.49,
+        "Photo": "racer02_yellow_f.jpg"
+      },
+      {
+        "id": "0a7028fb-ff06-4d38-aaa1-b64816278165",
+        "Name": "Road-550-W Yellow, 44",
+        "Number": "BK-R64Y-44",
+        "Category": "Road Bikes",
+        "Color": "Yellow",
+        "Size": "44",
+        "Weight": 8355.13,
+        "ListPrice": 1120.49,
+        "Photo": "racer02_yellow_f.jpg"
+      },
+      {
+        "id": "aad81532-a572-49a5-83c3-dfa9e3b4fea6",
+        "Name": "Road-550-W Yellow, 38",
+        "Number": "BK-R64Y-38",
+        "Category": "Road Bikes",
+        "Color": "Yellow",
+        "Size": "38",
+        "Weight": 7869.79,
+        "ListPrice": 1120.49,
+        "Photo": "racer02_yellow_f.jpg"
+      }
+    ],
+    "Photo": "racer02_yellow_f.jpg"
+  },
+  {
+    "id": "dba643d4-4cf2-4507-b947-e817d8c5792b",
+    "Name": "Taillight",
+    "Category": "Lights",
+    "Description": "Affordable light for safe night riding - uses 3 AAA batteries",
+    "Products": [
+      {
+        "id": "3c617b87-50a5-434c-a0d3-22314b7027ee",
+        "Name": "Taillights - Battery-Powered",
+        "Number": "LT-T990",
+        "Category": "Lights",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 13.99,
+        "Photo": "tail_lights.jpg"
+      }
+    ],
+    "Photo": "tail_lights.jpg"
+  },
+  {
+    "id": "5b59f032-9b73-4d90-b252-eafd6a871ff1",
+    "Name": "LL Crankset",
+    "Category": "Cranksets",
+    "Description": "Super rigid spindle.",
+    "Products": [
+      {
+        "id": "41d47371-4374-46d3-8d61-b07616ec54f0",
+        "Name": "LL Crankset",
+        "Number": "CS-4759",
+        "Category": "Cranksets",
+        "Color": "Black",
+        "Size": null,
+        "Weight": 600.0,
+        "ListPrice": 175.49,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "438cbcfa-05ff-4a29-ad95-ecf41dcb83d5",
+    "Name": "HL Road Rear Wheel",
+    "Category": "Wheels",
+    "Description": "Strong rear wheel with double-walled rim.",
+    "Products": [
+      {
+        "id": "8f262a37-43aa-4ad5-ae1f-8bd6967d8e9b",
+        "Name": "HL Road Rear Wheel",
+        "Number": "RW-R820",
+        "Category": "Wheels",
+        "Color": "Black",
+        "Size": null,
+        "Weight": 890.0,
+        "ListPrice": 357.06,
+        "Photo": "wheel.jpg"
+      }
+    ],
+    "Photo": "wheel.jpg"
+  },
+  {
+    "id": "e196d02e-9bf6-4c67-b772-ed9f86ccf44c",
+    "Name": "HL Headset",
+    "Category": "Headsets",
+    "Description": "High-quality 1\" threadless headset with a grease port for quick lubrication.",
+    "Products": [
+      {
+        "id": "12e4d5e8-79ed-4bcb-a532-6275d1a93417",
+        "Name": "HL Headset",
+        "Number": "HS-3479",
+        "Category": "Headsets",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 124.73,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "9416c2dd-55d8-469d-8edf-ef447c511897",
+    "Name": "Road Bottle Cage",
+    "Category": "Bottles and Cages",
+    "Description": "Aluminum cage is lighter than our mountain version; perfect for long distance trips.",
+    "Products": [
+      {
+        "id": "601b1fe8-d4d0-4cfb-9379-29481cc05291",
+        "Name": "Road Bottle Cage",
+        "Number": "BC-R205",
+        "Category": "Bottles and Cages",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 8.99,
+        "Photo": "water_bottle_cage.jpg"
+      }
+    ],
+    "Photo": "water_bottle_cage.jpg"
+  },
+  {
+    "id": "65bf3f6d-bcf2-4db6-8515-fc5c57423037",
+    "Name": "LL Mountain Frame",
+    "Category": "Mountain Frames",
+    "Description": "Our best value utilizing the same, ground-breaking frame technology as the ML aluminum frame.",
+    "Products": [
+      {
+        "id": "4800f4e6-99ea-4afd-a392-2cb05265d0d4",
+        "Name": "LL Mountain Frame - Black, 52",
+        "Number": "FR-M21B-52",
+        "Category": "Mountain Frames",
+        "Color": "Black",
+        "Size": "52",
+        "Weight": 1378.91,
+        "ListPrice": 249.79,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "408435aa-15c0-41e5-981f-32a8226af15f",
+        "Name": "LL Mountain Frame - Black, 48",
+        "Number": "FR-M21B-48",
+        "Category": "Mountain Frames",
+        "Color": "Black",
+        "Size": "48",
+        "Weight": 1360.77,
+        "ListPrice": 249.79,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "756f862e-40cc-4dfc-b189-716d0dda5ff9",
+        "Name": "LL Mountain Frame - Silver, 40",
+        "Number": "FR-M21S-40",
+        "Category": "Mountain Frames",
+        "Color": "Silver",
+        "Size": "40",
+        "Weight": 1306.34,
+        "ListPrice": 264.05,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "47ab0300-7b55-4d35-a786-80190976b9b5",
+        "Name": "LL Mountain Frame - Black, 44",
+        "Number": "FR-M21B-44",
+        "Category": "Mountain Frames",
+        "Color": "Black",
+        "Size": "44",
+        "Weight": 1342.63,
+        "ListPrice": 249.79,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "37bd4d2b-346b-4c6b-8f3f-85c084282529",
+        "Name": "LL Mountain Frame - Silver, 42",
+        "Number": "FR-M21S-42",
+        "Category": "Mountain Frames",
+        "Color": "Silver",
+        "Size": "42",
+        "Weight": 1324.48,
+        "ListPrice": 264.05,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "f230baac-5951-4eb1-b1e8-94c2ca2b37fa",
+        "Name": "LL Mountain Frame - Silver, 52",
+        "Number": "FR-M21S-52",
+        "Category": "Mountain Frames",
+        "Color": "Silver",
+        "Size": "52",
+        "Weight": 1378.91,
+        "ListPrice": 264.05,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "393a4d00-7428-41f0-a48a-af26b00e9a9c",
+        "Name": "LL Mountain Frame - Silver, 44",
+        "Number": "FR-M21S-44",
+        "Category": "Mountain Frames",
+        "Color": "Silver",
+        "Size": "44",
+        "Weight": 1342.63,
+        "ListPrice": 264.05,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "8dfef6f2-91a8-4884-8949-b2551218b37a",
+        "Name": "LL Mountain Frame - Silver, 48",
+        "Number": "FR-M21S-48",
+        "Category": "Mountain Frames",
+        "Color": "Silver",
+        "Size": "48",
+        "Weight": 1360.77,
+        "ListPrice": 264.05,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "3050e4df-2bba-4c2b-bdcc-b4c89972db1c",
+        "Name": "LL Mountain Frame - Black, 40",
+        "Number": "FR-M21B-40",
+        "Category": "Mountain Frames",
+        "Color": "Black",
+        "Size": "40",
+        "Weight": 1306.34,
+        "ListPrice": 249.79,
+        "Photo": "no_image_available.jpg"
+      },
+      {
+        "id": "faabd7fb-cb35-4bad-8857-ec71468686ad",
+        "Name": "LL Mountain Frame - Black, 42",
+        "Number": "FR-M21B-42",
+        "Category": "Mountain Frames",
+        "Color": "Black",
+        "Size": "42",
+        "Weight": 1324.48,
+        "ListPrice": 249.79,
+        "Photo": "no_image_available.jpg"
+      }
+    ],
+    "Photo": "no_image_available.jpg"
+  },
+  {
+    "id": "3688268a-260c-48bf-bf71-fff350d4d3d5",
+    "Name": "Water Bottle",
+    "Category": "Bottles and Cages",
+    "Description": "AWC logo water bottle - holds 30 oz; leak-proof.",
+    "Products": [
+      {
+        "id": "834e8d1a-69a7-4c42-8b68-fa08d9ec9e5b",
+        "Name": "Water Bottle - 30 oz.",
+        "Number": "WB-H098",
+        "Category": "Bottles and Cages",
+        "Color": null,
+        "Size": null,
+        "Weight": null,
+        "ListPrice": 4.99,
+        "Photo": "water_bottle.jpg"
+      }
+    ],
+    "Photo": "water_bottle.jpg"
+  }]
