@@ -15,8 +15,7 @@ namespace SimpleApi
 {
     public class Startup
     {
-        private const string INSTRUMENTATION_KEY = "4aa8db77-355e-4853-8b1f-ef0fb9f2dcf8";
-
+        private const string INSTRUMENTATION_KEY = "";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -28,7 +27,7 @@ namespace SimpleApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddApplicationInsightsTelemetry(INSTRUMENTATION_KEY);        
+            services.AddApplicationInsightsTelemetry(INSTRUMENTATION_KEY);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,7 +37,6 @@ namespace SimpleApi
             {
                 app.UseDeveloperExceptionPage();
             }
-
 
             app.UseRouting();
 

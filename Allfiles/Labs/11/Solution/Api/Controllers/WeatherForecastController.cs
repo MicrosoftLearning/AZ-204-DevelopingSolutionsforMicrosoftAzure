@@ -27,11 +27,27 @@ namespace SimpleApi.Controllers
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            
+            int temperatureC = rng.Next(-20, 55);
+            var summaryId = rng.Next(Summaries.Length);
+
+            switch (summaryId)
+            {
+                case 0: case 9:
+                _logger.LogError("WeatherForecast: extreme weather");
+                break;
+                case 1: case 2: case 7: case 8:
+                _logger.LogWarning("WeatherForecast: severe weather");
+                break;
+                default:
+                _logger.LogInformation("WeatherForecast: mild weather");
+                break;
+            }
+            return Enumerable.Range(1, 1).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
+                TemperatureC = temperatureC,
+                Summary = Summaries[summaryId]
             })
             .ToArray();
         }
