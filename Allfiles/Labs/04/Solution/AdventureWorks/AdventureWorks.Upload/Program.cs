@@ -15,7 +15,7 @@
         private const string AuthorizationKey = "";
         private const string DatabaseName = "Retail";
         private const string ContainerName = "Online";
-        private const string PrimaryKey = "";
+        private const string PartitionKey = "";
         private const string JsonFilePath = "";
 
         static private int amountToInsert;
