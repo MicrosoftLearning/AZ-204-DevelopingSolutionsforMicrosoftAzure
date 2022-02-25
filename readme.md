@@ -5,12 +5,19 @@
 > **Note**: There are new directions below for downloading the *allfiles.zip* The automated build process is offline.
 
 - **Direct students** to [https://aka.ms/az204labs](https://aka.ms/az204labs) for an easy-to-use list of lab instructions.
-- **[Download the AllFiles content](https://github.com/MicrosoftLearning/AZ-204-DevelopingSolutionsforMicrosoftAzure/raw/master/Allfiles/allfiles-20220106.zip)**
+- **[Download the AllFiles content](https://github.com/MicrosoftLearning/AZ-204-DevelopingSolutionsforMicrosoftAzure/raw/master/Allfiles/allfiles-20220211.zip)**
 - **Are you a MCT?** - Have a look at our [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
 - **Need to manually build the lab instructions?** - Instructions are available in the [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) repository 
 <!-- 
 
 - **[Download Latest Student Handbook and AllFiles Content](../../releases/latest)**-->
+
+## Security Issue - February 2022
+
+Some Azure training labs instruct the student to use a specific user name and password. Bad actors constantly scan virtual machines and try to log in using those credentials.
+One they login they use the machines for crypto-mining, and could potentially use them for other activities.
+
+**Remediation**: Students should be instructed to use a password of their own choosing. Students should not use the password in the lab instructions. The lab steps will be updated this week to remove the password. 
 
 ## What are we doing?
 
