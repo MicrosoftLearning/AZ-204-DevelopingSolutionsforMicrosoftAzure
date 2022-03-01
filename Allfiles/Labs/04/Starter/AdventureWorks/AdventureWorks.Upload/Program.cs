@@ -35,7 +35,7 @@
 
                 // Configure indexing policy to exclude all attributes to maximize RU/s usage
                 Console.WriteLine($"Creating a container if not already exists...");
-                await database.DefineContainer(Program.ContainerName, PrimaryKey)
+                await database.DefineContainer(Program.ContainerName, PartitionKey)
                         .WithIndexingPolicy()
                             .WithIndexingMode(IndexingMode.Consistent)
                             .WithIncludedPaths()
