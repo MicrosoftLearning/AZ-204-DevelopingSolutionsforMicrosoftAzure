@@ -15,7 +15,7 @@
         private const string AuthorizationKey = "";
         private const string DatabaseName = "Retail";
         private const string ContainerName = "Online";
-        private const string PrimaryKey = "";
+        private const string PartitionKey = "";
         private const string JsonFilePath = "";
 
         static private int amountToInsert;
@@ -35,7 +35,7 @@
 
                 // Configure indexing policy to exclude all attributes to maximize RU/s usage
                 Console.WriteLine($"Creating a container if not already exists...");
-                await database.DefineContainer(Program.ContainerName, PrimaryKey)
+                await database.DefineContainer(Program.ContainerName, PartitionKey)
                         .WithIndexingPolicy()
                             .WithIndexingMode(IndexingMode.Consistent)
                             .WithIncludedPaths()
