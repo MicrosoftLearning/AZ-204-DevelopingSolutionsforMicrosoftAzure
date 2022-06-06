@@ -16,11 +16,11 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
-        dotnet-version: 5.0.x
+        dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore
       working-directory: Allfiles/Labs/01/Starter/API
     - name: Build
-      run: dotnet build --no-restore Api.csproj
+      run: dotnet build --no-restore Api.csproj      
     - name: Test
       run: dotnet test --no-build --verbosity normal Api.csproj
