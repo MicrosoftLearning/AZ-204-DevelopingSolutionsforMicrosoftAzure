@@ -21,6 +21,8 @@ jobs:
       run: dotnet restore
       working-directory: Allfiles/Labs/01/Starter/API
     - name: Build
-      run: dotnet build --no-restore Api.csproj      
+      run: dotnet build --no-restore Api.csproj    
+      working-directory: Allfiles/Labs/01/Starter/API
     - name: Test
       run: dotnet test --no-build --verbosity normal Api.csproj
+      working-directory: Allfiles/Labs/01/Starter/API
