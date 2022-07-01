@@ -8,8 +8,8 @@ namespace MessageReceiver
     {
         static string connectionString = "";
         static string queueName = "messagequeue";
-        static ServiceBusClient client;
-        static ServiceBusProcessor processor;
+        static ServiceBusClient client = default!;
+        static ServiceBusProcessor processor = default!;
 
         static async Task MessageHandler(ProcessMessageEventArgs args)
         {
