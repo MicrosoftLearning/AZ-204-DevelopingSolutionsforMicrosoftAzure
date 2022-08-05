@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Flurl" Version="2.8.2" />
+    <PackageReference Include="Flurl" Version="3.0.6" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AdventureWorks.Context\AdventureWorks.Context.csproj" />
