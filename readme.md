@@ -1,13 +1,12 @@
 # AZ-204: Developing solutions for Microsoft Azure
 
-**All of the lab instructions were updated on 10/15/2021.** We will be closing all currently open issues and PRs and encourage everyone to review the new instructions and then submit new changes going forward.
+**The lab instructions, downloadable code, and the VM were updated on 8/5/2022 to .NET 6. We are monitoring issues related to this update and are working with our lab hosting providers to to try and get any issues resolved as quickly as we can.**
 
 > **Note**: Students should be directed to sync the repository if they aren't being provided the AllFiles through the lab hosting provider. 
 
 - **Direct students** to [https://aka.ms/az204labs](https://aka.ms/az204labs) for an easy-to-use list of lab instructions.
 - **Are you a MCT?** - Have a look at our [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
 - **Need to manually build the lab instructions?** - Instructions are available in the [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) repository 
-- Added a [project](https://github.com/MicrosoftLearning/AZ-204-DevelopingSolutionsforMicrosoftAzure/projects/1) to track progress on issues/PRs.
 
 ## Security Issue - February 2022
 

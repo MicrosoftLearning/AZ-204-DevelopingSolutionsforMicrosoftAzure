@@ -8,8 +8,8 @@ namespace MessageProcessor
     {
         private const string connectionString = "";
         private const string queueName = "messagequeue";
-        static ServiceBusClient client;
-        static ServiceBusSender sender;
+        static ServiceBusClient client = default!;
+        static ServiceBusSender sender = default!;
         private const int numOfMessages = 3;
 
         public static async Task Main(string[] args)
