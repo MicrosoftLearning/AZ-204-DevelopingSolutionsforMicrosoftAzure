@@ -13,7 +13,7 @@
 | Visual Studio Code PowerShell Extension | <https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell> |
 | Visual Studio Code C# Extension | <https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp> |
 | PowerShell 7 | <https://github.com/PowerShell/PowerShell/releases/tag/v7.0.3> |
-| .NET Core 3.1 SDK | <https://dotnet.microsoft.com/download/dotnet-core/3.1> |
+| .NET 6 SDK | <https://dotnet.microsoft.com/download/dotnet/6.0> |
 | Azure PowerShell | <https://docs.microsoft.com/powershell/azure/install-az-ps> |
 | Azure CLI | <https://docs.microsoft.com/cli/azure/install-azure-cli> |
 | Azure Storage Explorer | <https://azure.microsoft.com/features/storage-explorer> |
