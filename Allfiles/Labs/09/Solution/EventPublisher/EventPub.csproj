@@ -1,9 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="Azure.Messaging.EventGrid" Version="4.1.0" />
+    <PackageReference Include="Azure.Messaging.EventGrid" Version="4.11.0" />
   </ItemGroup>
+
 </Project>

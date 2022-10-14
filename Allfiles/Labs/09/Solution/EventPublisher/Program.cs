@@ -1,7 +1,7 @@
-﻿using System;
-using System.Threading.Tasks;
 using Azure;
 using Azure.Messaging.EventGrid;
+using System;
+using System.Threading.Tasks;
 
 public class Program
 {
