@@ -1,5 +1,5 @@
-# Module: 00
-## Lab/Demo: 00
+# Module/Lab: 00
+## Exercise: 00
 ### Task: 00
 #### Step: 00
 
@@ -10,3 +10,5 @@ Repro steps:
 1.
 1.
 1.
+
+### Relevant screenshots
