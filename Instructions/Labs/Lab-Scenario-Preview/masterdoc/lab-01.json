@@ -1,0 +1,12 @@
+[
+    {
+    "Name": "Lab Scenario Preview - AZ-204: Creating Azure App Service Web Apps",
+    "Language": "English",
+    "Files": [
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AZ-204-DevelopingSolutionsforMicrosoftAzure/prod/Instructions/Labs/Lab-Scenario-Preview/AZ-204_lab_01.md",
+          "Order": 1
+        }
+      ]
+    } 
+  ]
