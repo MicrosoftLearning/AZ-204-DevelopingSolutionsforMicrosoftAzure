@@ -36,14 +36,6 @@
    
 1. If a **Welcome to Microsoft Azure** popup window appears, click Maybe Later to skip the tour.
 
-1. From the home page select **Resource groups** from the Navigate section.
-
-    ![](./media/g6.png)
-    
-1. Review the resource groups available from the list, which you will be using in next sections.
-
-    ![](./media/g4.png)
-
 1. Click on **Next** from the bottom right and follow the instructions to perform the lab.
 
     ![](./media/g1.png)
