@@ -1,0 +1,91 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!-- MAIN (Center website) -->
+<div class="main">
+<h1>My Gallery</h1>
+<hr>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> All</button>
+  <button class="btn" onclick="filterSelection('art')"> Art</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('holiday')"> Holiday</button>
+
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column art">
+    <div class="content">
+      <img src="img/pexels-photo-1070534.jpeg" alt="art" style="width:100%">
+      <h5>Exploring the Depths of Expression</h5>
+      <p>Dive into the captivating world of art as it transcends boundaries and communicates emotions beyond words.</p>
+    </div>
+  </div>
+  <div class="column art">
+    <div class="content">
+    <img src="img/pexels-photo-1227497.jpeg" alt="art" style="width:100%">
+      <h5>From Canvas to Soul</h5>
+      <p>Discover the profound impact that art has on individuals, igniting passions, and fostering personal growth.</p>
+    </div>
+  </div>
+  <div class="column art">
+    <div class="content">
+    <img src="img/pexels-photo-2346120.jpeg" alt="art" style="width:100%">
+      <h5>Unveiling the Beauty of Diversity</h5>
+      <p>Witness the extraordinary ability of art to bridge cultures, celebrate differences, and unite people from all walks of life.</p>
+    </div>
+  </div>
+  
+  <div class="column nature">
+    <div class="content">
+      <img src="img/pexels-photo-1287124.jpeg" alt="nature" style="width:100%">
+      <h5>The Healing Power of Nature</h5>
+      <p>Indulge in the profound and life-altering experience of immersing yourself in the awe-inspiring beauty and serene tranquility of the natural world, igniting a sense of inner peace and revitalization within you.</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="img/pexels-photo-167699.jpeg" alt="nature" style="width:100%">
+      <h5>Nature's Timeless Splendor</h5>
+      <p>Embark on an enchanting journey to uncover the mesmerizing wonders of our planet, from majestic mountains to pristine coastlines, reminding us of the awe-inspiring beauty that surrounds us.</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="img/pexels-photo-2387873.jpeg" alt="nature" style="width:100%">
+      <h5>Protecting Our Natural Legacy</h5>
+      <p>Embracing the Call to Preserve and Conserve Nature" - Join the global effort to safeguard our precious ecosystems, recognizing the vital importance of preserving our natural heritage for future generations to enjoy and thrive in.</p>
+    </div>
+  </div>
+
+  <div class="column holiday">
+    <div class="content">
+      <img src="img/pexels-photo-872831.jpeg" alt="holiday" style="width:100%">
+      <h5>Unwrapping the Magic</h5>
+      <p>Embark on a captivating journey into the enchanting spirit of the holidays, where a symphony of twinkling lights, festive decorations, and heartwarming traditions weave together to create an extraordinary atmosphere.</p>
+    </div>
+  </div>
+  <div class="column holiday">
+    <div class="content">
+    <img src="img/pexels-photo-1329711.jpeg" alt="holiday" style="width:100%">
+      <h5>From Tradition to Celebration</h5>
+      <p>Delve into the diverse array of holiday traditions around the world, from jolly gift-giving to mouthwatering feasts, as we celebrate the unique ways different cultures come together to cherish the season.</p>
+    </div>
+  </div>
+  <div class="column holiday">
+    <div class="content">
+    <img src="img/pexels-photo-1105666.jpeg" alt="holiday" style="width:100%">
+      <h5>Creating Lasting Memories</h5>
+      <p>Embrace the opportunity to create cherished memories with loved ones, as laughter fills the air, delicious aromas waft from kitchens, and the spirit of giving and gratitude unites us all during this special time of year.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
