@@ -1,6 +1,6 @@
 ﻿using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
-using Flurl;
+using Azure.Storage.Sas;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -36,15 +36,28 @@ namespace Api.Controllers
         public async Task<ActionResult<IEnumerable<string>>> Get()
         {
             BlobContainerClient containerClient = await GetCloudBlobContainer(_options.FullImageContainerName);
+            BlobServiceClient blobServiceClient = new BlobServiceClient(_options.StorageConnectionString);
+
+            BlobClient blobClient;
+            BlobSasBuilder blobSasBuilder;
+
             List<string> results = new List<string>();
             await foreach (BlobItem blobItem in containerClient.GetBlobsAsync())
             {
-                results.Add(
-                    Flurl.Url.Combine(
-                        containerClient.Uri.AbsoluteUri,
-                        blobItem.Name
-                    )
-                );
+
+                blobClient = containerClient.GetBlobClient(blobItem.Name);
+                blobSasBuilder = new BlobSasBuilder()
+                {
+                    BlobContainerName = _options.FullImageContainerName,
+                    BlobName = blobItem.Name,
+                    ExpiresOn = DateTime.UtcNow.AddMinutes(5),//Let SAS token expire after 5 minutes.
+                    Protocol = SasProtocol.Https
+                };
+                blobSasBuilder.SetPermissions(BlobSasPermissions.Read);
+
+
+                results.Add(blobClient.GenerateSasUri(blobSasBuilder).AbsoluteUri);
+
             }
             Console.Out.WriteLine("Got Images");
             return Ok(results);
