@@ -6,7 +6,7 @@
 }
 <article class="row">
     <section class="col-md-8">
-        <img src="@Flurl.Url.Combine(Settings.Value?.BlobContainerUrl, Model.Model.Photo)" class="img-thumbnail img-fluid w-100 shadow-sm" alt="@Model.Model.Name" />
+        <img src=@(String.Format("{0}/{1}?{2}", Settings.Value?.BlobContainerUrl, Model.Model.Photo, Settings.Value?.BlobSASToken))  class="img-thumbnail img-fluid w-100 shadow-sm" alt="@Model.Model.Name" />
     </section>
     <aside class="col-md-4">
         <div class="card shadow-sm">
