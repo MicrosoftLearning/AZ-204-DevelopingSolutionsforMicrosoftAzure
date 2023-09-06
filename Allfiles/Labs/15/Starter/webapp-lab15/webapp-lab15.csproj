@@ -4,7 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>webapp_sam_lab13</RootNamespace>
+    <RootNamespace>webapp_lab15</RootNamespace>
   </PropertyGroup>
 
 </Project>
