@@ -8,7 +8,7 @@
     @foreach (var item in Model.Models)
     {
         <div class="card">
-            <img src="@Flurl.Url.Combine(Settings.Value?.BlobContainerUrl, item.Photo)" class="card-img-top" alt="@item.Name">
+            <img src=@(String.Format("{0}/{1}?{2}", Settings.Value?.BlobContainerUrl, item.Photo, Settings.Value?.BlobSASToken)) class="card-img-top" alt="@item.Name">
             <div class="card-body">
                 <h5 class="card-title">
                     @item.Name
