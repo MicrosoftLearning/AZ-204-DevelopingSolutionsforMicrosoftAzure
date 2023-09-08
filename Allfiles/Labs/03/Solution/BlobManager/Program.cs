@@ -34,7 +34,7 @@ public class Program
         string uploadedBlobName = "graph.svg";
         BlobClient blobClient = await GetBlobAsync(containerClient, uploadedBlobName);
 
-        await Console.Out.WriteLineAsync($"Blob Url:\t{blobClient.Uri}");
+        
     }
 
     private static async Task EnumerateContainersAsync(BlobServiceClient client)
@@ -71,7 +71,14 @@ public class Program
     private static async Task<BlobClient> GetBlobAsync(BlobContainerClient client, string blobName)
     {      
         BlobClient blob = client.GetBlobClient(blobName);
-        await Console.Out.WriteLineAsync($"Blob Found:\t{blob.Name}");
+        bool exists = await blob.ExistsAsync();
+        if (!exists)
+        {
+            await Console.Out.WriteLineAsync($"Blob {blob.Name} not found!");
+            
+        }
+        else
+            await Console.Out.WriteLineAsync($"Blob Found, URI:\t{blob.Uri}");
         return blob;
     }
 }
