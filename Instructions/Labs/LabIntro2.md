@@ -1,6 +1,6 @@
-# **Getting Started with Your  AZ-204: Developing Solutions for Microsoft Azure Workshop**
+# **Getting Started with Your AZ-204: Developing Solutions for Microsoft Azure Workshop**
  
-Welcome to your  AZ-204: Developing Solutions for Microsoft Azure workshop! We've prepared a seamless environment for you to explore and learn Azure ServicesS. Let's begin by making the most of this experience:
+Welcome to your AZ-204: Developing Solutions for Microsoft Azure workshop! We've prepared a seamless environment for you to explore and learn Azure ServicesS. Let's begin by making the most of this experience:
  
 ## **Accessing Your Lab Environment**
  
