@@ -42,7 +42,9 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
    ![Manage Your Virtual Machine](./media/gext2.png)  
 
-3. Click "Next" from the bottom right corner to embark on your Lab journey!
+3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed.
+
+4. Click "Next" from the bottom right corner to embark on your Lab journey!
  
    ![Start Your Azure Journey](./media/num.png)
 
