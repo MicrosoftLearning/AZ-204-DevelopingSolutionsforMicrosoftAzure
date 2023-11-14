@@ -29,10 +29,22 @@ For convenience, you can open the lab guide in a separate window by selecting th
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
 ![Manage Your Virtual Machine](./media/res.png)
-  
-Click "Next" from the bottom right corner to embark on your Lab journey!
+
+## **Lab Duration Extension**
+
+1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
+
+    ![Manage Your Virtual Machine](./media/gext.png)
+
+    >**Note:** You will get the **Hourglass** icon when 10 minutes are remaining in the lab.
+
+2. Click **OK** to extend your lab duration.
  
-![Start Your Azure Journey](./media/num.png)
+   ![Manage Your Virtual Machine](./media/gext2.png)  
+
+3. Click "Next" from the bottom right corner to embark on your Lab journey!
+ 
+   ![Start Your Azure Journey](./media/num.png)
 
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
 
