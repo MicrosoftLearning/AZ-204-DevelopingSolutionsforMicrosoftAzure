@@ -1,16 +1,32 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Azure.WebJobs;
-using Microsoft.AspNetCore.Http;
+using System.Net;
+using Microsoft.Azure.Functions.Worker;
+using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
 
-public static class Echo
+namespace func
 {
-    [FunctionName("Echo")]
-    public static IActionResult Run(
-        [HttpTrigger("POST")] HttpRequest request,
-        ILogger logger)
+    public class Echo
     {
-        logger.LogInformation("Received a request");
-        return new OkObjectResult(request.Body);
+        private readonly ILogger _logger;
+
+        public Echo(ILoggerFactory loggerFactory)
+        {
+            _logger = loggerFactory.CreateLogger<Echo>();
+        }
+
+        [Function("Echo")]
+        public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequestData req)
+        {
+            _logger.LogInformation("C# HTTP trigger function processed a request.");
+
+            var response = req.CreateResponse(HttpStatusCode.OK);
+            response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
+
+            StreamReader reader = new StreamReader(req.Body);
+            string requestBody = reader.ReadToEnd();
+            response.WriteString(requestBody);
+
+            return response;
+        }
     }
 }

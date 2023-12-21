@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.8.1" />
+    <PackageReference Include="Azure.Messaging.EventGrid" Version="4.11.0" />
   </ItemGroup>
 
 </Project>
