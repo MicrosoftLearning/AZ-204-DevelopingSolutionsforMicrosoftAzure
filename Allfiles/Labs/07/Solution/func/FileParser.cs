@@ -1,19 +1,43 @@
 using Azure.Storage.Blobs;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Azure.WebJobs;
-using Microsoft.AspNetCore.Http;
-using System;
-using System.Threading.Tasks;
+using Azure.Storage.Blobs.Models;
+using System.Net;
+using Microsoft.Azure.Functions.Worker;
+using Microsoft.Azure.Functions.Worker.Http;
+using Microsoft.Extensions.Logging;
 
-public static class FileParser
+namespace func
 {
-    [FunctionName("FileParser")]
-    public static async Task<IActionResult> Run(
-        [HttpTrigger("GET")] HttpRequest request)
+    public class FileParser
     {
-        string connectionString = Environment.GetEnvironmentVariable("StorageConnectionString");
-        BlobClient blob = new BlobClient(connectionString, "drop", "records.json");
-        var response = await blob.DownloadAsync();
-        return new FileStreamResult(response?.Value?.Content, response?.Value?.ContentType);
+        private readonly ILogger _logger;
+
+        public FileParser(ILoggerFactory loggerFactory)
+        {
+            _logger = loggerFactory.CreateLogger<FileParser>();
+        }
+
+        [Function("FileParser")]
+        public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequestData req)
+        {
+            _logger.LogInformation("C# HTTP trigger function processed a request.");
+
+            var response = req.CreateResponse(HttpStatusCode.OK);
+
+            string connectionString = Environment.GetEnvironmentVariable("StorageConnectionString");
+
+            /* Create a new instance of the BlobClient class by passing in your
+               connectionString variable, a  "drop" string value, and a
+               "records.json" string value to the constructor */
+            BlobClient blob = new BlobClient(connectionString, "drop", "records.json");
+
+            // Download the content of the referenced blob 
+            BlobDownloadResult downloadResult = blob.DownloadContent();
+
+             // Retrieve the value of the downloaded blob and convert it to string
+            response.WriteString(downloadResult.Content.ToString());
+            
+            //return the response
+            return response;
+        }
     }
 }
