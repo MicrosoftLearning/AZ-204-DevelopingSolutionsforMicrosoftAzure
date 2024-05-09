@@ -36,7 +36,6 @@ namespace Api.Controllers
         public async Task<ActionResult<IEnumerable<string>>> Get()
         {
             BlobContainerClient containerClient = await GetCloudBlobContainer(_options.FullImageContainerName);
-            BlobServiceClient blobServiceClient = new BlobServiceClient(_options.StorageConnectionString);
 
             BlobClient blobClient;
             BlobSasBuilder blobSasBuilder;
