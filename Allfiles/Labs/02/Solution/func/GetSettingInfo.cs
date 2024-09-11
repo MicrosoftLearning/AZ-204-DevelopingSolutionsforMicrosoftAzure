@@ -15,7 +15,7 @@ namespace func
         }
 
         [Function("GetSettingInfo")]
-        public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequestData req, 
+        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequestData req, 
             [BlobInput("content/settings.json", Connection = "AzureWebJobsStorage")] string blobContent
             )
         {
@@ -25,7 +25,7 @@ namespace func
             var response = req.CreateResponse(HttpStatusCode.OK);
             response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
 
-            response.WriteString($"{blobContent}");
+            await response.WriteStringAsync($"{blobContent}");
 
             return response;
         }

@@ -15,16 +15,18 @@ namespace func
         }
 
         [Function("Echo")]
-        public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequestData req)
+        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequestData req)
         {
             _logger.LogInformation("C# HTTP trigger function processed a request.");
 
             var response = req.CreateResponse(HttpStatusCode.OK);
             response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
 
-            StreamReader reader = new StreamReader(req.Body);
-            string requestBody = reader.ReadToEnd();
-            response.WriteString(requestBody);
+            using (StreamReader reader = new StreamReader(req.Body))
+            {
+                string requestBody = await reader.ReadToEndAsync();
+                await response.WriteStringAsync(requestBody);
+            }
 
             return response;
         }
