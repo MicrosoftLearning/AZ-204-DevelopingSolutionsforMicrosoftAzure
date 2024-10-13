@@ -6,7 +6,8 @@
 
 - **Direct students** to [https://aka.ms/az204labs](https://aka.ms/az204labs) for an easy-to-use list of lab instructions.
 - **Are you a MCT?** - Have a look at our [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
-- **Need to manually build the lab instructions?** - Instructions are available in the [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) repository 
+- **Need to manually build the lab instructions?** - Instructions are available in the [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) repository
+- galal
 
 ## Security Issue - February 2022
 
