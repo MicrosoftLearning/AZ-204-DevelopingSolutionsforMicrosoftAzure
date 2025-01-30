@@ -1,7 +1,5 @@
 # AZ-204: Developing solutions for Microsoft Azure
 
-**The lab instructions, downloadable code, and the VM were updated on 8/5/2022 to .NET 6. We are monitoring issues related to this update and are working with our lab hosting providers to to try and get any issues resolved as quickly as we can.**
-
 > **Note**: Students should be directed to sync the repository if they aren't being provided the AllFiles through the lab hosting provider. 
 
 - **Direct students** to [https://aka.ms/az204labs](https://aka.ms/az204labs) for an easy-to-use list of lab instructions.
