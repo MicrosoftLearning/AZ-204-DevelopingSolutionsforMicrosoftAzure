@@ -6,12 +6,11 @@ lab:
 
 # Deploy a containerized app to Azure App Service
 
-In this exercise, you...
-
 Tasks performed in this exercise:
 
-* something
-* something
+* Create an Azure App Service resource for a containerize app
+* View the results
+* Clean up resources
 
 This exercise should take approximately **15** minutes to complete.
 
@@ -20,7 +19,6 @@ This exercise should take approximately **15** minutes to complete.
 To complete the exercise you need:
 
 * An Azure subscription. If you don't already have one, you can [sign up for one](https://azure.microsoft.com/).
-
 
 ## Create a web app
 
@@ -31,9 +29,9 @@ To complete the exercise you need:
 
     ![Screenshot of the Web App tile.](./media/01/create-web-app-tile.png)
 
->**Note:** Selecting Create will open a template with various tabs to fill out with information about your deployment. The following sections walk you through what changes to make in the relevant tabs.
+>**Note:** Selecting **Create** will open a template with a few tabs to fill out with information about your deployment. The following steps walk you through what changes to make in the relevant tabs.
 
-### The Basics tab
+## Application settings
 
 1. Fill out the **Basics** tab with the information in the following table:
 
@@ -49,9 +47,7 @@ To complete the exercise you need:
     | **Linux Plan** | Retain the default selection. |
     | **Pricing plan** | Select the drop-down and choose the **Free F1** plan. |
 
-### The Container tab
-
-1. Select the **Container** tab, and enter the information in the following table:
+1. Select, or navigate to, the **Container** tab, and enter the information in the following table:
 
     | Setting | Action |
     |--|--|
@@ -61,8 +57,6 @@ To complete the exercise you need:
     | **Registry server URL** | Enter *mcr.microsoft.com/k8se*. |
     | **Image and Tag** | Enter *quickstart:latest*. |
     | **Startup Command** | Leave blank. |
-
-### The Review + create tab
 
 1. Select the **Review + create** tab.
 1. Review the selections you made, and then select the **Create** button.
