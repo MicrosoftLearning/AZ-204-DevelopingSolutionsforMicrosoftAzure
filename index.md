@@ -15,3 +15,15 @@ Hyperlinks to each of the labs are listed below.
 | --- | --- |
 {% for activity in labs  %}{% if activity.lab.az204Module %}| {{ activity.lab.az204Module }} | [{{ activity.lab.az204Title }}]({{ site.github.url }}{{ activity.url }}) |
 {% endif %}{% endfor %}
+
+## Exercises
+
+{% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Exercises'" %}
+{% for activity in labs  %}
+<hr>
+### [{{ activity.lab.title }}]({{ site.github.url }}{{ activity.url }})
+
+{{activity.lab.description}}
+
+{% endfor %}
+
