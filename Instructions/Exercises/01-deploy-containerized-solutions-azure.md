@@ -1,8 +1,10 @@
 ---
 lab:
-    title: 'Deploy containerized solutions to Azure App Service'
+    title: 'Deploy a containerized solution to Azure App Service'
     description: 'Learn how to deploy a containerized solution to Azure App Service.'
 ---
+
+# Deploy a containerized solution to Azure App Service
 
 In this exercise, you...
 
