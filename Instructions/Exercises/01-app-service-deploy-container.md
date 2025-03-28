@@ -20,26 +20,24 @@ To complete the exercise you need:
 
 * An Azure subscription. If you don't already have one, you can [sign up for one](https://azure.microsoft.com/).
 
-## Create a web app
+## Create a web app resource
 
-1. Open a web browser and navigate to the [Azure portal](https://portal.azure.com) at `https://portal.azure.com`; signing in with your Azure credentials if prompted.
+1. In your browser navigate to the Azure portal [https://portal.azure.com](https://portal.azure.com); signing in with your Azure credentials if prompted.
 1. Select the **+ Create a resource** located in the **Azure Services** heading near the top of the homepage. 
 1. In the **Search the Marketplace** search bar, enter *web app* and press **enter** to start searching.
 1. In the Web App tile, select the **Create** drop-down and then select **Web App**.
 
     ![Screenshot of the Web App tile.](./media/01/create-web-app-tile.png)
 
->**Note:** Selecting **Create** will open a template with a few tabs to fill out with information about your deployment. The following steps walk you through what changes to make in the relevant tabs.
-
-## Application settings
+Selecting **Create** will open a template with a few tabs to fill out with information about your deployment. The following steps walk you through what changes to make in the relevant tabs.
 
 1. Fill out the **Basics** tab with the information in the following table:
 
     | Setting | Action |
     |--|--|
     | **Subscription** | Retain the default value. |
-    | **Resource group** | Select Create new, enter *rg-WebApp*, and then select OK. |
-    | **Name** | Enter *\<your-initials>webapp*. This name needs to be unique, so it may require some changes. |
+    | **Resource group** | Select Create new, enter **rg-WebApp**, and then select OK. |
+    | **Name** | Enter **\<your-initials>containerwebapp**. Replace **\<your-initials>** with your initials, or some other value. The name needs to be unique, so it may require a few changes. |
     | Slider under **Name** setting | Select the slider to turn it off. |
     | **Publish** | Select the **Container** option. |
     | **Operating System** | Ensure **Linux** is selected. |
@@ -54,8 +52,8 @@ To complete the exercise you need:
     | **Sidecar support** | Retain default off position. |
     | **Image Source** | Select **Other container registries**. |
     | **Access Type** | Retain default **Public** selection. |
-    | **Registry server URL** | Enter *mcr.microsoft.com/k8se*. |
-    | **Image and Tag** | Enter *quickstart:latest*. |
+    | **Registry server URL** | Enter `mcr.microsoft.com/k8se`. |
+    | **Image and Tag** | Enter `quickstart:latest`. |
     | **Startup Command** | Leave blank. |
 
 1. Select the **Review + create** tab.
