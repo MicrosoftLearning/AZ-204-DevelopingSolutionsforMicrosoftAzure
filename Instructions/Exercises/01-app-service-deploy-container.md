@@ -36,8 +36,8 @@ Selecting **Create** will open a template with a few tabs to fill out with infor
     | Setting | Action |
     |--|--|
     | **Subscription** | Retain the default value. |
-    | **Resource group** | Select Create new, enter **rg-WebApp**, and then select OK. |
-    | **Name** | Enter **\<your-initials>containerwebapp**. Replace **\<your-initials>** with your initials, or some other value. The name needs to be unique, so it may require a few changes. |
+    | **Resource group** | Select Create new, enter `rg-WebApp`, and then select OK. |
+    | **Name** | Enter a unique name, for example `<your-initials>-containerwebapp`. Replace *\<your-initials>* with your initials, or some other value. The name needs to be unique, so it may require a few changes. |
     | Slider under **Name** setting | Select the slider to turn it off. |
     | **Publish** | Select the **Container** option. |
     | **Operating System** | Ensure **Linux** is selected. |
