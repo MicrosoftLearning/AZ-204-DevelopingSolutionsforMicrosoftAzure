@@ -118,7 +118,7 @@ You can perform a swap in the Azure portal with the **Swap** option in the toolb
 
 1. Select the link to your web app located in the **Default domain** field in the **Essentials** section. The link will open the site (production slot) in a new tab.
 
-1. Verify you can see your changes. You may need to refresh the page for them to appear.
+1. Verify your changes, you may need to refresh the page for them to appear.
 
 ## Clean up resources
 
