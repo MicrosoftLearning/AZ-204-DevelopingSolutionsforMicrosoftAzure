@@ -64,13 +64,15 @@ Visual Studio Code integrates with Azure Functions Core tools to let you run thi
 
 1. Press **F5** to start the function app project in the debugger. Output from Core Tools is displayed in the **Terminal** panel. Your app starts in the **Terminal** panel. You can see the URL endpoint of your HTTP-triggered function running locally.
 
-    ![Screenshot of the endpoint of your HTTP-triggered function is displayed in the Terminal panel.](./media/11/run-function-local.png)
+    ![Screenshot of the endpoint of your HTTP-triggered function is displayed in the Terminal panel.](./media/06/run-function-local.png)
 
 1. With Core Tools running, go to the **Azure: Functions** area. Under **Functions**, expand **Local Project** > **Functions**. Right-click the **HttpExample** function and select **Execute Function Now...**.
 
-    ![Screenshot showing the location of the Execute Function Now... step.](./media/11/execute-function-local.png)
+    ![Screenshot showing the location of the Execute Function Now... step.](./media/06/execute-function-local.png)
 
-1. In **Enter request body** type the request message body value of `{ "name": "Azure" }`. Press **Enter** to send this request message to your function. When the function executes locally and returns a response, a notification is raised in Visual Studio Code. Information about the function execution is shown in **Terminal** panel.
+1. In **Enter request body** type the request message body value of `{ "name": "Azure" }`. Press **Enter** to send this request message to your function. When the function executes locally and returns a response, a notification is raised in Visual Studio Code.
+
+    select the notification bell icon to view the notification. Information about the function execution is shown in **Terminal** panel.
 
 1. Press **Shift + F5** to stop Core Tools and disconnect the debugger.
 
@@ -86,7 +88,7 @@ Before you can publish your app, you must sign in to Azure. If you already signe
 
 1. If you aren't already signed in, choose the Azure icon in the Activity bar, then in the **Azure: Functions** area, choose **Sign in to Azure...**.
 
-    ![Screenshot of the Sign in to Azure button.](./media/11/functions-sign-into-azure.png)
+    ![Screenshot of the Sign in to Azure button.](./media/06/functions-sign-into-azure.png)
 
 1. When prompted in the browser, choose your Azure account and sign in using your Azure account credentials.
 
@@ -98,7 +100,7 @@ In this section, you create the Azure resources you need to deploy your local fu
 
 1. Choose the Azure icon in the Activity bar, then in the **Resources** area select the **Create resource...** button.
 
-    ![Screenshot of the Create Resources button.](./media/11/create-resource.png)    
+    ![Screenshot of the Create Resources button.](./media/06/create-resource.png)    
 
 1. Provide the following information at the prompts:
 
@@ -132,24 +134,25 @@ In this section, you create the Azure resources you need to deploy your local fu
 
 1. Select the function app you created. When prompted about overwriting previous deployments, select **Deploy** to deploy your function code to the new function app resource.
 
-1. After deployment completes, select **View Output** to view the creation and deployment results, including the Azure resources that you created. If you miss the notification, select the bell icon in the lower right corner to see it again.
+1. After deployment completes, select **View Output** to view the details of the deployment results. If you miss the notification, select the notification bell icon in the lower right corner to see it again.
 
-    ![Screenshot of the View Output button.](./media/11/function-view-output.png)
+    ![Screenshot of the View Output button.](./media/06/function-view-output.png)
 
 ### Run the function in Azure
 
 1. Back in the **Resources** area in the side bar, expand your subscription, your new function app, and **Functions**. **Right-click** the **HttpExample** function and choose **Execute Function Now...**.
 
-    ![Screenshot of the Execute Function Now option.](./media/11/execute-function-remote.png)
+    ![Screenshot of the Execute Function Now option.](./media/06/execute-function-remote.png)
 
 1. In **Enter request body** you see the request message body value of `{ "name": "Azure" }`. Press Enter to send this request message to your function.
 
-1. When the function executes in Azure and returns a response, a notification is raised in Visual Studio Code.
+1. When the function executes in Azure and returns a response, a notification is raised in Visual Studio Code. select the notification bell icon to view the notification.
 
 ## Clean up resources
 
 Now that you finished the exercise, you should delete the cloud resources you created to avoid unnecessary resource usage.
 
+1. In your browser navigate to the Azure portal [https://portal.azure.com](https://portal.azure.com); signing in with your Azure credentials if prompted.
 1. Navigate to the resource group you created and view the contents of the resources used in this exercise.
 1. On the toolbar, select **Delete resource group**.
 1. Enter the resource group name and confirm that you want to delete it.
