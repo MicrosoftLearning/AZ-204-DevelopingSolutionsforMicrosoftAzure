@@ -44,13 +44,13 @@ In this section, you use Visual Studio Code to create a local Azure Functions pr
 
     | Prompt | Action |
     |--|--|
+    | Select the folder that will contain your function projects | Select **Browse...** to select a folder for you app.
     | Select a language | Select **C#**. |
     | Select a .NET runtime | Select **.NET 8.0 Isolated** |
     | Select a template for your project's first function | Select **HTTP trigger**.<sup>1</sup> |
     | Provide a function name | Enter `HttpExample`. |
     | Provide a namespace | Enter `My.Function`. |
     | Authorization level | Select **Anonymous**, which enables anyone to call your function endpoint. |
-    | Select how you would like to open your project | Select **Open in current window**. |
 
     <sup>1</sup> Depending on your VS Code settings, you might need to use the **Change template filter** option to see the full list of templates.
 
@@ -105,20 +105,20 @@ In this section, you create the Azure resources you need to deploy your local fu
     | Prompt | Action |
     |--|--|
     | Select a resource to create | Select **Create Function App in Azure...** |
-    | Select subscription | Choose the subscription to use. *You won't see this if you only have one subscription.* |
-    | Enter a globally unique name for the function app | Type a name that is valid in a URL path, for example `myFunctionApp`. The name you type is validated to make sure that it's unique. |
-    | Select a location for new resources | For better performance, choose a region near you. |
+    | Select subscription | Select the subscription to use. *You won't see this if you only have one subscription.* |
+    | Enter a globally unique name for the function app | Type a name that is valid in a URL path, for example `myfunctionapp`. The name you type is validated to make sure that it's unique. |
+    | Select a location for new resources | For better performance, select a region near you. |
     | Select a runtime stack | Select **.NET 8.0 Isolated**. |
-    | Select an instance memory size | Select **2048 Default**
-    | Select the maximum instance count | Accept the default **100**.
+    | Select an instance memory size | Select **2048 Default** |
+    | Select the maximum instance count | Accept the default **100**. |
 
-    The extension shows the status of individual resources as they're being created in Azure in the **AZURE: ACTIVITY LOG** area of the terminal window.
+    The extension shows the status of individual resources as they're being created in the **AZURE** area of the terminal window.
     
 1. When completed, the following Azure resources are created in your subscription, using names based on your function app name:
 
     * A resource group, which is a logical container for related resources.
     * A standard Azure Storage account, which maintains state and other information about your projects.
-    * A consumption plan, which defines the underlying host for your serverless function app.
+    * A Flex consumption plan, which defines the underlying host for your serverless function app.
     * A function app, which provides the environment for executing your function code. A function app lets you group functions as a logical unit for easier management, deployment, and sharing of resources within the same hosting plan.
     * An Application Insights instance connected to the function app, which tracks usage of your serverless function.
 
@@ -128,8 +128,10 @@ In this section, you create the Azure resources you need to deploy your local fu
 
 1. In the command palette, search for and run the command **Azure Functions: Deploy to Function App...**.
 
+1. Select the subscription you used when creating the resources.
+
 1. Select the function app you created. When prompted about overwriting previous deployments, select **Deploy** to deploy your function code to the new function app resource.
-    
+
 1. After deployment completes, select **View Output** to view the creation and deployment results, including the Azure resources that you created. If you miss the notification, select the bell icon in the lower right corner to see it again.
 
     ![Screenshot of the View Output button.](./media/11/function-view-output.png)
