@@ -14,7 +14,7 @@ Tasks performed in this exercise:
 * View the results
 * Clean up resources
 
-This exercise should take approximately **XX** minutes to complete.
+This exercise should take approximately **30** minutes to complete.
 
 ## Before you start
 
@@ -80,7 +80,7 @@ After verifying that the function runs correctly on your local computer, it's ti
 
 ## Deploy and execute the function in Azure
 
-Descriptive
+In this section you create an Azure Function App resource and deploy the function to the resource.
 
 ### Sign in to Azure
 
