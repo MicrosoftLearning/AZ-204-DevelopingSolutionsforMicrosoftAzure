@@ -14,7 +14,7 @@ Tasks performed in this exercise:
 * Create the console app
 * Run the console app and verify results
 
-This exercise should take approximately **XX** minutes to complete.
+This exercise should take approximately **30** minutes to complete.
 
 ## Before you start
 
@@ -22,18 +22,9 @@ Before you begin, make sure you have the following requirements in place:
 
 * An Azure subscription. If you don't already have one, you can [sign up for one](https://azure.microsoft.com/).
 
-<!-- * [Visual Studio Code](https://code.visualstudio.com/) on one of the [supported platforms](https://code.visualstudio.com/docs/supporting/requirements#_platforms).
-
-* [.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) is the target framework.
-
-* [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) for Visual Studio Code.
-  
-*  The latest [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli) tools, installed locally.
- -->
-
 ## Create an Azure Cosmos DB account
 
-In this section of exercise you create a resource group and Azure Cosmos DB account. You also record the endpoint for the account and retrieve an access key.
+In this section of exercise you create a resource group and Azure Cosmos DB account. You also record the endpoint, and access key for the account.
 
 1. In your browser navigate to the Azure portal [https://portal.azure.com](https://portal.azure.com); signing in with your Azure credentials if prompted.
 
@@ -87,140 +78,170 @@ Now that the needed resources are deployed to Azure the next step is to set up t
     dotnet new console --framework net8.0
     ```
 
-It's time to start adding the packages and code to the project.
-
-### Add packages and using statements
-
-1. Open the terminal in Visual Studio Code and use the following command to add the **Microsoft.Azure.Cosmos** package to the project.
+1. Run the following commands to add the **Microsoft.Azure.Cosmos** package to the project, and also the supporting **Newtonsoft.Json** package.
 
     ```dotnetcli
     dotnet add package Microsoft.Azure.Cosmos --version 3.*
     dotnet add package Newtonsoft.Json --version 13.*
     ```
 
-1. Delete any existing code in the *Program.cs* file and add the following  statements.
+Now it's time to replace the template code in the **Program.cs** file using the editor in the cloud shell.
+
+### Add the starting code for the project
+
+1. Run the following command in the cloud shell to begin editing the application.
+
+    ```bash
+    code Program.cs
+    ```
+
+1. Replace any existing code with the following  following code snippet after the **using** statements. Be sure to replace the placeholder values for **\<documentEndpoint>** and **\<primaryKey>** following the directions in the code comments.
+
+    The code provides the overall structure of the app, and some necessary elements. Review the comments in the code, you add code in areas specified in the instructions. 
 
     ```csharp
     using Microsoft.Azure.Cosmos;
-    ```
-
-### Add code to connect to an Azure Cosmos DB account
-
-1. Add the following code snippet after the **using** statements. The code snippet adds constants and variables into the class and adds some error checking. Be sure to replace the placeholder values for **EndpointUri** and **PrimaryKey** following the directions in the code comments.
-
-    ```csharp
-    public class Program
-    {
-        // Replace <documentEndpoint> with the information created earlier
-        private static readonly string EndpointUri = "<documentEndpoint>";
-
-        // Set variable to the Primary Key from earlier.
-        private static readonly string PrimaryKey = "<your primary key>";
-
-        // The Cosmos client instance
-        private CosmosClient cosmosClient;
-
-        // The database we will create
-        private Database database;
-
-        // The container we will create.
-        private Container container;
-
-        // The names of the database and container we will create
-        private string databaseId = "myDatabase";
-        private string containerId = "myContainer";
-
-        public static async Task Main(string[] args)
-        {
-            try
-            {
-                Console.WriteLine("Beginning operations...\n");
-                Program p = new Program();
-                await p.CosmosAsync();
     
-            }
-            catch (CosmosException de)
+    namespace CosmosExercise
+    {
+        // This class represents a product in the Cosmos DB container
+        public class Product
+        {
+            public string? id { get; set; }
+            public string? name { get; set; }
+            public string? description { get; set; }
+        }
+    
+        public class Program
+        {
+            // Cosmos DB account URL - replace with your actual Cosmos DB account URL
+            static string cosmosDbAccountUrl = "<documentEndpoint>";
+    
+            // Cosmos DB account key - replace with your actual Cosmos DB account key
+            static string accountKey = "<primaryKey>";
+    
+            // Name of the database to create or use
+            static string databaseName = "myDatabase";
+    
+            // Name of the container to create or use
+            static string containerName = "myContainer";
+    
+            public static async Task Main(string[] args)
             {
-                Exception baseException = de.GetBaseException();
-                Console.WriteLine("{0} error occurred: {1}", de.StatusCode, de);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error: {0}", e);
-            }
-            finally
-            {
-                Console.WriteLine("End of program, press any key to exit.");
-                Console.ReadKey();
+                // Create the Cosmos DB client using the account URL and key
+    
+    
+                try
+                {
+                    // Create a database if it doesn't already exist
+    
+    
+                    // Create a container with a specified partition key
+    
+    
+                    // Define a typed item (Product) to add to the container
+    
+    
+                    // Add the item to the container
+                    // The partition key ensures the item is stored in the correct partition
+    
+    
+                }
+                catch (CosmosException ex)
+                {
+                    // Handle Cosmos DB-specific exceptions
+                    // Log the status code and error message for debugging
+                    Console.WriteLine($"Cosmos DB Error: {ex.StatusCode} - {ex.Message}");
+                }
+                catch (Exception ex)
+                {
+                    // Handle general exceptions
+                    // Log the error message for debugging
+                    Console.WriteLine($"Error: {ex.Message}");
+                }
             }
         }
-        //The sample code below gets added below this line
     }
     ```
 
-1. Below the `Main` method, add a new asynchronous task called `CosmosAsync`, which instantiates our new `CosmosClient` and adds code to call the methods you add later to create a database and a container.
+### Add code to create the client and perform operations 
+
+In this section of the exercise you add code in specified areas of the projects to create the: client, database, container, and add a sample item to the container.
+
+1. Add the following code in the space after the **// Create the Cosmos DB client using the account URL and key** comment. This code defines the client used to connect to your Azure Cosmos DB account.
 
     ```csharp
-    public async Task CosmosAsync()
+    CosmosClient client = new(
+        accountEndpoint: cosmosDbAccountUrl,
+        authKeyOrResourceToken: accountKey
+    );
+    ```
+
+    >Note: It's a best practice to use the **DefaultAzureCredential** from the *Azure Identity* library. This can require some additional configuration requirments in Azure depending on how your subscription is set up. 
+
+1. Add the following code in the space after the **// Create a database if it doesn't already exist** comment. 
+
+    ```csharp
+    Microsoft.Azure.Cosmos.Database database = await client.CreateDatabaseIfNotExistsAsync(databaseName);
+    Console.WriteLine($"Created or retrieved database: {database.Id}");
+    ```
+
+1. Add the following code in the space after the **// Create a container with a specified partition key** comment. 
+
+    ```csharp
+    Microsoft.Azure.Cosmos.Database database = await client.CreateDatabaseIfNotExistsAsync(databaseName);
+    Console.WriteLine($"Created or retrieved database: {database.Id}");
+    ```
+
+1. Add the following code in the space after the **// Define a typed item (Product) to add to the container** comment. This defines the item that's added to the container.
+
+    ```csharp
+    Product newItem = new Product
     {
-        // Create a new instance of the Cosmos Client
-        this.cosmosClient = new CosmosClient(EndpointUri, PrimaryKey);
-
-        // Runs the CreateDatabaseAsync method
-        await this.CreateDatabaseAsync();
-
-        // Run the CreateContainerAsync method
-        await this.CreateContainerAsync();
-    }
+        id = Guid.NewGuid().ToString(), // Generate a unique ID for the product
+        name = "Sample Item",
+        description = "This is a sample item in my Azure Cosmos DB exercise."
+    };
     ```
 
-## Create a database
+1. Add the following code in the space after the **// Add the item to the container** comment. 
 
-Copy and paste the `CreateDatabaseAsync` method after the  `CosmosAsync` method. `CreateDatabaseAsync` creates a new database with ID `az204Database` if it doesn't already exist.
-
-```csharp
-private async Task CreateDatabaseAsync()
-{
-    // Create a new database using the cosmosClient
-    this.database = await this.cosmosClient.CreateDatabaseIfNotExistsAsync(databaseId);
-    Console.WriteLine("Created Database: {0}\n", this.database.Id);
-}
- ```
-
-## Create a container
-
-Copy and paste the `CreateContainerAsync` method below the `CreateDatabaseAsync` method.
-
-```csharp
-private async Task CreateContainerAsync()
-{
-    // Create a new container
-    this.container = await this.database.CreateContainerIfNotExistsAsync(containerId, "/LastName");
-    Console.WriteLine("Created Container: {0}\n", this.container.Id);
-}
-```
-
-## Run the application
-
-1. Save your work and, in a terminal in Visual Studio Code, check for any errors by running the `dotnet build` command. Run the `dotnet run` command if the build is successful. The console displays the following messages.
-
-    ```
-    Beginning operations...
-    
-    Created Database: myDatabase
-    
-    Created Container: myContainer
-    
-    End of program, press any key to exit.
+    ```csharp
+    ItemResponse<Product> createResponse = await container.CreateItemAsync(
+        item: newItem,
+        partitionKey: new PartitionKey(newItem.id)
+    );
     ```
 
-1. Verify the results by opening the Azure portal, navigating to your Azure Cosmos DB resource, and use the **Data Explorer** to view the database and container.
+1. Now that the code is complete, save your progress use **Ctrl + S** to save the file, and **Ctrl + Q** to exit the editor.
 
-## Clean up Azure resources
+1. Run the following command in the cloud shell to test for any errors in the project. If you do see errors, open the *Program.cs* file in the editor and check for missing code or pasting errors.
+
+    ```bash
+    dotnet build
+    ```
+
+Now that the project is finished it's time to run the application and verify the results in the Azure portal.
+
+## Run the application and verify results
+
+1. Run the `dotnet run` command if in the cloud shell. The output should be something similar to the following example.
+
+    ```
+    Created or retrieved database: myDatabase
+    Created or retrieved container: myContainer
+    Created item: c549c3fa-054d-40db-a42b-c05deabbc4a6
+    Request charge: 6.29 RUs
+    ```
+
+1. In the Azure portal, navigate to the Azure Cosmos DB resource you created earlier. Select **Data Explorer** in the left navigation. In **Data Explorer**, select **myDatabase** and then expand **myContainer**. You can view the item you created by selecting **Items**.
+
+    ![Screenshot showing the location of Items in the Data Explorer.](./media/09/cosmos-data-explorer.png)
+
+## Clean up resources
 
 Now that you finished the exercise, you should delete the cloud resources you created to avoid unnecessary resource usage.
 
-```
-az group delete --name rg-cosmos --no-wait --yes
-```
-
+1. Navigate to the resource group you created and view the contents of the resources used in this exercise.
+1. On the toolbar, select **Delete resource group**.
+1. Enter the resource group name and confirm that you want to delete it.
