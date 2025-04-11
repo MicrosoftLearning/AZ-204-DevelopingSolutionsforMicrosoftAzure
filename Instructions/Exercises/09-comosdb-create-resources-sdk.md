@@ -213,7 +213,7 @@ In this section of the exercise you add code in specified areas of the projects 
     );
     ```
 
-1. Now that the code is complete, save your progress use **ctrl + S** to save the file, and **Ctrl + q** to exit the editor.
+1. Now that the code is complete, save your progress use **ctrl + q** to save the file, and **ctrl + q** to exit the editor.
 
 1. Run the following command in the cloud shell to test for any errors in the project. If you do see errors, open the *Program.cs* file in the editor and check for missing code or pasting errors.
 
