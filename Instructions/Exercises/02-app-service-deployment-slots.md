@@ -6,7 +6,7 @@ lab:
 
 # Swap deployment slots in Azure App Service
 
-In this exercise, you deploy a basic HTML+CSS site to Azure App Service by using the Azure CLI `az  webapp up` command. Next, you update the code and deploy the change to a staging slot. Finally, you swap the slots.
+In this exercise, you deploy a basic HTML+CSS site to Azure App Service by using the Azure CLI **az webapp up** command. Next, you update the code and deploy the change to a staging slot. Finally, you swap the slots.
 
 Tasks performed in this exercise:
 
