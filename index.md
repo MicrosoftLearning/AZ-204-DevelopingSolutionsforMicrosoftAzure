@@ -18,6 +18,8 @@ Hyperlinks to each of the labs are listed below.
 
 ## Exercises
 
+The following exercises are designed supplement the labs to provide you with additional hands-on learning experiences. 
+
 {% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Exercises'" %}
 {% for activity in labs  %}
 <hr>
