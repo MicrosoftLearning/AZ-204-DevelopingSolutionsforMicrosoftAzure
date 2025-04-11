@@ -70,7 +70,7 @@ Visual Studio Code integrates with Azure Functions Core tools to let you run thi
 
     ![Screenshot showing the location of the Execute Function Now... step.](./media/06/execute-function-local.png)
 
-1. In **Enter request body** type the request message body value of `{ "name": "Azure" }`. Press **Enter** to send this request message to your function. When the function executes locally and returns a response, a notification is raised in Visual Studio Code.
+1. In **Enter request body** enter the request message body value of `{ "name": "Azure" }`. Press **Enter** to send this request message to your function. When the function executes locally and returns a response, a notification is raised in Visual Studio Code.
 
     select the notification bell icon to view the notification. Information about the function execution is shown in **Terminal** panel.
 
@@ -108,7 +108,7 @@ In this section, you create the Azure resources you need to deploy your local fu
     |--|--|
     | Select a resource to create | Select **Create Function App in Azure...** |
     | Select subscription | Select the subscription to use. *You won't see this if you only have one subscription.* |
-    | Enter a globally unique name for the function app | Type a name that is valid in a URL path, for example `myfunctionapp`. The name you type is validated to make sure that it's unique. |
+    | Enter a globally unique name for the function app | Enter a name that is valid in a URL path, for example `myfunctionapp`. The name you enter is validated to make sure that it's unique. |
     | Select a location for new resources | For better performance, select a region near you. |
     | Select a runtime stack | Select **.NET 8.0 Isolated**. |
     | Select an instance memory size | Select **2048 Default** |
