@@ -15,7 +15,7 @@ Tasks performed in this exercise:
 * Make a change to the sample app and deploy it to the staging slot.
 * Swap the staging and default production slots to move the changes to the production slot.
 
-This exercise should take approximately **30** minutes to complete.
+This exercise should take approximately **20** minutes to complete.
 
 ## Before you start
 
